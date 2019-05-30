@@ -1,0 +1,132 @@
+﻿
+units= {
+	##### NAVAL UNITS #####
+	### ITALY ###
+	
+	### EAGEAN SEA ###
+	fleet = {
+		name = "Comando Navale Mar Egeo"			
+		naval_base = 819 # Rhodes, Greece
+		task_force = { 
+			name = "Squadra di Mar Egeo" 
+			location = 819 # Rhodes, Greece
+			# IV Squadriglia Cacciatorpediniere
+			ship = { name = "RCT Francesco Crispi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
+			ship = { name = "RCT Quintino Sella" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
+			# VIII Squadriglia Torpediniere
+			ship = { name = "RCT Astore" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Spica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+		} 
+		task_force = { 
+			name = "VI Gruppo Sommergibili"	
+			location = 11837 # Rhodes, Greece
+			# LXI Squadriglia Sommergibili
+			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Argonauta" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Fisalia" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Smeraldo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+		} 
+			task_force = { 
+			name = "VI Gruppo Sommergibili"	
+			location = 11837 # Rhodes, Greece
+			# LXI Squadriglia Sommergibili
+			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Argonauta" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Fisalia" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Smeraldo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+		} 
+				task_force = { 
+			name = "VI Gruppo Sommergibili"	
+			location = 819 # Rhodes, Greece
+			# LXI Squadriglia Sommergibili
+			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Argonauta" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Fisalia" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Smeraldo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+		}
+	}
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	if = { 
+		limit = { is_tutorial = no } 
+		
+		##### Ships #####
+		# BB: "RN Conte di Cavour" (Refitted & Recommissioned: 1-Jun, 1937)
+		add_equipment_production = { 
+			equipment = { 
+				type = battleship_2 # Caio Duilio Class
+				creator = "ITA" 
+			} 
+			requested_factories = 2
+			progress = 0.20 
+			amount = 1 
+		} 
+
+		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
+		add_equipment_production = { 
+			equipment = { 
+				type = battleship_2 # Caio Duilio Class
+				creator = "ITA" 
+			} 
+			requested_factories = 2
+			progress = 0.20 
+			amount = 1 
+		} 
+
+		# CL: "RI Eugenio di Savoia" (Recommissioned: 16-Jan, 1936)
+		add_equipment_production = { 
+			equipment = { 
+				type = light_cruiser_1 
+				creator = "ITA" 
+				version_name = "Montecuccoli Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
+		} 
+
+		# DD: "RCT Perseo", "RCT Sirio"
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = destroyer_1 
+				creator = "ITA" 
+				version_name = "Maestrale Class" 
+			} 
+			requested_factories = 1
+			progress = 0.60 
+			amount = 1 
+		} 
+
+		# SS: "RSmg Enrico Tazzoli"
+		add_equipment_production = { 
+			equipment = { 
+				type = submarine_1 
+				creator = "ITA" 
+				version_name = "Sirena Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.50 
+			amount = 1 
+		} 
+	} 
+}
+
+#####################
