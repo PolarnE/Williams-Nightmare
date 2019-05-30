@@ -1,0 +1,30 @@
+state={
+	id=790
+	name="Inner Angola"
+	manpower = 2225000
+	
+	state_category = rural
+	resources={
+		rubber=1 # was: 1
+	}
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+			8248 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8248 1
+		}
+		victory_points = {
+			10966 1
+		}
+		add_core_of = ANG
+	}
+
+	provinces={
+    8219 12981 8248 5158 10966 12958 12391 8138 8202 12985 12921 8136 10957 10978
+	}
+}
