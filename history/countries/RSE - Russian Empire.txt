@@ -1,0 +1,135 @@
+﻿capital = 386
+
+oob = "RSE_1936"
+
+set_research_slots = 4
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	interwar_antiair = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		coastal_defense_ships = 1
+	}
+}
+
+set_convoys = 5
+
+add_ideas = {
+	limited_conscription
+	RSE_tsar_nick
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = RSL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.65
+	}
+	else = {
+		puppet = RSL
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = CST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.35
+	}
+	else = {
+		puppet = CST
+	}
+}
+
+add_opinion_modifier = { target = SOV modifier = large_decrease }
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 5
+		}
+
+		neutrality = {
+			popularity = 70
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Sergey Vikarov"
+	desc = ""
+	picture = "portrait_sergey_vikarov.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sergey Vikarov"
+	desc = ""
+	picture = "portrait_sergey_vikarov.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+
+
+
+}
