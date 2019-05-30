@@ -1,0 +1,103 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "FRA"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			political_effort
+				nuclear_effort
+				army_effort
+			}
+		}
+		"SOV"={
+			history = "RUS_lore"
+			ideology = democratic
+			ideas = {
+		    RUS_closed_borders
+			RUS_lack_of_innovation
+			RUS_slow_industrialisation
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+	"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+			"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+			"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+			"SWE"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+			"USA"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
