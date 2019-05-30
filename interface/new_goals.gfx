@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_focus_eng_support_the_king"
+		texturefile = "gfx/interface/goals/focus_eng_support_the_king.dds"
+	}
+
+}

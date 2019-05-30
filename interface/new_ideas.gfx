@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_eng_treaty_of_bordeaux"
+		texturefile = "gfx/interface/ideas/idea_eng_treaty_of_bordeaux.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_eng_rsa"
+		texturefile = "gfx/interface/ideas/idea_eng_rsa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rse_tsar_nick"
+		texturefile = "gfx/interface/ideas/idea_rse_nicholas.dds"
+	}
+
+}
