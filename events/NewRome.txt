@@ -1,0 +1,19 @@
+﻿###########################
+# Italian/Roman Events
+###########################
+
+add_namespace = newrome
+
+country_event = {
+	id = newrome.1
+	title = newrome.1.t
+	desc = newrome.1.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = {
+		name = newrome.1.a
+	}
+
+}

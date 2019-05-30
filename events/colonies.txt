@@ -1,0 +1,92 @@
+﻿###########################
+# Colony Independance Events
+###########################
+
+add_namespace = colonies
+
+# Independance of Morocco
+country_event = {
+	id = colonies.1
+	title = colonies.1.t
+	desc = colonies.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date > 1936.1.1 # Trigger at some point after 1936
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = { # Oh No!
+		name = colonies.1.a
+		MOR = {
+			if = {
+				limit = { SPR = { owns_state = 290 controls_state = 290 } }
+				transfer_state = 290
+			}
+			if = {
+				limit = { SPR = { owns_state = 783 controls_state = 783 } }
+				transfer_state = 783
+			}
+			if = {
+				limit = { FRA = { owns_state = 461 controls_state = 461 } }
+				transfer_state = 461
+			}
+			if = {
+				limit = { FRA = { owns_state = 462 controls_state = 462 } }
+				transfer_state = 462
+			}
+			load_oob = "MOR_rebellion"
+		}
+		SPR = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
+		}
+		FRA = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
+		}
+		hidden_effect = {
+			news_event = { id = nnews.1 }
+			SPR = {
+				country_event = colonies.2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = colonies.2
+	title = colonies.2.t
+	desc = colonies.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = colonies.2.a
+		start_civil_war = {
+			ideology = communism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = colonies.2.b
+		start_civil_war = {
+			ruling_party = communism
+			ideology = fascism
+			size = 0.5
+		}
+	}
+
+}
