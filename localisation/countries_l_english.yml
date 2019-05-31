@@ -2338,5 +2338,18 @@
  MYS_communism_ADJ:0 "Mysore"
  MYS_fascism_ADJ:0 "Mysore"
  MYS_democratic_ADJ:0 "Mysore"
+ #scandinavian congo
+ SCN_neutrality:0 "Scandinavian Kongo"
+ SCN_neutrality_DEF:0 "the Scandinavian Kongo"
+ SCN_fascism:0 "Scandinavian Kongo"
+ SCN_fascism_DEF:0 "the Scandinavian Kongo"
+ SCN_democratic:0 "Scandinavian Kongo"
+ SCN_democratic_DEF:0 "the Scandinavian Kongo"
+ SCN_communism:0 "Scandinavian Kongo"
+ SCN_communism_DEF:0 "the Scandinavian Kongo"
+ SCN_neutrality_ADJ:0 "Kongolese"
+ SCN_communism_ADJ:0 "Kongolese"
+ SCN_fascism_ADJ:0 "Kongolese"
+ SCN_democratic_ADJ:0 "Kongolese"
  
   
