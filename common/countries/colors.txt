@@ -575,3 +575,8 @@ CST = {
 	color = rgb { 248 233 46 }
 	color_ui = rgb { 248 233 46 }
 }
+
+SCN = {
+	color = rgb { 36 132 247 }
+	color_ui = rgb { 47 172 255 }
+}
