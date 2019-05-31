@@ -237,7 +237,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gustav V"
+	name = "Gustaf V"
 	desc = ""
 	picture = "portrait_gustav_v.dds"
 	expire = "1965.1.1"
