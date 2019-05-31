@@ -75,7 +75,7 @@ set_politics = {
 create_country_leader = {
 	
 	name = "Gustaf I"
-	picture = "gfx//leaders//SWE//portrait_gustav_v.dds.dds"
+	picture = "gfx//leaders//SWE//portrait_gustav_v.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
