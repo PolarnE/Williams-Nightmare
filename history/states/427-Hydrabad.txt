@@ -1,9 +1,9 @@
 state={
 	id=427
 	name="STATE_427"
-	manpower = 14013400
+	manpower = 29013400
 	
-	state_category = town
+	state_category = metropolis
 	
 	resources={
 		chromium=6 # was: 8
@@ -14,15 +14,18 @@ state={
 		victory_points = {
 			8087 1
 		}
+		victory_points = {
+			 10311 25
+		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 6
+			industrial_complex = 3
 			air_base = 3
 		}
 
 	}
 
 	provinces={
-		1275 1317 1359 4472 5019 5063 5104 8087 10311 10324 10511 11950 12226 
+		1275 1317 1359 4472 5019 5063 5104 8087 10324 10511 11950 12226 10311
 	}
 }
