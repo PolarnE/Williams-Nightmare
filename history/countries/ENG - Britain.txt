@@ -84,6 +84,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_faction = duumvirate
+add_to_faction = ENG
+add_to_faction = SWE
+
 add_ideas = {
 }
 
