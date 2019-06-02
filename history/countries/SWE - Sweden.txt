@@ -65,6 +65,23 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SCN
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	else = {
+		puppet = SCN
+	}
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
