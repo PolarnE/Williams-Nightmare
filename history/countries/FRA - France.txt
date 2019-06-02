@@ -135,6 +135,22 @@ if = {
 		}
 	}
 	set_autonomy = {
+		target = FAF
+		autonomous_state = autonomy_colony
+		freedom_level = 0.75
+	}
+	else = {
+		puppet = FAF
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
 		target = TUS
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.5
