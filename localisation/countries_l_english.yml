@@ -2338,7 +2338,7 @@
  MYS_communism_ADJ:0 "Mysore"
  MYS_fascism_ADJ:0 "Mysore"
  MYS_democratic_ADJ:0 "Mysore"
- #scandinavian congo
+ #scandinavian congo:
  SCN_neutrality:0 "Scandinavian Kongo"
  SCN_neutrality_DEF:0 "the Scandinavian Kongo"
  SCN_fascism:0 "Scandinavian Kongo"
@@ -2351,5 +2351,18 @@
  SCN_communism_ADJ:0 "Kongolese"
  SCN_fascism_ADJ:0 "Kongolese"
  SCN_democratic_ADJ:0 "Kongolese"
+ #french africa:
+ FAF_neutrality:0 "Dependency of Marrakech"
+ FAF_neutrality_DEF:0 "the Dependency of Marrakech"
+ FAF_fascism:0 "Dependency of Marrakech"
+ FAF_fascism_DEF:0 "the Dependency of Marrakech"
+ FAF_democratic:0 "Dependency of Marrakech"
+ FAF_democratic_DEF:0 "the Dependency of Marrakech"
+ FAF_communism:0 "Dependency of Marrakech"
+ FAF_communism_DEF:0 "the Dependency of Marrakech"
+ FAF_neutrality_ADJ:0 "French African"
+ FAF_communism_ADJ:0 "French African"
+ FAF_fascism_ADJ:0 "French African"
+ FAF_democratic_ADJ:0 "French African"
  
   
