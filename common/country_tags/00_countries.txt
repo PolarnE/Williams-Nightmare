@@ -197,5 +197,6 @@ RSL = "countries/RussianLevant.txt"
 CST = "countries/Constantinople.txt"
 ############INDIA###################################
 MYS = "countries/Mysore.txt"
-############CONGO###################################
+############AFRICA##################################
 SCN = "countries/SwedenCongo.txt"
+FAF = "countries/FrenchAfrica.txt"
