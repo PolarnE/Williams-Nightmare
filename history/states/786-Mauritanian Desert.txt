@@ -7,8 +7,9 @@ state={
 	impassable = yes
 
 	history={
-		owner = FRA
+		owner = FAF
 		add_core_of = MRT
+		add_core_of = FAF
 		buildings = {
 			infrastructure = 0
 		}
