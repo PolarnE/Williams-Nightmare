@@ -94,16 +94,16 @@ set_stability = 0.75
 set_war_support = 0.3
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	democratic = 20
-	neutrality = 56
+	neutrality = 20
 	communism = 4
-	fascism = 20
+	fascism = 56
 }
 
 create_faction = Axis
@@ -143,6 +143,17 @@ create_country_leader = {
 	picture = "Portrait_Germany_Wilhelm_II.dds"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Erwin Rommel"
+	desc = ""
+	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	expire = "1965.1.1"
+	ideology = cromwellian
 	traits = {
 		
 	}
