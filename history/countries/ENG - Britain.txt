@@ -97,7 +97,7 @@ create_country_leader = {
 	desc = ""
 	picture = "portrait_the_protector.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = cromwellian
 	traits = {
 	}
 }
