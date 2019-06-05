@@ -123,6 +123,8 @@ ideologies = {
 			
 			rexism = {
 			}
+			
+			cromwellian = { }
 		}
 		
 		dynamic_faction_names = {
