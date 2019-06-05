@@ -33,7 +33,7 @@ bookmarks = {
 			}		
 		}
 	"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "ENG_lore"
 			ideology = fascism
 			ideas = {
 			}	
@@ -55,8 +55,8 @@ bookmarks = {
 			}		
 		}
 			"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "GER_lore
+			ideology = fascism
 			ideas = {
 			}	
 			focuses = {
