@@ -55,7 +55,7 @@ bookmarks = {
 			}		
 		}
 			"GER"={
-			history = "GER_lore
+			history = "GER_lore"
 			ideology = fascism
 			ideas = {
 			}	
