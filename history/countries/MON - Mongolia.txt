@@ -57,26 +57,17 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 90
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 5
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 90
+	fascism = 5
+	communism = 5
+	neutrality = 0
 }
 
 create_country_leader = {

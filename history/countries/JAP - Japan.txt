@@ -253,26 +253,17 @@ set_convoys = 400
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
-	
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 2
+	fascism = 50
+	communism = 6
+	neutrality = 42
 }
 
 

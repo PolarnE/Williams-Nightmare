@@ -85,29 +85,16 @@ set_convoys = 300
 
 
 set_politics = {
-
-	parties = {
-		neutrality = { 
-			popularity = 42
-		}
-
-		democratic = {
-			popularity = 30
-		}
-		
-		fascism		= {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 8
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 20
+	communism = 8
+	neutrality = 42
 }
 
 # DIPLOMACY

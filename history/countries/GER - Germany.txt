@@ -94,26 +94,11 @@ set_stability = 0.75
 set_war_support = 0.3
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		neutrality = {
-			popularity = 80
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
-
+set_popularities = {
+	democratic = 5
+	fascism = 10
+	communism = 5
+	neutrality = 80
 }
 
 create_faction = Axis

@@ -61,27 +61,17 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		fascism = { 
-			popularity = 63
-		}
-
-		neutrality = {
-			popularity = 27
-		}
-		democratic = {
-			popularity = 8
-		}
-		communism = {
-			popularity = 2
-		}
-	}
-	
 	ruling_party = fascism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 8
+	fascism = 63
+	communism = 2
+	neutrality = 27
 }
 
 create_faction = duumvirate

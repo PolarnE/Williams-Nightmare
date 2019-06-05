@@ -11,16 +11,17 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
 
-	parties = {
-		democratic = { 
-			popularity = 50
-		}
-
-		communism = {
-			popularity = 50
-		}
-	}
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
 }
 
 create_country_leader = {
