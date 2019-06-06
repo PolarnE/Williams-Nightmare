@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = CAN
+		owner = USA
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -22,6 +22,7 @@ state={
 			}
 		}
 		add_core_of = CAN
+		add_core_of = USA
 		victory_points = {
 			4345 20
 		}

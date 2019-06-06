@@ -8,7 +8,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = CAN
+		owner = USA
 		buildings = {
 			infrastructure = 1
 			3691 = {
@@ -17,7 +17,7 @@ state={
 
 		}
 		add_core_of = CAN
-
+add_core_of = USA
 	}
 
 	provinces={
