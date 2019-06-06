@@ -1,19 +1,22 @@
 
 state={
-	id=51
-	name="Westrhein"
-	manpower = 4096494 #2048247
+	id=792
+	name="Ostrhein"
+	manpower = 2048247
 	resources={
-		steel= 12 # was: 25
+		steel= 10 # was: 31
 	}
 
 
 	state_category = metropolis
 	
 	history={
-		owner = FRA
+		owner = COR
 		victory_points = {
-			587 20
+			6469 20 
+		}
+		victory_points = {
+			6570 25
 		}
 		#victory_points = {
 		#	3444 5
@@ -29,12 +32,12 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = FRA
+		add_core_of = COR
 
 	}
 
 	provinces={
-	 587 3444 3547 9522 
+		529 3512 6469 6570 9482
 	}
 	
 }
