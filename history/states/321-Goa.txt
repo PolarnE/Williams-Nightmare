@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = SPR
+		add_core_of = RAJ
 		add_claim_by = MYS
 		victory_points = {
 			1273 1 
