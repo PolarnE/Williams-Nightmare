@@ -1,4 +1,4 @@
-﻿capital = 323
+capital = 323
 
 oob = "TIB_1936"
 
@@ -55,7 +55,8 @@ set_politics = {
 }
 set_popularities = {
 	communism = 75
-	democratic = 25
+	democratic = 10
+	non aligned = 15
 }
 
 
@@ -80,3 +81,49 @@ create_country_leader = {
 		#
 	}
 }
+create_field_marshal = {
+	name = " Yuthok Tashi Dhondup"
+	picture = "Yuthok_Tashi_Dondrub.dds"
+	traits = { defensive_doctrine offensive_doctrine media_personality  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1
+}
+
+create_corps_commander = {
+	name = "Taring Jigme"
+	picture = "Taring_Jigme.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "   Ngapoi Ngawang Jigme "
+	picture = ""
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Pandatsang Rapga"
+	picture = ""
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
