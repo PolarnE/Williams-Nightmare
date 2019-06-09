@@ -112,7 +112,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Willi Stoph"
-	picture = "Willy_Stoph.dds.dds"
+	picture = "Willi_Stoph.dds.dds"
 	traits = { trickster trait_reckless armor_officer }
 	skill = 4
 	id = 4
