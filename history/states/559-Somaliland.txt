@@ -7,8 +7,9 @@ state=
 	state_category = rural
 	
 	history={
-		owner = ITA
+		owner = ETH
 		add_core_of = SOM
+		add_core_of = ETH
 		victory_points = {
 			12991 3 
 		}
@@ -22,5 +23,5 @@ state=
 	}
 	provinces=
 	{
-1964 1966 2020 2063 4909 5065 8164 10818 10891 10928 11014 12840 12941 12991 	}
+1964 1966 2020 2063 4909 5065 8164 10818 10891 10928 11014 12840 12941 12991 10761 10976 8133 2066 12927 	}
 }
