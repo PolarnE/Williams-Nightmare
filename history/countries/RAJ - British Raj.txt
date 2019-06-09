@@ -120,6 +120,8 @@ set_convoys = 20
 }
 
 create_faction = maletist_internationale
+add_to_faction = RAJ
+add_to_faction = TIB
 
 create_country_leader = {
 	name = "Lord Linlithgow"
