@@ -1,4 +1,4 @@
-capital = 323
+﻿capital = 323
 
 oob = "TIB_1936"
 
@@ -56,7 +56,7 @@ set_politics = {
 set_popularities = {
 	communism = 75
 	democratic = 10
-	non aligned = 15
+	neutrality = 15
 }
 
 
@@ -106,7 +106,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "   Ngapoi Ngawang Jigme "
+	name = "Ngapoi Ngawang Jigme"
 	picture = ""
 	traits = { trait_cautious armor_officer }
 	skill = 1
@@ -127,3 +127,4 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+	}
