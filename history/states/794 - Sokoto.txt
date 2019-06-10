@@ -1,32 +1,26 @@
 
 state={
-	id=558
-	name="STATE_558"
-	manpower = 9231362
+	id=794
+	name="Sokoto"
+	manpower = 11272314
 	
 	state_category = rural
 	resources={
 		rubber=2 # was: 3
 	}
 	history={
-		owner = FFR
+		owner = NGA
 		add_core_of = NGA
-		add_core_of = FFR
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
 			industrial_complex = 1
-			2050 = {
-				naval_base = 3
-			}
 		}
 		victory_points = {
-			2050 1
+			1891 20
 		}
-
 	}
-
 	provinces={
-	12817 12731 2050 12900 4952 8034 10831
+	1891 1932 1969 1992 2025 4889 4938 4972 4997 5028 7978 8021 8109 10820
 	}
 }
