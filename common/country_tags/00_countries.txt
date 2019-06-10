@@ -200,3 +200,4 @@ MYS = "countries/Mysore.txt"
 ############AFRICA##################################
 SCN = "countries/SwedenCongo.txt"
 FAF = "countries/FrenchAfrica.txt"
+FFR = "countries/FreeFrance.txt"
