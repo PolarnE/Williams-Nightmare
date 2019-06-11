@@ -1,4 +1,4 @@
-﻿capital = 427
+capital = 427
 
 oob = "RAJ_1936"
 
@@ -39,21 +39,6 @@ set_popularities = {
 
 set_convoys = 20
 
-1939.1.1 = {
-	
-	if = {
-		limit = {
-			has_dlc = "Together for Victory"
-		}
-		complete_national_focus = RAJ_lessons_of_the_great_war
-		complete_national_focus = RAJ_vickers_berthier_gun
-		complete_national_focus = RAJ_army_motorization
-		complete_national_focus = RAJ_british_pilot_training
-		complete_national_focus = RAJ_great_indian_peninsula_railway
-		complete_national_focus = RAJ_east_india_railways
-		complete_national_focus = RAJ_found_scindia_shipyard
-		complete_national_focus = RAJ_industrial_expansion
-		complete_national_focus = RAJ_ishapore_arsenal
 	}
 
 	add_political_power = 1198
@@ -169,8 +154,8 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Noel Beresford-Peirse"
-	gfx = "GFX_RAJ_noel_beresford_peirse"
+	name = "Lakshmi Sahga"
+	gfx = "Lakshmi_Sahga.dds"
 	traits = { armor_officer }
 	skill = 3
 	attack_skill = 3
@@ -180,8 +165,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Frank Messervy"
-	gfx = "GFX_RAJ_frank_messervy"
+	name = "Gurbaksh Singh Dhillon"
+	gfx = "Gurbaksh_Singh_Dhillon.dds"
 	traits = { hill_fighter }
 	skill = 3
 	attack_skill = 2
@@ -191,8 +176,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Douglas Gracey"
-	gfx = "GFX_RAJ_douglas_gracey"
+	name = "Mohammed Zaman Kiani"
+	gfx = "Mohammed_Zaman_Kiani.dds"
 	traits = { desert_fox }
 	skill = 3
 	attack_skill = 1
