@@ -193,7 +193,7 @@ ai_will_do = {
 
  } 
 
-#Focus for Perfect balance
+#t h a n o s
 focus = { 
 id = SOV_perfectbalance
 icon = GFX_goal_generic_neutrality_focus
@@ -207,7 +207,7 @@ ai_will_do = {
  } 
 completion_reward = { 
 add_popularity= { 
-ideology = democracy 
+ideology = democratic
 popularity = 0.3 
 }
  } 
