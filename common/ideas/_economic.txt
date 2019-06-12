@@ -452,7 +452,7 @@ ideas = {
 						original_tag = SOV
 					}
 					NOT = { has_idea = RUS_closed_borders }
-				}
+				} }
 			
 			
 			cost = 150
