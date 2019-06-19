@@ -3,34 +3,3 @@
 ###########################
 
 add_namespace = nnews
-
-# Moroccan Rebellion News
-news_event = {
-	id = nnews.1
-	title = nnews.1.t
-	desc = nnews.1.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = nnews.1.a
-	}
-}
-#Saxon King is Dead
-news_event = {
-	id = nnews.2
-	title = nnews.2.t
-	desc = nnews.2.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = nnews.2.a
-	}
-}
