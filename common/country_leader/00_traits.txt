@@ -37,7 +37,7 @@ leader_traits = {
 	#	}
 	#}
 #######################################
-#Russian nationality leaders traits, some better, some worse
+#WN fresh leaders traits, some better, some worse
 	political_mastermind = {
 		random = no
 		political_power_factor = 0.30
@@ -54,6 +54,16 @@ leader_traits = {
 		economy_cost_factor = -0.25
 		political_advisor_cost_factor = -0.25
 		stability_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	weak_will = {
+		random = no
+		political_power_factor = -0.15
+		war_support_factor = -0.15
 		
 		ai_will_do = {
 			factor = 1
