@@ -303,12 +303,11 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Napoleon VI"
-	desc = ""
+	desc = "weak_will_desc"
 	picture = "Portrait_Napoleon_IV.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-	}
+	traits = { weak_will }
 }
 
 ### VARIANTS ###
