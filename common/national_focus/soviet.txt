@@ -194,6 +194,7 @@ ai_will_do = {
  } 
 
 #t h a n o s
+#seriously lol
 focus = { 
 id = SOV_perfectbalance
 icon = GFX_goal_generic_neutrality_focus
@@ -304,7 +305,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_war_support= 25
+add_war_support= 0.25
  } 
 
  } 
