@@ -1,0 +1,165 @@
+# Russian Zeppelin Hooray
+
+add_namespace = newsWN
+
+news_event = {
+	id = newsWN.1
+	title = newsWN.1.t
+	desc = newsWN.1.d
+	picture = GFX_newsWN_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = hooray_rus_zeppelin
+	}
+	
+	option = {
+		name = newsWN.1.f
+		trigger = { is_in_faction_with = FRA NOT = { TAG = SOV } NOT = { TAG = RSE } }
+	}
+	option = {
+		name = newsWN.1.r
+		trigger = { TAG = RSE }
+	}
+	option = {
+		name = newsWN.1.a
+		trigger = { NOT = { TAG = SOV } NOT = { TAG = FRA } NOT = { TAG = RSE }  NOT = { is_in_faction_with = FRA } NOT = { is_in_faction_with = SOV } }
+	}
+	option = {
+		name = newsWN.1.b
+		trigger = { TAG = SOV }
+	}
+
+	option = {
+		name = newsWN.1.c
+		trigger = {
+			is_in_faction_with = SOV
+			NOT = {
+				tag = SOV
+			} 
+		}
+	}
+}
+
+# Russian Zeppelin RIP
+news_event = {
+	id = newsWN.2
+	title = newsWN.2.t
+	desc = newsWN.2.d
+	picture = GFX_newsWN_event_002
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = rip_rus_zeppelin
+	}
+	
+	option = {
+		name = newsWN.2.f
+		trigger = { is_in_faction_with = FRA NOT = { TAG = SOV } NOT = { TAG = RSE } }
+	}
+	option = {
+		name = newsWN.2.r
+		trigger = { TAG = RSE }
+	}
+	option = {
+		name = newsWN.2.a
+		trigger = { NOT = { TAG = SOV } NOT = { TAG = FRA } NOT = { TAG = RSE }  NOT = { is_in_faction_with = FRA } NOT = { is_in_faction_with = SOV } }
+	}
+	option = {
+		name = newsWN.2.b
+		trigger = { TAG = SOV }
+	}
+
+	option = {
+		name = newsWN.2.c
+		trigger = {
+			is_in_faction_with = SOV
+			NOT = {
+				tag = SOV
+			} 
+		}
+	}
+}
+# Russian Expedition in Africa
+news_event = {
+	id = newsWN.3
+	title = newsWN.3.t
+	desc = newsWN.3.d
+	picture = GFX_newsWN_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = rusafrica_expedition
+	}
+	
+	option = {
+		name = newsWN.3.f
+		trigger = { is_in_faction_with = FRA NOT = { TAG = SOV } NOT = { TAG = RSE } }
+	}
+	option = {
+		name = newsWN.3.r
+		trigger = { TAG = RSE }
+	}
+	option = {
+		name = newsWN.3.a
+		trigger = { NOT = { TAG = SOV } NOT = { TAG = FRA } NOT = { TAG = RSE }  NOT = { is_in_faction_with = FRA } NOT = { is_in_faction_with = SOV } }
+	}
+	option = {
+		name = newsWN.3.b
+		trigger = { TAG = SOV }
+	}
+
+	option = {
+		name = newsWN.1.c
+		trigger = {
+			is_in_faction_with = SOV
+			NOT = {
+				tag = SOV
+			} 
+		}
+	}
+}
+
+####### HIDDEN TRIGGERS #######
+# Russian Zeppelin probability TRIGGER
+news_event = {
+	id = TnewsWN.1
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.5.5
+		date < 1937.5.5
+		country_exists = SOV
+		country_exists = FRA
+		SOV = { has_war = no }
+		SOV = { has_war = no }
+		NOT = { has_global_flag = rip_rus_zeppelin }
+		NOT = { has_global_flag = hooray_rus_zeppelin }
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	immediate = {
+		random_list = {
+			50 = { SOV = { news_event = { id = newsWN.1 } } }
+			50 = { SOV = { news_event = { id = newsWN.2 } } }
+		}
+	}
+	
+	option = {
+		name = TnewsWN.1.a
+	}
+}
