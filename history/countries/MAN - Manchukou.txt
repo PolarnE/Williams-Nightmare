@@ -50,6 +50,17 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Zhang Xueliang"
+	gfx = "GFX_portrait_chi_zhang_xueliang"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
 create_corps_commander = {
 	name = "Zhang Haipeng"
 	GFX = "GFX_portrait_man_zhang_haipeng"
