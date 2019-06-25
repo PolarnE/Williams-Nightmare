@@ -1,0 +1,26 @@
+﻿add_namespace = easteregg
+
+country_event = {
+	id = easteregg.1
+	title = easteregg.1.t
+	desc = easteregg.1.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+
+	option = {
+		name = easteregg.1.a
+		JER = { change_tag_from = ROOT }
+		JER = { add_state_core = 454
+		transfer_state = 454 
+		create_faction = crasumod_faction }
+		every_other_country = { declare_war_on = { type = annex_everything    target = JER } }
+	}
+	
+	option = {
+	name = easteregg.1.b
+JER = { add_state_core = 454
+		transfer_state = 454 
+		create_faction = crasumod_faction }
+every_other_country = { declare_war_on = { type = annex_everything    target = JER } }
+} }
