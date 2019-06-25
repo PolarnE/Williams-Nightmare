@@ -10,6 +10,94 @@ leader_traits = {
 		}
 	}
 	
+		crasumod_1 = { #CrasuMOD exclusive leader traits, extremely op becuase lol
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 1
+		political_power_factor = 0.25
+		army_defence_factor = 0.25
+		army_attack_factor = 0.25 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		crasumod_2 = { #CrasuMOD exclusive leader traits, extremely op becuase lol
+		random = no
+		consumer_goods_factor = -0.5
+		production_speed_buildings_factor = 0.75
+		conscription = 0.1
+		conscription_factor = 0.15
+		equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.75 instant = yes
+				} }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+			crasumod_3 = { #CrasuMOD exclusive leader traits, extremely op becuase lol
+		random = no
+		ai_badass_factor = 0.01
+		ai_get_ally_desire_factor = -1000
+		ai_focus_aggressive_factor = 0.75
+		fascism_acceptance = -150
+		communism_acceptance = -150
+		democratic_acceptance = -150
+		neutrality_acceptance = -150
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 ###########################################################################
+	 #WN flavour traits, like silvo says 'some better some worse'
+			war_criminal = { #originally for crasu but really it could work on a lot of people, cough cough tojo cough cough
+		random = yes
+		ai_focus_aggressive_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	political_mastermind = {
+		random = yes
+		political_power_factor = 0.30
+		stability_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hard_headed_bureaucrat = {
+		random = yes
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		political_advisor_cost_factor = -0.25
+		stability_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	weak_will = {
+		random = yes
+		political_power_factor = -0.15
+		war_support_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	############################################################################
+	
 	#ENG_unpopular_leader = { #all these might get used in some form later but rn theyre not gonna be
 	#	random = no
 	#	stability_factor = -0.2 #start of the game
@@ -37,39 +125,7 @@ leader_traits = {
 	#	}
 	#}
 #######################################
-#WN fresh leaders traits, some better, some worse
-	political_mastermind = {
-		random = no
-		political_power_factor = 0.30
-		stability_factor = 0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
-	hard_headed_bureaucrat = {
-		random = no
-		trade_laws_cost_factor = -0.25
-		economy_cost_factor = -0.25
-		political_advisor_cost_factor = -0.25
-		stability_factor = -0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	weak_will = {
-		random = no
-		political_power_factor = -0.15
-		war_support_factor = -0.15
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-#######################################
 	dictator = {
 		random = no
 		political_power_factor = 0.25
