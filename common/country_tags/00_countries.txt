@@ -201,3 +201,5 @@ MYS = "countries/Mysore.txt"
 SCN = "countries/SwedenCongo.txt"
 FAF = "countries/FrenchAfrica.txt"
 FFR = "countries/FreeFrance.txt"
+############MEMES###################################
+JER = "countries/CrasuMOD.txt"
