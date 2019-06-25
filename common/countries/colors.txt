@@ -589,3 +589,8 @@ FFR = {
 	color = rgb { 26 53 107 }
 	color_ui = rgb { 26 53 107 }
 }
+
+JER = {
+color = rgb { 204 0 0 }
+	color_ui = rgb { 163 17 31 }
+}
