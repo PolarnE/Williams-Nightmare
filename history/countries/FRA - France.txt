@@ -10,7 +10,7 @@ if = {
 }
 
 set_research_slots = 3
-set_stability = 0.4
+set_stability = 0.5
 set_war_support = 0.15
 
 # Starting tech
@@ -303,11 +303,12 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Napoleon VI"
-	desc = "weak_will_desc"
+	desc = ""
 	picture = "Portrait_Napoleon_IV.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = { weak_will }
+	traits = {
+	}
 }
 
 ### VARIANTS ###
