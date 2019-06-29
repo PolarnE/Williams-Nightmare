@@ -65,7 +65,7 @@ set_popularities = {
 
 	create_country_leader = {
 	name = "Siddiq Abubakar III"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_1.dds"
+	picture = "gfx//leaders//NGA//portrait_sokoto_man.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
