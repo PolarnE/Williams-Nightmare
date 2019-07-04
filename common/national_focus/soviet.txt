@@ -53,6 +53,8 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_contactmaletists } 
 ai_will_do = { 
  factor = 1
+ completion_reward = { 
+add_research_slot= 1
  } 
 
  } 
@@ -90,7 +92,7 @@ ai_will_do = {
 #Focus for Fight illiteracy
 focus = { 
 id = SOV_fightilliteracy
-icon = GFX_focus_research2
+icon = GFX_focus_2
 x = 13
 y = 2
 cost = 10
@@ -139,7 +141,168 @@ prerequisite = { focus = SOV_thereaping }
 ai_will_do = { 
  factor = 1
  } 
+		available = {
 
+		}
+
+		bypass = {
+			has_government = fascist			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_capital = 532
+			start_civil_war = {
+				ruling_party = fascist
+				ideology = ROOT
+				size = 0.8
+				only_own_territory = no
+				capital = 282
+				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 527 525 }
+				keep_unit_leaders = {
+					750 751 752
+				}
+			}
+			custom_effect_tooltip = cast_the_die_TT
+			if = {
+				limit = {
+					MON = { is_subject_of = ROOT }
+				}
+				set_autonomy = { target = MON autonomy_state = autonomy_free }
+			}
+			}
+			hidden_effect = {
+				division_template = { name = "Nationalistic Partisan" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+				532 = {
+					create_unit = { 
+						division = "name = \"1. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"2. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"3. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"4. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"5. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				531 = {
+					create_unit = { 
+						division = "name = \"6. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"7. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"8. Nationalistic Partisan\" division_template = \"Nationalistic Partisan\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"9. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"10. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				534 = {
+					create_unit = { 
+						division = "name = \"11. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"12. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				535 = {
+					create_unit = { 
+						division = "name = \"13. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"14. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+				537 = {
+					create_unit = { 
+						division = "name = \"15. Nationalistic Partisan\" division_template = \"Japanese People's Regiment\" start_experience_factor = 0" 
+						owner = ROOT
+					}
+				}
+			}
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = SOV
+						has_government = democratic
+					}
+					hidden_effect = {
+						division_template = { name = "White Division" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+						529 = {
+							create_unit = { 
+								division = "name = \"1. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"2. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"3. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"4. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"5. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+						}
+						530 = {
+							create_unit = { 
+								division = "name = \"6. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"7. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+						}
+						533 = {
+							create_unit = { 
+								division = "name = \"8. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+							create_unit = { 
+								division = "name = \"9. White Army Regiment\" division_template = \"Japanese Loyalist Regiment\" start_experience_factor = 0" 
+								owner = PREV
+							}
+						}
+					}
+				}
+			}
+			add_stability = -0.1
+		}
+	}
  } 
 
 #Focus for Contact maletists
