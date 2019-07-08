@@ -304,7 +304,7 @@ ai_will_do = {
 		}
 	}
  } 
-
+}
 #Focus for Contact maletists
 focus = { 
 id = SOV_contactmaletists
