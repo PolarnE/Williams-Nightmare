@@ -50,7 +50,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6103
+		location = 6399
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -59,7 +59,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6103
+		location = 6268
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1 
@@ -68,7 +68,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 296
+		location = 6399
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -77,7 +77,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9297
+		location = 6368
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -86,7 +86,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 377
+		location = 2985
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -95,7 +95,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9239
+		location = 9379
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 1
 		start_equipment_factor = 1 
@@ -104,7 +104,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9458
+		location = 6268
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -113,7 +113,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 11279
+		location = 9315
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -122,7 +122,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9250
+		location = 6237
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -131,26 +131,8 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6384
+		location = 11279
 		division_template = "Tank Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1 
-		}
-			division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 6384
-		division_template = "Tank Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1 
-		}
-			division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 6318
-		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
 		}
@@ -167,16 +149,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9315
-		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1 
-		}
-			division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 11270
+		location = 11297
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -185,7 +158,34 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 3311
+		location = 11317
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+		}
+			division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11299
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+		}
+			division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 219
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 
+		}
+			division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11332
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
@@ -194,7 +194,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 540
+		location = 11299
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
@@ -203,7 +203,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 3369
+		location = 9250
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
@@ -212,7 +212,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9364
+		location = 6237
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
@@ -221,7 +221,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 351
+		location = 11382
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
@@ -230,8 +230,35 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 351
+		location = 9269
 		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1 
+		}
+				division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9285
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+		start_equipment_factor = 1 
+		}
+				division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9285
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1 
+		}
+				division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 219
+		division_template = "Tank Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
 		}
@@ -240,33 +267,6 @@ units = {
 			is_name_ordered = yes
 		}
 		location = 9332
-		division_template = "Infantry Division"
-		start_experience_factor = 0
-		start_equipment_factor = 1 
-		}
-				division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 3273
-		division_template = "Tank Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1 
-		}
-				division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 3273
-		division_template = "Tank Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1 
-		}
-				division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 6385
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0
 		start_equipment_factor = 1 
@@ -275,7 +275,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 11332
+		location = 9397
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1 
@@ -284,7 +284,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6526
+		location = 3353
 		division_template = "Infantry Division"
 		start_experience_factor = 0
 		start_equipment_factor = 1 
@@ -293,25 +293,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9392
-		division_template = "Infantry Division"
-		start_experience_factor = 0
-		start_equipment_factor = 1 
-		}
-						division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 9075
-		division_template = "Infantry Division"
-		start_experience_factor = 0
-		start_equipment_factor = 1 
-		}
-						division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 11136
+		location = 9315
 		division_template = "Infantry Division"
 		start_experience_factor = 0
 		start_equipment_factor = 1 
@@ -320,133 +302,3 @@ units = {
 	
 
 units = { }
-
-	#########################
-	## STARTING PRODUCTION ##
-	#########################
-instant_effect = {
-	
-
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "ENG"
-		}
-		requested_factories = 3
-		progress = 0.1
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
-
-	### Ongoing Ship Production Jan 1 1936 ###
-	# DD: G/H class (x9) ("HMS Gallant HMS Garland HMS Gipsy HMS Glowworm HMS Grafton HMS Grenade HMS Grenville HMS Greyhound HMS Griffin")
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.33
-		amount = 3
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.33
-		amount = 3
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.33
-		amount = 3
-	}
-	# SS: S-class variant (x2) ("HMS Seawolf HMS Narwhal")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "ENG" 
-			version_name = "S Class"
-		}
-		requested_factories = 2
-		progress = 0.50
-		amount = 3
-	}
-	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "ENG" 
-			version_name = "Amphion Class"
-		}
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "ENG" 
-			version_name = "Amphion Class"
-		}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "ENG" 
-			version_name = "Amphion Class"
-		}
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-	}
-}
-	#####################
