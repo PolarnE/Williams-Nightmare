@@ -1,0 +1,175 @@
+ENG_cooperate_with_germanicists = {
+
+ENG_request_pan_germanicist_factory_building = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		}
+
+		cost = 100
+
+		fire_only_once = no
+		
+		days_remove = 35
+		
+		available = {
+		has_war = no }
+
+		visible = {
+			tag = ENG
+			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		}
+
+		complete_effect = {
+		random_list = {
+						50 = { 			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+                   }
+		} }
+						50 = {			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+                   }
+		} }
+					} }
+		modifier = {
+			political_power_cost = 0.5
+			consumer_goods_factor = 0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ENG_request_pan_germanicist_production_bonus = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		}
+
+		cost = 75
+
+		fire_only_once = no
+		
+		days_remove = 35
+		
+		available = {
+		has_war = no }
+
+		visible = {
+			tag = ENG
+			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		}
+
+		complete_effect = {
+		add_timed_idea = { idea = ENG_pan_germanicist_corruption_1 days = 200 }
+	      }
+		
+		modifier = {
+			political_power_cost = 0.5
+			consumer_goods_factor = 0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	ENG_request_pan_germanicist_financial_aid = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		}
+
+		cost = 150
+
+		fire_only_once = no
+		
+		days_remove = 75
+		
+		available = {
+		has_war = no }
+
+		visible = {
+			tag = ENG
+			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		}
+
+		complete_effect = {
+	      }
+		
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}                         
+		ENG_request_pan_germanicist_ties = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		}
+
+		cost = 50
+
+		fire_only_once = no
+		
+		days_remove = 50
+		
+		available = {
+		has_war = no }
+
+		visible = {
+			tag = ENG
+			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		}
+
+		complete_effect = {
+	      }
+		
+		modifier = {
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}   }
