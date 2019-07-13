@@ -9,3 +9,10 @@
  crasumod_3:0 "Probably a Nazi"
  crasumod_faction:0 "11th Crusade"
  JER_communism_party:0 "National Socialist Crasu Party"
+ #martial law in great britain
+ newsWN.4.t:0 "Martial Law in Britain"
+ newsWN.4.desc:0 "In response to the increasing amount of anti-government protests in the Commonwealth, the government has officially declared martial law in the country - reasoning that they're in a state of crisis due to the rise of 'Royalist terrorism.'\nMany were quick to criticise the harshness of government actions, by saying that they're barbaric and suppressing a basic human right. Many support these actions though, most notably being East Germany's Führer saying that the Protectorate was only trying to maintain its cohesion in a rapidly developing world, other alleged supporters is the current President of Russia who has been known as a fervent anti-monarchist, sourcing that it ruins nations and using Russian history as an example.\nCould this mark the end of the Protectorate?"
+ newsWN.4.a:0 "They're in dire straights."
+ newsWN.4.b:0 "Hah! We're still stronger than them!"
+ newsWN.4.c:0 "Deny it fervently in public."
+ newsWN.4.d:0 "This is necessary for the state and people."
