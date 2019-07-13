@@ -1,0 +1,245 @@
+﻿add_namespace = commonwealth
+
+#economic depression hits the protectorate
+country_event = {
+	id = commonwealth.1
+	title = commonwealth.1.t
+	desc = commonwealth.1.d
+	picture = GFX_report_event_german_advisors_remain
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_global_flag = global_paris_stock_market_crash
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.1.a
+add_political_power = -50
+add_ideas = ENG_economic_collapse
+set_country_flag = ENG_down_the_shitter_1
+}
+}
+
+#anti-government protests in york
+country_event = {
+	id = commonwealth.2
+	title = commonwealth.2.t
+	desc = commonwealth.2.d
+	picture = GFX_report_event_american_hunger_march
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_1
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.2.a
+add_political_power = -15
+set_country_flag = ENG_down_the_shitter_2
+}
+}
+
+#anti-government strikes
+country_event = {
+	id = commonwealth.3
+	title = commonwealth.3.t
+	desc = commonwealth.3.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_2
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.3.a
+	ai_chance = { base = 75 }
+add_political_power = -15
+set_country_flag = ENG_down_the_shitter_3
+add_timed_idea = { idea = strikes_1  days = 30 }
+}
+
+	option = {
+	name = commonwealth.3.b
+	ai_chance = { base = 25 }
+add_political_power = -50
+ENG_down_the_shitter_3 }
+}
+}
+
+#royalist conspiracy
+country_event = {
+	id = commonwealth.4
+	title = commonwealth.4.t
+	desc = commonwealth.4.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_3
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.4.a
+add_stability = -0.03
+set_country_flag = ENG_down_the_shitter_4
+}
+}
+
+#martial law
+country_event = {
+	id = commonwealth.5
+	title = commonwealth.5.t
+	desc = commonwealth.5.d
+	picture = GFX_report_event_lithuania_army
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_4
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+	name = commonwealth.5.a
+add_political_power = 50
+add_stability = 0.05
+set_country_flag = ENG_down_the_shitter_5
+hidden_effect = {
+	news_event = { id = newsWN.4 hours = 6 } }
+}
+}
+
+#protectorate loyalist groups establish themselves
+country_event = {
+	id = commonwealth.6
+	title = commonwealth.6.t
+	desc = commonwealth.6.d
+	picture = GFX_report_event_generic_riot
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_5
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+	name = commonwealth.6.a
+add_political_power = 15
+set_country_flag = ENG_down_the_shitter_6
+}
+}
+
+#battles in the streets
+country_event = {
+	id = commonwealth.7
+	title = commonwealth.7.t
+	desc = commonwealth.7.d
+	picture = GFX_report_event_generic_riot
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_6
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+	name = commonwealth.7.a
+add_political_power = -250
+set_country_flag = ENG_down_the_shitter_7
+}
+}
+
+#initial collapse ends
+country_event = {
+	id = commonwealth.8
+	title = commonwealth.8.t
+	desc = commonwealth.8.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_idea = ENG_economic_collapse
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+	
+	option = {
+	name = commonwealth.8.a
+add_political_power = 10
+ swap_ideas = { 
+  remove_idea = ENG_economic_collapse
+  add_idea = ENG_depression_1
+}
+}
+}
+
+#demilitarises the areas that most certainly wont definitely not be royalist
+country_event = {
+	id = commonwealth.9
+	title = commonwealth.9.t
+	desc = commonwealth.9.d
+	picture = GFX_report_event_riot_police_poland
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_7
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.9.a
+add_manpower = -50000
+131 = { set_demilitarized_zone = yes }
+130 = { set_demilitarized_zone = yes }
+129 = { set_demilitarized_zone = yes }
+set_country_flag = ENG_down_the_shitter_8
+}
+}
