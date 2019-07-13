@@ -4,5 +4,25 @@ spriteTypes = {
 		name = "GFX_focus_eng_support_the_king"
 		texturefile = "gfx/interface/goals/focus_eng_support_the_king.dds"
 	}
+	
+		SpriteType = { 
+		name = "GFX_focus_wales"
+		texturefile = "gfx/interface/goals/focus_wales.dds"
+	}
+	
+			SpriteType = { 
+		name = "GFX_focus_scotland"
+		texturefile = "gfx/interface/goals/focus_scotland.dds"
+	}
+	
+			SpriteType = { 
+		name = "GFX_focus_england"
+		texturefile = "gfx/interface/goals/focus_england.dds"
+	}
+	
+		SpriteType = { 
+		name = "GFX_focus_commonwealth_wales"
+		texturefile = "gfx/interface/goals/focus_commonwealth_wales.dds"
+	}
 
 }
