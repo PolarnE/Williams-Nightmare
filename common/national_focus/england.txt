@@ -1,0 +1,533 @@
+focus_tree = {
+	id = uk
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 70 y = 1200 }
+	
+	#overhaul done by CrasuMOD
+	
+	#		focus = {
+	#	id = ENG_
+	#	icon = GFX_
+	#	prerequisite = { focus = ENG_ }
+	#	x = 1
+	#	y = 0
+	#	cost = 10
+	#		completion_reward = {
+	#		}
+	#	}
+	
+	focus = {
+		id = ENG_cooperate_with_pan_germanicists
+		icon = GFX_goal_anschluss
+		x = 6
+		y = 0
+		cost = 10
+			completion_reward = {
+			add_political_power = 300
+		    swap_ideas = { 
+  remove_idea = ENG_pan_germanicist_corruption
+  add_idea = ENG_pan_germanicist_corruption_empowered
+}
+			custom_effect_tooltip = ENG_pan_germanicist_league_tooltip
+				}
+
+	}
+	
+		focus = {
+		id = ENG_attempt_stabilisation
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ENG_cooperate_with_pan_germanicists }
+		x = 6
+		y = 1
+		cost = 10
+			completion_reward = {
+			add_timed_idea = { idea = ENG_attempt_stabilisation_idea  days = 100 }
+		    	}
+}
+
+		focus = {
+		id = ENG_liberalise_the_commonwealth
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = ENG_attempt_stabilisation }
+		mutually_exclusive = { focus = ENG_stamp_out_unrest }
+		mutually_exclusive = { focus = ENG_economical_focus }
+		x = 4
+		y = 2
+		cost = 10
+			completion_reward = {
+			add_political_power = 120
+		    	}
+}
+
+		focus = {
+		id = ENG_admit_wales
+		icon = GFX_focus_commonwealth_wales
+		prerequisite = { focus = ENG_liberalise_the_commonwealth }
+		x = 4
+		y = 3
+		cost = 10
+			completion_reward = {
+			set_country_flag = ENG_flag_admitted_wales
+			set_cosmetic_tag = ENG_commonwealthofbritain
+			custom_effect_tooltip = ENG_admitted_wales
+		    	}
+}
+
+		focus = {
+		id = ENG_constitutional_reform
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ENG_admit_wales }
+		x = 4
+		y = 4
+		cost = 10
+			completion_reward = {
+			add_stability = 0.05
+		    	}
+}
+
+		focus = {
+		id = ENG_stamp_out_unrest
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = ENG_attempt_stabilisation }
+		mutually_exclusive = { focus = ENG_liberalise_the_commonwealth }
+		mutually_exclusive = { focus = ENG_economical_focus }
+		x = 6
+		y = 2
+		cost = 10
+			completion_reward = {
+			swap_ideas = {
+			remove_idea = ENG_overmilitarisation
+			add_idea = ENG_grander_military }
+		    	}
+}
+
+		focus = {
+		id = ENG_stamp_out_unrest_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ENG_stamp_out_unrest }
+		x = 6
+		y = 3
+		cost = 10
+			completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					} }
+					
+	random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					} }
+					
+	random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					} }
+	random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					} }
+		    	}
+}
+
+		focus = {
+		id = ENG_stamp_out_unrest_3
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = ENG_stamp_out_unrest_2 }
+		x = 6
+		y = 4
+		cost = 10
+			completion_reward = {
+			custom_effect_tooltip = ENG_fortification_building_tooltip
+		hidden_effect = {
+		126 = { add_building_construction = {
+							type = bunker
+							level = 5
+							province = 6103
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9239
+							instant_build = yes
+						} }
+		125 = {  add_building_construction = {
+							type = bunker
+							level = 3
+							province = 296
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11221
+							instant_build = yes
+						} }
+						128 = { add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9297
+							instant_build = yes
+						} }
+					132 = {	add_building_construction = {
+							type = bunker
+							level = 5
+							province = 6384
+							instant_build = yes
+						} }
+					}
+		    	}
+}
+
+		focus = {
+		id = ENG_economical_focus
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ENG_attempt_stabilisation }
+		mutually_exclusive = { focus = ENG_stamp_out_unrest }
+		mutually_exclusive = { focus = ENG_liberalise_the_commonwealth }
+		x = 8
+		y = 2
+		cost = 10
+			completion_reward = {
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+	add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} }
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+	add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				} }
+		    	}
+}
+
+		focus = {
+		id = ENG_economical_focus_2
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = ENG_economical_focus }
+		x = 8
+		y = 3
+		cost = 10
+			completion_reward = {
+			add_ideas = ENG_fight_unemployment
+		    	}
+}
+
+		focus = {
+		id = ENG_economical_focus_3
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_economical_focus_2 }
+		x = 8
+		y = 4
+		cost = 10
+			completion_reward = {
+			swap_ideas = {
+			remove_idea = ENG_overmilitarisation 
+			add_idea = ENG_limit_conscription_idea }
+		    	}
+}
+
+		focus = {
+		id = ENG_fight_for_the_commonwealth #civil war will start ~18 january 1937
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ENG_economical_focus_3 
+		focus = ENG_constitutional_reform
+		focus = ENG_stamp_out_unrest_3}
+		available = { has_country_flag = ENG_civil_war_began }
+		x = 6
+		y = 5
+		cost = 10
+			completion_reward = {
+		    	}
+}
+
+	
+		focus = {
+		id = ENG_industrialise_underdeveloped_regions
+		icon = GFX_goal_generic_construct_civilian
+		x = 1
+		y = 1
+		prerequisite = { focus = ENG_cooperate_with_pan_germanicists }
+		available = { has_country_flag = ENG_flag_civil_war_ended }
+		cost = 6.5
+			completion_reward = {
+	random_owned_controlled_state = {
+	prioritize = { 130 132 131 795 122 133 121 136 120 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+				}
+}
+
+		focus = {
+		id = ENG_industrialise_wales
+		icon = GFX_focus_wales
+		x = 2
+		y = 2
+		prerequisite = { focus = ENG_industrialise_underdeveloped_regions }
+		cost = 10
+			completion_reward = {
+	random_owned_controlled_state = {
+	prioritize = { 795 122 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+	122 = { add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+		795 = { add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				} }
+} }
+
+		focus = {
+		id = ENG_industrialise_scotland
+		icon = GFX_focus_scotland
+		x = 0
+		y = 2
+		prerequisite = { focus = ENG_industrialise_underdeveloped_regions }
+		cost = 10
+			completion_reward = {
+	random_owned_controlled_state = {
+	prioritize = { 121 136 120 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+	random_owned_controlled_state = {
+	prioritize = { 121 136 120 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+} }
+
+		focus = {
+		id = ENG_industrialise_colonial
+		icon = GFX_focus_generic_home_defense
+		x = 1
+		y = 3
+		prerequisite = { focus = ENG_industrialise_scotland
+focus = ENG_industrialise_wales		}
+		cost = 10
+			completion_reward = {
+	random_owned_controlled_state = {
+	prioritize = { 741 286 636 689 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+	random_owned_controlled_state = {
+	prioritize = { 741 286 636 689 }
+	add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+	random_owned_controlled_state = {
+	prioritize = { 741 286 636 689 }
+	add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+} }
+
+		focus = {
+		id = ENG_industrialise_colonial_2
+		icon = GFX_focus_generic_rubber
+		x = 0
+		y = 4
+		prerequisite = { focus = ENG_industrialise_colonial	}
+		cost = 10
+			completion_reward = {
+			286 = {
+		add_resource = {
+					type = rubber
+					amount = 28
+				} }
+		}
+}
+
+		focus = {
+		id = ENG_industrialise_colonial_3
+		icon = GFX_focus_generic_self_management
+		x = 2
+		y = 4
+		prerequisite = { focus = ENG_industrialise_colonial	}
+		cost = 10
+			completion_reward = {
+			MAL = { 
+			add_autonomy_ratio = {
+					value = -0.085
+					localization = ENG_industrialise_malaya
+				}
+		random_owned_controlled_state = {
+	prioritize = { 333 336 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+	333 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} }
+	336 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				} } }
+		
+		}
+}
+
+		focus = {
+		id = ENG_english_business_support
+		icon = GFX_focus_england
+		x = 12
+		y = 1
+		prerequisite = { focus = ENG_cooperate_with_pan_germanicists }
+		available = { has_country_flag = ENG_flag_civil_war_ended }
+		cost = 10
+			completion_reward = {
+	random_owned_controlled_state = {
+	prioritize = { 131 130 132 128 129 125 338 126 127 123 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+	random_owned_controlled_state = {
+	prioritize = { 131 130 132 128 129 125 338 126 127 123 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} }
+	random_owned_controlled_state = {
+	prioritize = { 131 130 132 128 129 125 338 126 127 123 }
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				} } }
+}
+
+		focus = {
+		id = ENG_cult_of_progression
+		icon = GFX_goal_generic_scientific_exchange
+		x = 11
+		y = 2
+		prerequisite = { focus = ENG_english_business_support }
+		cost = 10
+			completion_reward = {}
+}
+
+		focus = {
+		id = ENG_embrace_totalitarianism
+		icon = GFX_focus_generic_military_mission
+		x = 11
+		y = 3
+		prerequisite = { focus = ENG_cult_of_progression }
+		cost = 10
+			completion_reward = {}
+}
+
+		focus = {
+		id = ENG_purge_political_enemies
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 11
+		y = 4
+		prerequisite = { focus = ENG_embrace_totalitarianism }
+		cost = 10
+			completion_reward = {}
+}
+
+		focus = {
+		id = ENG_militaristic_zeal
+		icon = GFX_goal_generic_military_deal
+		x = 10
+		y = 5
+		prerequisite = { focus = ENG_purge_political_enemies }
+		cost = 10
+			completion_reward = {}
+}
+
+		focus = {
+		id = ENG_new_british_man
+		icon = GFX_goal_demand_sudetenland
+		x = 10
+		y = 6
+		prerequisite = { focus = ENG_purge_political_enemies }
+		cost = 10
+			completion_reward = {}
+}
+		focus = {
+		id = ENG_illegalise_pan_germanicism
+		icon = GFX_focus_usa_voter_registration_act
+		x = 12
+		y = 5
+		prerequisite = { focus = ENG_purge_political_enemies }
+		cost = 10
+			completion_reward = {}
+}
+
+		focus = {
+		id = ENG_ban_civil_liberties
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 12
+		y = 6
+		prerequisite = { focus = ENG_illegalise_pan_germanicism }
+		cost = 10
+			completion_reward = {}
+}
