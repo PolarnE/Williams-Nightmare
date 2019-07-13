@@ -1,6 +1,6 @@
 ﻿l_english:
- GER_fascism:0 "East German Republic"
- GER_fascism_DEF:0 "the East German Republic"
+ GER_fascism:0 "East German State"
+ GER_fascism_DEF:0 "the East German State"
  GER_democratic:0 "Republic of Prussia"
  GER_democratic_DEF:0 "the Republic of Prussia"
  GER_neutrality:1 "Kingdom of Prussia"
@@ -23,15 +23,15 @@
  ENG_democratic_ADJ:0 "English"
  ENG_neutrality_ADJ:0 "English"
  ENG_communism_ADJ:0 "English Peasant"
- SOV_fascism:0 "Russian Empire"
- SOV_fascism_DEF:0 "the Russian Empire"
+ SOV_fascism:0 "Novorossiya"
+ SOV_fascism_DEF:0 "Novorossiya"
  SOV_democratic:0 "Russian Federation"
  SOV_democratic_DEF:0 "the Russian Federation"
  SOV_neutrality:0 "Russia"
  SOV_neutrality_DEF:0 "Russia"
  SOV_communism:0 "Russian Soviet Republic"
  SOV_communism_DEF:0 "the Russian Soviet Republic"
- SOV_fascism_ADJ:0 "Russian"
+ SOV_fascism_ADJ:0 "Novorossiyan"
  SOV_democratic_ADJ:0 "Russian"
  SOV_neutrality_ADJ:0 "Russian"
  SOV_communism_ADJ:0 "Russian"
@@ -2225,8 +2225,8 @@
  #naples:
  NAP_neutrality:0 "Kingdom of the Naples"
  NAP_neutrality_DEF:0 "the Kingdom of the Naples"
- NAP_fascism:0 "Kingdom of the Naples"
- NAP_fascism_DEF:0 "Kingdom of the Naples"
+ NAP_fascism:0 "Neopolitan State"
+ NAP_fascism_DEF:0 "the Neopolitan State"
  NAP_democratic:0 "Republic of the Naples"
  NAP_democratic_DEF:0 "the Republic of the Naples"
  NAP_communism:0 "Napoli People's Republic"
@@ -2377,5 +2377,89 @@
  FFR_neutrality_ADJ:0 "West African"
  FFR_communism_ADJ:0 "French"
  FFR_fascism_ADJ:0 "French"
+ #jerusalem (easter egg nation):
+ JER_democratic:0 "Crusader Democratic State"
+ JER_democratic_DEF:0 "the Crusader Democratic State"
+ JER_neutrality:0 "Kingdom of Jerusalem"
+ JER_neutrality_DEF:0 "the Kingdom of Jerusalem"
+ JER_fascism:0 "Crusader State"
+ JER_fascism_DEF:0 "the Crusader State"
+ JER_communism:0 "Anarcho-Syndicalist Commune of Jerusalem"
+ JER_communism_DEF:0 "the Anarcho-Syndicalist Commune of Jerusalem"
+ JER_democratic_ADJ:0 "Crusader"
+ JER_neutrality_ADJ:0 "Jerusalemite"
+ JER_fascism_ADJ:0 "Crusader"
+ JER_communism_ADJ:0 "Communist Crusader"
+ #hejaz:
+ HEJ_democratic:0 "Republic of Hejaz"
+ HEJ_democratic_DEF:0 "the Republic of Hejaz"
+ HEJ_neutrality:0 "Kingdom of Hejaz"
+ HEJ_neutrality_DEF:0 "the Kingdom of Hejaz"
+ HEJ_fascism:0 "State of Hejaz"
+ HEJ_fascism_DEF:0 "the State of Hejaz"
+ HEJ_communism:0 "Workers' Union of Hejaz"
+ HEJ_communism_DEF:0 "the Workers' Union of Hejaz"
+ HEJ_democratic_ADJ:0 "Hejazian"
+ HEJ_neutrality_ADJ:0 "Hejazian"
+ HEJ_fascism_ADJ:0 "Hejazian"
+ HEJ_communism_ADJ:0 "Hejazian"
+ ###ENGLISH CIVIL WAR:
+ ##WALES##
+ #NATIONALIST WALES: (welsh tags switch back to wales if they achieve superiority)
+ WL2_fascism:0 "Welsh Nationalists" #it SHOULD be impossible for them to switch ideology but you never know
+ WL2_fascism_DEF:0 "Welsh Nationalists"
+ WL2_fascism_ADJ:0 "Welsh"
+ #WELSH LOYALISTS: (will be annexed into the kingdom of england if loyalists win, 50/50 if theyre nationalist or loyalist)
+ WL4_neutrality:0 "Welsh Loyalists"
+ WL4_neutrality_DEF:0 "the Welsh Loyalists"
+ WL4_neutrality_ADJ:0 "Welsh"
+ ##SCOTLAND##
+ #SCOTTISH REPUBLICANS: (will fire shortly after scotland declares independence, as scotland will have a kinda large army it will be pretty necessary)
+ SC2_fascism:0 "Scottish Republicans"
+ SC2_fascism_DEF:0 "the Scottish Republicans"
+ SC2_fascism_ADJ:0 "Scottish"
+ #SCOTLAND: (cosmetic tag which will be cleared after civil war ends, if republicans beat them they will just be annexed into protecorate)
+ SCO_rebellion_democratic:0 "Scottish National Guard"
+ SCO_rebellion_democratic_DEF:0 "the Scottish National Guard"
+ SCO_rebellion_democratic_ADJ:0 "Scottish"
+ ##ENGLAND##
+ #REPUBLICANS:
+ ENG_civilwar_fascism:0 "Republicans"
+ ENG_civilwar_fascism_DEF:0 "the Republicans"
+ ENG_civilwar_fascism_ADJ:0 "English"
+ #LOYALISTS: (after civil war, during will be a cosmetic tag)
+ GBR_fascism:0 "Kingdom of England"
+ GBR_fascism_DEF:0 "the Kingdom of England"
+ GBR_communism:0 "English Socialist Republic"
+ GBR_communism_DEF:0 "the English Socialist Republic"
+ GBR_democratic:0 "Republic of England"
+ GBR_democratic_DEF:0 "the Republic of England"
+ GBR_neutrality:0 "Kingdom of England"
+ GBR_neutrality_DEF:0 "the Kingdom of England
+ GBR_fascism_ADJ:0 "English"
+ GBR_communism_ADJ:0 "English"
+ GBR_neutrality_ADJ:0 "English"
+ GBR_democratic_ADJ:0 "English
+ #actually during the civil war:
+ GBR_civilwar_neutrality:0 "Royalists"
+ GBR_civilwar_neutrality_DEF:0 "the Royalists"
+ GBR_civilwar_neutrality_ADJ:0 "English"
+ #PAN-GERMANICISTS: (it will be entirely possible to become pan-germanicist without playing as them in the civil war but slower)
+ PGE_fascism:0 "Anglo-Saxon State"
+ PGE_fascism_DEF:0 "the Anglo-Saxon State"
+ PGE_democratic:0 "Anglo-Saxon Republic"
+ PGE_democratic_DEF:0 "the Anglo-Saxon Republic"
+ PGE_communism:0 "Anglo-Saxon People's Republic"
+ PGE_communism_DEF:0 "the Anglo-Saxon People's Republic"
+ PGE_neutrality:0 "Anglo-Saxon State"
+ PGE_neutrality_DEF:0 "the Anglo-Saxon State"
+ PGE_neutrality_ADJ:0 "Anglo-Saxon"
+ PGE_fascism_ADJ:0 "Anglo-Saxon"
+ PGE_communism_ADJ:0 "Anglo-Saxon"
+ PGE_democratic_ADJ:0 "Anglo-Saxon"
+ #actually during civil war^2: (only fires if they get purged for being naughty)
+ PGE_civilwar_democratic:0 "Pan-Germanicists"
+ PGE_civilwar_democratic_DEF:0 "the Pan-Germanicists"
+ PGE_civilwar_democratic_ADJ:0 "Anglo-Saxon"
  
-  
+ 
