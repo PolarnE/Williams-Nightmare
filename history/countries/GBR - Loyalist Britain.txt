@@ -1,13 +1,13 @@
-﻿capital = 126
+﻿capital = 130
 
-oob = "ENG_1936"
+#oob = "GBR_1936"
 
-#set_cosmetic_tag = ENG_civilwar
+#set_cosmetic_tag = GBR_civilwar
 
 set_research_slots = 4
 
-set_stability = 0.35
-set_war_support = 0.4
+set_stability = 0.6
+set_war_support = 0.75
 
 # Starting tech
 set_technology = {
@@ -73,56 +73,29 @@ if = {
 
 set_convoys = 5
 
-# DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = MAL
-	}
-}
-
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 8
-	fascism = 63
-	communism = 2
-	neutrality = 27
+	democratic = 5
+	fascism = 5
+	communism = 8
+	neutrality = 82
 }
 
-create_faction = duumvirate
-add_to_faction = ENG
-add_to_faction = SWE
-
 add_ideas = {
-limited_conscription
-limited_exports
-partial_economic_mobilisation
-ENG_overmilitarisation
-ENG_pan_germanicist_corruption
-ENG_weak_government
 }
 
 create_country_leader = {
-	name = "Edmund Ironside"
+	name = "Willelme II"
 	desc = ""
-	picture = "portrait_the_protector.dds"
+	picture = "gfx/leaders/ENG/portrait_not_fucking_george.dds"
 	expire = "1953.3.1"
-	ideology = cromwellian
+	ideology = despotism
 	traits = {
 	}
 }
