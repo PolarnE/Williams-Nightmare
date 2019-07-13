@@ -1,0 +1,13 @@
+ENG_cooperate_with_germanicists = {
+
+	icon = eng_concessions_to_the_trade_unions
+
+	picture = GFX_decision_cat_picture_chi_political_support
+	
+	allowed = {
+		tag = ENG }
+
+	visible = {
+		has_completed_focus = ENG_cooperate_with_pan_germanicists
+	}
+}
