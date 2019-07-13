@@ -13,7 +13,8 @@ country_event = {
 		JER = { change_tag_from = ROOT }
 		JER = { add_state_core = 454
 		transfer_state = 454 
-		create_faction = crasumod_faction }
+		create_faction = crasumod_faction 
+		load_oob = JER_crusaders }
 		every_other_country = { declare_war_on = { type = annex_everything    target = JER } }
 	}
 	
@@ -21,6 +22,7 @@ country_event = {
 	name = easteregg.1.b
 JER = { add_state_core = 454
 		transfer_state = 454 
-		create_faction = crasumod_faction }
+		create_faction = crasumod_faction 
+		load_oob = JER_crusaders }
 every_other_country = { declare_war_on = { type = annex_everything    target = JER } }
 } }

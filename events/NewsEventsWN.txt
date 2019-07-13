@@ -139,3 +139,34 @@ news_event = {
 		trigger = { original_tag = ENG }
 	}
 }
+
+# Protectorate declares martial law
+news_event = {
+	id = newsWN.4
+	title = newsWN.4.t
+	desc = newsWN.4.desc
+	picture = GFX_news_event_generic_riot
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsWN.4.a #all the others
+		trigger = { NOT = { original_tag = FRA }
+		NOT = { original_tag = ENG }
+		NOT = { original_tag = SOV } }
+	}
+	option = {
+		name = newsWN.4.b #france
+		trigger = { original_tag = FRA }
+	}
+	option = {
+		name = newsWN.4.c #russia
+		trigger = { original_tag = SOV }
+	}
+	option = {
+		name = newsWN.4.d #protectorate
+		trigger = { original_tag = ENG }
+	}
+}
