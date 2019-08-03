@@ -10,6 +10,67 @@ leader_traits = {
 		}
 	}
 	
+			ironside_generalissimo = {
+		random = no
+		offensive_war_stability_factor = 0.3
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+				butcher_of_birmingham = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.15
+		offensive_war_stability_factor = 0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+					butcher_of_birmingham_2 = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.05
+		offensive_war_stability_factor = 0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+						butcher_of_birmingham_3 = { #saviour of the republic
+		random = no
+		stability_factor = -0.1
+		political_power_factor = 0.15
+		offensive_war_stability_factor = 0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+				napoleon_trait_1 = {
+		random = no
+		stability_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+					napoleon_trait_2 = {
+		random = no
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 		crasumod_1 = { #CrasuMOD exclusive leader traits, extremely op becuase lol
 		random = no
 		stability_factor = 0.15
@@ -98,32 +159,32 @@ leader_traits = {
 	
 	############################################################################
 	
-	#ENG_unpopular_leader = { #all these might get used in some form later but rn theyre not gonna be
-	#	random = no
-	#	stability_factor = -0.2 #start of the game
-	#	
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
-	#
-	#	ENG_unpopular_leader_2 = {
-	#	random = no
-	#	stability_factor = -0.1 #from focuses to improve kingdom of england
-	#	
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
-	#
-	#	ENG_unpopular_leader_3 = {
-	#	random = no
-	#	stability_factor = 0.1 #might just not use this ngl
-	#	
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
+	ENG_unpopular_leader = { #all these might get used in some form later but rn theyre not gonna be
+		random = no
+		stability_factor = -0.2 #start of the game
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		ENG_unpopular_leader_2 = {
+		random = no
+		stability_factor = -0.1 #from focuses to improve kingdom of england
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		ENG_unpopular_leader_3 = {
+		random = no
+		stability_factor = 0.1 #used for alexander macewen
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 #######################################
 	
 	dictator = {
