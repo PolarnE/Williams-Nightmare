@@ -1,4 +1,4 @@
-# Russian Zeppelin Hooray
+﻿# Russian Zeppelin Hooray
 
 add_namespace = newsWN
 
@@ -109,7 +109,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1936.2.15
+		date > 1936.2.4
 		country_exists = FRA
 		NOT = { has_global_flag = global_paris_stock_market_crash }
 	}
@@ -169,4 +169,46 @@ news_event = {
 		name = newsWN.4.d #protectorate
 		trigger = { original_tag = ENG }
 	}
+}
+
+# Brandenburg falls to Maletism
+news_event = {
+	id = newsWN.5
+	title = newsWN.5.t
+	desc = newsWN.5.desc
+	picture = GFX_news_event_gathering_protest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = newsWN.5.a #everyone
+		}
+}
+
+# Fall of the Duumvirate
+news_event = {
+	id = newsWN.6
+	title = newsWN.6.t
+	desc = newsWN.6.desc
+	picture = GFX_news_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsWN.6.a #everyone
+		trigger = { NOT = { original_tag = ENG original_tag = SWE } }
+		}
+	option = {
+		name = newsWN.6.b #engerland
+		trigger = { original_tag = ENG }
+		}
+	option = {
+		name = newsWN.6.c #sweeeeden
+		trigger = { original_tag = SWE }
+		}
 }

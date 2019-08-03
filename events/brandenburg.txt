@@ -1,0 +1,23 @@
+﻿add_namespace = brandenburg
+
+#brandenburg falls to communism
+country_event = {
+	id = brandenburg.1
+	title = brandenburg.1.t
+	desc = brandenburg.1.d
+	picture = GFX_report_event_communists_cheer
+
+	fire_only_once = yes
+	
+	trigger = { date > 1936.3.5 
+	original_tag = BRN } #3 5
+
+	option = {
+		name = brandenburg.1.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		hidden_effect = {
+news_event = { id = newsWN.5 hours = 6 } } }
+	}

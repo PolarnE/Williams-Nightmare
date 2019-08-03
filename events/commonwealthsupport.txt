@@ -1,0 +1,106 @@
+add_namespace = commonwealthsupport
+
+#FOR SWEDEN: commonwealth asks for support
+country_event = {
+	id = commonwealthsupport.1
+	title = commonwealthsupport.1.t
+	desc = commonwealthsupport.1.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = commonwealthsupport.1.a #we will help the commonwealth!
+	ai_chance = { base = 95 }
+ENG = { country_event = commonwealthsupport.2 }
+}
+
+	option = {
+	name = commonwealthsupport.1.b #idk why youd ever do this like seriously sweden what is wrong with you you prick betraying your good friend and only ally like seriously why why WhY?!?!?!
+	ai_chance = { base = 5 }
+ENG = { country_event = commonwealthsupport.3 } }
+}
+
+#sweden is a g
+country_event = {
+	id = commonwealthsupport.2
+	title = commonwealthsupport.2.t
+	desc = commonwealthsupport.2.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = commonwealthsupport.2.a #who knew the swedes can be trusted? please dont quote me on that oh shit oh fuck
+	add_opinion_modifier = { target = SWE modifier = ENG_swedish_loyalty_opinion }
+	add_ideas = ENG_civil_war_support_sweden 
+}
+}
+
+#sweden is n a u g h t y
+country_event = {
+	id = commonwealthsupport.3
+	title = commonwealthsupport.3.t
+	desc = commonwealthsupport.3.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = commonwealthsupport.3.a #fuck
+	add_opinion_modifier = { target = SWE modifier = ENG_betrayed_by_sweden_opinion }
+}
+}
+
+#FOR SILVLAND (russian FEDERATION in case i forget): commonwealth asks for support
+country_event = {
+	id = commonwealthsupport.4
+	title = commonwealthsupport.4.t
+	desc = commonwealthsupport.4.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = commonwealthsupport.4.a #fuck monarchism gang
+	ai_chance = { base = 90 }
+ENG = { country_event = commonwealthsupport.5 }
+}
+
+	option = {
+	name = commonwealthsupport.4.b #slightly too sympathetic with monarchism gang
+	ai_chance = { base = 10 }
+ENG = { country_event = commonwealthsupport.6 } }
+}
+
+#oh my goodness golly gracious russian interference in other country's affairs who knew it?!?!?!
+country_event = {
+	id = commonwealthsupport.5
+	title = commonwealthsupport.5.t
+	desc = commonwealthsupport.5.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = commonwealthsupport.5.a
+	add_opinion_modifier = { target = SOV modifier = ENG_anti_monarchism_opinion }
+	add_ideas = ENG_civil_war_support_russianfed
+}
+}
+
+#russian refusal
+country_event = {
+	id = commonwealthsupport.6
+	title = commonwealthsupport.6.t
+	desc = commonwealthsupport.6.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = commonwealthsupport.6.a #wtf thought these russians were for democracy!!1!
+	add_opinion_modifier = { target = SOV modifier = ENG_anti_anti_monarchism_opinion }
+}
+}
+

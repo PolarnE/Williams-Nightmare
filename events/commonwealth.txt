@@ -81,8 +81,7 @@ add_timed_idea = { idea = strikes_1  days = 30 }
 	name = commonwealth.3.b
 	ai_chance = { base = 25 }
 add_political_power = -50
-ENG_down_the_shitter_3 }
-}
+set_country_flag = ENG_down_the_shitter_3 }
 }
 
 #royalist conspiracy
@@ -203,7 +202,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 25
+		days = 30
 	}
 	
 	option = {
@@ -241,5 +240,243 @@ add_manpower = -50000
 130 = { set_demilitarized_zone = yes }
 129 = { set_demilitarized_zone = yes }
 set_country_flag = ENG_down_the_shitter_8
+}
+}
+
+#scottish nationalists grow scarily powerful
+country_event = {
+	id = commonwealth.10
+	title = commonwealth.10.t
+	desc = commonwealth.10.d
+	picture = GFX_report_event_communist_leader
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_4
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+	name = commonwealth.10.a
+add_manpower = -75000
+add_stability = -0.05
+}
+}
+
+#york armoury raid
+country_event = {
+	id = commonwealth.11
+	title = commonwealth.11.t
+	desc = commonwealth.11.d
+	picture = GFX_report_event_french_resistance_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_8
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.11.a
+	set_country_flag = ENG_down_the_shitter_9
+add_manpower = -50000
+add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+			}
+}
+}
+
+#loyalists generals desert
+country_event = {
+	id = commonwealth.12
+	title = commonwealth.12.t
+	desc = commonwealth.12.d
+	picture = GFX_report_event_desertion_poster
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_9
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.12.a
+	set_country_flag = ENG_down_the_shitter_10
+add_manpower = -50000
+custom_effect_tooltip = ENG_generals_desert_tooltip
+hidden_effect = {
+		remove_unit_leader = 997
+		remove_unit_leader = 996
+		remove_unit_leader = 995
+		remove_unit_leader = 994
+		remove_unit_leader = 993
+		remove_unit_leader = 998
+		remove_unit_leader = 983
+		remove_unit_leader = 984
+		remove_unit_leader = 987
+		remove_unit_leader = 988
+		remove_unit_leader = 2008
+		remove_unit_leader = 2001
+		remove_unit_leader = 2002
+		remove_unit_leader = 2003
+		remove_unit_leader = 2004
+		remove_unit_leader = 2005
+		remove_unit_leader = 2006
+		remove_unit_leader = 2007
+		remove_unit_leader = 2009 }
+}
+}
+
+#ouf scotland
+country_event = {
+	id = commonwealth.13
+	title = commonwealth.13.t
+	desc = commonwealth.13.d
+	picture = GFX_report_event_generic_rally
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_10
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.13.a
+	set_country_flag = ENG_down_the_shitter_11
+121 = { set_demilitarized_zone = yes }
+133 = { set_demilitarized_zone = yes }
+120 = { set_demilitarized_zone = yes }
+136 = { set_demilitarized_zone = yes }
+}
+}
+
+#duumvirate suspended
+country_event = {
+	id = commonwealth.14
+	title = commonwealth.14.t
+	desc = commonwealth.14.d
+	picture = GFX_report_event_generic_parliament
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_11
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+	name = commonwealth.14.a
+	set_country_flag = ENG_down_the_shitter_12
+dismantle_faction = yes
+hidden_effect = {
+news_event = { id = newsWN.6 hours = 6 }
+create_faction = english_temp_alliance
+SWE = { create_faction = swedish_temp_alliance } }
+}
+}
+
+#royalist coup attempt
+country_event = {
+	id = commonwealth.15
+	title = commonwealth.15.t
+	desc = commonwealth.15.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_down_the_shitter_12
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+	name = commonwealth.15.a #heil ironside
+    ai_chance = { base = 50 }
+	add_ideas = ENG_military_confusion
+	add_named_threat = { threat = 5 name = english_civil_war_threat }
+	hidden_effect = { set_country_flag = ENG_civil_war_began
+GBR = { create_faction = Royalists add_to_faction = SCO transfer_state = 131 transfer_state = 130 transfer_state = 129 add_state_core = 131 add_state_core = 130 add_state_core = 129 add_state_core = 132 add_state_core = 128 add_state_core = 122 add_state_core = 795 add_state_core = 125 add_state_core = 126 add_state_core = 338 add_state_core = 127 add_state_core = 123
+load_oob = GBR_1936 set_cosmetic_tag = GBR_civilwar } declare_war_on = { type = annex_everything    target = GBR } 
+declare_war_on = { type = annex_everything target = SCO } puppet = SC2 
+set_cosmetic_tag = ENG_civilwar
+SCO = { transfer_state = 121 transfer_state = 133 transfer_state = 136 load_oob = SCO_1936 }
+SC2 = { transfer_state = 120 load_oob = SC2_1936 declare_war_on = { type = annex_everything target = SCO } }
+}
+}
+	option = {
+	name = commonwealth.15.b #heil king
+    ai_chance = { base = 50 }
+	GBR = { change_tag_from = ENG }
+	add_named_threat = { threat = 5 name = english_civil_war_threat }
+	hidden_effect = {
+GBR = { create_faction = Royalists add_to_faction = SCO transfer_state = 131 transfer_state = 130 transfer_state = 129 add_state_core = 131 add_state_core = 130 add_state_core = 129 add_state_core = 132 add_state_core = 128 add_state_core = 122 add_state_core = 795 add_state_core = 125 add_state_core = 126 add_state_core = 338 add_state_core = 127 add_state_core = 123
+load_oob = GBR_1936 set_cosmetic_tag = GBR_civilwar } ENG = { set_country_flag = ENG_civil_war_began add_ideas = ENG_military_confusion declare_war_on = { type = annex_everything    target = GBR } declare_war_on = { type = annex_everything    target = SCO } puppet = SC2 set_cosmetic_tag = ENG_civilwar}
+SCO = { transfer_state = 121 transfer_state = 133 transfer_state = 136 load_oob = SCO_1936 }
+SC2 = { transfer_state = 120 load_oob = SC2_1936 }
+} }
+}
+
+#civil war victory
+country_event = {
+	id = commonwealth.16
+	title = commonwealth.16.t
+	desc = commonwealth.16.d
+	picture = GFX_report_event_soviet_purge_officers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_civil_war_began
+		NOT = { country_exists = GBR country_exists = SCO }
+	}
+	
+	option = {
+	name = commonwealth.16.a
+	add_political_power = 50
+	add_stability = 0.05
+    	if = {
+				limit = {
+					NOT = { has_completed_focus = ENG_admit_wales }
+				}
+				drop_cosmetic_tag = yes
+			}
+		else_if = {
+		limit = {
+		has_completed_focus = ENG_admit_wales }
+		set_cosmetic_tag = ENG_commonwealthofbritain
+		}
+	annex_country = { target = SC2 transfer_troops = no }
+	set_country_flag = ENG_flag_civil_war_ended
+hidden_effect = { remove_ideas = ENG_military_confusion remove_ideas = ENG_rally_the_people_protectorate remove_ideas = ENG_civil_war_support_russianfed remove_ideas = ENG_civil_war_support_sweden }
 }
 }
