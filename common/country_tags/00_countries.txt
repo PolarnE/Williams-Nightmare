@@ -1,5 +1,4 @@
 GER	= "countries/Germany.txt"
-ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
 SWE	= "countries/Sweden.txt"
 FRA	= "countries/France.txt"
@@ -189,6 +188,7 @@ ITA = "countries/Italy.txt"
 ############GERMAN NATIONS##########################
 COR = "countries/ConfederationofRhine.txt"
 BRN = "countries/Brandenburg.txt"
+BAV = "countries/Bavaria.txt"
 ############CHING CHONG#############################
 HVK = "countries/HeavenlyKingdom.txt"
 ############RUSSIAN STUFF###########################
@@ -203,3 +203,9 @@ FAF = "countries/FrenchAfrica.txt"
 FFR = "countries/FreeFrance.txt"
 ############MEMES###################################
 JER = "countries/CrasuMOD.txt"
+############MIDDLE EAST#############################
+HEJ = "countries/Hejaz.txt"
+############ENGLAND ALL THAT STUFF##################
+ENG = "countries/United Kingdom.txt"
+SC2 = "countries/ScottishRepublicans.txt"
+GBR = "countries/Loyalists.txt"
