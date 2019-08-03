@@ -175,6 +175,12 @@
  focus_generic_denounce_maletisto_desc:0 "Maletism has been shown to throw the nations it taints into extreme poverty and economic decline, we can't let this spread to us at any cost!"
  focus_generic_cultural_revolution:0 "Cultural Revolution"
  focus_generic_cultural_revolution_desc:0 "With the removal of the constraints that are Fascism and Maletism we're now free to completely change the life our people live."
+ focus_generic_foreign_intervention:0 "Foreign Intervention"
+ focus_generic_foreign_intervention_desc:0 "As the world stage progresses we must be ready for whatever awaits us and be ready to support who works towards our goals."
+ focus_generic_foreign_expeditions:0 "Foreign Expeditions"
+ focus_generic_foreign_expeditions_desc:0 "We must prepare for large campaigns in not only our own lands, but in our allies' too."
+ focus_generic_researcher_3:0 "Fund Civilian Research Projects"
+ focus_generic_researcher_3_desc:0 "Our civilians are just as wise as our geniuses if we put them to the right funding, equipment and proper training."
  #ideas:
  idea_army_of_defense:0 "Defensive Military"
  idea_army_of_defense_desc:0 "Long, drawn out military campaigns are doomed for failure. We will wither away the enemy whilst gaining in strength."

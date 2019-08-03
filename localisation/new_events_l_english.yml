@@ -16,3 +16,16 @@
  newsWN.4.b:0 "Hah! We're still stronger than them!"
  newsWN.4.c:0 "Deny it fervently in public."
  newsWN.4.d:0 "This is necessary for the state and people."
+ #brandenburg falls to maletism
+ brandenburg.1.t:0 "Maletist Coup"
+ brandenburg.1.d:0 "In response to the economic issues caused by the Paris Stock Market Crash, Ernst Thälmann's support has risen rapidly, earlier today he has marched a huge force of angry workers and only now has he managed to seize full control of the government.\nThe new regime is Maletist thanks to great leader Thälmann."
+ brandenburg.1.a:0 "This is a dark day for Brandenburg."
+ newsWN.5.t:0 "Brandenburg Falls to Maletism"
+ newsWN.5.desc:0 "Due to the wealthy nature of the continent, Maletism has largely struggled to make a stronghold in Europe besides fringe parties. Today this changes, only hours ago the parliament of Brandenburg was stormed and overthrown by Thälmann and a relatively large amount of supporters. Many governments are now really worried about the possibilities of a Maletist coup in their own country with crack downs on major parties issued in some.\nThe new government of Brandenburg has rapidly changed the country already, with many gigantic business assets being seized within the first few hours of the Maletists seizing power. This shows a turn in the global scale, with Maratha quickly moving the recognise the new government and a sign of the old ideals of global Maletism.\nThis is a dark day for Brandenburg."
+ newsWN.5.a:0 "The global stage is changing."
+ #'fall of the duumvirate'
+ newsWN.6.t:0 "'Fall of the Duumvirate'"
+ newsWN.6.desc:0 "Due to the Protectorate's state of internal dissent and instability, the government of Sweden has officially suspended the Duumvirate alliance 'until further notice,' according to Swedish King Gustaf V, whilst the population of Sweden had a mostly popular opinion towards this decision in the Protectorate a lot of people saw it as 'betrayal' and proof that they should be ready for any threat, others simply see it as a wise move as it becomes clearer and clearer that the Commonwealth is on the brink of collapse and civil war.\nLord-Protector Ironside has announced in a public statement that he understands the frustrations and motives of Sweden but doesn't understand why they would take such a seemingly suicidal decision with Sweden having disputed claims with Russia.\nSweden hasn't issued a response to his speech yet."
+ newsWN.6.a:0 "So now it's the Dictatorship?"
+ newsWN.6.b:0 "They'll come crawling back..."
+ newsWN.6.c:0 "We can reconcile when they're stable."
