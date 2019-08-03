@@ -50,7 +50,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6103
+		location = 11306
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -59,7 +59,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6103
+		location = 6385
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1 
@@ -68,7 +68,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 296
+		location = 6395
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -77,7 +77,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9297
+		location = 9161
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -86,7 +86,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 377
+		location = 3273
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -95,7 +95,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9239
+		location = 9392
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 1
 		start_equipment_factor = 1 
@@ -104,7 +104,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9458
+		location = 11218
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 

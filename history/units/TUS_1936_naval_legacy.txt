@@ -5,10 +5,10 @@ units= {
 	
 	### EAGEAN SEA ###
 	fleet = {
-		name = "Comando Navale Mar Egeo"			
+		name = "Marina Toscana"			
 		naval_base = 6973 # Rhodes, Greece
 		task_force = { 
-			name = "Squadra di Mar Egeo" 
+			name = "Flotta I" 
 			location = 6973 # Rhodes, Greece
 			# IV Squadriglia Cacciatorpediniere
 			ship = { name = "RCT Francesco Crispi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 

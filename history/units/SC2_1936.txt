@@ -12,9 +12,6 @@
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
         infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
 	}
 	support = {
 	}
@@ -46,20 +43,11 @@ division_template = {
 }
 
 units = {
-	division= {  
-		division_name = {
-			is_name_ordered = yes
-		}
-		location = 6103
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1 
-		}
 			division= {  
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 6103
+		location = 9075
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1 
@@ -68,7 +56,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 296
+		location = 11161
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 
@@ -77,7 +65,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9297
+		location = 284
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 

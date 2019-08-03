@@ -5,10 +5,10 @@ units= {
 	
 	### EAGEAN SEA ###
 	fleet = {
-		name = "Comando Navale Mar Egeo"			
+		name = "Flotta di Napoli"			
 		naval_base = 819 # Rhodes, Greece
 		task_force = { 
-			name = "Squadra di Mar Egeo" 
+			name = "Flotta I" 
 			location = 819 # Rhodes, Greece
 			# IV Squadriglia Cacciatorpediniere
 			ship = { name = "RCT Francesco Crispi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
@@ -18,7 +18,7 @@ units= {
 			ship = { name = "RCT Spica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
 		} 
 		task_force = { 
-			name = "VI Gruppo Sommergibili"	
+			name = "Flotta II"	
 			location = 11837 # Rhodes, Greece
 			# LXI Squadriglia Sommergibili
 			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
@@ -28,7 +28,7 @@ units= {
 			ship = { name = "RSmg Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 		} 
 			task_force = { 
-			name = "VI Gruppo Sommergibili"	
+			name = "Flotta III"	
 			location = 11837 # Rhodes, Greece
 			# LXI Squadriglia Sommergibili
 			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
@@ -38,7 +38,7 @@ units= {
 			ship = { name = "RSmg Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 		} 
 				task_force = { 
-			name = "VI Gruppo Sommergibili"	
+			name = "Flotta IV"	
 			location = 819 # Rhodes, Greece
 			# LXI Squadriglia Sommergibili
 			ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
