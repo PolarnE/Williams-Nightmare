@@ -5,8 +5,8 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 0 39 128 }
+	color_ui = rgb { 0 49 158 }
 }
 SOV = {
 	color = rgb { 2 94 19 }
@@ -78,8 +78,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -303,8 +303,8 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 0 102 204 }
-	color_ui = rgb { 0 128 255 }
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
 }
 
 CRO = {
@@ -413,8 +413,8 @@ CAM = {
 }
 
 MAL = {
-	color = rgb { 213  169  121 }
-	color_ui = rgb { 213  169  121 }
+	color = rgb { 0 39 128 }
+	color_ui = rgb { 0 49 158 }
 }
 
 MNT = {
@@ -593,4 +593,24 @@ FFR = {
 JER = {
 color = rgb { 204 0 0 }
 	color_ui = rgb { 163 17 31 }
+}
+
+SC2 = {
+	color = rgb { 0 39 128 }
+	color_ui = rgb { 0 49 158 }
+}
+
+GBR = {
+	color = rgb { 221 56 93 }
+	color_ui = rgb { 255 73 121 }
+}
+
+WL3 = {
+	color = rgb { 221 56 93 }
+	color_ui = rgb { 255 73 121 }
+}
+
+BAV = {
+	color = rgb { 17 103 152 }
+	color_ui = rgb { 10 164 213 }
 }
