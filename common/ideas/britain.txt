@@ -79,6 +79,43 @@ ideas = {
 			}
 		}
 		
+										ENG_pan_germanicist_corruption_weakened = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = hol_caved_to_the_germans
+			
+			modifier = {
+			consumer_goods_factor = 0.02
+			production_speed_buildings_factor = 0.1
+			}
+		}
+		
+												ENG_pan_germanicist_corruption_controlled = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = hol_caved_to_the_germans
+			
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			}
+		}
+		
 			ENG_pan_germanicist_corruption_1 = {
 		
 			removal_cost = -1
@@ -132,6 +169,82 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = 0.3
 			production_speed_buildings_factor = -0.5
+			}
+		}
+		
+									ENG_depression_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = usa_great_depression_2
+			
+			modifier = {
+			consumer_goods_factor = 0.2
+			production_speed_buildings_factor = -0.3
+			}
+		}
+		
+											ENG_depression_3 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = usa_great_depression_2
+			
+			modifier = {
+			consumer_goods_factor = 0.15
+			production_speed_buildings_factor = -0.25
+			}
+		}
+		
+				ENG_depression_4 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = usa_great_depression_3
+			
+			modifier = {
+			consumer_goods_factor = 0.07
+			production_speed_buildings_factor = -0.15
+			}
+		}
+		
+													ENG_state_controlled_economy = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+			consumer_goods_factor = 0.03
+			production_speed_buildings_factor = 0.05
 			}
 		}
 		
@@ -213,6 +326,235 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.05
 			production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		ENG_rally_the_people_protectorate = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = mex_politicised_army
+			
+			modifier = {
+			surrender_limit = 0.2
+			war_support_factor = 0.15
+			}
+		}
+		
+				ENG_military_confusion = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = chi_incompetent_officers
+			
+			modifier = {
+			army_core_defence_factor = -0.1
+			war_support_factor = -0.2
+			}
+		}
+		
+		ENG_civil_war_support_sweden = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = advisors_sweden
+			
+			modifier = {
+				army_org_factor = 0.02
+				planning_speed = 0.10
+			}
+		}
+		
+				ENG_civil_war_support_russianfed = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = advisors_russianfed
+			
+			modifier = {
+				army_org_factor = 0.02
+				planning_speed = 0.10
+			}
+		}
+		
+				ENG_political_purge = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = generic_purge
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+		trade_laws_cost_factor = 0.25
+		mobilization_laws_cost_factor = 0.25
+		economy_cost_factor = 0.25
+		high_command_cost_factor = 0.5
+		air_chief_cost_factor = 0.5
+		army_chief_cost_factor = 0.5
+		navy_chief_cost_factor = 0.5
+			}
+		}
+		
+						ENG_cult_of_progress_idea = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = generic_research_bonus
+			
+			modifier = {
+		research_speed_factor = 0.05
+			}
+		}
+		
+								ENG_the_greater_state_idea = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = generic_political_support
+			
+			modifier = {
+		political_power_cost = 0.75
+			}
+		}
+		
+										ENG_the_greater_state_idea_2 = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = generic_political_support
+			
+			modifier = {
+			fascism_drift = 0.05
+		political_power_cost = 0.5
+			}
+		}
+		
+												ENG_strengthened_secret_police = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = generic_secret_police
+			
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				enemy_partisan_effect = -0.2
+			}
+		}
+		
+														ENG_church_threat = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = chi_war_of_resistance3
+			
+			modifier = {
+			political_power_cost = 0.8
+			}
+		}
+		
+														ENG_military_threat = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = hun_secret_rearmament
+			
+			modifier = {
+			planning_speed = -0.5
+			}
+		}
+		
+														ENG_political_threat = { 
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+            picture = generic_deal_with_the_devil
+			
+			modifier = {
+			stability_factor = -0.15
 			}
 		}
 	}
