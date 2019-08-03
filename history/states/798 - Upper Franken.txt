@@ -1,0 +1,26 @@
+state={
+	id=798
+	name="Bayreuth"
+	manpower = 752162
+
+	state_category = city
+
+	history={
+		owner = COR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = COR
+victory_points = { 3474 10 }
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+			}
+		}
+	}
+
+	provinces={
+	3474 6421 13116 11417 6594
+	}
+}
