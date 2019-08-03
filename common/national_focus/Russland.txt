@@ -1,0 +1,844 @@
+focus_tree = { 
+id = Russland
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = RSE 
+} 
+} 
+#Focus for Challenge American trade
+focus = { 
+id = RSE_challengeamericantrade
+icon = GFX_goal_generic_intelligence_exchange
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_ourowncourse } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Arctic Research Program
+focus = { 
+id = RSE_arcticresearchprogram
+icon = GFX_focus_research2
+x = 19
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_ourowncourse } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Civilian aircraft conversion
+focus = { 
+id = RSE_civilianaircraftconversion
+icon = GFX_goal_generic_air_fighter2
+x = 13
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_militarycomplexexpansion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Remove Vikarov
+focus = { 
+id = RSE_removevikarov
+icon = GFX_focus_mex_arrest_general_cedillo
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Academies for elites
+focus = { 
+id = RSE_academiesforelites
+icon = GFX_goal_generic_scientific_exchange
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_nobleinvestments } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A rehabilitated Tsar
+focus = { 
+id = RSE_arehabilitatedtsar
+icon = GFX_focus_eng_god_save_the_king
+x = 4
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_royalpurple } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Royal Purple
+focus = { 
+id = RSE_royalpurple
+icon = GFX_focus_rom_royal_dictatorship
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_royalregiments } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Royal regiments
+focus = { 
+id = RSE_royalregiments
+icon = GFX_goal_rhineland
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_romanovsdemands } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Abandon Russian administration model
+focus = { 
+id = RSE_abandonrussianadministrationmodel
+icon = GFX_focus_renounce_the_treaty_of_trianon
+x = 17
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_justice } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Revive royal ties
+focus = { 
+id = RSE_reviveroyalties
+icon = GFX_focus_generic_home_defense
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_vostochnayarodina } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Noble investments
+focus = { 
+id = RSE_nobleinvestments
+icon = GFX_focus_usa_guarantee_the_american_dream
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_reviveroyalties } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Romanovs' demands
+focus = { 
+id = RSE_romanovsdemands
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_reviveroyalties } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Operation Led
+focus = { 
+id = RSE_operationled
+icon = GFX_goal_generic_navy_battleship
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_warpreparations } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Empire rises again
+focus = { 
+id = RSE_empirerisesagain
+icon = GFX_focus_hun_elect_a_king
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_removevikarov } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The bell tolls for us
+focus = { 
+id = RSE_thebelltollsforus
+icon = GFX_goal_generic_attack_allies
+x = 10
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_eastcoasttraditions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Private fleets
+focus = { 
+id = RSE_privatefleets
+icon = GFX_goal_generic_navy_anti_submarine
+x = 9
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_operationled } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Military complex expansion
+focus = { 
+id = RSE_militarycomplexexpansion
+icon = GFX_goal_generic_construct_mil_factory
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_warpromises } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for East coast traditions
+focus = { 
+id = RSE_eastcoasttraditions
+icon = GFX_goal_generic_navy_cruiser
+x = 11
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_operationled } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for War promises
+focus = { 
+id = RSE_warpromises
+icon = GFX_goal_generic_territory_or_war
+x = 13
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_removevikarov } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for War preparations
+focus = { 
+id = RSE_warpreparations
+icon = GFX_goal_generic_major_war
+x = 10
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_removevikarov } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Justice
+focus = { 
+id = RSE_justice
+icon = GFX_goal_generic_neutrality_focus
+x = 17
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_meltthecrown } 
+mutually_exclusive = { focus = RSE_reconciliation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reconciliation
+focus = { 
+id = RSE_reconciliation
+icon = GFX_goal_generic_improve_relations
+x = 21
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_meltthecrown } 
+mutually_exclusive = { focus = RSE_justice } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Melt the crown
+focus = { 
+id = RSE_meltthecrown
+icon = GFX_focus_rom_handle_king
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_enforceorder } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Enforce order
+focus = { 
+id = RSE_enforceorder
+icon = GFX_focus_generic_the_giant_wakes
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_ourowncourse } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Our own course
+focus = { 
+id = RSE_ourowncourse
+icon = GFX_goal_generic_occupy_states_coastal
+x = 17
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = RSE_vostochnayarodina } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Vostochnaya rodina
+focus = { 
+id = RSE_vostochnayarodina
+icon = GFX_focus_hol_prepare_the_inundation_lines
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = RSE_ourowncourse } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The prodigal son
+focus = { 
+id = RSE_theprodigalson
+icon = GFX_focus_CZE_german_puppet
+x = 21
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_reconciliation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Support mining industry
+focus = { 
+id = RSE_supportminingindustry
+icon = GFX_goal_generic_construct_civ_factory
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_challengeamericantrade } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Build armouries
+focus = { 
+id = RSE_buildarmouries
+icon = GFX_goal_generic_construct_mil_factory
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_reviveroyalties } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Support southern settlements
+focus = { 
+id = RSE_supportsouthernsettlements
+icon = GFX_goal_generic_construction2
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_buildarmouries } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Help northerners
+focus = { 
+id = RSE_helpnortherners
+icon = GFX_goal_generic_construction2
+x = 15
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_supportminingindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Renewal of the Colonial Deals
+focus = { 
+id = RSE_renewalofthecolonialdeals
+icon = GFX_goal_generic_improve_relations
+x = 23
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_theprodigalson } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform the colonial administration
+focus = { 
+id = RSE_reformthecolonialadministration
+icon = GFX_goal_support_democracy
+x = 20
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_theprodigalson } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Secure the coasts
+focus = { 
+id = RSE_securethecoasts
+icon = GFX_goal_generic_small_arms
+x = 32
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_dontbegentle } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Continental Research Group
+focus = { 
+id = RSE_continentalresearchgroup
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 29
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_claimnipponislands } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_research_slot= 1
+ } 
+
+ } 
+
+#Focus for Sakhalin
+focus = { 
+id = RSE_sakhalin
+icon = GFX_focus_generic_support_the_left_right
+x = 27
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 100
+ } 
+
+ } 
+
+#Focus for Northern Wings
+focus = { 
+id = RSE_northernwings
+icon = GFX_goal_generic_air_bomber
+x = 35
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_russlanderpatriots } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Play nice
+focus = { 
+id = RSE_playnice
+icon = GFX_goal_generic_dangerous_deal
+x = 24
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_sakhalin } 
+mutually_exclusive = { focus = RSE_dontbegentle } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Don't be gentle
+focus = { 
+id = RSE_dontbegentle
+icon = GFX_goal_generic_forceful_treaty
+x = 30
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_sakhalin } 
+mutually_exclusive = { focus = RSE_playnice } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Open for continental trade
+focus = { 
+id = RSE_openforcontinentaltrade
+icon = GFX_goal_generic_positive_trade_relations
+x = 22
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_playnice } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Create Pacific Trade Union
+focus = { 
+id = RSE_createpacifictradeunion
+icon = GFX_goal_generic_intelligence_exchange
+x = 25
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_playnice } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Claim Nippon Islands
+focus = { 
+id = RSE_claimnipponislands
+icon = GFX_goal_generic_position_armies
+x = 29
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_dontbegentle } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Invest in Asia
+focus = { 
+id = RSE_investinasia
+icon = GFX_goal_generic_production2
+x = 24
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_createpacifictradeunion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Russlander Patriots
+focus = { 
+id = RSE_russlanderpatriots
+icon = GFX_focus_mex_caudillo_private_armies
+x = 35
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_securethecoasts } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Russlander mining companies
+focus = { 
+id = RSE_russlanderminingcompanies
+icon = GFX_focus_generic_steel
+x = 24
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_investinasia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Take over Asian sphere
+focus = { 
+id = RSE_takeoverasiansphere
+icon = GFX_focus_hol_gateway_to_europe
+x = 27
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_guardthepacific } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Russland Strategy
+focus = { 
+id = RSE_russlandstrategy
+icon = GFX_focus_generic_tank_production
+x = 29
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_continentalresearchgroup } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fullfill the Dream of Superiority
+focus = { 
+id = RSE_fullfillthedreamofsuperiority
+icon = GFX_goal_generic_attack_allies
+x = 31
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_takeovertheamerica } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Develop military sector
+focus = { 
+id = RSE_developmilitarysector
+icon = GFX_goal_generic_construct_mil_factory
+x = 17
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_enforceorder } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Reform the Army
+focus = { 
+id = RSE_reformthearmy
+icon = GFX_focus_chi_army_reform
+x = 17
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_abandonrussianadministrationmodel } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for North American Treaty
+focus = { 
+id = RSE_northamericantreaty
+icon = GFX_goal_generic_major_alliance
+x = 14
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_abandonrussianadministrationmodel } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Fortify Novomirsk
+focus = { 
+id = RSE_fortifynovomirsk
+icon = GFX_goal_generic_construct_military
+x = 32
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_securethecoasts } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Tame the China
+focus = { 
+id = RSE_tamethechina
+icon = GFX_focus_generic_concessions
+x = 26
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_theprodigalson } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Take over the America
+focus = { 
+id = RSE_takeovertheamerica
+icon = GFX_goal_generic_secret_weapon
+x = 32
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_fortifynovomirsk } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Guard the Pacific
+focus = { 
+id = RSE_guardthepacific
+icon = GFX_goal_generic_defence
+x = 26
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RSE_createpacifictradeunion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#NEW ZEALAND CYKAAAAAA
+ }
