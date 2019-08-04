@@ -1,26 +1,30 @@
 
 state={
-	id=158
-	name="Turin"
-	manpower = 1982749
+	id=800
+	name="Genoa"
+	manpower = 2924615
 	
 	state_category = metropolis
 	resources={
-		steel=20 # was: 30
-		aluminium=13 # was: 24
+		steel=5 # was: 24
+		aluminium=5 # was: 12
+		chromium = 2 # was: 4
+		tungsten = 1 # was: 2
 	}
 
 	history={
 		owner = FRA
 		victory_points = {
-			6780 5 
+			6788 10 
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 4
-			industrial_complex = 1
-			air_base = 8
+			arms_factory = 3
+			6788 = {
+				naval_base = 8
+			}
 		}
+		add_core_of = ITA
 		add_core_of = FRA
 		1939.1.1 = {
 			buildings = {
@@ -32,6 +36,6 @@ state={
 	}
 
 	provinces={
-		611 770 3782 6635 6780 9738 11570 11721 11730 11891 
+    776 9741 11723 3772 11726 771 6788 
 	}
 }
