@@ -7,11 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			OR = {
-				tag = YUN
-				tag = SIK
-				tag = GXC
-				tag = SHX
-				tag = XSM
+				tag = BOB
 			}
 			has_dlc = "Waking the Tiger"
 		}

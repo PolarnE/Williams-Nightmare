@@ -6,6 +6,6 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = #ENG #shouldnt be used ever
+			tag = BOB
 		}
 	}

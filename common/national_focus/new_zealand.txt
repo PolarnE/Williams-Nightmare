@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = NZL
+			tag = BOB
 			has_dlc = "Together for Victory"
 		}
 

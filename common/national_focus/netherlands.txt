@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = HOL
+			tag = BOB
 			has_dlc = "Man the Guns"
 		}
 	}
