@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = BOB
+			tag = CZE
 			has_dlc = "Death or Dishonor"
 		}
 	}
