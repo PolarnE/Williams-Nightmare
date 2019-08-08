@@ -20,6 +20,8 @@ state={
 			564 3
 		}
 		add_core_of = COR
+		add_claim_by = BRN
+		add_claim_by = GER
 
 		1939.1.1 = {
 			buildings = {

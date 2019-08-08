@@ -12,6 +12,8 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = BAV
+		add_claim_by = BRN
+		add_claim_by = GER
 		victory_points = {
 			9515 3
 		}
