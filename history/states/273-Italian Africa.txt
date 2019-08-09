@@ -1,7 +1,7 @@
 
 state={
 	id=273
-	name="West Libyan Desert" # Libyan Desert
+	name="Fezzan" # Libyan Desert
 	manpower = 31211
 	
 	state_category = wasteland
