@@ -78,7 +78,6 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 set_convoys = 300
@@ -251,8 +250,8 @@ if = {
 	}
 	set_autonomy = {
 		target = ITA
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.5
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.25
 	}
 	else = {
 		puppet = ITA
@@ -274,11 +273,28 @@ if = {
 		puppet = SPR
 	}
 }
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = BAV
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = BAV
+	}
+}
 give_guarantee = VAT
 
 add_ideas = {
-	FRA_disjointed_government
+    FRA_napoleons_legacy
 	limited_conscription
+	low_economic_mobilisation
 }
 
 create_faction = French_Sphere
@@ -302,11 +318,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Napoleon VI"
+	name = "Louis-Napoléon IV"
 	desc = ""
 	picture = "Portrait_Napoleon_IV.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = bonapartism
+	traits = {
+	napoleon_trait_1
+	}
+}
+
+create_country_leader = {
+	name = "Philippe Pétain"
+	desc = ""
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 	}
 }
