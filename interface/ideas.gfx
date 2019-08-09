@@ -21,6 +21,21 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_idea_advisors_russianfed"
+		texturefile = "gfx/interface/ideas/idea_advisors_russianfed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisors_sweden"
+		texturefile = "gfx/interface/ideas/idea_advisors_sweden.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fra_napoleon_legacy"
+		texturefile = "gfx/interface/ideas/idea_fra_napoleon_legacy.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_agrarian_society"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
 	}	
