@@ -1,0 +1,20 @@
+state={
+	id=801
+	name="South Patagonia"
+	manpower = 12024
+	
+	state_category = pastoral
+
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ARG
+		add_claim_by = CHL
+	}
+
+	provinces={
+	5209 5215 5201 8913
+	}
+}

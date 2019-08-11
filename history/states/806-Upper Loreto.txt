@@ -1,20 +1,20 @@
-
 state={
-	id=491
-	name="STATE_491"
-	manpower = 176626
+	id=806
+	name="Upper Loreto"
+	manpower = 5126
 
 	state_category = pastoral
 
 	history={
-		owner = ECU
+		owner = COL
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 		}
 		add_core_of = ECU
+		add_core_of = COL
 	}
 
 	provinces={
-		5162 8213 10970
+	12869 
 	}
 }

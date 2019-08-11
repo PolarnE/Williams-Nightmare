@@ -1,0 +1,24 @@
+state={
+	id=803
+	name="Oruro"
+	manpower = 31631
+	
+	state_category = pastoral
+	
+	resources={
+		tungsten=1 # was: 1
+	}
+
+	history={
+		owner = CHL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BOL
+		add_core_of = CHL
+	}
+	
+	provinces={
+    2174 10952
+	}
+}

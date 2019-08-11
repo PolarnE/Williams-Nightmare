@@ -1,24 +1,21 @@
-
 state={
-	id=488
-	name="STATE_488"
-	manpower = 245642
+	id=805
+	name="Venezuelan Amazonas"
+	manpower = 15621
 	
 	state_category = pastoral
 
 	history={
-		owner = VEN
+		owner = BRA
 		buildings = {
 			infrastructure = 1
 
 		}
 		add_core_of = VEN
-		victory_points = {
-			10879 1
-		}
+		add_core_of = BRA
 	}
 
 	provinces={
-		1981 5317 7915 10736 10849 10879
+		8050
 	}
 }
