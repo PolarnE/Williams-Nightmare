@@ -80,6 +80,9 @@ set_convoys = 5
 	}
 }
 
+add_ideas = {
+idea_germanys_germany_divided
+}
 
 set_politics = {
 	ruling_party = neutrality

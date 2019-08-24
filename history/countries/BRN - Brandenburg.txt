@@ -57,6 +57,7 @@ set_popularities = {
 
 add_ideas = {
 disarmed_nation
+idea_germanys_germany_divided
 }
 
 create_country_leader = {
@@ -70,14 +71,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
+	name = "Ernst Thälmann"
+	desc = ""
+	picture = "Portrait_Brandenburg_Ernst_Thalmann.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
 	}
 }
 

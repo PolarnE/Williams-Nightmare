@@ -289,10 +289,28 @@ if = {
 		puppet = BAV
 	}
 }
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = FFR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = FFR
+	}
+}
 give_guarantee = VAT
 
 add_ideas = {
     FRA_napoleons_legacy
+	FRA_grand_army
+	FRA_parisian_geniuses
 	limited_conscription
 	low_economic_mobilisation
 }
@@ -305,17 +323,13 @@ add_to_faction = SPR
 add_to_faction = NAP
 add_to_faction = ITA
 
-#Order matters here Daladier will start as leaders because added last
 create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+    name = "Charles de Gaulle"
+	picture = "gfx//leaders//FRA//Portrait_France_Charles_De_Gaulle.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = conservatism
 	traits = {
-		stout_defender
-	}
-}
+	} }
 
 create_country_leader = {
 	name = "Louis-Napoléon IV"

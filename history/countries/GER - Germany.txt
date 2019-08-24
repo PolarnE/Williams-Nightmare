@@ -106,13 +106,14 @@ set_popularities = {
 	fascism = 56
 }
 
-create_faction = Axis
+create_faction = Stahlpakt
 add_to_faction = GER
 
 
 add_ideas = {
 	general_staff
 	limited_conscription
+	idea_germanys_germany_divided
 }
 
 create_country_leader = {
