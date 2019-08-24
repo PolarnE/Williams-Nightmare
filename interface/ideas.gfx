@@ -36,6 +36,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_fra_great_army"
+		texturefile = "gfx/interface/ideas/idea_fra_great_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_germanys_germany_divided"
+		texturefile = "gfx/interface/ideas/idea_germanys_germany_disunited.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_agrarian_society"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
 	}	
