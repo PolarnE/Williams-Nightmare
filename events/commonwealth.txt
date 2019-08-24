@@ -478,5 +478,30 @@ country_event = {
 	annex_country = { target = SC2 transfer_troops = no }
 	set_country_flag = ENG_flag_civil_war_ended
 hidden_effect = { remove_ideas = ENG_military_confusion remove_ideas = ENG_rally_the_people_protectorate remove_ideas = ENG_civil_war_support_russianfed remove_ideas = ENG_civil_war_support_sweden }
-}
+} }
+
+#w e l s h
+country_event = {
+	id = commonwealth.17
+	title = commonwealth.17.t
+	desc = commonwealth.17.d
+	picture = GFX_report_event_iww_demonstration
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = ENG
+		has_country_flag = ENG_civil_war_began
+		NOT = { has_completed_focus = ENG_admit_wales }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+	name = commonwealth.17.a
+	add_stability = -0.03
+	WLS = { transfer_state = 795 transfer_state = 122 load_oob = WLS_rebellion declare_war_on = { type = annex_everything    target = ENG } }
+    }
 }
