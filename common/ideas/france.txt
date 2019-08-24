@@ -18,11 +18,56 @@ ideas = {
 			picture = fra_napoleon_legacy
 			
 			research_bonus = {
-				land_doctrine = 0.1
+				land_doctrine = -0.3
 			}
 			modifier = {
-				war_support_factor = 0.05
+				war_support_factor = 0.1
 				army_morale_factor = 0.05
+			}
+		}
+		
+				FRA_grand_army = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = fra_great_army
+			
+			modifier = {
+		    conscription = 0.025
+			surrender_limit = 0.1
+			experience_gain_army = 0.05
+			planning_speed = -0.3
+			max_planning = -0.2
+			army_org = 5
+			}
+		}
+		
+				FRA_parisian_geniuses = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.05
 			}
 		}
 		

@@ -1,0 +1,21 @@
+ideas = {
+country = {
+idea_germanys_germany_divided = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = germanys_germany_divided
+			
+			modifier = {
+			stability_factor = -0.05
+		    political_power_cost = 0.5
+			}
+		}
+}

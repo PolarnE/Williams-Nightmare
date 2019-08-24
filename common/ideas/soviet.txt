@@ -42,7 +42,7 @@ ideas = {
 			}
 		}
 		
-				RUS_strong_integrity = {
+				RUS_integrity_6 = { #strong integrity, idea at start
 		
 			removal_cost = -1
 			
@@ -58,6 +58,101 @@ ideas = {
 			modifier = {
 		    stability_factor = 0.25 #combined with closed borders is 30%
 			drift_defence_factor = 0.5
+			}
+		}
+		
+						RUS_integrity_5 = { #good integrity
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+		    stability_factor = 0.15
+			drift_defence_factor = 0.35
+			}
+		}
+		
+								RUS_integrity_4 = { #mediocre integrity
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+		    stability_factor = 0.7
+			drift_defence_factor = 0.15
+			}
+		}
+		
+										RUS_integrity_3 = { #weak integrity
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+		    stability_factor = -0.7
+			drift_defence_factor = -0.15
+			}
+		}
+		
+												RUS_integrity_2 = { #bad integrity
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+		    stability_factor = -0.15
+			drift_defence_factor = -0.35
+			}
+		}
+		
+														RUS_integrity_1 = { #non-existent integrity, federation collapses a lot at this point
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+		    stability_factor = -0.25
+			drift_defence_factor = -0.5
 			}
 		}
 		
