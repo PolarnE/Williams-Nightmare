@@ -18,7 +18,7 @@ state={
 			infrastructure = 5
 			industrial_complex = 2
 		}
-		add_core_of = ROM
+		add_core_of = BAT
 		add_core_of = HUN
 	}
 

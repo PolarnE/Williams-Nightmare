@@ -1,0 +1,20 @@
+state={
+	id=810
+	name="Sindh"
+	manpower = 1392130
+	
+	state_category = town
+
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		add_core_of = RAJ
+	}
+
+	provinces={
+	1971 7084 4382 4110 1980 4003 1147
+	}
+}

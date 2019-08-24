@@ -1,0 +1,21 @@
+
+state={
+	id=808
+	name="East Punjab"
+	manpower = 2310000
+	
+	state_category = town
+
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = PAK
+		add_core_of = RAJ
+	}
+
+	provinces={
+	10772 10843 10898 12792
+	}
+}

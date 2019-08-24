@@ -1,0 +1,23 @@
+state=
+{
+	id=811
+	name="Rijeka"
+	manpower = 85262
+	
+	state_category = large_town
+	
+	history =
+	{
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+		}
+			victory_points = {
+			11564 1 
+		}
+		add_core_of = YUG
+		add_core_of = AUS
+	}
+	provinces={
+	11564 }
+	}
