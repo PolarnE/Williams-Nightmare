@@ -209,3 +209,7 @@ HEJ = "countries/Hejaz.txt"
 ENG = "countries/United Kingdom.txt"
 SC2 = "countries/ScottishRepublicans.txt"
 GBR = "countries/Loyalists.txt"
+############BALKANS#################################
+CAP = "countries/Carpathia.txt"
+TRS = "countries/Transylvania.txt"
+BAT = "countries/Banat.txt"
