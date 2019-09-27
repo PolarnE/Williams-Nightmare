@@ -2,9 +2,8 @@
 state={
 	id=43
 	name="STATE_43" # Northern Hungary
-	manpower = 3750752
+	manpower = 2324473
 	resources={
-		steel=3 # was: 4
 		aluminium=100 # was: 194
 	}
 	
@@ -13,18 +12,15 @@ state={
 	history={
 		owner = HUN
 		buildings = {
-			infrastructure = 6
-			arms_factory = 4
-			industrial_complex = 4
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
 			air_base = 4
-		}
-		victory_points = {
-			9660 20 
 		}
 		add_core_of = HUN
 	}
 
 	provinces={
-		684 716 3713 3731 6716 6751 9660 9690 11520 
+		684 716 3713 3731 6716 6751 9690 11520 
 	}
 }
