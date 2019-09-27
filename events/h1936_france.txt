@@ -51,23 +51,11 @@ country_event = {
 	
 	option = {
 	name = h1936_france.2.a
-	ai_chance = { base = 90 }
 	set_country_flag = flag_french_collapse_3
 	set_country_flag = flag_france_helped_rhine_and_bavaria
 add_manpower = -100000
-COR = { add_stability = -0.05 }
-BAV = { add_stability = -0.05 }
+COR = { country_event = { id = confederationoftherhine.1 } }
 }
-	option = {
-	name = h1936_france.2.b
-	ai_chance = { base = 10 }
-	custom_effect_tooltip = FRA_dont_help_rhine_tooltip
-	set_country_flag = flag_french_collapse_2_alt
-	set_country_flag = flag_france_doomed_rhine_and_bavaria
-COR = { add_stability = -0.2
-set_country_flag = flag_french_doomed_rhine } 
-BAV = { add_stability = -0.2
-set_country_flag = flag_french_doomed_rhine } 
 }
 }
 
@@ -247,6 +235,8 @@ set_politics = {
 	elections_allowed = no
 } }
 }
+set_autonomy = { target = UBR autonomy_state = autonomy_free } 
+remove_from_faction = UBR
 }
 }
 
