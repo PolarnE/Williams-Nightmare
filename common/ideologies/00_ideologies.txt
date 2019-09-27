@@ -25,35 +25,18 @@ ideologies = {
 		
 		color = { 0 0 255 }
 		
-		rules = {
-			can_declare_war_on_same_ideology = no
-			can_force_government = yes
-			can_send_volunteers = no
+			rules = {
+			can_force_government = no
 			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
+			can_join_factions = no
+			can_send_volunteers = yes
 		}
-		
-		can_host_government_in_exile = yes
-		
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-		
 		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			take_states_cost_factor = 0.25
-			annex_cost_factor = 0.5
+		join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
 		}
-		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_neutral = yes # uses the democratic AI behaviour
+		ai_neutral = yes
+		can_be_boosted = no
 	}
 
 
@@ -87,25 +70,18 @@ ideologies = {
 		
 		color = { 255 0 0 }
 		
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
-		
-		ai_neutral = yes # uses the commie AI behaviour
-		
 		rules = {
 			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
 			can_send_volunteers = yes
-			can_puppet = yes
 		}
-		
 		modifiers = {
-			puppet_cost_factor = -0.3
+		join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
 		}
-		
-		faction_modifiers = {
-			
-		}
-
+		ai_neutral = yes
+		can_be_boosted = no
 	}
 
 	fascism = {
@@ -137,20 +113,18 @@ ideologies = {
 		
 		color = { 150 75 0 }
 		
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-		
-		rules = {
+				rules = {
 			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
 			can_send_volunteers = yes
-			can_puppet = yes
 		}
-		
 		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
+		join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
 		}
-
-		ai_neutral = yes # uses the fascist AI behaviour
+		ai_neutral = yes
+		can_be_boosted = no
 	}
 	
 	neutrality = {
@@ -168,6 +142,8 @@ ideologies = {
 			
 			centrism = {
 			}
+			
+			bonapartism = { }
 		}
 
 		dynamic_faction_names = {
@@ -181,31 +157,17 @@ ideologies = {
 		color = { 124 124 124 }
 		
 		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
+				rules = {
 			can_force_government = no
-			can_puppet = yes
-			can_send_volunteers = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
 		}
-		
 		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.4
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-			drift_defence_factor = -0.3	
+		join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
 		}
-		
-		faction_modifiers = {
-		}
-
+		ai_neutral = yes
 		can_be_boosted = no
-		can_collaborate = yes
-
-		ai_neutral = yes # 
 	}
 }
