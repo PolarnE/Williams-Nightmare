@@ -29,3 +29,22 @@
  newsWN.6.a:0 "So now it's the Dictatorship?"
  newsWN.6.b:0 "They'll come crawling back..."
  newsWN.6.c:0 "We can reconcile when they're stable."
+ #french collapse
+ newsWN.7.t:0 "French Collapse"
+ newsWN.7.desc:0 "The collapse of the French economy has left them in a dangerous state, with many doubting France's ability to hold onto her vast empire.\nHours ago, these beliefs were reinforced with the Marathan Socialist People's Republic marching into the French Protectorate of Mysore and then annexing it with virtually no resistance.\nWhat will be in store for the future alludes many, but it is clear that the world is changing rapidly."
+ newsWN.7.a:0 "The old order falls."
+ newsWN.7.b:0 "The Empire will live on!"
+ newsWN.7.c:0 "Mother Russia bides her time..."
+ newsWN.7.d:0 "Our rival wanes yet again."
+ newsWN.7.e:0 "Viva l'Italia"
+ newsWN.7.f:0 "A good opportunity for freedom."
+ #morocco switch event
+ morocco.1.t:0 "March on Casablanca"
+ morocco.1.d:0 "Despite the recent rebirth of Morocco there is already a huge desire for maletism in the country, with the government expenditure seemingly being wasted on the monarchy many people would like to end the long lasting oppression and attempt to achieve equality via Maletism.\nThe Maletists have formed a huge group and marched on Casablanca, after attempts to quell the protesters failed they quickly overwhelmed the royal guard and overthrew the government.\nMohammed V's brief reign has ended violently with his execution expected to occur next week."
+ morocco.1.a:0 "long live Maletism!"
+ #the empire of guatemala
+ newsWN.8.t:0 "The Empire of Guatemala"
+ newsWN.8.desc:0 "Citing the French collapse as proof of French weakness, President of Guatemala, Jorge Ubico has issued an 'Imperial Decree' that the French Empire has lost its legitimacy after the death of Louis-Napoléon I and that he is the legitimate successor to the great legacy of Napoleon.\nIt's a commonly known fact that Jorge Ubico is an avid fan of Napoleon and has always saw himself as his equal. Several times under his tyrannical leadership of Guatemala, Ubico has unsuccessfully attempted to join the Entente Impérial much to the annoyance of France. In his lavish ceremony, modeled after Napoleon I's, he spent a reported large amount of the Guatemalan GDP despite a relatively poor economy."
+ newsWN.8.a:0 "What a fool."
+ newsWN.8.c:0 "For the Emperor!"
+ newsWN.8.b:0 "His obsession is unhealthy."
