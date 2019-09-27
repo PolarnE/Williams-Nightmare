@@ -1,22 +1,21 @@
 
 state={
-	id=354
-	name="Erzrum"
-	manpower = 705129
+	id=820
+	name="Nakhchivan"
+	manpower = 130000
 	
 	state_category = rural
-
 	history={
 		owner = SOV
-		
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = ARM
+		add_core_of = AZR
 		add_core_of = SOV
+		add_claim_by = ARM
 	}
 
 	provinces={
-		789 3979 6976 6991 9886 10472 4583 7470 652 11880 13121 12376
+	6997
 	}
 }

@@ -11,7 +11,7 @@ state={
 	state_category = metropolis
 	
 	history={
-		owner = COR
+		owner = DDE
 		victory_points = {
 			6469 20 
 		}
@@ -31,6 +31,7 @@ state={
 			air_base = 3
 
 		}
+		add_core_of = DDE
 		add_core_of = COR
 		add_claim_by = BRN
 		add_claim_by = GER

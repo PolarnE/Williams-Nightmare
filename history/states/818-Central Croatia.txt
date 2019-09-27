@@ -1,8 +1,8 @@
 state=
 {
-	id=811
-	name="Rijeka"
-	manpower = 85262
+	id=818
+	name="Central Croatia"
+	manpower = 126000
 	
 	state_category = large_town
 	
@@ -11,16 +11,12 @@ state=
 		owner = AUS
 		buildings = {
 			infrastructure = 6
-			11564 = {
-				naval_base = 1
-			}
-		}
-			victory_points = {
-			11564 1 
 		}
 		add_core_of = YUG
+		add_core_of = CRO
 		add_core_of = AUS
 	}
 	provinces={
-	11564 }
+	3592 3596
+	 }
 	}

@@ -6,7 +6,7 @@ state={
 	state_category = city
 
 	history={
-		owner = COR
+		owner = WST
 		victory_points = {
 			11388 5
 		}
@@ -15,12 +15,13 @@ state={
 			industrial_complex = 2
 			fuel_silo = 1
 		}
+		add_core_of = WST
 		add_core_of = COR
 		add_claim_by = BRN
 		add_claim_by = GER
 	}
 
 	provinces={
-	 247 309 3234 9281 11233 11264 11388 
+	 247 9281 11233 11264 11388 
 	}
 }

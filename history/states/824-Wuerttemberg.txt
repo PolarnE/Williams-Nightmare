@@ -1,36 +1,21 @@
 state={
-	id=50
-	name="Württemberg"
+	id=824
+	name="Baden"
 	resources={
-		aluminium=6 # was: 10.000
 	}
 
 	state_category = large_city
 	history={
-		owner = WUE
+		owner = BDN
 		victory_points = {
-			9517 20
+			6542 20 
 		}
-		victory_points = {
-			11499 3 #10
-		}
-		#victory_points = {
-		#	3530 10
-		#}
-		#victory_points = {
-		#	11640 1
-		#}
-		#victory_points = {
-		#	6712 3
-		#}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 5
 			industrial_complex = 1
-			air_base = 3
-
-		}
-		add_core_of = WUE
+}
+		add_core_of = BDN
 		add_core_of = COR
 		add_claim_by = BRN
 		add_claim_by = GER
@@ -46,8 +31,8 @@ state={
 	}
 
 	provinces={
-		519 694 3690 6555 6934 9517 9545 9655 11486 11499 13126 
+	3679 11640 3692 6712 6542 3530 6568
 	}
-	manpower=3472643
+	manpower=2614211
 	buildings_max_level_factor=1.000
 }

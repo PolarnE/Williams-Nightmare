@@ -1,23 +1,20 @@
 
 state={
-	id=57
-	name="Westfalen"
-	manpower = 4829333
+	id=822
+	name="Mittelwestfalen"
+	manpower = 6271321
 	state_category = large_city
 
 	history={
-		owner = WST
-		#victory_points = {
-		#	9509 1
-		#}
+		owner = COR
+		victory_points = { 425 3 }
+			victory_points = { 3326 5 }
 		buildings = {
 			infrastructure = 8
 			arms_factory = 3
 			industrial_complex = 1
 			air_base = 3
-
-		}
-		add_core_of = WST
+        }
 		add_core_of = COR
 		add_claim_by = BRN
 		add_claim_by = GER
@@ -32,6 +29,6 @@ state={
 	}
 
 	provinces={
-		   6535 6622 9509 11346 11431 
+	425 11468 11402 6513 11493 3395 3271 3326 6349 374 3355 405 3234 309
 	}
 }

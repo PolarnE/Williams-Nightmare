@@ -2,7 +2,7 @@
 state={
 	id=59
 	name="STATE_59"
-	manpower = 2438286
+	manpower = 1238286
 	resources={
 		oil=2 # was: 4
 	}
@@ -10,12 +10,9 @@ state={
 	state_category = large_city
 
 	history={
-		owner = COR
+		owner = HNO
 		victory_points = {
-			3326 5 
-		}
-		victory_points = {
-			6377 10 
+			6377 25
 		}
 		victory_points = {
 			9347 20
@@ -30,7 +27,7 @@ state={
 			}
 
 		}
-		add_core_of = COR
+		add_core_of = HNO
 		add_claim_by = BRN
 		add_claim_by = GER
 
@@ -45,6 +42,6 @@ state={
 	}
 
 	provinces={
-		374 526 3271 3326 3395 6218 6263 6298 6325 6349 6377 6513 9238 9264 9375 11402 11468 11493 9347
+	 526 6218 6263 6298 6325 6377 9238 9264 9375 9347 
 	}
 }

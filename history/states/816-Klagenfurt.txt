@@ -1,0 +1,24 @@
+
+state={
+	id=816
+	name="Klagenfurt"
+	manpower = 898253
+	
+	state_category = town
+
+	history={
+		owner = AUS
+		victory_points = {
+			3673 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = AUS
+	}
+
+	provinces={
+	3673 11612 6687 9650 11651 6723 6552
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=821
+	name="Trabzon"
+	manpower = 326000
+	
+	state_category = rural
+	history={
+		owner = SOV
+		victory_points = {
+			9932 3 
+		}
+		buildings = {
+			infrastructure = 3
+						9932 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = GEO
+		add_core_of = SOV
+	}
+
+	provinces={
+	9932 3714 11753 7454 10403
+	}
+}
