@@ -212,3 +212,66 @@ news_event = {
 		trigger = { original_tag = SWE }
 		}
 }
+
+# French Collapse
+news_event = {
+	id = newsWN.7
+	title = newsWN.7.t
+	desc = newsWN.7.desc
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsWN.7.a #everyone
+		trigger = { NOT = { original_tag = ENG original_tag = FRA original_tag = SOV original_tag = ITA original_tag = RAJ } }
+		}
+	option = {
+		name = newsWN.7.b #france
+		trigger = { original_tag = FRA }
+		}
+	option = {
+		name = newsWN.7.c #russia
+		trigger = { original_tag = SOV }
+		}
+	option = {
+		name = newsWN.7.d #commonwealth
+		trigger = { original_tag = ENG }
+		}
+	option = {
+		name = newsWN.7.e #italy
+		trigger = { original_tag = ITA }
+		}
+	option = {
+		name = newsWN.7.f #maratha
+		trigger = { original_tag = RAJ }
+		}
+}
+
+
+# The Empire of Guatemala
+news_event = {
+	id = newsWN.8
+	title = newsWN.8.t
+	desc = newsWN.8.desc
+	picture = GFX_news_event_generic_rally
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsWN.8.a #everyone
+		trigger = { NOT = { original_tag = GUA original_tag = GUA } }
+		}
+	option = {
+		name = newsWN.8.b #france
+		trigger = { original_tag = FRA }
+		}
+	option = {
+		name = newsWN.8.c #guatemala
+		trigger = { original_tag = GUA }
+		}
+}
