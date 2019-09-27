@@ -189,12 +189,23 @@ ITA = "countries/Italy.txt"
 COR = "countries/ConfederationofRhine.txt"
 BRN = "countries/Brandenburg.txt"
 BAV = "countries/Bavaria.txt"
+DDE = "countries/Duesseldorf.txt"
+SAX = "countries/Saxony.txt"
+WRB = "countries/Wuerzburg.txt"
+BDN = "countries/Baden.txt"
+WUE = "countries/Wuerttemberg.txt"
+RDL = "countries/Rudolstadt.txt"
+HNO = "countries/Hannover.txt"
+NSA = "countries/Nassau.txt"
+WST = "countries/Westphalia.txt"
+RGN = "countries/Regensburg.txt"
 ############CHING CHONG#############################
 HVK = "countries/HeavenlyKingdom.txt"
 ############RUSSIAN STUFF###########################
 RSE = "countries/RussianEmpire.txt"
 RSL = "countries/RussianLevant.txt"
 CST = "countries/Constantinople.txt"
+UBR = "countries/UnitedBalticRepublic.txt"
 ############INDIA###################################
 MYS = "countries/Mysore.txt"
 ############AFRICA##################################
