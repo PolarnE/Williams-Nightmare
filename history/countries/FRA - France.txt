@@ -280,15 +280,6 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	set_autonomy = {
-		target = BAV
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.5
-	}
-	else = {
-		puppet = BAV
-	}
-}
 if = {
 	limit = {
 		OR = {
@@ -303,6 +294,23 @@ if = {
 	}
 	else = {
 		puppet = FFR
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = UBR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.75
+	}
+	else = {
+		puppet = UBR
 	}
 }
 give_guarantee = VAT

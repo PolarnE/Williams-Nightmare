@@ -129,13 +129,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Napoleon VI"
+	name = "Luigi-Napoleone IV"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "portrait_napoleon_iv.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = bonapartism
 	traits = {
-		
+		napoleon_trait_2
 	}
 }
 

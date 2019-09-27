@@ -92,13 +92,12 @@ set_convoys = 150
 #}
 
 create_country_leader = {
-	name = "Hendrikus Colijn"
-	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "GFX_portrait_holland_hendrikus_colijn"
+	name = "Godfried van Voorst tot Voorst"
+	desc = ""
+	picture = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		strict_austerity_adherent
 	}
 }
 
