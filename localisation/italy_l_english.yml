@@ -1,0 +1,21 @@
+﻿l_english:
+#country tags
+ ITA_republic_neutrality:0 "Republic of Italy"
+ ITA_republic_neutrality_DEF:0 "the Republic of Italy"
+ ITA_republic_neutrality_ADJ:0 "Italian"
+ ITA_republic_fascism:0 "Republic of Italy"
+ ITA_republic_fascism_DEF:0 "the Republic of Italy"
+ ITA_republic_fascism_ADJ:0 "Italian"
+ ITA_republic_democratic:0 "Republic of Italy"
+ ITA_republic_democratic_DEF:0 "the Republic of Italy"
+ ITA_republic_democratic_ADJ:0 "Italian"
+ ITA_mussolini_fascism:0 "Kingdom of Italy"
+ ITA_mussolini_fascism_DEF:0 "the Kingdom of Italy"
+ ITA_mussolini_fascism_ADJ:0 "Italian"
+ ITA_empire_fascism:0 "Empire of Italy"
+ ITA_empire_fascism_DEF:0 "the Empire of Italy"
+ ITA_empire_fascism_ADJ:0 "Italian"
+ #country events
+ h1936_italy.1.t:0 "Declaration of the Republic"
+ h1936_italy.1.d:0 "Many Italians have called for the official end to the Franco-Italian personal union after independence, and now is finally that day. In a patriotic speech outside of Milan, Regent Italo Balbo declared that the century old Kingdom of Italy is no more, and from this day forth it will be the Republic of Italy.\nHe is no longer the Regent of Italy for the young Emperor but now the President of Italy."
+ h1936_italy.1.a:0 "Per la Repubblica!"

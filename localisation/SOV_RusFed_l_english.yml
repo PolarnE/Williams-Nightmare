@@ -117,3 +117,6 @@ SOV_dominateformercolonies:0 "Dominate former colonies"
 SOV_dominateformercolonies_desc:0 "Whether people want it or not, colonies are our property. Any opposition is equal to betrayal, and insult means war!"
 SOV_fateofthecolonies:0 "Fate of the Colonies"
 SOV_fateofthecolonies_desc:0 "During the revolution we lost control over the colonies that explicitly declared independence. We still have time to ease the situation retrying to unite the sphere of rusophones."
+###INTEGRITY SYSTEM:
+RUS_integrity_increase_tooltip:0 "§GIncreases integrity!§!\n"
+RUS_integrity_decrease_tooltip:0 "§RDecreases integrity!§!\n"
