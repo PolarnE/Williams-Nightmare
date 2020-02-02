@@ -1,0 +1,28 @@
+
+state={
+	id=830
+	name="Saare and Hiiu"
+	manpower = 21340
+	resources={
+	}
+	state_category = small_island
+	history={
+		owner = UBR
+		victory_points = {
+			3152 5 
+		}
+		buildings = {
+			infrastructure = 3
+		185 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = UBR
+		add_core_of = SWE
+		add_core_of = SOV
+	}
+
+	provinces={
+		185 6201
+	}
+}

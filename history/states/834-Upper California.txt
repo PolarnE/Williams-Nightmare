@@ -1,0 +1,20 @@
+
+state={
+	id=834
+	name="Upper California"
+	manpower = 41638
+	
+	state_category = town
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MEX
+	}
+
+	provinces={
+	10305 4347 3471 10151 11733 12281 528 505 11495
+	}
+}

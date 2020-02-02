@@ -1,0 +1,25 @@
+state={
+	id=835
+	name="Eastern Frontier"
+	
+	state_category = wasteland
+	
+	resources={
+	}
+
+	history={
+		owner = RSE
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CAN
+add_core_of = RSE
+	}
+
+	provinces={
+	10721 2947 10585 5239 7782 7185 13190 13188 8962 12636 4218 1848 3721
+	}
+	manpower=26135
+	buildings_max_level_factor=1.000
+}

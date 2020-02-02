@@ -1,0 +1,27 @@
+state= {
+	id=832
+	name="Gallipoli"
+	manpower = 42712
+	resources={
+	}
+	
+	state_category = city
+
+	history= {
+		add_core_of = GRE
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			849 = {
+				naval_base = 5
+					bunker = 3
+			}
+		}
+		add_claim_by = TUR
+		add_claim_by = BUL
+	}
+	provinces=
+	{
+849 	}
+}

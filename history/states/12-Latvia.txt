@@ -10,9 +10,9 @@ state={
 	state_category = city
 	
 	history={
-		owner = SOV
+		owner = UBR
 		victory_points = {
-			9340 5 
+			9340 20
 		}
 		victory_points = {
 			310 1 
@@ -29,7 +29,7 @@ state={
 				bunker = 2
 			}
 		}
-		add_core_of = LAT
+		add_core_of = UBR
 		add_core_of = SOV
 	}
 

@@ -1,0 +1,25 @@
+state={
+	id=837
+	name="Eastern Orissa"
+	manpower = 361300
+	
+	state_category = rural
+	
+	resources={
+		steel=12 # was: 17
+	}
+
+	history={
+		owner = BAN
+		add_core_of = BAN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+	1538 1101 12063 4104 1059
+	}
+}

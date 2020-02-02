@@ -15,9 +15,6 @@ state= {
 			air_base = 8
 			arms_factory = 1
 			industrial_complex = 4
-			11751 = {
-				naval_base = 5
-			}
 			11846 = {
 				naval_base = 2
 			}
@@ -32,6 +29,6 @@ state= {
 	}
 
 	provinces= {
-	 6862 9794 9904 11751 11846 11882
+	 9794 9904 11846 11882
  	}
 }

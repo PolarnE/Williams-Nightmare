@@ -13,10 +13,11 @@ state= {
 
 	history= {
 		add_core_of = SCO
+		add_core_of = SC2 #TEMP!11!!!!!!11!!
 		add_core_of = ENG
 		owner = ENG
 		victory_points = { 11064 1 }
-		victory_points = { 9075 1 }
+		victory_points = { 9075 5 }
 		buildings = {
 			infrastructure = 4
 			anti_air_building = 2

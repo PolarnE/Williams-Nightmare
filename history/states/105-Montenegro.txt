@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			9809 3
 		}
-		owner = SER
+		owner = AUS
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 3
@@ -21,8 +21,7 @@ state={
 			}
 
 		}
-		add_core_of = SER
-
+		add_core_of = AUS
 	}
 
 	provinces={

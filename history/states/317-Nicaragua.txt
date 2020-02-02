@@ -8,7 +8,7 @@ state={
 	state_category = town
 
 	history={
-		owner = MEX
+		owner = NIC
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1

@@ -1,6 +1,6 @@
 state= {
 	id=341
-	name="Tsargrad"
+	name="Edirne"
 	manpower = 604509
 	resources={
 		chromium=45 # was: 84
@@ -24,5 +24,5 @@ state= {
 	}
 	provinces=
 	{
-849 922 3879 3893 6895 11842 	}
+922 3879 3893 6895 11842 	}
 }
