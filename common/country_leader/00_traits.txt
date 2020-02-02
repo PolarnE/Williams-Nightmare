@@ -20,6 +20,15 @@ leader_traits = {
 		}
 	}
 	
+			bortnowski_trait = {
+		random = no
+		stability_factor = 0.7
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 				butcher_of_birmingham = {
 		random = no
 		stability_factor = -0.05
@@ -65,6 +74,35 @@ leader_traits = {
 					napoleon_trait_2 = {
 		random = no
 		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+							adolf_hitler_trait_1 = {
+		random = no
+		political_power_factor = 0.15
+		fascism_drift = 0.05
+		ai_call_ally_desire_factor = -30
+		ai_strategy = {
+			type = antagonize
+			id = "GER"			
+			value = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+								adolf_hitler_trait_2 = {
+		random = no
+		ai_focus_aggressive_factor = 0.5
+		ai_focus_defense_factor = -0.25
+		justify_war_goal_time = -0.25
+		consumer_goods_factor = -0.03
+		production_speed_arms_factory_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1

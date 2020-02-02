@@ -1,0 +1,88 @@
+ideas = {
+
+	state_of_press = {
+		law = yes
+
+		free_press = {
+
+			cost = 150
+			removal_cost = 75
+			
+			picture = generic_pp_unity_bonus
+
+			available = {
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+
+			modifier = {
+				political_power_cost = -0.2
+				drift_defence_factor = -0.1
+				justify_war_goal_time = 0.50
+				enemy_justify_war_goal_time = 0.15
+			}
+
+			cancel_if_invalid = no
+		}
+
+		censored_press = {
+
+			cost = 150
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+
+			available = {
+			}
+
+			modifier = {
+			    political_power_cost = -0.1
+				drift_defence_factor = 0.05
+				justify_war_goal_time = -0.10
+			}
+			cancel_if_invalid = no
+		}
+
+		state_press = {
+
+			cost = 150
+			removal_cost = 150
+			
+			picture = generic_pp_unity_bonus
+
+		    available = { }
+
+			modifier = {
+			    political_power_cost = 0.1
+				drift_defence_factor = 0.05
+				army_core_defence_factor = 0.075
+				justify_war_goal_time = -0.15
+			}
+
+			cancel_if_invalid = no
+		}
+
+		propaganda_press = {
+
+			cost = 150
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			available = { }
+
+			modifier = {
+			    political_power_cost = 0.2
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+			    army_core_defence_factor = 0.15
+				justify_war_goal_time = -0.20
+			}
+
+			cancel_if_invalid = no
+			default = yes
+		}
+	}
+}

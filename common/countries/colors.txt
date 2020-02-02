@@ -24,6 +24,18 @@ FAF = {
 	color = rgb { 67 123 238 }
 	color_ui = rgb { 84 157 255 }
 }
+FRM = {
+	color = rgb { 67 123 238 }
+	color_ui = rgb { 84 157 255 }
+}
+FRL = {
+	color = rgb { 67 123 238 }
+	color_ui = rgb { 84 157 255 }
+}
+FRT = {
+	color = rgb { 67 123 238 }
+	color_ui = rgb { 84 157 255 }
+}
 LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
@@ -546,14 +558,73 @@ TUS = {
 }
 
 VAT = {
-	color = rgb { 173 173 110 }
-	color_ui = rgb { 173 173 110 } 
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
 }
+
+#confederation of the rhine, all the same colour
 
 COR = {
 	color = rgb { 39 42 156 }
 	color_ui = rgb { 39 42 156 }
 }
+
+BAV = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+DDE = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+SAX = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+WRB = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+BDN = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+WUE = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+RDL = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+HNO = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+NSA = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+WST = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+RGN = {
+	color = rgb { 39 42 156 }
+	color_ui = rgb { 39 42 156 }
+}
+
+#end of confederation of the rhine colours
 
 BRN = {
 	color = rgb { 128 0 32 }
@@ -591,7 +662,7 @@ FFR = {
 }
 
 JER = {
-color = rgb { 204 0 0 }
+    color = rgb { 204 0 0 }
 	color_ui = rgb { 163 17 31 }
 }
 
@@ -605,12 +676,7 @@ GBR = {
 	color_ui = rgb { 255 73 121 }
 }
 
-WL3 = {
-	color = rgb { 221 56 93 }
-	color_ui = rgb { 255 73 121 }
-}
-
-BAV = {
-	color = rgb { 17 103 152 }
-	color_ui = rgb { 10 164 213 }
+UBR = {
+	color = rgb { 246 239 89 }
+	color_ui = rgb { 246 239 89 }
 }

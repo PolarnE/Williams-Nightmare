@@ -8,7 +8,7 @@ bookmarks = {
 		default = yes
 		
 		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "FRA_lore"
 			ideology = neutrality
 			ideas = {
 			}
@@ -44,7 +44,7 @@ bookmarks = {
 			}		
 		}
 			"CHI"={
-			history = "CHI_GATHERING_STORM_DESC"
+			history = "CHI_lore"
 			ideology = neutrality
 			ideas = {
 			}	
@@ -66,7 +66,7 @@ bookmarks = {
 			}		
 		}
 			"SWE"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "SWE_lore"
 			ideology = neutrality
 			ideas = {
 			}	
@@ -77,8 +77,20 @@ bookmarks = {
 			}		
 		}
 			"USA"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}	
+			focuses = {
+		    	political_effort
+				nuclear_effort
+				army_effort
+			}		
+		}
+		
+		"RAJ"={
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
 			}	
 			focuses = {
@@ -93,6 +105,8 @@ bookmarks = {
 
 
 		# minors from DLC ####
+		
+
 
 		
 		effect = {

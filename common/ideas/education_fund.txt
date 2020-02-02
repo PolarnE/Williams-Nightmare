@@ -1,0 +1,71 @@
+ideas = {
+
+	education_fund = { 
+		law = yes
+	    education_minimal = {
+		picture = jap_duplicate_research
+
+			removal_cost = -1
+			
+			cost = 200
+			
+			level = 4
+		
+			modifier = {
+				research_speed_factor = 0.005
+			}
+
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+			education_average = {
+			picture = generic_research_bonus
+
+			removal_cost = -1
+			
+			cost = 200
+			
+			level = 3
+		
+			modifier = {
+			consumer_goods_factor = 0.02
+				research_speed_factor = 0.015
+			}
+			
+			cancel_if_invalid = no
+		}
+
+			education_large = {
+			picture = generic_research_bonus
+
+			removal_cost = -1
+			
+			cost = 200
+			
+			level = 2
+		
+			modifier = {
+			consumer_goods_factor = 0.04
+				research_speed_factor = 0.03
+			}
+			
+			cancel_if_invalid = no
+		}
+			education_gigantic = {
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			cost = 200
+			
+			level = 1
+		
+			modifier = {
+			consumer_goods_factor = 0.06
+			research_speed_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+#			}

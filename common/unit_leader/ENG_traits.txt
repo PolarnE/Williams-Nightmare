@@ -1,0 +1,29 @@
+leader_traits = {
+ENG_guerilla_boi = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		modifier = {
+			dig_in_speed_factor = 0.75
+			planning_skill_factor = 0.5
+			army_attack_factor = -0.10
+			max_dig_in = -1
+			equipment_capture = 0.03
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

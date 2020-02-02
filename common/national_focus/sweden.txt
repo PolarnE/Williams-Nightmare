@@ -1,0 +1,964 @@
+focus_tree = {
+	id = swedish_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 70 y = 2000 }
+	
+	#Focus for Denmark Anslutning
+	focus = {
+		id = SWE_denmarkanslutning
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_seizeroyalproperty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country= {
+ target = DEN 
+}
+		}
+	}
+
+	#Focus for FRA International Operations
+	focus = {
+		id = SWE_frainternationaloperations
+		icon = GFX_focus_generic_military_mission
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_mottitactics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rule All Seas
+	focus = {
+		id = SWE_ruleallseas
+		icon = GFX_goal_generic_amphibious_assault
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_denmarkanslutning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop Wartime Industry
+	focus = {
+		id = SWE_developwartimeindustry
+		icon = GFX_focus_generic_industry_3
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_siberianclaims }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy French Hegemony
+	focus = {
+		id = SWE_destroyfrenchhegemony
+		icon = GFX_focus_attack_france
+		x = 3
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_developwartimeindustry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sjölejon Operations
+	focus = {
+		id = SWE_sjlejonoperations
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_siberianclaims }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lessons of War
+	focus = {
+		id = SWE_lessonsofwar
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_siberianclaims }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Anglo-Skand Initiative for Unity
+	focus = {
+		id = SWE_angloskandinitiativeforunity
+		icon = GFX_goal_generic_dangerous_deal
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_projectheimevernet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modern Vikinga Doctrine
+	focus = {
+		id = SWE_modernvikingadoctrine
+		icon = GFX_modernvikingadoctrine
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_nordicheritage }
+		mutually_exclusive = { focus = SWE_doctrineofsuperiority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fjordprojektet
+	focus = {
+		id = SWE_fjordprojektet
+		icon = GFX_goal_generic_scientific_exchange
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_duumvirate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for The New Tide
+	focus = {
+		id = SWE_thenewtide
+		icon = GFX_thenewtide
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_folkhemmet }
+		mutually_exclusive = { focus = SWE_duumvirate }
+		completion_reward = {
+			add_political_power= 100
+		}
+	}
+
+	#Focus for Dod Till Kungar
+	focus = {
+		id = SWE_dodtillkungar
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_pathofsolidarity }
+		mutually_exclusive = { focus = SWE_fredliglosning }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.25
+		}
+	}
+
+	#Focus for Path Of Solidarity
+	focus = {
+		id = SWE_pathofsolidarity
+		icon = GFX_goal_support_democracy
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_thenewtide }
+		mutually_exclusive = { focus = SWE_nordicheritage }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democracy 
+popularity = 0.2 
+}
+		}
+	}
+
+	#Focus for Duumvirate
+	focus = {
+		id = SWE_duumvirate
+		icon = GFX_duumvirate
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_folkhemmet }
+		mutually_exclusive = { focus = SWE_thenewtide }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.15
+		}
+	}
+
+	#Focus for Folkhemmet
+	focus = {
+		id = SWE_folkhemmet
+		icon = GFX_folkhemmet
+		x = 3
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SWE_nordicracetheory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.2
+		}
+	}
+
+	#Focus for Kunglig Marin
+	focus = {
+		id = SWE_kungligmarin
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_duumvirate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = dockyard
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = dockyard
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+
+	#Focus for Food Import Strategy
+	focus = {
+		id = SWE_foodimportstrategy
+		icon = GFX_foodimportstrategy
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_duumvirate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Three Nations Army
+	focus = {
+		id = SWE_threenationsarmy
+		icon = GFX_threenationsarmy
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_duumvirate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 120000
+		}
+	}
+
+	#Focus for Nordic Heritage
+	focus = {
+		id = SWE_nordicheritage
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_thenewtide }
+		mutually_exclusive = { focus = SWE_pathofsolidarity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.2 
+}
+		}
+	}
+
+	#Focus for Create the Pan-European Alliance
+	focus = {
+		id = SWE_createthepaneuropeanalliance
+		icon = GFX_goal_generic_dangerous_deal
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_modernvikingadoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction= 'french_entente_alliance'
+		}
+	}
+
+	#Focus for Doctrine of Superiority
+	focus = {
+		id = SWE_doctrineofsuperiority
+		icon = GFX_goal_generic_wolf_pack
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_nordicheritage }
+		mutually_exclusive = { focus = SWE_modernvikingadoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fredlig losning
+	focus = {
+		id = SWE_fredliglosning
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_pathofsolidarity }
+		mutually_exclusive = { focus = SWE_dodtillkungar }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.25
+		}
+	}
+
+	#Focus for Seize Royal Property
+	focus = {
+		id = SWE_seizeroyalproperty
+		icon = GFX_seizeroyalproperty
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_dodtillkungar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kill All Pretenders
+	focus = {
+		id = SWE_killallpretenders
+		icon = GFX_goal_generic_attack_allies
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_doctrineofsuperiority }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = GER
+}
+create_wargoal= { 
+type = annex_everything 
+target = POL
+}
+		}
+	}
+
+	#Focus for Set Provisional Constitution
+	focus = {
+		id = SWE_setprovisionalconstitution
+		icon = GFX_setprovisionalconstitution
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_fredliglosning }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = democracy 
+elections_allowed = yes 
+}
+		}
+	}
+
+	#Focus for Recociliation With Russia
+	focus = {
+		id = SWE_recociliationwithrussia
+		icon = GFX_goal_generic_improve_relations
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_fredliglosning }
+		mutually_exclusive = { focus = SWE_northernlight }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_faction= SOV
+		}
+	}
+
+	#Focus for Pre-Emptive Attack
+	focus = {
+		id = SWE_preemptiveattack
+		icon = GFX_preemptiveattack
+		x = 23
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_ourindustrializatsya }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Radio Frihet
+	focus = {
+		id = SWE_radiofrihet
+		icon = GFX_goal_generic_propaganda
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_connecttranssiberianrailway }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Swedish War Cabinet
+	focus = {
+		id = SWE_swedishwarcabinet
+		icon = GFX_goal_generic_army_doctrines
+		x = 48
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fund SAKO
+	focus = {
+		id = SWE_fundsako
+		icon = GFX_focus_generic_aluminum
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_foodimportstrategy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hemvarnet
+	focus = {
+		id = SWE_hemvarnet
+		icon = GFX_goal_rhineland
+		x = 46
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_swedishwarcabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shape of Flygvapnet
+	focus = {
+		id = SWE_shapeofflygvapnet
+		icon = GFX_goal_generic_build_airforce
+		x = 52
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_swedishwarcabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reorganize Statsrådet
+	focus = {
+		id = SWE_reorganizestatsrdet
+		icon = GFX_goal_generic_neutrality_focus
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_setprovisionalconstitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mechanical Works Institute
+	focus = {
+		id = SWE_mechanicalworksinstitute
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_hemvarnet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Multinational Investments
+	focus = {
+		id = SWE_multinationalinvestments
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_balticsafetytreaty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Northern Light
+	focus = {
+		id = SWE_northernlight
+		icon = GFX_goal_anschluss
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_balticsafetytreaty }
+		mutually_exclusive = { focus = SWE_recociliationwithrussia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Hungary
+	focus = {
+		id = SWE_invitehungary
+		icon = GFX_focus_generic_self_management
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_northernlight }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Asylum for European Dissidents
+	focus = {
+		id = SWE_asylumforeuropeandissidents
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_northernlight }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our "Industrializatsya"
+	focus = {
+		id = SWE_ourindustrializatsya
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_recociliationwithrussia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Redefine Folkhemmet
+	focus = {
+		id = SWE_redefinefolkhemmet
+		icon = GFX_goal_generic_national_unity
+		x = 31
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_hedersregler }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Project Heimevernet
+	focus = {
+		id = SWE_projectheimevernet
+		icon = GFX_goal_generic_position_armies
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_fjordprojektet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guardian on Watch
+	focus = {
+		id = SWE_guardianonwatch
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_britainontherightcourse }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Baltic Safety Treaty
+	focus = {
+		id = SWE_balticsafetytreaty
+		icon = GFX_goal_generic_major_alliance
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_fackfrening }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fackförening
+	focus = {
+		id = SWE_fackfrening
+		icon = GFX_goal_generic_demand_territory
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_romanticpatriotism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Education Reform
+	focus = {
+		id = SWE_educationreform
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_heritageofforegang }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Britain on the Right Course
+	focus = {
+		id = SWE_britainontherightcourse
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_theoryofsettlers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Theory of Settlers
+	focus = {
+		id = SWE_theoryofsettlers
+		icon = GFX_goal_generic_construction2
+		x = 19
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_nordicracetheory }
+		mutually_exclusive = { focus = SWE_romanticpatriotism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nordic Race Theory
+	focus = {
+		id = SWE_nordicracetheory
+		icon = GFX_goal_generic_propaganda
+		x = 28
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SWE_folkhemmet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Aryan Superiority
+	focus = {
+		id = SWE_aryansuperiority
+		icon = GFX_focus_generic_little_entente
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_nordicracetheory }
+		mutually_exclusive = { focus = SWE_romanticpatriotism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Romantic Patriotism
+	focus = {
+		id = SWE_romanticpatriotism
+		icon = GFX_goal_support_fascism
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_nordicracetheory }
+		mutually_exclusive = { 
+			focus = SWE_aryansuperiority 
+		}
+		mutually_exclusive = { 
+			focus = SWE_theoryofsettlers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heritage of Foregang
+	focus = {
+		id = SWE_heritageofforegang
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_theoryofsettlers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hedersregler
+	focus = {
+		id = SWE_hedersregler
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_romanticpatriotism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lottorna
+	focus = {
+		id = SWE_lottorna
+		icon = GFX_focus_mex_soldaderas
+		x = 43
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_hemvarnet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Swedish Arsenal
+	focus = {
+		id = SWE_swedisharsenal
+		icon = GFX_goal_generic_small_arms
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_hemvarnet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Science for Masses
+	focus = {
+		id = SWE_scienceformasses
+		icon = GFX_goal_generic_scientific_exchange
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_setprovisionalconstitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Intervention in Russia
+	focus = {
+		id = SWE_interventioninrussia
+		icon = GFX_goal_generic_military_deal
+		x = 28
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_northernlight }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Connect Transsiberian Railway
+	focus = {
+		id = SWE_connecttranssiberianrailway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_ourindustrializatsya }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Motti Tactics
+	focus = {
+		id = SWE_mottitactics
+		icon = GFX_goal_generic_defence
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_reorganizestatsrdet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Liberate Danelaw
+	focus = {
+		id = SWE_liberatedanelaw
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_killallpretenders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Siberian Claims
+	focus = {
+		id = SWE_siberianclaims
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_angloskandinitiativeforunity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Decentralised Food Import
+	focus = {
+		id = SWE_decentralisedfoodimport
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SWE_reorganizestatsrdet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

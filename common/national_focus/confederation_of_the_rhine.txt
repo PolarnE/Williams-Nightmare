@@ -1,0 +1,464 @@
+focus_tree = {
+	id = confederation_of_the_rhine_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = #COR
+			}
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1350 }
+	
+	#made by CrasuMOD, won't be used for a while
+	
+		focus = {
+		id = COR_guide_the_princes
+		icon = GFX_goal_generic_improve_relations
+		x = 9
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        has_global_flag = global_paris_stock_market_crash
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+			focus = {
+		id = COR_frankfurt_constitution
+		icon = GFX_focus_generic_treaty
+		x = 9
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_guide_the_princes
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		create_faction = frankfurt_confederation
+		hidden_effect = {
+		set_autonomy = {
+	target = WUE
+	autonomy_state = autonomy_free
+}
+add_to_faction = WUE
+set_autonomy = {
+	target = BAV
+	autonomy_state = autonomy_free
+}
+add_to_faction = BAV
+set_autonomy = {
+	target = RGN
+	autonomy_state = autonomy_free
+}
+add_to_faction = RGN
+set_autonomy = {
+	target = BDN
+	autonomy_state = autonomy_free
+}
+add_to_faction = BDN
+set_autonomy = {
+	target = WRB
+	autonomy_state = autonomy_free
+}
+add_to_faction = WRB
+set_autonomy = {
+	target = RDL
+	autonomy_state = autonomy_free
+}
+add_to_faction = RDL
+set_autonomy = {
+	target = SAX
+	autonomy_state = autonomy_free
+}
+add_to_faction = SAX
+set_autonomy = {
+	target = HNO
+	autonomy_state = autonomy_free
+}
+add_to_faction = HNO
+set_autonomy = {
+	target = WST
+	autonomy_state = autonomy_free
+}
+add_to_faction = WST
+set_autonomy = {
+	target = NSA
+	autonomy_state = autonomy_free
+}
+add_to_faction = NSA
+set_autonomy = {
+	target = DDE
+	autonomy_state = autonomy_free
+}
+add_to_faction = DDE }
+		}
+	}
+	
+					focus = {
+		id = COR_align_westphalia
+		icon = GFX_goal_anschluss
+		x = 7
+		y = 2
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		has_war_with = BAV
+		WST = { NOT = { has_war_with = BAV } }
+		}
+
+		bypass = {
+		OR = {
+        has_war_with = WST
+		BAV = { has_war_with = WST }
+		}
+		}
+		
+		prerequisite = {
+		focus = COR_frankfurt_constitution
+		}
+		
+		mutually_exclusive = {
+		focus = COR_destroy_westphalia
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+						focus = {
+		id = COR_destroy_westphalia
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		has_war_with = BAV
+		WST = { NOT = { has_war_with = BAV } }
+		}
+
+		bypass = {
+        has_war_with = WST
+		}
+		
+		prerequisite = {
+		focus = COR_frankfurt_constitution
+		}
+		
+		mutually_exclusive = {
+		focus = COR_align_westphalia
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+						focus = {
+		id = COR_declare_german_confederation
+		icon = GFX_goal_generic_propaganda
+		x = 3
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+		NOT = { country_exists = BAV }
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_frankfurt_constitution
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+							focus = {
+		id = COR_enforce_republicanism
+		icon = GFX_focus_rom_handle_king
+		x = 2
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 300
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_declare_german_confederation
+		}
+		
+		mutually_exclusive = {
+		focus = COR_accept_monarchies
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+								focus = {
+		id = COR_russian_support
+		icon = GFX_goal_generic_alliance
+		x = 0
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = -10
+			modifier = {
+    factor = 1000000
+    OR = {
+	NOT = { country_exists = GER }
+	NOT = { country_exists = BRN }
+	}
+  }
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_enforce_republicanism
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+								focus = {
+		id = COR_accept_monarchies
+		icon = GFX_focus_hun_elect_a_king
+		x = 4
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 300
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_declare_german_confederation
+		}
+		
+		mutually_exclusive = {
+		focus = COR_enforce_republicanism
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+									focus = {
+		id = COR_union_with_westphalia
+		icon = GFX_goal_generic_dangerous_deal
+		x = 6
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_accept_monarchies
+		}
+		
+		prerequisite = {
+		focus = COR_align_westphalia
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}
+	
+									focus = {
+		# id = COR_
+		icon = GFX_focus_hun_elect_a_king
+		x = 4
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+		
+		prerequisite = {
+		focus = COR_accept_monarchies
+		focus = COR_enforce_republicanism
+		}
+		
+		mutually_exclusive = {
+		focus = COR_enforce_republicanism
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+		}
+	}

@@ -1,5 +1,25 @@
 ideas = {
 country = {
+
+CORP_idea_reorganise_government = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_political_support
+			
+			modifier = {
+			political_power_cost = 0.15
+			stability_weekly = 0.001
+			}
+		}
+		
 idea_germanys_germany_divided = {
 		
 			removal_cost = -1
@@ -16,6 +36,240 @@ idea_germanys_germany_divided = {
 			modifier = {
 			stability_factor = -0.05
 		    political_power_cost = 0.5
+			}
+		}
+		
+CORP_technological_cooperation_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_research_bonus
+			
+			modifier = {
+			research_speed_factor = 0.05
+			}
+		}
+		
+CORP_military_federation_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = air_support_focus
+			
+			modifier = {
+			army_core_defence_factor = 0.1
+			}
+		}
+
+CORP_mobilise_rapidly_1 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+			training_time_factor = -0.1
+			}
+		}
+		
+CORP_mobilise_rapidly_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+			training_time_factor = -0.1
+			conscription = 0.05
+			}
+		}
+
+ENG_swedish_english_economic_cooperation_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+			industrial_capacity_factory = 0.05
+			}
+		}
+
+ENG_russian_english_economic_cooperation_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+			industrial_capacity_factory = 0.05
+			}
+		}
+		
+idea_colonial_nation_fra = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			 ai_call_ally_desire_factor = -1000
+		     ai_join_ally_desire_factor = -1000
+			}
+		}
+
+idea_colonial_nation_eng = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			OVERLORD = { original_tag = ENG }
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			 ai_call_ally_desire_factor = -1000
+		     ai_join_ally_desire_factor = -1000
+			}
+			
+			targeted_modifier = {
+				tag = ENG
+			industrial_capacity_factory = 0.025
+			}
+		}
+		
+		idea_colonial_nation_eng_cheap_labour = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			OVERLORD = { original_tag = ENG }
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			 ai_call_ally_desire_factor = -1000
+		     ai_join_ally_desire_factor = -1000
+			}
+			
+			targeted_modifier = {
+				tag = ENG
+			industrial_capacity_factory = 0.05
+			consumer_goods_factor = -0.02
+			}
+		}
+		
+idea_colonial_eng_suppressed = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			OVERLORD = { original_tag = ENG }
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+			 master_ideology_drift = 0.05
+			}
+		}
+		
+		idea_colonial_eng_suppressed_secret_police = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			OVERLORD = { original_tag = ENG }
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+			 master_ideology_drift = 0.05
+			 stability_factor = 0.025
+			 enemy_partisan_effect = -0.35
+			}
+		}
+		
+				idea_colonial_eng_suppressed_empower_colonists = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			OVERLORD = { original_tag = ENG }
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+			 conscription_factor = -0.25
+			 planning_speed = 0.25
+			 land_reinforce_rate = 0.075
 			}
 		}
 }

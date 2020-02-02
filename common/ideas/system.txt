@@ -1,0 +1,645 @@
+ideas = {
+
+	system = { 
+		law = yes
+		####### Monarchist
+		M_absolutism = {
+		picture = idea_M_absolutism
+
+			removal_cost = -1
+			
+			cost = 500
+			
+			visible = {
+				has_government = neutrality
+			}
+		
+			modifier = {
+				generate_wargoal_tension = 0.10
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				political_power_cost = -0.1
+			}
+
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+			M_constitutional = {
+			picture = idea_M_consitutional
+			visible = {
+				has_government = neutrality
+			}			
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				stability_factor = 0.03
+			}
+			
+			cancel_if_invalid = no
+		}
+
+			M_elective = {
+			picture = idea_M_elective	
+			visible = {
+				or = {	
+					has_government = neutrality
+					and = {
+							neutrality > 0.5
+						}
+					}
+			}
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			on_add = {
+			add_popularity = {
+					ideology = neutrality
+					popularity = 0.15
+				}				
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+			M_aristocracy = {
+			picture = idea_M_aristocracy
+			visible = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+			M_enlightened = {
+			picture = idea_M_enlightened
+			visible = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+			M_asian = {
+			picture = idea_M_asian	
+			visible = {
+				has_government = neutrality
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+			M_feudal = {
+				picture = idea_M_feudal
+				
+			visible = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+	####### Democratic Regimes
+				D_centrism = {
+					picture = idea_D_centrism
+					
+			visible = {
+				or = {	
+					has_government = democratic
+					and = {
+							democratic > 0.5
+						}
+					}
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 1.00
+				lend_lease_tension = 0.90
+				send_volunteers_tension = 0.90
+				guarantee_tension = 0.75
+				conscription = -0.01
+				defensive_war_stability_factor = 0.2
+				political_power_gain = 0.6
+			}
+			
+			available = {
+				or = {	
+					has_government = democratic
+					and = {
+							democratic > 0.5
+							has_stability > 0.7
+						}
+					}	
+				}
+				
+			on_add = {
+			add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}				
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+				
+			cancel_if_invalid = yes
+			
+			}
+		
+				D_conservatism = {
+					picture = idea_D_conservatism
+
+			visible = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.80
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.20
+				conscription = -0.005
+				army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.25
+				political_power_gain = 0.4
+			}
+			available = {	
+					and = {
+							has_government = democratic
+							has_stability > 0.5
+						}
+				}
+			cancel_if_invalid = no
+		}
+				D_liberalism = {
+					picture = idea_D_liberalism
+			visible = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 0.90
+				join_faction_tension = 0.80
+				lend_lease_tension = 0.80
+				send_volunteers_tension = 0.60
+				guarantee_tension = 0.20
+				conscription = -0.01
+				army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.25
+				political_power_gain = 0.6
+			}
+			
+			available = {	
+					and = {
+							has_government = democratic
+							has_stability > 0.7
+						}
+				}
+			
+			cancel_if_invalid = yes
+		}
+				D_syndicalism = {
+					picture = idea_D_syndicalism
+			
+			visible = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 0.35
+				join_faction_tension = 0.10
+				send_volunteers_tension = 0.05
+				political_power_gain = 0.2
+			}
+			available = {	
+					and = {
+							has_stability < 0.5
+							has_government = democratic
+							custom_trigger_tooltip = {
+								tooltip = maletism_requirement_tt	
+										always = no
+						}
+				}
+			}
+			cancel_if_invalid = no
+
+		}
+				D_socialdemocracy = {
+				picture = idea_D_socialdemocracy
+					
+			visible = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 0.80
+				join_faction_tension = 0.70
+				lend_lease_tension = 0.70
+				send_volunteers_tension = 0.50
+				guarantee_tension = 0.50
+				conscription = -0.01
+				army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.25
+				political_power_gain = 0.5 
+			}
+			
+			available = {	
+					and = {
+							has_government = democratic
+							custom_trigger_tooltip = {
+								tooltip = maletism_requirement_tt	
+										always = no
+						}
+				}
+			}
+				
+			cancel_if_invalid = yes
+		}
+	####### Authoritarian Regimes
+				A_commonwealth = {
+					picture = idea_A_commonwealth
+					
+			visible = {
+				or = {	
+					has_government = communism
+					and = {
+							communism > 0.5
+						}
+					}
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			available = {
+				or = {	
+					has_government = communism
+					and = {
+							communism > 0.5
+							has_stability > 0.7
+						}
+					}	
+				}
+			
+			on_add = {
+			add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}				
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+				A_despotism = {
+					picture = idea_A_despotism
+					
+			visible = {
+					has_government = communism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+				A_meritocracy = {
+					picture = idea_A_meritocracy
+					
+			visible = {
+					has_government = communism
+					}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+				A_metaxas_autocracy = {
+					picture = idea_A_metaxas_autocracy
+					
+			visible = {
+					has_government = communism
+					}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+				A_oligarchy = {
+					picture = idea_A_oligarchy
+					
+			visible = {
+					has_government = communism
+
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+				A_personalist_dictatorship = {
+					picture = idea_A_personalist_dictatorship
+					
+			visible = {
+					has_government = communism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+				A_positivism = {
+					picture = idea_A_positivism
+					
+			visible = {
+					has_government = communism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+	####### Totalitarian Regimes
+				T_radical_maletism = {
+					picture = idea_T_radical_maletism
+					
+			visible = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				join_faction_tension = 0.05
+				guarantee_tension = 0.15
+				guarantee_tension = 0.75
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.03
+			}
+			
+			cancel_if_invalid = no
+		}
+				T_gosterism = {
+					picture = idea_T_gosterism
+					
+			visible = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+			    join_faction_tension = 0.05
+				guarantee_tension = 0.15
+				surrender_limit = 0.1
+				conscription = 0.005
+				justify_war_goal_when_in_major_war_time = -0.5
+			}
+			
+			cancel_if_invalid = no
+		}
+				T_cromwellianism = {
+					picture = idea_T_cromwellianism
+					
+			visible = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				join_faction_tension = 0.05
+				guarantee_tension = 0.15
+				improve_relations_maintain_cost_factor = -0.75
+				enemy_justify_war_goal_time = 0.15
+			}
+			
+			cancel_if_invalid = no
+		}
+				T_police_state = {
+					picture = idea_T_police_state
+					
+			visible = {
+				or = {	
+					has_government = fascism
+					and = {
+							fascism > 0.5
+						}
+					}
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				join_faction_tension = 0.05
+				guarantee_tension = 0.15
+				enemy_partisan_effect = -0.05
+			}
+			
+			on_add = {
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}				
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+				T_divine_mandate = {
+					picture = idea_T_divine_mandate
+					
+			visible = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			cost = 500
+		
+			modifier = {
+				join_faction_tension = 0.05
+				guarantee_tension = 0.15
+				surrender_limit = 0.025
+				political_power_factor = 0.15
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}
+# May be useful later to set reuqirements for each subbranch:
+#			allowed_to_remove = {
+#				OR = {
+#					has_war_support > 0.5
+#					has_war = yes
+#				}
+#			}

@@ -94,7 +94,7 @@ ideas = {
 			picture = generic_neutrality_drift_bonus
 			
 			modifier = {
-		    stability_factor = 0.7
+		    stability_factor = 0.07
 			drift_defence_factor = 0.15
 			}
 		}
@@ -113,7 +113,7 @@ ideas = {
 			picture = generic_neutrality_drift_bonus
 			
 			modifier = {
-		    stability_factor = -0.7
+		    stability_factor = -0.07
 			drift_defence_factor = -0.15
 			}
 		}
