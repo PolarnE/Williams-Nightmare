@@ -25,8 +25,9 @@ set_popularities = {
 	democratic = 0
 	fascism = 0
 	communism = 0
-	neutrality = 100
-}
+	neutrality = 100 }
+	
+	add_opinion_modifier = { target = CHI modifier = empire_of_china_claims_mandate }
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
@@ -48,17 +49,6 @@ create_country_leader = {
 	traits = {
 		warrior_code
 	}
-}
-
-create_field_marshal = {
-	name = "Zhang Xueliang"
-	gfx = "GFX_portrait_chi_zhang_xueliang"
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
 }
 
 create_corps_commander = {

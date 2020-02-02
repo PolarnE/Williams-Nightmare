@@ -1,0 +1,40 @@
+﻿capital = 80
+
+set_stability = 0.15
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+communism = 100
+}
+
+create_country_leader = {
+				name = "Regency Council"
+				desc = ""
+				picture = GFX_portrait_eng_fallen_government			
+				expire = "1965.1.1"
+				ideology = oligarchism
+				traits = {
+				cabinet_crisis
+				}
+				}
+

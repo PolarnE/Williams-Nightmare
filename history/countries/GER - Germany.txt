@@ -177,6 +177,18 @@ create_field_marshal = {
 	id = 1
 }
 
+create_corps_commander = {
+	name = "Erich I"
+	picture = "Portrait_Germany_Erich_von_Manstein.dds"
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	skill = 4
+	id = 5
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
 create_field_marshal = {
 	name = "Günther von Kluge"
 	picture = "Portrait_Germany_Gunther_von_Kluge.dds"
@@ -211,18 +223,6 @@ create_corps_commander = {
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Erich von Manstein"
-	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { trickster armor_officer brilliant_strategist trait_engineer }
-	skill = 4
-	id = 5
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
 }
 
 create_corps_commander = {

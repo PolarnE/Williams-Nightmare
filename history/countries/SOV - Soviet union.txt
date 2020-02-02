@@ -1,4 +1,4 @@
-﻿capital = 263
+﻿capital = 252
 
 oob = "SOV_1936"
 if = {
@@ -117,7 +117,7 @@ add_opinion_modifier = { target = RSL modifier = large_decrease }
 add_ideas = {
 RUS_closed_borders
 closed_economy
-RUS_integrity_6
+RUS_integrity_5
 RUS_lack_of_innovation
 RUS_legacy_of_empire
 RUS_slow_industrialisation
@@ -157,7 +157,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lev Bronstein"
+	name = "Lev Davidovich"
 	desc = ""
 	picture = "portrait_not_leon_trotsky.dds"
 	expire = "1953.3.1"

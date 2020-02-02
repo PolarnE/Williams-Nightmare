@@ -1,4 +1,4 @@
-﻿capital = 361
+﻿capital = 371
 
 oob = "USA_1936"
 
@@ -142,7 +142,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "George S. Patton"
-	picture = "George_Patton.dds"
+	picture = "Portrait_USA_George_S_Patton.dds"
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
 	skill = 5
 
@@ -154,7 +154,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Omar Bradley"
-	picture = "Omar_Bradley.dds"
+	picture = "Portrait_USA_Omar_Bradley.dds"
 	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
 	skill = 5
 
@@ -166,7 +166,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
-	picture = "Dwight_D.dds"
+	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
 	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
 	skill = 5
 	id = 602
@@ -215,7 +215,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
-	picture = "Douglas_McArthur.dds"
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
 	skill = 4
 
@@ -223,18 +223,6 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Bert Hoffmeister"
-	picture = "Bert_Hoffmeister.dds"
-	traits = { hill_fighter }
-	skill = 4
-   
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -497,16 +485,6 @@ create_navy_leader = {
 	coordination_skill = 3
 }
 
-create_navy_leader = {
-	name = "Harry DeWolf"
-	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician bold }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 5
-}
 
 ### VARIANTS ###
 # 1936 Start #

@@ -137,6 +137,54 @@ if = {
 		}
 	}
 	set_autonomy = {
+		target = FRT
+		autonomous_state = autonomy_colony
+		freedom_level = 0.75
+	}
+	else = {
+		puppet = FRT
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = FRL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.75
+	}
+	else = {
+		puppet = FRL
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = FRM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.75
+	}
+	else = {
+		puppet = FRM
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
 		target = TUS
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.5

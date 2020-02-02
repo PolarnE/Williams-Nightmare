@@ -1,5 +1,7 @@
 ﻿capital = 55
 
+oob = "COR_1936"
+
 # Starting tech
 set_technology = {
 infantry_weapons = 1
@@ -32,53 +34,184 @@ infantry_weapons = 1
 }
 
 set_convoys = 5
-
-1939.1.1 = {
-
-	add_political_power = 1198
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+	if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = BAV
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = BAV
 	}
 }
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = DDE
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = DDE
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SAX
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = SAX
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = WRB
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = WRB
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = BDN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = BDN
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = WUE
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = WUE
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = RDL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = RDL
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = HNO
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = HNO
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = NSA
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = NSA
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = WST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = WST
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = RGN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.25
+	}
+	else = {
+		puppet = RGN
+	}
+}
+
 
 add_ideas = {
 idea_germanys_germany_divided

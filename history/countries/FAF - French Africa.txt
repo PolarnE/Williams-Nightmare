@@ -10,6 +10,10 @@ set_technology = {
 
 set_convoys = 5
 
+add_ideas = {
+idea_colonial_nation_fra
+}
+
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -60,7 +64,7 @@ set_popularities = {
 
 create_country_leader = {
 	
-	name = "Maurice Varnier"
+	name = "Maurice Viollette"
 	picture = "portrait_maurice_varnier.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism

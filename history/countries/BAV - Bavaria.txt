@@ -1,6 +1,6 @@
 ﻿capital = 52
 
-#oob = ""
+oob = "BAV_1936"
 
 # Starting tech
 set_technology = {
@@ -41,9 +41,8 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 20
-	fascism = 10
-	communism = 6
-	neutrality = 64
+	fascism = 36
+	neutrality = 44
 }
 
 create_country_leader = {
@@ -52,6 +51,16 @@ create_country_leader = {
 	picture = "portrait_bavarian_king.dds"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hermann Göring"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
+	expire = "1965.1.1"
+	ideology = nazism
 	traits = {
 	}
 }

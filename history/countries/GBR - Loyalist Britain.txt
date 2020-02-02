@@ -99,3 +99,214 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_field_marshal = {
+	name = "Bernard Montgomery" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Bernard_Montgomery.dds"
+	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
+	skill = 4 
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Willelme II" # Aristocrat
+	picture = "gfx/leaders/ENG/portrait_not_fucking_george.dds"
+	traits = { media_personality trait_cautious politically_connected ENG_guerilla_boi }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Alan Brooke" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Alan_Brooke.dds"
+	traits = { defensive_doctrine trait_cautious career_officer }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Harold Alexander" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "J.F.C. Fuller" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hugh Dowding" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Arthur Harris" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vernon Sturdee" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Oswald Mosley" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Oswald_Mosley.dds"
+	traits = { ENG_guerilla_boi politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Percy Hobart" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Bernard Freyberg" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Anthony Eden" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "John Vereker Lord Gort" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_John_Vereker.dds"
+	traits = { politically_connected trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Oliver Leese" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Oliver_Leese.dds"
+	traits = {  armor_officer harsh_leader politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Archibald Wavell" # Aristocrat
+	picture = "gfx/leaders/ENG/Portrait_Britain_Archibald_Wavell.dds"
+	traits = { career_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "James Fownes Somerville" # Aristocrat
+		picture = "gfx/leaders/ENG/Portrait_Britain_James_Fownes_Somerville.dds"
+	traits = { superior_tactician aviation_enthusiast navy_career_officer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Henry Harwood" # Aristocrat
+		picture = "gfx/leaders/ENG/Portrait_Britain_Henry_Harwood.dds"
+	traits = { old_guard_navy bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "John Tovey" # Aristocrat
+		picture = "gfx/leaders/ENG/Portrait_Britain_John_Tovey.dds"
+	traits = { gentlemanly naval_lineage superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Bernard Rawlings" # Aristocrat
+		picture = "gfx/leaders/ENG/Portrait_Britain_Bernard_Rawlings.dds"
+	traits = { gentlemanly }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
