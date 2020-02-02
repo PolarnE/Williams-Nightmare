@@ -1,5 +1,0 @@
-﻿###########################
-# Colony Independance Events
-###########################
-
-add_namespace = colonies
