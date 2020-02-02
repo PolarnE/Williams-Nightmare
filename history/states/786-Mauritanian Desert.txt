@@ -7,9 +7,9 @@ state={
 	impassable = yes
 
 	history={
-		owner = FAF
+		owner = FRM
 		add_core_of = MRT
-		add_core_of = FAF
+		add_core_of = FRM
 		buildings = {
 			infrastructure = 0
 		}
@@ -17,6 +17,6 @@ state={
 	}
 
 	provinces={
-		1897 1962 7943 8035 10771 10779 10838
+		1897 1962 7943 8035 10771
 	}
 }

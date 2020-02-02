@@ -17,6 +17,6 @@ state=
 		add_core_of = AUS
 	}
 	provinces={
-	3592 3596
+	3592 3596 3601
 	 }
 	}

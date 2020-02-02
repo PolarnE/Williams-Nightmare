@@ -7,9 +7,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = FAF
+		owner = FRM
 		add_core_of = MRT
-		add_core_of = FAF
+		add_core_of = FRM
 		victory_points = {
 			5034 1
 		}
@@ -20,6 +20,6 @@ state={
 	}
 
 	provinces={
-		5034 5077 7992 8058 10814
+		5034 5077 7992 8058 10814 10875
 	}
 }
