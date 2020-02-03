@@ -1,0 +1,22 @@
+state={
+	id=846
+	name="Danish Bengal"
+	manpower=21271
+	state_category = enclave
+	
+	history={
+		owner = DEN
+		add_core_of = BAN
+		buildings = {
+			infrastructure = 5
+			11911 = {
+				naval_base = 1
+
+			}
+		}
+
+	}
+	provinces={
+	11911
+	}
+}

@@ -72,6 +72,8 @@ set_popularities = {
 	neutrality = 62
 }
 
+give_guarantee = JAP
+
 set_convoys = 150
 set_stability = 0.65
 

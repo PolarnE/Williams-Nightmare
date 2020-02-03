@@ -1,0 +1,22 @@
+state={
+	id=851
+	name="Rakhine"
+	manpower=581162
+	state_category = rural
+	
+	history={
+		owner = HOL
+		add_core_of = BRM
+		buildings = {
+			infrastructure = 4
+			3651 = {
+				naval_base = 6
+
+			}
+		}
+
+	}
+	provinces={
+	3651 1014 12090
+	}
+}

@@ -7,7 +7,7 @@ state={
 	
 	history=
 	{
-		owner = LIB
+		owner = SWE
 		add_core_of = SIE
 		add_core_of = LIB
 		victory_points = {
@@ -23,6 +23,6 @@ state={
 	}
 	
 	provinces={
-		2038 2094 
+		2038 1909 
 	}
 }

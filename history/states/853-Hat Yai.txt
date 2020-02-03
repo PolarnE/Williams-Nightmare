@@ -1,0 +1,25 @@
+state={
+	id=853
+	name="Hat Yai"
+	manpower=91831
+	state_category = rural
+	
+		resources={
+		rubber=10 # was: 25
+	}
+	
+	history={
+		owner = MAL
+		add_core_of = SIA
+		victory_points = {
+			7236 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	provinces={
+	10156 12131 1279 4297 7236
+	}
+}

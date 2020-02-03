@@ -1,0 +1,26 @@
+state={
+	id=850
+	name="Ayeyarwady"
+	manpower=2136211
+	state_category = rural
+	
+	history={
+		owner = ENG
+		add_core_of = BRM
+		buildings = {
+			infrastructure = 4
+			7382 = {
+				naval_base = 6
+
+			}
+			12267 = {
+				naval_base = 1
+
+			}
+		}
+
+	}
+	provinces={
+	12267 7382 10223 10267 12197 7254 10182 12284
+	}
+}

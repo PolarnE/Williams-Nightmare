@@ -1,0 +1,27 @@
+
+state={
+	id=855
+	name="East Salween"
+	manpower = 72152
+	
+	state_category = town
+	
+	resources={
+		rubber=3 # was: 4
+	}
+
+	history={
+		add_core_of = BRM
+		add_core_of = SIA
+		owner = SIA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+	12317 7647
+	}
+}

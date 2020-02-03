@@ -16,6 +16,8 @@ add_ideas = {
 	neutrality_idea
 }
 
+give_guarantee = JAP
+
 set_major = yes
 
 set_stability = 0.9

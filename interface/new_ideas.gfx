@@ -14,5 +14,15 @@ spriteTypes = {
 		name = "GFX_rse_tsar_nick"
 		texturefile = "gfx/interface/ideas/idea_rse_nicholas.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_advisors_russianfed"
+		texturefile = "gfx/interface/ideas/idea_advisors_russianfed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisors_sweden"
+		texturefile = "gfx/interface/ideas/idea_advisors_sweden.dds"
+	}
 
 }

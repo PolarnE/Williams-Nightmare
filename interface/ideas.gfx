@@ -46,6 +46,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_pol_bortnowskis_dictatorship"
+		texturefile = "gfx/interface/ideas/idea_pol_bortnowskis_dictatorship.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_agrarian_society"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
 	}	

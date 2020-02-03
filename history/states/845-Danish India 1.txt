@@ -1,0 +1,22 @@
+state={
+	id=845
+	name="Danish India"
+	manpower=10352
+	state_category = enclave
+	
+	history={
+		owner = DEN
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 5
+			7297 = {
+				naval_base = 1
+
+			}
+		}
+
+	}
+	provinces={
+	7297
+	}
+}

@@ -1,0 +1,17 @@
+on_actions = {
+on_startup = {
+		effect = {
+			#Russian influence in Persia
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				PER = {
+					give_resource_rights = { receiver = SOV state = 413 }
+					give_resource_rights = { receiver = SOV state = 412 }
+					give_resource_rights = { receiver = SOV state = 411 }
+				}
+			}
+                }
+}
+}

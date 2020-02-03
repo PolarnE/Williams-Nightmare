@@ -1,0 +1,27 @@
+
+state={
+	id=840
+	name="Willemshaven"
+	manpower = 414231
+	
+	state_category = rural
+	
+	history={
+		add_core_of = MAD
+		owner = HOL
+		victory_points = {
+			2200 1
+		}
+		buildings = {
+			infrastructure = 3
+			2200 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+	2200 12956
+	}
+}

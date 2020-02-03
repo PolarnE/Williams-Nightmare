@@ -1,0 +1,10 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_frontend_scroll_bg"
+		texturefile = "gfx/interface/frontend_scroll_bg.dds"
+		size= { x=184 y=87 }
+		borderSize = { x=184 y=87 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=848
+	name="Bombay City"
+	manpower=1452131
+	state_category = enclave
+	
+	history={
+		owner = SOV
+		add_core_of = RAJ
+		victory_points = {
+			1349 10 
+		}
+		buildings = {
+			infrastructure = 5
+			1349 = {
+				naval_base = 6
+
+			}
+		}
+
+	}
+	provinces={
+	1349
+	}
+}

@@ -80,6 +80,8 @@ set_popularities = {
 
 set_convoys = 150
 
+give_guarantee = JAP
+
 #create_country_leader = {
 #	name = "Dirk Jan de Geer"
 #	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"

@@ -92,6 +92,12 @@ add_to_faction = SOV
 add_to_faction = MON
 give_guarantee = BUL
 give_guarantee = POL
+give_guarantee = JAP
+diplomatic_relation = {
+	country = PER
+	relation = military_access
+	active = yes
+}
 
 if = {
 	limit = {

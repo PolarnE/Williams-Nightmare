@@ -1,4 +1,4 @@
-﻿capital = 288
+﻿capital = 640
 
 #oob = ""
 
@@ -45,24 +45,24 @@ set_convoys = 5
 	}
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 72
-	fascism = 2
-	communism = 14
-	neutrality = 12
+	democratic = 10
+	fascism = 3
+	communism = 46
+	neutrality = 41
 }
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	
+	name = "Myat Phaya Lat"
+    picture = "Portrait_Burma_Myat_Phaya_Lat.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

@@ -90,6 +90,7 @@ set_popularities = {
 create_faction = duumvirate
 add_to_faction = ENG
 add_to_faction = SWE
+give_guarantee = JAP
 
 # DIPLOMACY
 set_autonomy = {

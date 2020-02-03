@@ -45,6 +45,8 @@ add_ideas = {
 	RSE_tsar_nick
 }
 
+give_guarantee = JAP
+
 if = {
 	limit = {
 		OR = {

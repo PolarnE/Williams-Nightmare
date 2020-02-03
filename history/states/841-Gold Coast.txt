@@ -1,0 +1,34 @@
+state={
+	id=841
+	name="Gold Coast"
+
+	history={
+		owner = HOL
+		add_core_of = GHA
+		victory_points = {
+			10862 1 
+		}
+		victory_points = {
+			10803 1
+		}
+		buildings = {
+			infrastructure = 3
+			10862 = {
+				naval_base = 2
+
+			}
+			10803 = {
+				naval_base = 1
+			}
+
+		}
+
+	}
+
+	provinces={
+	10862 12742 10803
+	}
+	manpower=1823121
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

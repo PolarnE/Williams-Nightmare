@@ -1,0 +1,853 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "spirit_idea_entry_small"
+		size = { width=60 height=66 }
+		clipping = no
+		
+		iconType = {
+			name = "icon"
+			quadTextureSprite ="GFX_idea_unknown"
+			orientation = "CENTER"
+			centerPosition = yes
+			#MODDEDv
+			#scale = 0.55
+			#MODDED^
+		}
+	}
+		
+	editBoxType = {
+		position = { x = 115 y = 485 }
+		name = "game_name"
+		font = "hoi_16mbs"
+		borderSize = { x = 4 y = 8  }
+
+		#MODDEDv			
+		size = { x=198 y=42 }		
+		#MODDED^
+		text = ""	
+		orientation = "UPPER_LEFT"
+	}
+	
+	containerWindowType = {
+		name ="gamesetup_interesting_countries_window"
+			#MODDEDv
+		size = { width=1280 height=717 }		
+			#MODDED^
+		Orientation = center
+		origo = center
+		clipping = no
+		moveable = yes
+		
+		instantTextBoxType = {
+			name = "title"
+			#MODDEDv
+			position = { x = 468 y = 12 }		
+			#MODDED^
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "FE_SELECT_COUNTRY"
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+		
+		background = {
+			name = "single_player_country_bg"
+			quadTextureSprite ="GFX_country_selection_bg"
+		}
+		
+		ButtonType = {
+			name = "back_button"
+			position = { x = -158 y = -52 }
+			quadTextureSprite ="GFX_button_148x34"	
+			buttonText = "BACK"
+			buttonFont = "hoi_18mbs"
+			Orientation = "CENTER_DOWN"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
+		
+		ButtonType = {
+			name = "select_button"
+			position = { x = 10 y = -52 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "FE_SELECT_COUNTRY"
+			buttonFont = "hoi_18mbs"
+			Orientation = "CENTER_DOWN"
+			clicksound = click_default
+			oversound = ui_menu_over
+			shortcut = "RETURN"
+		}			
+
+		containerWindowType = {
+			name ="countries"
+			#MODDEDv
+			position = { x = 13 y = 45 }		
+			#MODDED^
+			size = { width = -15 height = 120}
+			
+			gridboxType = {
+				name ="countries_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+			#MODDEDv
+				slotsize = { width = 138 height = 0 }#Menu 		
+			#MODDED^
+				add_horizontal = yes
+				max_slots_vertical = 1
+				format = "UPPER_LEFT"
+			}	
+			
+		}
+			
+		containerWindowType = {
+			name ="countries_medium"
+			#MODDEDv
+			position = { x = 13 y = 330 }		
+			#MODDED^
+			size = { width = -15 height = 120}
+			
+			gridboxType = {
+				name ="countries_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+			#MODDEDv
+				slotsize = { width = 124 height = 0 }		
+			#MODDED^
+				add_horizontal = yes
+			#MODDEDv
+				max_slots_horizontal = 10
+				#MODDED^														   
+				max_slots_vertical = 1
+				format = "UPPER_LEFT"
+			}
+		}
+
+		containerWindowType = {
+			name ="countries_mini"
+			position = { x = 15 y = 340 }
+			size = { width = -15 height = 120}
+			
+			gridboxType = {
+				name ="countries_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+				slotsize = { width = 54 height = 40 }
+				add_horizontal = yes
+				#MODDEDv
+				max_slots = { x = 23 y = 2 }
+				#MODDED^
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		iconType = {
+			name = "minor_country_leader"
+			quadTextureSprite ="GFX_leader_unknown"
+			position = { x = 309 y = 441 }
+			scale=0.696
+			rotation=-0.04
+		}
+		
+		iconType = {
+				name ="minor_portrait_overlay"
+				spriteType = "GFX_minor_portrait_overlay"
+				position = { x= 300 y = 430 }
+		}
+		
+		
+		instantTextBoxType = {
+			name = "info_title"
+			#MODDEDv
+			position = { x = 38 y = 450 }		
+			#MODDED^
+			font = "STAMP_ALL_CAPS_17"
+			borderSize = {x = 0 y = 0}
+			text = "FE_COUNTRY_INFO_TITLE"
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+		
+		containerWindowType = {
+			name = "info"				
+			position = { x = 35 y = 485 }
+			
+			instantTextBoxType = {
+				name = "leader_label"
+				position = { x = 0 y = -5 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = "LEADER"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "leader"
+				position = { x = 0 y = 12 }
+				textureFile = ""
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = ""
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "ideology_label"
+				position = { x = 0 y = 35 }
+				textureFile = ""
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = "IDEOLOGY"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "ideology"
+				position = { x = 0 y = 52 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "government_label"
+				position = { x = 0 y = 75 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = "GOVERNMENT"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "government"
+				position = { x = 0 y = 92 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = "FE_INTERESTING_COUNTRIES"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "elections_label"
+				position = { x = 0 y = 115 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = "ELECTIONS"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "elections"
+				position = { x = 0 y = 132 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "party_label"
+				position = { x = 0 y = 155 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				text = "RULING_PARTY"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "party"
+				position = { x = 0 y = 172 }
+				font = "hoi_16typewriter"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = left
+			}
+		}
+		
+		instantTextBoxType = {
+			name = "nation_title"
+			#MODDEDv
+			position = { x = 470 y = 429 }		
+			#MODDED^
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+
+		containerWindowType = {
+			name = "spirit"
+			#MODDEDv
+			position = { x = 478 y = 475 }		
+			#MODDED^
+			
+			iconType ={
+				name ="pol_faction_icon"
+				spriteType = "GFX_pol_factions_strip"
+				position = { x= 0 y = 0 }
+				frame = 1
+			}
+			
+			containerWindowType = {
+				name ="ideas"
+				position = { x = 90 y = 0 }
+				size = { width = 100%% height = 70 }
+				
+				gridboxType = {
+					name ="ideas_grid"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 70 }
+					slotsize = { width = 60 height = 66 }
+					max_slots = { x = 3 y = 1 }
+					add_horizontal = yes
+					format = "UPPER_LEFT"
+				}
+			}
+			
+			containerWindowType = {
+				name ="focus"
+				position = { x = 9 y = 85 }
+				size = { width = 100% height = 100 }
+				
+				gridboxType = {
+					name ="focus_grid"
+					position = { x = 17 y = 8 }
+					size = { width = 100% height = 100 }
+					slotsize = { width = 105 height = 100 }
+					max_slots = { x = 4 y = 1 }
+					add_horizontal = yes
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+		
+		instantTextBoxType = {
+			name = "history_title"
+			#MODDEDv
+			position = { x = 865 y = 450 }		
+			#MODDED^
+			font = "hoi_16typewriter" #MODDED
+			borderSize = { x = 0 y = 0 }
+			text = "FE_COUNTRY_HISTORY_TITLE"
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "history"
+			#MODDEDv
+			position = { x = 835 y = 480 }	
+			#MODDED^
+			font = "hoi_16typewriter" #MODDED
+			borderSize = {x = 0 y = 0}
+			maxWidth = 410
+			maxHeight = 30	
+			format = left
+		}
+	}
+	containerWindowType = {
+		name = "spirit_modifier_entry_small"
+		size = { width=60 height=66 }
+		clipping = no
+		
+		iconType = {
+			name = "icon"
+			quadTextureSprite ="GFX_idea_unknown"
+			orientation = "CENTER"
+			centerPosition = yes
+		}
+		
+		iconType = {
+			name = "flag"
+			position = { x = 18 y = 35 }
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe"
+			orientation = "UPPER_LEFT"
+		}
+	}
+	containerWindowType = {
+		name ="gamesetup_country_details"
+		position = { x=20 y =-490}
+		show_position = { x=20 y =90}
+		animation_type = decelerated
+		animation_time = 1000		
+		size = { width=492 height=301}
+		Orientation = upper_right
+		origo = upper_right
+		show_sound = menu_open_window
+		hide_sound = menu_close_window
+		
+		background={
+			name ="background"
+			spriteType = "GFX_lobby_right_sidepanel_bg"
+		}
+		
+		iconType = {
+			name = "country_leader"
+			quadTextureSprite ="GFX_leader_unknown"
+			position = { x = 30 y = 20 }
+			scale=0.4
+		}
+
+		iconType = {
+			name = "country_leader_frame"
+			quadTextureSprite ="GFX_naval_unit_leader_frame"
+			position = { x = 27 y = 16 }
+		}
+		
+		iconType ={
+			name ="pol_faction_icon"
+			spriteType = "GFX_pol_factions_strip"
+			position = { x= 105 y = 30 }
+			#Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+		
+		gridboxtype = {
+			name = "spirit_grid"
+			position = { x = 250 y = 30 }
+			size = { width = 300 height = 70 }
+			slotsize = { width = 60 height = 68 }
+			max_slots = { x = 8 y = 1 }
+			format = "UPPER_LEFT"
+		}
+		
+		gridboxtype = {
+			name = "spirit_grid_over_defined"
+			#MODDEDv
+			position = { x = 250 y = 30 }		
+			#MODDED^
+			size = { width = 300 height = 70 }
+			#MODDEDv
+			slotsize = { width = 60 height = 68 }
+			max_slots = { x = 3 y = 1 }		
+			#MODDED^
+			format = "UPPER_LEFT"
+		}
+			
+		containerWindowType = {
+			name = "political_pie_chart"
+			position = { x= 185 y = 40 }
+			size = { width=100 height=100 }
+			clipping = no
+
+			iconType = {
+				name = "chart"
+				spriteType = "GFX_political_chart_small"
+				position = { x = 20 y = -3 }
+			}
+			
+			iconType ={
+				name ="pol_view_bg"
+				spriteType = "GFX_small_pol_piechart_overlay"
+				position = { x= -5 y = -5 }
+			}
+			
+			iconType ={
+				name ="piechart_frame"
+				spriteType = "GFX_small_pol_piechart_frame"
+				position = { x= -11 y = -11 }
+			}				
+		}	
+		
+		containerWindowType = {
+			name = "info"				
+			position = { x = 30 y = 140 }
+			
+			instantTextBoxType = {
+				name = "leader_label"
+				position = { x = 0 y = 0 }
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "LEADER"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "leader"
+				position = { x = 60 y = 0 }
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = right
+			}
+			
+			instantTextBoxType = {
+				name = "ideology_label"
+				position = { x = 0 y = 24 }
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "IDEOLOGY"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "ideology"
+				position = { x = 60 y = 24 }
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = right
+			}
+			
+			instantTextBoxType = {
+				name = "government_label"
+				position = { x = 0 y = 48 }
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "GOVERNMENT"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "government"
+				position = { x = 60 y = 48 }
+				textureFile = ""
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = right
+			}
+			
+			instantTextBoxType = {
+				name = "elections_label"
+				position = { x = 0 y = 72 }
+				textureFile = ""
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "POLITICS_NEXTELECTION"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "elections"
+				position = { x = 60 y = 72 }
+				textureFile = ""
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 340
+				format = right
+			}
+			
+			instantTextBoxType = {
+				name = "party_label"
+				position = { x = 0 y = 96 }
+				textureFile = ""
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "RULING_PARTY"
+				maxWidth = 340
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "party"
+				position = { x = 130 y = 96 }
+				textureFile = ""
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 270
+				maxHeight = 20
+				fixedsize = yes
+				format = right
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name ="frontendgamesetupview"
+		position = { x=0 y =0}	
+		size = { width=100% height =100%}
+		clipping = no
+		
+		containerWindowType = {
+			name ="top"
+			position = { x=0 y = -80}
+			show_position = { x=0 y =-30}
+			animation_type = decelerated
+			animation_time = 1000
+			size = { width=102% height =128}
+			clipping = no
+		
+			Background =
+			{
+				name ="top_bg"
+				spriteType = "GFX_tiled_frontend_upper_bar"
+				position = { x=-10 y=0 }
+			}
+
+			containerWindowType = {
+				name ="scenario_window"
+				position = { x=50% y = -80}
+				show_position = { x=50% y =-30}
+				animation_type = decelerated
+				animation_time = 1000
+				size = { width=340 height =128}
+				clipping = no
+
+				iconType ={
+					name ="menu_top_date_bg"
+					spriteType = "GFX_menu_top_bg_bg"
+					position = { x= -196 y = 54 }
+				}	
+				
+				instantTextBoxType = {
+					name = "date"
+					position = { x = -170 y = 65 }
+					font = "hoi_24header"
+					borderSize = {x = 4 y = 4}
+					text = "Pikku Saippuakauppias Itkee!!"	
+					maxWidth = 340
+					maxHeight = 30	
+					format = centre
+				}
+				
+				instantTextBoxType = {
+					name = "name"
+					position = { x = -184 y = 85 }
+					font = "hoi_24header"
+					borderSize = {x = 4 y = 4}
+					text = "Pikku Saippuakauppias Itkee!!"	
+					maxWidth = 360
+					maxHeight = 23	
+					format = centre
+					fixedsize = yes
+				}
+				
+				ButtonType = {
+					name = "scenario_button"
+					position = { x = -136 y = 115 }
+					quadTextureSprite ="GFX_button_261x34"	
+					buttonText = "FE_CHANGE_SCENARIO"
+					buttonFont = "hoi_20b"
+					clicksound = click_ok
+					shortcut = "c"
+				}
+				
+				# 1st BUTTON (BIG)
+				buttonType = {
+					name = "mapmode_button_1"
+					position = { x=-50 y=160 }	
+					quadTextureSprite ="GFX_lobby_country_mapmode_strip"
+					clicksound = land_mapmode
+					shortcut = "F1"
+					pdx_tooltip = "MAPMODE_DEFAULT"
+					pdx_tooltip_delayed = "MAPMODE_DEFAULT_DESCRIPTION"
+					frame = 1
+				}
+				buttonType = {
+					name = "mapmode_button_1_s"
+					position = { x=-50 y=160 }	
+					quadTextureSprite ="GFX_lobby_country_mapmode_strip_selected"
+					shortcut = "F1"
+					pdx_tooltip = "MAPMODE_DEFAULT"
+					pdx_tooltip_delayed = "MAPMODE_DEFAULT_DESCRIPTION"
+					frame = 1					
+				}
+				
+				# 2st BUTTON (BIG)
+				buttonType = {
+					name = "mapmode_button_2"
+					position = { x=20 y=160 }	
+					quadTextureSprite ="GFX_lobby_country_mapmode_strip"
+					clicksound = land_mapmode
+					shortcut = "F2"
+					pdx_tooltip = "MAPMODE_PLAYERS"
+					frame = 2					
+				}
+				buttonType = {
+					name = "mapmode_button_2_s"
+					position = { x=20 y=160 }	
+					quadTextureSprite ="GFX_lobby_country_mapmode_strip_selected"
+					shortcut = "F2"
+					pdx_tooltip = "MAPMODE_PLAYERS"
+					frame = 2						
+				}
+			}
+
+			
+			ButtonType = {
+				name = "interesting_countries_button"
+				position = { x = 40 y = 58 }
+				quadTextureSprite ="GFX_button_261x34"
+				buttonText = "FE_INTERESTING_COUNTRIES"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				oversound = ui_menu_over
+				shortcut = "i"
+			}
+
+			ButtonType = {
+				name = "observer_button"
+				position = { x = 320 y = 49 }
+				quadTextureSprite ="GFX_observer_button"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				oversound = ui_menu_over
+				scale = 0.8
+			}	
+			
+			iconType ={
+				name ="observer_button_overlay"
+				spriteType = "GFX_observer_button_overlay"
+				position = { x = 320 y = 49 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.8
+				alwaystransparent = yes
+			}
+			
+			ButtonType = {
+				position = { x= -487 y = 47 }
+				name = "player_shield"	
+				quadTextureSprite ="GFX_player_flag"
+				Orientation = "UPPER_RIGHT"
+			}
+			
+			iconType ={
+				name ="large_flag_frame"
+				spriteType = "GFX_large_flag_frame"
+				position = { x= -492 y = 45 }
+				Orientation = "UPPER_RIGHT"
+			}
+
+			iconType ={
+				name ="selected_nation_label_bg"
+				spriteType = "GFX_generic_bg"
+				position = { x= -380 y = 46 }
+				Orientation = "UPPER_RIGHT"
+			}			
+			
+			instantTextBoxType = {
+				name = "selected_nation_label"
+				position = { x = -365 y = 55 }
+				textureFile = ""
+				font = "hoi_20bs"
+				borderSize = {x = 0 y = 0}
+				text = "FE_NO_COUNTRY_SELECTED"
+				maxWidth = 240
+				maxHeight = 80
+				#fixedsize = yes
+				format = centre
+				Orientation = "UPPER_RIGHT"
+			}
+			
+			ButtonType = {
+				position = { x= -97 y = 45 }
+				name = "extended_country_button"	
+				quadTextureSprite ="GFX_extended_country_button"
+				Orientation = "UPPER_RIGHT"
+			}			
+			
+		}
+			
+		containerWindowType = {
+			name ="bottom"
+			position = { x=0 y =0}
+			show_position = { x=0 y =-100 }
+			animation_type = decelerated
+			animation_time = 1000				
+			size = { width=102% height =128}
+			Orientation = lower_left	
+			
+			Background ={
+				name ="bottom_win"
+				spriteType = "GFX_tiled_frontend_lower_bar"
+				position = { x=-10 y =0}				
+			}
+			
+			ButtonType = {
+				name = "back_button"
+				position = { x = 20 y = 40 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "MAIN_MENU_BACK"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_close
+				oversound = ui_menu_over
+				shortcut = "ESCAPE"
+			}
+			
+			ButtonType = {
+				name = "load_button"
+				position = { x = 180 y = 40 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "MENU_BAR_LOAD"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				oversound = ui_menu_over
+				shortcut = "l"
+			}
+			
+			ButtonType = {
+				name = "options_button"
+				position = { x = 340 y = 40 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "OPTIONS"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				oversound = ui_menu_over
+				shortcut = "o"
+			}
+
+			iconType = {
+				name = "enabled_achievement_icons"
+				position = { x = -382 y = -115 }
+				quadTextureSprite ="GFX_enabled_achievement_icons"
+				Orientation = "LOWER_RIGHT"
+			}
+			
+			ButtonType = {
+				name = "play_button"
+				position = { x = -300 y = -100 }
+				quadTextureSprite ="GFX_play_button"
+				buttonText = "FE_START"
+				buttonFont = "hoi_30header"
+				Orientation = "LOWER_RIGHT"
+				#clicksound = start_game_01 # Don't add this here. I intentionally removed it because otherwise the sound is played when the client clicks on Ready/Unready button. The sound should only play when the host starts the game (or when it's SP) which is done in the code.  
+				shortcut = "RETURN"
+#				frame = 1
+			}
+			
+			ButtonType = {
+				name = "play_button_ready"
+				position = { x = -300 y = -100 }
+				spriteType ="GFX_play_button_ready"
+				buttonText = "READY"
+				buttonFont = "hoi_30header"
+				Orientation = "LOWER_RIGHT"
+				#clicksound = start_game_01 # Don't add this here. I intentionally removed it because otherwise the sound is played when the client clicks on Ready/Unready button. The sound should only play when the host starts the game (or when it's SP) which is done in the code.  
+				shortcut = "RETURN"
+				frame = 1
+			}	
+
+			iconType = {
+				name = "play_button_checkbox"
+				position = { x = -112 y = -85 }
+				quadTextureSprite ="GFX_generic_checkbox2"
+				Orientation = "LOWER_RIGHT"
+				allwaystransparent = yes
+			}			
+			
+		}
+	}
+}

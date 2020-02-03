@@ -1,0 +1,25 @@
+state={
+	id=849
+	name="Calcutta"
+	manpower=3214523
+	state_category = enclave
+	
+	history={
+		owner = ENG
+		add_core_of = BAN
+		victory_points = {
+			4245 5 
+		}
+		buildings = {
+			infrastructure = 5
+			4245 = {
+				naval_base = 6
+
+			}
+		}
+
+	}
+	provinces={
+	4062 4245 1159
+	}
+}

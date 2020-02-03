@@ -362,6 +362,13 @@ if = {
 	}
 }
 give_guarantee = VAT
+give_guarantee = SIA
+give_guarantee = JAP
+diplomatic_relation = {
+	country = SIA
+	relation = military_access
+	active = yes
+}
 
 add_ideas = {
     FRA_napoleons_legacy
