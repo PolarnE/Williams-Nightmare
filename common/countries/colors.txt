@@ -354,6 +354,27 @@ EGY = {
 	color_ui = rgb { 230 230 70 }
 }
 
+CYR = {
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+
+DAR = {
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+
+CHA = {
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+
+NGR = {
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+
+
 PAL = {
 	color = rgb { 170  125  80 }
 	color_ui = rgb { 170  125  80 }

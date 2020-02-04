@@ -1,0 +1,24 @@
+state={
+	id=862
+	name="N'Djamena"
+
+	history={
+		owner = NGR
+		add_core_of = NGR
+		victory_points = {
+			2081 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+	3123 2081 4897 13138
+	}
+	manpower=351861
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

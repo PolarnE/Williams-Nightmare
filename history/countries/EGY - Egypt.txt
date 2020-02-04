@@ -8,6 +8,73 @@ set_technology = {
 
 set_convoys = 20
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = CYR
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = CYR
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = DAR
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = DAR
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = CHA
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = CHA
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = NGR
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = NGR
+	}
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -91,7 +158,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Farouk Muhammad Ali"
+	name = "Farouk I"
 	desc = ""
 	picture = "portrait_farouk_i.dds"
 	ideology = despotism

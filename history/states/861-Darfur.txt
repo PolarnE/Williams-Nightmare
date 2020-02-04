@@ -1,0 +1,25 @@
+
+state={
+	id=861
+	name="Darfur"
+	manpower = 862341
+	
+	state_category = rural
+	
+	
+	history={
+		victory_points = {
+			8084 1
+		}
+		owner = DAR
+		add_core_of = DAR
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+	 2016 10827 8084 10739 8052
+	}
+}

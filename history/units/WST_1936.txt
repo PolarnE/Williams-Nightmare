@@ -56,7 +56,7 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 		}
-		location = 9507
+		location = 9509
 		division_template = "Infanterie-Abteilung"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1 

@@ -1,14 +1,13 @@
 state={
 	id=775
-	name="STATE_775" # BET - Borkou-Ennedi-Tibesti region
+	name="Borkou-Ennedi-Tibesti" # BET - Borkou-Ennedi-Tibesti region
 	
 	state_category = wasteland
 	impassable = yes
 
 	history={
-		owner = MLI
-		add_core_of = CHA
-		add_core_of = MLI
+		owner = NGR
+		add_core_of = NGR
 		buildings = {
 			infrastructure = 0
 		}

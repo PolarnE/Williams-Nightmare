@@ -215,6 +215,8 @@ FFR = "countries/FreeFrance.txt"
 FRM = "countries/FrenchMauritania.txt"
 FRL = "countries/FrenchLibya.txt"
 FRT = "countries/FrenchTunisia.txt"
+CYR = "countries/Cyrenaica.txt"
+DAR = "countries/Darfur.txt"
 ############MEMES###################################
 JER = "countries/CrasuMOD.txt"
 ############MIDDLE EAST#############################

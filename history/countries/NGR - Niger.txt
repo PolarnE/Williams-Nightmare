@@ -1,4 +1,4 @@
-﻿capital = 781
+﻿capital = 862
 
 # Starting tech
 set_technology = {
@@ -63,4 +63,14 @@ set_popularities = {
 	fascism = 20
 	communism = 5
 	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Farouk of Egypt"
+	desc = ""
+	picture = "gfx//leaders//EGY//portrait_farouk_i.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
 }
