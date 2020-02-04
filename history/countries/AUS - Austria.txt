@@ -22,11 +22,17 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 63
-	fascism = 37
+	neutrality = 32
+	fascism = 28
+	communism = 40
 }
 
-set_stability = 0.50
+add_ideas = {
+AUS_Status_Impios
+AUS_Factionalism
+}
+
+set_stability = 0.30
 
 create_country_leader = {
 	name = "Franz Ferdinand I"
