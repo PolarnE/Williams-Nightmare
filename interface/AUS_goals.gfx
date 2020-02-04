@@ -1,0 +1,206 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_AUS_revise_dezemberverfassung"
+		texturefile = "gfx/interface/goals/AUS_revise_dezemberverfassung.dds"
+	}
+	SpriteType = { 
+		name = "GFX_AUS_Allow_Referendum"
+		texturefile = "gfx/interface/goals/AUS_Allow_Referendum.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Endlosung"
+		texturefile = "gfx/interface/goals/AUS_Endlosung.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Fate_Of_The_Adriatic"
+		texturefile = "gfx/interface/goals/AUS_Fate_Of_The_Adriatic.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_AUS_Join_the_Coallition"
+		texturefile = "gfx/interface/goals/AUS_Join_the_Coallition.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Legalize_Unionist_Movements"
+		texturefile = "gfx/interface/goals/AUS_Legalize_Unionist_Movements.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Reform_Staatsgrundgesetz"
+		texturefile = "gfx/interface/goals/AUS_Reform_Staatsgrundgesetz.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Rewrite_Oktoberdiplom"
+		texturefile = "gfx/interface/goals/AUS_Rewrite_Oktoberdiplom.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_AUS_Split_The_Crown"
+		texturefile = "gfx/interface/goals/AUS_Split_The_Crown.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Suppress_Reactionaries"
+		texturefile = "gfx/interface/goals/AUS_Suppress_Reactionaries.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_United_And_Ready"
+		texturefile = "gfx/interface/goals/AUS_United_And_Ready.dds"
+	}
+	SpriteType = { 
+		name = "GFX_AUS_Seize_Royal_Goods"
+		texturefile = "gfx/interface/goals/AUS_Seize_Royal_Goods.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Reunite_Hungarian_Nobles"
+		texturefile = "gfx/interface/goals/AUS_Reunite_Hungarian_Nobles.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Red_Night"
+		texturefile = "gfx/interface/goals/AUS_Red_Night.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Red_Militia"
+		texturefile = "gfx/interface/goals/AUS_Red_Militia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Quality_Over_Quantity"
+		texturefile = "gfx/interface/goals/AUS_Quality_Over_Quantity.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Modern_Imperialism"
+		texturefile = "gfx/interface/goals/AUS_Modern_Imperialism.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Generic_Gosterism"
+		texturefile = "gfx/interface/goals/AUS_Generic_Gosterism.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_AUS_Cut_Imperialism_Down"
+		texturefile = "gfx/interface/goals/AUS_Cut_Imperialism_Down.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Collectivization"
+		texturefile = "gfx/interface/goals/AUS_Collectivization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Breakthrough_Tactics"
+		texturefile = "gfx/interface/goals/AUS_Breakthrough_Tactics.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Doctrine_Of_War"
+		texturefile = "gfx/interface/goals/AUS_Doctrine_Of_War.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Heavy_Arms"
+		texturefile = "gfx/interface/goals/AUS_Heavy_Arms.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Kill_Czechs"
+		texturefile = "gfx/interface/goals/AUS_Kill_Czechs.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Offer_Protection_To_Czech"
+		texturefile = "gfx/interface/goals/AUS_Offer_Protection_To_Czech.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Cargo"
+		texturefile = "gfx/interface/goals/AUS_Cargo.dds"
+	}
+		SpriteType = { 
+		name = "GFX_AUS_Force_Hungary"
+		texturefile = "gfx/interface/goals/AUS_Force_Hungary.dds"
+	}
+		SpriteType = { 
+		name = "GFX_AUS_Forche_Czech"
+		texturefile = "gfx/interface/goals/AUS_Forche_Czech.dds"
+	}
+		SpriteType = { 
+		name = "GFX_AUS_Quality_Over_Quantity"
+		texturefile = "gfx/interface/goals/AUS_Quality_Over_Quantity.dds"
+	}
+		SpriteType = { 
+		name = "GFX_AUS_Bavaria"
+		texturefile = "gfx/interface/goals/AUS_Bavaria.dds"
+	}
+		SpriteType = {
+		name = "GFX_idea_AUS_Status_Impios"
+		texturefile = "gfx/interface/ideas/idea_AUS_Status_Impios.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Factionalism"
+		texturefile = "gfx/interface/ideas/idea_AUS_Factionalism.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Air_Export_Focus"
+		texturefile = "gfx/interface/ideas/idea_AUS_Air_Export_Focus.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Allow_Foreign_Investors"
+		texturefile = "gfx/interface/ideas/idea_AUS_Allow_Foreign_Investors.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Collectivisation"
+		texturefile = "gfx/interface/ideas/idea_AUS_Collectivisation.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Factionalism_Negative"
+		texturefile = "gfx/interface/ideas/idea_AUS_Factionalism_Negative.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Factionalism_Positive"
+		texturefile = "gfx/interface/ideas/idea_AUS_Factionalism_Positive.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Legalize_Unionists"
+		texturefile = "gfx/interface/ideas/idea_AUS_Legalize_Unionists.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Modern_Imperialism"
+		texturefile = "gfx/interface/ideas/idea_AUS_Modern_Imperialism.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Open_Royal_Deposits"
+		texturefile = "gfx/interface/ideas/idea_AUS_Open_Royal_Deposits.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Open_Royal_Deposits_Plus"
+		texturefile = "gfx/interface/ideas/idea_AUS_Open_Royal_Deposits_Plus.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Principalities_Administration"
+		texturefile = "gfx/interface/ideas/idea_AUS_Principalities_Administration.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Red_Militia"
+		texturefile = "gfx/interface/ideas/idea_AUS_Red_Militia.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_Small_Arms_Manufacturing"
+		texturefile = "gfx/interface/ideas/idea_AUS_Small_Arms_Manufacturing.dds"
+	}	
+		SpriteType = {
+		name = "GFX_idea_AUS_What_Was_Taken"
+		texturefile = "gfx/interface/ideas/idea_AUS_What_Was_Taken.dds"
+	}	
+}

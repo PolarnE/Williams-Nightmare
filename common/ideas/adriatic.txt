@@ -1,0 +1,305 @@
+ideas = {
+	country = {
+				
+		AUS_Status_Impios = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_AUS_Status_Impios
+			
+			modifier = {
+			political_power_factor = -0.3
+			}
+		}
+		
+		AUS_Factionalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = GFX_idea_AUS_Factionalism
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.04
+				fascism_drift = 0.05
+			}
+		}
+		
+		AUS_Air_Export_Focus = {
+			
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Air_Export_Focus
+			
+			removal_cost = -1
+
+			research_bonus = {
+				air_doctrine = 0.05
+			}
+			}
+			
+		AUS_Allow_Foreign_Investors = {
+			
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Allow_Foreign_Investors
+			
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				min_export = 0.05 
+			}
+			}
+			
+		AUS_Collectivisation = {
+			
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Collectivisation
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+			
+			}
+			
+		AUS_Factionalism_Negative = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Factionalism_Negative
+			
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.1
+				communism_drift = -0.05
+				foreign_subversive_activites = -0.75
+			}
+		}
+		
+		AUS_Factionalism_Positive = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Factionalism_Positive
+			
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+				stability_factor = 0.2
+			}
+		}
+		
+		AUS_Legalize_Unionists = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Legalize_Unionists
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				communism_drift = 0.1
+			}
+		}
+		
+		AUS_Modern_Imperialism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Modern_Imperialism
+			
+			removal_cost = -1
+
+			modifier = {
+				generate_wargoal_tension = -0.9
+			}
+		}
+		
+		AUS_Open_Royal_Deposits = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Open_Royal_Deposits
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		AUS_Open_Royal_Deposits_Plus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Open_Royal_Deposits_Plus
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		AUS_Principalities_Administration = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Principalities_Administration
+			
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.2
+				political_power_cost = 0.1
+				stability_factor = 0.3
+			}
+		}
+		
+		AUS_Red_Militia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Red_Militia
+			
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
+		AUS_Small_Arms_Manufacturing = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_AUS_Small_Arms_Manufacturing
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+		
+		AUS_What_Was_Taken = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = air_support_focus
+			
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.4
+				war_support_factor = 0.1
+			}
+		}
+	
+}
