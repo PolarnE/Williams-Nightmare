@@ -143,6 +143,32 @@ spriteTypes = {
 		name = "GFX_AUS_Bavaria"
 		texturefile = "gfx/interface/goals/AUS_Bavaria.dds"
 	}
+	
+		SpriteType = { 
+		name = "GFX_AUS_One_Leader_Focus"
+		texturefile = "gfx/interface/goals/AUS_one_leader.dds"
+	}
+	
+		SpriteType = { 
+		name = "GFX_AUS_Reclaim_Galicia_Focus"
+		texturefile = "gfx/interface/goals/AUS_reclaim_galicia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_Reclaim_Dalmatia_Focus"
+		texturefile = "gfx/interface/goals/AUS_reclaim_dalmatia.dds"
+	}
+	
+		SpriteType = { 
+		name = "GFX_AUS_Greater_Germany_Focus"
+		texturefile = "gfx/interface/goals/AUS_greater_germany_solution.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_AUS_One_People_Focus"
+		texturefile = "gfx/interface/goals/AUS_One_People.dds"
+	}
+	
 		SpriteType = {
 		name = "GFX_idea_AUS_Status_Impios"
 		texturefile = "gfx/interface/ideas/idea_AUS_Status_Impios.dds"

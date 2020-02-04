@@ -39,6 +39,75 @@ ideas = {
 			}
 		}
 		
+				AUS_Factionalism_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = GFX_idea_AUS_Factionalism
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.03
+				fascism_drift = 0.03
+				democratic_drift = 0.03
+				conscription_factor = -0.35
+				conscription = -0.005
+			}
+		}
+		
+						AUS_Factionalism_Democratic = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = GFX_idea_AUS_Factionalism
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.03
+				fascism_drift = 0.03
+				democratic_drift = 0.05
+				conscription_factor = -0.35
+				conscription = -0.005
+			}
+		}
+		
+						AUS_Factionalism_Maletist = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = GFX_idea_AUS_Factionalism
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				fascism_drift = 0.03
+				democratic_drift = 0.03
+				conscription_factor = -0.35
+				conscription = -0.005
+			}
+		}
+		
 		AUS_Air_Export_Focus = {
 			
 			allowed = {
