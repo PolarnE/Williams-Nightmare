@@ -9,9 +9,8 @@ state={
 		rubber=2 # was: 3
 	}
 	history={
-		owner = FFR
+		owner = ENG
 		add_core_of = NGA
-		add_core_of = FFR
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
@@ -27,6 +26,6 @@ state={
 	}
 
 	provinces={
-	12817 12731 2050 12900 4952 8034 10831
+	12817 12731 2050 12900
 	}
 }

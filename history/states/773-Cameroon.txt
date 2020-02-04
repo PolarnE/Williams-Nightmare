@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = CHA
+		owner = USA
 		add_core_of = CHA
 		buildings = {
 			infrastructure = 3
@@ -21,6 +21,6 @@ state={
 	}
 
 	provinces={
-		  6039 7963 9137 11194 
+		  6039 7963 9137 11194 1993 13211 9152 8078
 	}
 }

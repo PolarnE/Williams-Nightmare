@@ -1,0 +1,21 @@
+state={
+	id=858
+	name="Raqqa"
+	manpower = 127261
+	
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+add_core_of = TUR
+	}
+
+
+	provinces={
+	1606 6883 1634 901 10882 1578 1549 10804 1938 12372
+	}
+}

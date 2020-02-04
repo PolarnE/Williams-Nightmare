@@ -1,16 +1,13 @@
 
 state={
 	id=352
-	name="STATE_352" # Van
+	name="Batman" # Van
 	manpower = 365490
 
 	state_category = rural
 
 	history={
 		owner = TUR
-		victory_points = {
-			6935 1 
-		}
 		buildings = {
 			infrastructure = 3
 		}
@@ -18,6 +15,6 @@ state={
 	}
 
 	provinces={
-		864 1463 6935 7530 10497 12318 12476 
+		864 1463 7530 10497 12318 12476 
 	}
 }

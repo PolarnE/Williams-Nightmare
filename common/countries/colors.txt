@@ -138,7 +138,7 @@ ARG = {
 	color_ui = rgb { 189 204 255 }
 }
 AST = {
-	color = rgb { 57 143 97 }
+	color = rgb { 120 201 120 }
 	color_ui = rgb { 74 186 126 }
 }
 BHU = {
@@ -270,7 +270,7 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 20 133 237 }
+	color = rgb { 66 107 189 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {

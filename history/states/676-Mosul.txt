@@ -11,17 +11,18 @@ state={
 
 
 	history={
-		owner = IRQ
+		owner = TUR
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {
 			10106 1 
 		}
+		add_core_of = TUR
 		add_core_of = IRQ
 	}
 	
 	provinces={
-		1600 3916 5014 6826 8123 10106 10793 10811
+		1600 3916 5014 10106 10811
 	}
 }

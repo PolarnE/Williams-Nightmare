@@ -1,0 +1,20 @@
+state={
+	id=859
+	name="Outer Mosul"
+	manpower = 372643
+	
+	state_category = rural
+
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = IRQ
+	}
+
+
+	provinces={
+	10793 8123 6826
+	}
+}

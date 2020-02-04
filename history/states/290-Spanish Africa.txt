@@ -15,12 +15,18 @@ state={
 		owner = SPR
 		add_core_of = MOR
 		victory_points = {
-			9945 5 
+			9945 5
+		}
+		victory_points = {
+			12100 1
 		}
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 			12100 = {
+				naval_base = 3
+			}
+			9945 = {
 				naval_base = 3
 			}
 		}
