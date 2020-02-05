@@ -57,6 +57,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Arthur Seyss-Inquart"
+	desc = ""
+	picture = "portrait_Seyss_Inquart.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+create_country_leader = {
 	name = "Adolf Hitler"
 	desc = ""
 	picture = "portrait_Adolf_Hitler.dds"
@@ -65,6 +74,17 @@ create_country_leader = {
 	traits = {
 	adolf_hitler_trait_1
 	adolf_hitler_trait_2
+	}
+}
+
+create_country_leader = {
+	name = "Ignace Reiss"
+	desc = "POLITICS_IGNACE_REISS_DESC"
+	picture = "portrait_Ignace_Reiss.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
 	}
 }
 
