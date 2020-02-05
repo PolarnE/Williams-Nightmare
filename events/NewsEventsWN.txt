@@ -6,7 +6,7 @@ news_event = {
 	id = newsWN.1
 	title = newsWN.1.t
 	desc = newsWN.1.d
-	picture = GFX_NE_Pobeda_Good
+	picture = GFX_newsWN_event_001
 	
 	major = yes
 	
@@ -49,7 +49,7 @@ news_event = {
 	id = newsWN.2
 	title = newsWN.2.t
 	desc = newsWN.2.d
-	picture = GFX_NE_Pobeda_Bad
+	picture = GFX_news_event_hindenburg_intact
 	
 	major = yes
 	
@@ -60,47 +60,25 @@ news_event = {
 	}
 	
 	option = {
-		name = newsWN.2.f
-		trigger = { is_in_faction_with = FRA NOT = { TAG = SOV } NOT = { TAG = RSE } }
-	}
-	option = {
-		name = newsWN.2.r
-		trigger = { TAG = RSE }
-	}
-	option = {
 		name = newsWN.2.a
-		trigger = { NOT = { TAG = SOV } NOT = { TAG = FRA } NOT = { TAG = RSE }  NOT = { is_in_faction_with = FRA } NOT = { is_in_faction_with = SOV } }
-	}
-	option = {
-		name = newsWN.2.b
-		trigger = { TAG = SOV }
-	}
-
-	option = {
-		name = newsWN.2.c
-		trigger = {
-			is_in_faction_with = SOV
-			NOT = {
-				tag = SOV
-			} 
-		}
 	}
 }
 
 ####### HIDDEN TRIGGERS #######
 # Russian Zeppelin probability TRIGGER
 news_event = {
-	id = newsWN.H1
+	id = newsWN.1
 	hidden = yes
 	
 	fire_only_once = yes
 	
 	trigger = {
 		date > 1936.5.5
+		date < 1937.5.5
 		country_exists = SOV
 		country_exists = FRA
 		SOV = { has_war = no }
-		FRA = { has_war = no }
+		SOV = { has_war = no }
 		NOT = { has_global_flag = rip_rus_zeppelin }
 		NOT = { has_global_flag = hooray_rus_zeppelin }
 	}
@@ -111,11 +89,10 @@ news_event = {
 	
 	immediate = {
 		random_list = {
-			50 = { SOV = { news_event = { id = newsWN.2 } } }
 			50 = { SOV = { news_event = { id = newsWN.1 } } }
+			50 = { SOV = { news_event = { id = newsWN.2 } } }
 		}
 	}
-	
 	
 	option = {
 		name = TnewsWN.1.a
@@ -295,34 +272,6 @@ news_event = {
 		}
 	option = {
 		name = newsWN.8.c #guatemala
-		trigger = { original_tag = GUA }
-		}
-}
-
-# Austria goes communist
-news_event = {
-	id = newsWN.9
-	title = newsWN.9.t
-	desc = newsWN.9.desc
-	picture = GFX_newsWN_event_Austria_Is_Communist
-	fire_only_once = yes
-	
-	major = yes
-	
-	trigger = {
-		country_exists = AUS
-		AUS = { has_government = communism }
-		}
-	option = {
-		name = newsWN.9.a #everyone
-		trigger = { NOT = { original_tag = GUA original_tag = GUA } }
-		}
-	option = {
-		name = newsWN.9.b #france
-		trigger = { original_tag = FRA }
-		}
-	option = {
-		name = newsWN.9.c #guatemala
 		trigger = { original_tag = GUA }
 		}
 }
