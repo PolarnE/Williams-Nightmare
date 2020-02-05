@@ -15,6 +15,8 @@ country_event = {
 		date > 1936.2.24
 	}
 	
+	mean_time_to_happen = { hours = 6 }
+	
 	option = {
 		name = austria.1.a
 		set_country_flag = flag_franz_ferdinand_died
@@ -109,5 +111,34 @@ option = {
 	ideology = communism
 	popularity = 0.15
 }
+		}
+}
+
+# Ustase Revolt
+country_event = {
+	id = austria.4
+	title = austria.4.t
+	desc = austria.4.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = AUS
+		has_country_flag = flag_hitler_is_prime_minister
+	}
+	
+	mean_time_to_happen = {
+		days = 42
+	}
+	
+	option = {
+		name = austria.4.a
+		set_country_flag = flag_ustase_revolt
+	CRO = { transfer_state = 109 load_oob = CRO_ustase_revolt }
+	declare_war_on = {
+			target = CRO
+			type = annex_everything
+			}
 		}
 }
