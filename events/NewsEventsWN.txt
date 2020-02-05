@@ -115,14 +115,6 @@ news_event = {
 			50 = { SOV = { news_event = { id = newsWN.1 } } }
 		}
 	}
-		immediate = {
-		random_list = {
-			50 = {
-				SOV = { news_event = { id = news.1 } }
-			}
-			50 = { SOV = { news_event = { id = news.2 } } }
-		}
-	}
 	
 	
 	option = {
@@ -303,6 +295,34 @@ news_event = {
 		}
 	option = {
 		name = newsWN.8.c #guatemala
+		trigger = { original_tag = GUA }
+		}
+}
+
+# Austria goes communist
+news_event = {
+	id = newsWN.9
+	title = newsWN.9.t
+	desc = newsWN.9.desc
+	picture = GFX_newsWN_event_Austria_Is_Communist
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		country_exists = AUS
+		AUS = { has_government = communism }
+		}
+	option = {
+		name = newsWN.9.a #everyone
+		trigger = { NOT = { original_tag = GUA original_tag = GUA } }
+		}
+	option = {
+		name = newsWN.9.b #france
+		trigger = { original_tag = FRA }
+		}
+	option = {
+		name = newsWN.9.c #guatemala
 		trigger = { original_tag = GUA }
 		}
 }
