@@ -1,0 +1,55 @@
+﻿add_namespace = maratha
+
+#Time to take Mysore!!!
+country_event = {
+	id = maratha.1
+	title = maratha.1.t
+	desc = maratha.1.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	option = {
+		name = maratha.1.a
+	MYS = { country_event = { id = mysore.1 hours = 6 } }
+		}
+	}
+
+#France backs Mysore
+country_event = {
+	id = maratha.2
+	title = maratha.2.t
+	desc = maratha.2.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = maratha.2.a
+	add_political_power = -100
+	add_popularity = {
+	ideology = communism
+	popularity = -0.05
+}
+set_truce = { target = FRA days = 250 }
+set_truce = { target = MYS days = 250 }
+		}
+	}
+	
+#France leaves Mysore to die
+country_event = {
+	id = maratha.3
+	title = maratha.3.t
+	desc = maratha.3.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+
+	option = {
+		name = maratha.3.a
+	declare_war_on = {
+			target = MYS
+			type = annex_everything
+			}
+		}
+	}

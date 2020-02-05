@@ -1,0 +1,22 @@
+﻿l_english:
+  #il include mysore in this too because theyre both basically the same country
+  ##demanding french mysore
+  maratha.1.t:0 "France is Distracted"
+  maratha.1.d:0 "With the Great Depression kicking off in Europe we've got a golden opportunity to expand the Maletist revolution to our brothers and sisters in Mysore, due to their isolated position and relative lack of power against France our generals are confident there will not be a response from them. It could even cause the collapse of their disgusting Empire as a whole by encouraging their many subjects to rise up in defiance."
+  maratha.1.a:0 "For a united Hindustan!"
+  mysore.1.t:0 "An Interesting Offer"
+  mysore.1.d:0 "A diplomat from the Marathan Socialist People's Republic has came to us with an interesting offer, we 'free ourselves from the shackles of France' and join them in their Maletist revolution. Whilst we do have very limited power under 'protection' by France surrendering our indepence and most likely getting the royal family murdered by these revolutionaries isn't appealing to some of our government."
+  mysore.1.a:0 "For a united Hindustan!"
+  mysore.1.b:0 "Request France for support against the vile Maletists."
+  mysore.2.t:0 "France Backs Us"
+  mysore.2.d:0 "The French government, like we predicted, quickly responded to our request and have publicly stated that their protectorate over us will remain despite their current economic crisis to the dismay of the Marathans."
+  mysore.2.a:0 "We knew we could trust them."
+  mysore.3.t:0 "France Abandons Us"
+  mysore.3.d:0 "The French government seems to have entirely ignored our request, not even sending any response at all. This essentially guarantees the destruction of our state but we will still fight on despite the poor odds."
+  mysore.3.a:0 "Traitors."
+  maratha.2.t:0 "Failure in Mysore"
+  maratha.2.d:0 "The French have backed their tiny puppet state of Mysore and then sent us a warning demanding we don't touch them. For now we will have to accept this humiliating defeat as we'd have no hopes in winning a war against them even in their current state, but the next time we're back the French Empire will have fallen and the foolish monarchy all dead."
+  maratha.2.a:0 "Retreat and regroup."
+  maratha.3.t:0 "Mysore Crisis Ends in Victory"
+  maratha.3.d:0 "Whilst the tiny state of Mysore did provide resistance to their ineviatable annexation the French haven't given any indication of their backing of their supposed protectorate. Now's our chance to quickly invade them and incorporate them into our glorious revolution!"
+  maratha.3.a:0 "We're the victors in the end."

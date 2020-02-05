@@ -1,0 +1,52 @@
+﻿add_namespace = mysore
+
+#Maratha demands our annexation
+country_event = {
+	id = mysore.1
+	title = mysore.1.t
+	desc = mysore.1.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	option = {
+		name = mysore.1.a #union with maratha
+        ai_chance = { base = 50 }
+		RAJ = { annex_country = { target = MYS transfer_troops = yes } }
+		}
+	option = {
+		name = mysore.1.b #request french support
+        ai_chance = { base = 50 }
+		FRA = { country_event = h1936_france.2 }
+		}
+	}
+	
+#France backs Mysore
+country_event = {
+	id = mysore.2
+	title = mysore.2.t
+	desc = mysore.2.d
+	picture = GFX_report_event_french_liberation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = mysore.2.a #demand they back off
+		RAJ = { country_event = { id = maratha.2 hours = 6 } }
+		}
+	}
+	
+#France abandons Mysore
+country_event = {
+	id = mysore.3
+	title = mysore.3.t
+	desc = mysore.3.d
+	picture = GFX_report_event_generic_ruins
+	
+	is_triggered_only = yes
+
+	option = {
+		name = mysore.3.a #if for some ungodly reason youre playing mysore///you poor man if you get this
+		RAJ = { country_event = { id = maratha.3 hours = 6 } }
+		}
+	}
