@@ -13,28 +13,16 @@ idea_categories = {
 		cost = 0
 		removal_cost = -1
 	}
-
-	psystem = {
-		slot = system
+	
+	government = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
-		slot = education_fund
-		slot = state_of_press
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
 		
 		cost = 150
-		removal_cost = -1
-	}
-	
-	government = {
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		
-		cost = 200
 		removal_cost = -1
 	}
 	
