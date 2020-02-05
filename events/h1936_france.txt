@@ -1,0 +1,43 @@
+﻿add_namespace = h1936_france
+
+#Black Tuesday
+country_event = {
+	id = h1936_france.1
+	title = h1936_france.1.t
+	desc = h1936_france.1.d
+	picture = GFX_report_event_generic_strike
+	
+	is_triggered_only = yes
+
+	option = {
+		name = h1936_france.1.a
+		hidden_effect = {
+		RAJ = { country_event = { id = maratha.1 days = 5 } }
+news_event = { id = newsWN.3 hours = 6 } } }
+	}
+
+#Mysore requests support against Maratha
+country_event = {
+	id = h1936_france.2
+	title = h1936_france.2.t
+	desc = h1936_france.2.d
+	picture = GFX_report_event_generic_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = h1936_france.2.a #the empire will be maintained
+		ai_chance = { base = 60 }
+		add_political_power = -75
+		MYS = { country_event = { id = mysore.2 hours = 6 } }
+		}
+	option = {
+	    name = h1936_france.2.b #theres nothing we can do
+		ai_chance = { base = 40 }
+		set_autonomy = {
+	target = MYS
+	autonomy_state = autonomy_free
+}
+remove_from_faction = MYS
+		MYS = { set_cosmetic_tag = MYS_independent country_event = { id = mysore.3 hours = 6 } }
+	}

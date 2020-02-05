@@ -99,7 +99,7 @@ news_event = {
 	}
 }
 
-# Paris Stock Market Crash
+# Paris Stock Market Crash - IMPORTANT - BEING CHANGED TO GET TRIGGERED BY A CONFED. RHINE EVENT
 news_event = {
 	id = newsWN.3
 	title = newsWN.3.t
@@ -108,13 +108,7 @@ news_event = {
 	
 	major = yes
 	
-	trigger = {
-		date > 1936.2.4
-		country_exists = FRA
-		NOT = { has_global_flag = global_paris_stock_market_crash }
-	}
-	
-	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
 	
 	immediate = {
 		set_global_flag = global_paris_stock_market_crash
@@ -274,4 +268,20 @@ news_event = {
 		name = newsWN.8.c #guatemala
 		trigger = { original_tag = GUA }
 		}
+}
+
+# Confed. Rhine defaults Hungary - IMPORTANT - BEING CHANGED TO GET TRIGGERED BY A CONFED. RHINE EVENT
+news_event = {
+	id = newsWN.9
+	title = newsWN.9.t
+	desc = newsWN.9.desc
+	picture = GFX_news_event_017
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = newsWN.9.a #eh this will blow over ;)
+	}
 }
