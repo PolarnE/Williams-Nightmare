@@ -6,7 +6,7 @@ news_event = {
 	id = newsWN.1
 	title = newsWN.1.t
 	desc = newsWN.1.d
-	picture = GFX_newsWN_event_001
+	picture = GFX_NE_Pobeda_Good
 	
 	major = yes
 	
@@ -49,7 +49,7 @@ news_event = {
 	id = newsWN.2
 	title = newsWN.2.t
 	desc = newsWN.2.d
-	picture = GFX_news_event_hindenburg_intact
+	picture = GFX_NE_Pobeda_Bad
 	
 	major = yes
 	
@@ -67,18 +67,17 @@ news_event = {
 ####### HIDDEN TRIGGERS #######
 # Russian Zeppelin probability TRIGGER
 news_event = {
-	id = newsWN.1
+	id = newsWN.H1
 	hidden = yes
 	
 	fire_only_once = yes
 	
 	trigger = {
 		date > 1936.5.5
-		date < 1937.5.5
 		country_exists = SOV
 		country_exists = FRA
 		SOV = { has_war = no }
-		SOV = { has_war = no }
+		FRA = { has_war = no }
 		NOT = { has_global_flag = rip_rus_zeppelin }
 		NOT = { has_global_flag = hooray_rus_zeppelin }
 	}

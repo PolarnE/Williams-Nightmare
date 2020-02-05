@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_NE_Pobeda_Good"
+		texturefile = "gfx/event_pictures/newsWN_event_Pobeda_Good.dds"
+	}	
+	spriteType = {
+		name = "GFX_NE_Pobeda_Bad"
+		texturefile = "gfx/event_pictures/newsWN_event_Pobeda_Bad.dds"
+	}	
+}
