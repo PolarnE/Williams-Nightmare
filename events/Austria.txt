@@ -142,3 +142,40 @@ country_event = {
 			}
 		}
 }
+
+# Brief History
+country_event = {
+	id = austria.5
+	title = austria.5.t
+	desc = austria.5.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = AUS
+	}
+	
+	mean_time_to_happen = {
+	hours = 2
+	}
+	
+	option = {
+		name = austria.5.a
+		country_event = austria.6
+		}
+}
+
+# Brief History 2
+country_event = {
+	id = austria.6
+	title = austria.6.t
+	desc = austria.6.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.6.a
+		}
+}

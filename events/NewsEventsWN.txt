@@ -6,7 +6,7 @@ news_event = {
 	id = newsWN.1
 	title = newsWN.1.t
 	desc = newsWN.1.d
-	picture = GFX_NE_Pobeda_Good
+	picture = GFX_newsWN_event_001
 	
 	major = yes
 	
@@ -49,7 +49,7 @@ news_event = {
 	id = newsWN.2
 	title = newsWN.2.t
 	desc = newsWN.2.d
-	picture = GFX_NE_Pobeda_Bad
+	picture = GFX_news_event_hindenburg_intact
 	
 	major = yes
 	
@@ -60,47 +60,25 @@ news_event = {
 	}
 	
 	option = {
-		name = newsWN.2.f
-		trigger = { is_in_faction_with = FRA NOT = { TAG = SOV } NOT = { TAG = RSE } }
-	}
-	option = {
-		name = newsWN.2.r
-		trigger = { TAG = RSE }
-	}
-	option = {
 		name = newsWN.2.a
-		trigger = { NOT = { TAG = SOV } NOT = { TAG = FRA } NOT = { TAG = RSE }  NOT = { is_in_faction_with = FRA } NOT = { is_in_faction_with = SOV } }
-	}
-	option = {
-		name = newsWN.2.b
-		trigger = { TAG = SOV }
-	}
-
-	option = {
-		name = newsWN.2.c
-		trigger = {
-			is_in_faction_with = SOV
-			NOT = {
-				tag = SOV
-			} 
-		}
 	}
 }
 
 ####### HIDDEN TRIGGERS #######
 # Russian Zeppelin probability TRIGGER
 news_event = {
-	id = newsWN.H1
+	id = newsWN.1
 	hidden = yes
 	
 	fire_only_once = yes
 	
 	trigger = {
 		date > 1936.5.5
+		date < 1937.5.5
 		country_exists = SOV
 		country_exists = FRA
 		SOV = { has_war = no }
-		FRA = { has_war = no }
+		SOV = { has_war = no }
 		NOT = { has_global_flag = rip_rus_zeppelin }
 		NOT = { has_global_flag = hooray_rus_zeppelin }
 	}
@@ -111,19 +89,10 @@ news_event = {
 	
 	immediate = {
 		random_list = {
-			50 = { SOV = { news_event = { id = newsWN.2 } } }
 			50 = { SOV = { news_event = { id = newsWN.1 } } }
+			50 = { SOV = { news_event = { id = newsWN.2 } } }
 		}
 	}
-		immediate = {
-		random_list = {
-			50 = {
-				SOV = { news_event = { id = news.1 } }
-			}
-			50 = { SOV = { news_event = { id = news.2 } } }
-		}
-	}
-	
 	
 	option = {
 		name = TnewsWN.1.a
