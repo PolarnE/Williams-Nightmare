@@ -1,0 +1,45 @@
+add_namespace = siam
+
+#Great Depression hits Siam
+country_event = {
+	id = siam.1
+	title = siam.1.t
+	desc = siam.1.d
+	picture = GFX_report_event_aid_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = siam.1.a #stop paying tribute
+		remove_ideas = SIA_french_tribute
+		FRA = { country_event = { id = h1936_france.3 hours = 6 } }
+		}
+	}
+	
+#France revokes protection
+country_event = {
+	id = siam.2
+	title = siam.2.t
+	desc = siam.2.d
+	picture = GFX_report_event_aid_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = siam.2.a #were surrounded by enemies
+		}
+	}
+	
+#France takes pity
+country_event = {
+	id = siam.3
+	title = siam.3.t
+	desc = siam.3.d
+	picture = GFX_report_event_aid_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = siam.3.a #were surrounded by enemies
+		}
+	}
