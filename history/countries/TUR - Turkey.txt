@@ -133,11 +133,12 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	neutrality = 90
+	democratic = 51
+	communism = 7
+	neutrality = 42
 }
 
 set_convoys = 20
