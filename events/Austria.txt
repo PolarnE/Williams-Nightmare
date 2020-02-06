@@ -183,3 +183,26 @@ country_event = {
 		name = austria.6.a
 		}
 }
+
+#Great Depression hits Austria
+country_event = {
+	id = austria.7
+	title = austria.7.t
+	desc = austria.7.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.7.a
+		add_stability = -0.3
+			add_popularity = {
+	ideology = communism
+	popularity = 0.1
+}
+		add_popularity = {
+	ideology = fascism
+	popularity = 0.1
+}
+		}
+}

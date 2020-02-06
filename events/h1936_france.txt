@@ -10,8 +10,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+	hidden_effect = {
 	RAJ = { country_event = { id = maratha.1 days = 5 } }
-		SIA = { country_event = { id = siam.1 days = 2 } }
+	SIA = { country_event = { id = siam.1 days = 2 } }
+	AUS = { country_event = { id = austria.7 days = 2 } }
+	}
 	}
 
 	option = {

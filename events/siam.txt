@@ -40,6 +40,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = siam.3.a #were surrounded by enemies
+		name = siam.3.a #based
 		}
 	}
