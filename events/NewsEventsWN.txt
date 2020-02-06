@@ -6,7 +6,7 @@ news_event = {
 	id = newsWN.1
 	title = newsWN.1.t
 	desc = newsWN.1.d
-	picture = GFX_newsWN_event_001
+	picture = GFX_newsWN_event_Pobeda_Good
 	
 	major = yes
 	
@@ -49,7 +49,7 @@ news_event = {
 	id = newsWN.2
 	title = newsWN.2.t
 	desc = newsWN.2.d
-	picture = GFX_news_event_hindenburg_intact
+	picture = GFX_newsWN_event_Pobeda_Bad
 	
 	major = yes
 	

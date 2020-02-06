@@ -3188,7 +3188,7 @@
  newsWN.1.f:0 "Maybe it'd be better to see it in flames..."
  newsWN.2.t:0 "Pobeda Disaster"
  newsWN.2.d:0 "A few hours ago disaster has happened. 'Pobeda' Russian zeppelin burnt in flames taking with it 70 people whole world mourns now. Ironically, announced to be Titanic of The Skies, 'Pobeda' repeated it's tragedy. It's skeleton has fallen to the shallow Mediterranean sea.\nThe trip which was started from Vladivostok was the innovative First Class zeppelin flight, reserved for the richest authorities from the continents of Europe and Asia.\nPresident Lev Davidovich has sent condolences to all victims' families, ordering to abandon ambitious plans of zeppelin production program - promising it will never happen again."
- newsWN.2.a:0 "[Root.GetName] sends condolences to Russians."
+ newsWN.2.a:0 "[From.GetName] sends condolences to Russians."
  newsWN.2.b:0 "Terrible. But we must go on, don't stop."
  newsWN.2.c:0 "Is the world ending?"
  newsWN.2.r:0 "Even they don't deserve such tragedy."
