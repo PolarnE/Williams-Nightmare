@@ -1,6 +1,6 @@
 ﻿add_namespace = h1936_france
 
-#Black Tuesday
+#Great Depression
 country_event = {
 	id = h1936_france.1
 	title = h1936_france.1.t
@@ -8,11 +8,15 @@ country_event = {
 	picture = GFX_report_event_generic_strike
 	
 	is_triggered_only = yes
+	
+	immediate = {
+	RAJ = { country_event = { id = maratha.1 days = 5 } }
+		SIA = { country_event = { id = siam.1 days = 2 } }
+	}
 
 	option = {
 		name = h1936_france.1.a
 		hidden_effect = {
-		RAJ = { country_event = { id = maratha.1 days = 5 } }
 news_event = { id = newsWN.3 hours = 6 } } }
 	}
 
@@ -40,4 +44,34 @@ country_event = {
 }
 remove_from_faction = MYS
 		MYS = { set_cosmetic_tag = MYS_independent country_event = { id = mysore.3 hours = 6 } }
+	} }
+	
+#Siam can't pay tribute
+country_event = {
+	id = h1936_france.3
+	title = h1936_france.3.t
+	desc = h1936_france.3.d
+	picture = GFX_report_event_generic_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = h1936_france.3.a #cut off their end of the deal
+		ai_chance = { base = 50 }
+		diplomatic_relation = {
+    country = SIA
+    relation = guarantee
+    active = no
+}
+diplomatic_relation = {
+    country = SIA
+    relation = military_access
+    active = no
+}
+		SIA = { country_event = { id = siam.2 hours = 6 } }
+		}
+	option = {
+	    name = h1936_france.3.b #theyre just trying to get by too
+		ai_chance = { base = 50  }
+		SIA = { country_event = { id = siam.3 hours = 6 } }
 	}

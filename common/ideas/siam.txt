@@ -1,0 +1,33 @@
+ideas = {
+country = {
+
+    	SIA_french_tribute = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+		original_tag = SIA
+			always = yes
+		}
+		
+		removal_cost = -1
+
+		picture = generic_deal_with_the_devil2
+		
+		modifier = {
+		political_power_cost = 0.1
+		consumer_goods_factor = 0.05
+		}
+		
+		targeted_modifier = {
+		tag = FRA
+		political_power_cost = -0.1
+consumer_goods_factor = -0.05		}
+	}
+
+}
+
+}

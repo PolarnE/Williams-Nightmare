@@ -2648,3 +2648,6 @@
  censored_press:0 "Censored Press"
  state_press:0 "State Controlled Press"
  propaganda_press:0 "Propaganda Press"
+ ####################FRENCH TRIBUTE - SIAM - MOVE TO THEIR OWN LOCALISATION FILE
+ SIA_french_tribute:0 "French Tribute"
+ SIA_french_tribute_desc:0 "Ever since the Paris Conference we've been a de facto French tributary state, France provides us with protection whilst we pay tribute to them. This agreement has worked out well so far and will continue to unless we experience an economic disaster."
