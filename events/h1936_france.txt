@@ -14,6 +14,7 @@ country_event = {
 	RAJ = { country_event = { id = maratha.1 days = 5 } }
 	SIA = { country_event = { id = siam.1 days = 2 } }
 	AUS = { country_event = { id = austria.7 days = 2 } }
+	FRA = { country_event = { id = h1936_france.4 days = 7 } }
 	}
 	}
 
@@ -78,3 +79,25 @@ diplomatic_relation = {
 		ai_chance = { base = 50  }
 		SIA = { country_event = { id = siam.3 hours = 6 } }
 	}
+	
+#Catalonian Uprising - cba rna il do it later 
+#country_event = {
+#	id = h1936_france.4
+#	title = h1936_france.4.t
+#	desc = h1936_france.4.d
+#	picture = GFX_report_event_generic_strike
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#	hidden_effect = {
+#	RAJ = { country_event = { id = maratha.1 days = 5 } }
+#	SIA = { country_event = { id = siam.1 days = 2 } }
+#	AUS = { country_event = { id = austria.7 days = 2 } }
+#	}
+#	}
+#
+#	option = {
+#		name = h1936_france.4.a
+#		}
+#	}

@@ -20,3 +20,24 @@ country_event = {
 		FRA = { country_event = { id = h1936_france.1 days = 7 } }
 news_event = { id = newsWN.9 hours = 6 } } }
 	}
+	
+#Independence from France - cba rn il do it later
+#country_event = {
+#	id = confedrhine.1
+#	title = confedrhine.1.t
+#	desc = confedrhine.1.d
+#	picture = GFX_report_event_communists_cheer
+#
+#	fire_only_once = yes
+#	
+#       trigger = { date > 1936.2.4
+#	country_exists = FRA
+#	NOT = { has_global_flag = global_paris_stock_market_crash } }
+#
+#	option = {
+#		name = confedrhine.1.a
+#		add_political_power = -300
+#		hidden_effect = {
+#		FRA = { country_event = { id = h1936_france.1 days = 7 } }
+#news_event = { id = newsWN.9 hours = 6 } } }
+#	}
