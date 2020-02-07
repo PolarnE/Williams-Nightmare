@@ -1,0 +1,47 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_1"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_2"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_3"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_4"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_5"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_5.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_6"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_6.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Integrity_Isolation"
+		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_Isolation.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Closed_Borders"
+		texturefile = "gfx/interface/ideas/idea_SOV_Closed_Borders.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Slow_Industrialisation"
+		texturefile = "gfx/interface/ideas/idea_SOV_Slow_Industrialisation.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Legacy_Of_Empire"
+		texturefile = "gfx/interface/ideas/idea_SOV_Legacy_Of_Empire.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Lack_Of_Innovation"
+		texturefile = "gfx/interface/ideas/idea_SOV_Lack_Of_Innovation.dds"
+	}
+}
