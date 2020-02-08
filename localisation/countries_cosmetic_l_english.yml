@@ -736,3 +736,6 @@
  GUA_empire_neutrality_ADJ:0 "Guatemalan"
  MYS_independent_neutrality:0 "Kingdom of Mysore"
  MYS_independent_neutrality_DEF:0 "the Kingdom of Mysore"
+ AUS_empire_fascism:0 "Austrian Empire"
+ AUS_empire_fascism_DEF:0 "the Austrian Empire"
+ AUS_empire_fascism_ADJ:0 "Austrian"

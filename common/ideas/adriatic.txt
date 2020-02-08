@@ -370,5 +370,24 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
+		
+		AUS_one_people_spirit = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_generic_reserve_divisions
+			
+			modifier = {
+			conscription = 0.025
+			conscription_factor = 0.1
+			}
+		}
 	
 }

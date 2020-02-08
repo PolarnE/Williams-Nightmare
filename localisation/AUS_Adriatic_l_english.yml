@@ -17,6 +17,18 @@ austria.4.a:0 "We will crush these impertinent fools."
 austria.7.t:0 "Great Depression Hits the Adriatic Federation"
 austria.7.d:0 "Ever since the rise of Napoleon the economy has never been a strong point of ours, mere days ago the French vassal the Confederation of the Rhine defaulted all debts to Hungary and this has caused an economic crisis that has completely spiralled out of control into a global financial crisis. It was fairly obvious we were going to be hit by this, but when it finally came it hit really hard - popularity in fascism and maletism has exploded and once peaceful streets have devolved into complete chaos. It will take strong leadership and determination to solve the biggest economic crisis this world has ever seen."
 austria.7.a:0 "This is a disaster!"
+austria.8.t:0 "Parliament Passes the National Security Act"
+austria.8.d:0 "The latest policy proposed by Hitler is an extremely controversial one, called the National Security Act it gives full political control of the Adriatic Federation to GOVP and almost certainly guarantees an end to the parliament institution.\nDue to the larger and larger amount of Gosters in the Parliament they have finally succeeded in passing this controversial reform, Hitler was quick to make a speech about its passing - claim that this is the shining beacon and will guide the Austrians to a new and greater future.\nWith this passing, many prominent anti-fascist politicians are fleeing the country and many experts believe this is only the beginning in Hitler's consolidation of power."
+austria.8.a:0 "Lang lebe der Premierminister!"
+austria.9.t:0 "Hitler Named Prime Minister for Life"
+austria.9.d:0 "In a second act of tyranny, Hitler has taken his goals of cementing political control over the Adriatic Federation further to fruition.\nMere hours ago the rump Parliament has unanimously declared Adolf Hitler the Prime Minister for life - frustratingly enough to the insignificant opposition the last hope of stopping a Goster takeover, Emperor Karl, has refused to comment on the issue of the fracturing institution.\nThis has confirmed to many of these politicians that Emperor Karl is a puppet or possibly even supporter of the radical policies that GOVP proposes."
+austria.9.a:0 "Heil Hitler!"
+austria.10.t:0 "Hitler's Speech"
+austria.10.d:0 "One of the greatest skills Adolf Hitler has as a politician is the ability to make really strong and inspiring speeches, this has driven his political career and served him well.\nHours ago, Hitler made a public speech in Vienna where he was quickly able to captivate the crowd with his awe inspiring promises of restoring Austria to its former glory and unite all Germanic peoples of the world under the single Austrian banner. Whilst to an outsider these radical claims are over the top and neigh impossible, Hitler's strong and flamboyant personality has worked heavily in his favour."
+austria.10.a:0 "Nice speech."
+##spirits - done by silvy and crasu
+AUS_one_people_spirit:0 "One People"
+AUS_one_people_spirit_desc:0 "The people of the Adriatic must be united under the great military legacy our nation holds, an all Austrian military will remind the people of our untapped potential!"
 ##most of the tree - done by silvy
 ##Undead Unicorn wuz here---- I fixed MOST of Silv's Rusglish but honestly I got the most important ones and I am bored as nails right now so there are still a few mistakes here and there
 AUS_High_Command_Rotation:0 "High Command Rotation"

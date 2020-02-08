@@ -6,7 +6,7 @@ news_event = {
 	id = newsWN.1
 	title = newsWN.1.t
 	desc = newsWN.1.d
-	picture = GFX_newsWN_event_Pobeda_Good
+	picture = GFX_NE_Pobeda_Good
 	
 	major = yes
 	
@@ -49,7 +49,7 @@ news_event = {
 	id = newsWN.2
 	title = newsWN.2.t
 	desc = newsWN.2.d
-	picture = GFX_newsWN_event_Pobeda_Bad
+	picture = GFX_NE_Pobeda_Bad
 	
 	major = yes
 	
@@ -59,8 +59,31 @@ news_event = {
 		set_global_flag = rip_rus_zeppelin
 	}
 	
+option = {
+		name = newsWN.2.f
+		trigger = { is_in_faction_with = FRA NOT = { TAG = SOV } NOT = { TAG = RSE } }
+	}
+	option = {
+		name = newsWN.2.r
+		trigger = { TAG = RSE }
+	}
 	option = {
 		name = newsWN.2.a
+		trigger = { NOT = { TAG = SOV } NOT = { TAG = FRA } NOT = { TAG = RSE }  NOT = { is_in_faction_with = FRA } NOT = { is_in_faction_with = SOV } }
+	}
+	option = {
+		name = newsWN.2.b
+		trigger = { TAG = SOV }
+	}
+
+	option = {
+		name = newsWN.2.c
+		trigger = {
+			is_in_faction_with = SOV
+			NOT = {
+				tag = SOV
+			} 
+		}
 	}
 }
 

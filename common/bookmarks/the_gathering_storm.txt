@@ -77,7 +77,7 @@ bookmarks = {
 			}		
 		}
 			"USA"={
-			history = "USA_GATHERING_STORM_DESC"
+			history = "USA_lore"
 			ideology = democratic
 			ideas = {
 			}	
@@ -89,7 +89,7 @@ bookmarks = {
 		}
 		
 		"RAJ"={
-			history = "RAJ_GATHERING_STORM_DESC"
+			history = "RAJ_lore"
 			ideology = communism
 			ideas = {
 			}	
