@@ -10,9 +10,9 @@ tag = SOV
 #Focus for Car factories because Russia needs cars and cars need Russias for... uh, nasty things
 focus = { 
 id = SOV_carfactories
-icon = GFX_goal_generic_production
-x = 2
-y = 1
+icon = GFX_RUS_Car_Factories
+x = 1
+y = 0
 cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 
@@ -47,7 +47,7 @@ focus = {
 id = SOV_socialisticeducation
 icon = GFX_focus_prc_agrarian_socialism
 x = 11
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_contactmaletists } 
@@ -62,7 +62,7 @@ focus = {
 id = SOV_smotherautonomies
 icon = GFX_focus_eng_move_to_secure_the_dominions
 x = 19
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_holdomorplan } 
@@ -77,7 +77,7 @@ focus = {
 id = SOV_tverskayastreet
 icon = GFX_goal_generic_wolf_pack
 x = 5
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_capitalistsparadise } 
@@ -92,7 +92,7 @@ focus = {
 id = SOV_fightilliteracy
 icon = GFX_focus_research2
 x = 13
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_enactthefederalconstitution } 
@@ -110,7 +110,7 @@ focus = {
 id = SOV_guardiansofliberty
 icon = GFX_goal_generic_national_unity
 x = 11
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_enactthefederalconstitution } 
@@ -132,7 +132,7 @@ focus = {
 id = SOV_killingthelasteagle
 icon = GFX_focus_hol_war_on_pacifism
 x = 21
-y = 7
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_thereaping } 
@@ -147,7 +147,7 @@ focus = {
 id = SOV_contactmaletists
 icon = GFX_goal_generic_radar
 x = 11
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_guardiansofliberty } 
@@ -163,7 +163,7 @@ focus = {
 id = SOV_grantstateprivileges
 icon = GFX_focus_usa_union_representation_act
 x = 13
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_guardiansofliberty } 
@@ -183,7 +183,7 @@ focus = {
 id = SOV_scientificstipends
 icon = GFX_goal_generic_scientific_exchange
 x = 5
-y = 6
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_urbanization } 
@@ -198,7 +198,7 @@ focus = {
 id = SOV_perfectbalance
 icon = GFX_goal_generic_neutrality_focus
 x = 16
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_grantstateprivileges } 
@@ -219,7 +219,7 @@ focus = {
 id = SOV_militarystockup
 icon = GFX_goal_generic_small_arms
 x = 9
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_siberia } 
@@ -234,7 +234,7 @@ focus = {
 id = SOV_thelastroarofthemotherland
 icon = GFX_focus_hol_united_netherlands
 x = 11
-y = 7
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ministryofstrategy } 
@@ -250,7 +250,7 @@ focus = {
 id = SOV_thereaping
 icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 x = 19
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_smotherautonomies } 
@@ -266,7 +266,7 @@ focus = {
 id = SOV_proletarianarmy
 icon = GFX_focus_YUG_pan_slavic_congress
 x = 11
-y = 6
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_operationredcrew } 
@@ -281,7 +281,7 @@ focus = {
 id = SOV_capitalistsparadise
 icon = GFX_focus_mex_privatisation
 x = 7
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_dominatethemarket } 
@@ -296,7 +296,7 @@ focus = {
 id = SOV_applyleninsreforms
 icon = GFX_focus_generic_military_mission
 x = 19
-y = 1
+y = 0
 cost = 10
 available_if_capitulated = yes 
 mutually_exclusive = { focus = SOV_enactthefederalconstitution } 
@@ -314,7 +314,7 @@ focus = {
 id = SOV_endthereferenduminstitution
 icon = GFX_focus_usa_voter_registration_act
 x = 19
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_applyleninsreforms } 
@@ -329,7 +329,7 @@ focus = {
 id = SOV_onlyus
 icon = GFX_goal_generic_defence
 x = 9
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_industrializatsiya } 
@@ -348,7 +348,7 @@ focus = {
 id = SOV_enactthefederalconstitution
 icon = GFX_focus_generic_military_academy
 x = 13
-y = 1
+y = 0
 cost = 10
 available_if_capitulated = yes 
 mutually_exclusive = { focus = SOV_applyleninsreforms } 
@@ -366,7 +366,7 @@ focus = {
 id = SOV_expandtheprotection
 icon = GFX_goal_generic_build_tank
 x = 15
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_enactthefederalconstitution } 
@@ -386,7 +386,7 @@ focus = {
 id = SOV_dominatethemarket
 icon = GFX_focus_usa_reestablish_the_gold_standard
 x = 7
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_industrializatsiya } 
@@ -409,7 +409,7 @@ focus = {
 id = SOV_industrializatsiya
 icon = GFX_goal_generic_construct_civ_factory
 x = 8
-y = 1
+y = 0
 cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 
@@ -463,7 +463,7 @@ focus = {
 id = SOV_holdomorplan
 icon = GFX_focus_hol_abandon_the_gold_standard
 x = 19
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_endthereferenduminstitution } 
@@ -478,7 +478,7 @@ focus = {
 id = SOV_allwhatweneed
 icon = GFX_goal_generic_occupy_states_ongoing_war
 x = 7
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_navalsupremacy } 
@@ -493,7 +493,7 @@ focus = {
 id = SOV_siberia
 icon = GFX_goal_generic_oil_refinery
 x = 9
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_onlyus } 
@@ -508,7 +508,7 @@ focus = {
 id = SOV_ministryofstrategy
 icon = GFX_goal_generic_cavalry
 x = 9
-y = 6
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_menofsteel } 
@@ -523,7 +523,7 @@ focus = {
 id = SOV_navalsupremacy
 icon = GFX_goal_generic_construct_naval_dockyard
 x = 7
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_capitalistsparadise } 
@@ -538,7 +538,7 @@ focus = {
 id = SOV_menofsteel
 icon = GFX_focus_generic_little_entente
 x = 9
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_militarystockup } 
@@ -553,7 +553,7 @@ focus = {
 id = SOV_urbanization
 icon = GFX_goal_generic_construction2
 x = 5
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_tverskayastreet } 
@@ -568,7 +568,7 @@ focus = {
 id = SOV_silencethenoise
 icon = GFX_focus_eng_imperial_federation
 x = 7
-y = 7
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ministryofstrategy } 
@@ -584,7 +584,7 @@ focus = {
 id = SOV_novgorodindustrialdistrict
 icon = GFX_focus_generic_industry_2
 x = 1
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_lightindustry } 
@@ -620,7 +620,7 @@ focus = {
 id = SOV_ivanovscomplex
 icon = GFX_focus_generic_industry_2
 x = 3
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_heavyindustry } 
@@ -656,7 +656,7 @@ focus = {
 id = SOV_heavyindustry
 icon = GFX_focus_generic_industry_1
 x = 3
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_carfactories } 
@@ -692,7 +692,7 @@ focus = {
 id = SOV_lightindustry
 icon = GFX_focus_generic_industry_1
 x = 1
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_carfactories } 
@@ -728,7 +728,7 @@ focus = {
 id = SOV_focusonaircraft
 icon = GFX_focus_usa_escort_fighters
 x = 1
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_novgorodindustrialdistrict } 
@@ -744,7 +744,7 @@ focus = {
 id = SOV_focusontanks
 icon = GFX_focus_generic_license_production
 x = 3
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ivanovscomplex } 
@@ -760,7 +760,7 @@ focus = {
 id = SOV_bloodynight
 icon = GFX_focus_ger_strike_at_the_source
 x = 22
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_endthereferenduminstitution } 
@@ -775,7 +775,7 @@ focus = {
 id = SOV_secularisethestate
 icon = GFX_focus_mex_triumph_over_the_cristeros
 x = 13
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_grantstateprivileges } 
@@ -793,7 +793,7 @@ focus = {
 id = SOV_openborders
 icon = GFX_focus_hol_the_foundations_of_defense
 x = 16
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_expandtheprotection } 
@@ -808,7 +808,7 @@ focus = {
 id = SOV_whatwevebecome
 icon = GFX_focus_mex_support_general_cedillo
 x = 22
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_bloodynight } 
@@ -823,7 +823,7 @@ focus = {
 id = SOV_nomercy
 icon = GFX_focus_rom_abdicate
 x = 22
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_whatwevebecome } 
@@ -839,7 +839,7 @@ focus = {
 id = SOV_operationredcrew
 icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
 x = 11
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_socialisticeducation } 
@@ -854,7 +854,7 @@ focus = {
 id = SOV_internationale
 icon = GFX_focus_ger_great_red_menace
 x = 13
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_socialisticeducation } 
@@ -869,7 +869,7 @@ focus = {
 id = SOV_struggleofthebear
 icon = GFX_focus_eng_expose_the_belly_of_the_bear
 x = 13
-y = 7
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_therighteousrevolution } 
@@ -885,7 +885,7 @@ focus = {
 id = SOV_therighteousrevolution
 icon = GFX_focus_generic_join_comintern
 x = 13
-y = 6
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_internationale } 
@@ -900,7 +900,7 @@ focus = {
 id = SOV_humilityandwork
 icon = GFX_focus_ger_great_red_menace
 x = 17
-y = 7
+y = 6
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_therighteousrevolution } 
@@ -916,7 +916,7 @@ focus = {
 id = SOV_savethetradition
 icon = GFX_focus_generic_self_management
 x = 16
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_perfectbalance } 
@@ -931,7 +931,7 @@ focus = {
 id = SOV_oneandall
 icon = GFX_goal_generic_national_unity
 x = 16
-y = 6
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_savethetradition } 
@@ -946,7 +946,7 @@ focus = {
 id = SOV_russianinfluencesphere
 icon = GFX_goal_generic_propaganda
 x = 29
-y = 6
+y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ourgoodwill } 
@@ -961,7 +961,7 @@ focus = {
 id = SOV_ourgoodwill
 icon = GFX_focus_generic_diplomatic_treaty
 x = 31
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_concessionstotheroyalfamily } 
@@ -976,7 +976,7 @@ focus = {
 id = SOV_defeatthepuppetmaster
 icon = GFX_focus_RAJ_lions_of_the_great_war
 x = 27
-y = 5
+y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_purpleassasination } 
@@ -991,7 +991,7 @@ focus = {
 id = SOV_purpleassasination
 icon = GFX_goal_generic_secret_weapon
 x = 27
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_takelevantbyforce } 
@@ -1006,7 +1006,7 @@ focus = {
 id = SOV_takelevantbyforce
 icon = GFX_focus_eng_move_to_secure_the_dominions
 x = 27
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_dominateformercolonies } 
@@ -1021,7 +1021,7 @@ focus = {
 id = SOV_concessionstotheroyalfamily
 icon = GFX_focus_generic_treaty
 x = 31
-y = 4
+y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_offerprotectiontolevant } 
@@ -1036,7 +1036,7 @@ focus = {
 id = SOV_offerprotectiontolevant
 icon = GFX_goal_generic_national_unity
 x = 31
-y = 3
+y = 2
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_keeppartnershiprelations } 
@@ -1051,7 +1051,7 @@ focus = {
 id = SOV_keeppartnershiprelations
 icon = GFX_goal_generic_improve_relations
 x = 31
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_fateofthecolonies } 
@@ -1067,7 +1067,7 @@ focus = {
 id = SOV_dominateformercolonies
 icon = GFX_goal_tripartite_pact
 x = 27
-y = 2
+y = 1
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_fateofthecolonies } 
@@ -1083,7 +1083,7 @@ focus = {
 id = SOV_fateofthecolonies
 icon = GFX_focus_jap_cast_the_die
 x = 29
-y = 1
+y = 0
 cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 

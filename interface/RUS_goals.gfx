@@ -44,4 +44,12 @@ spriteTypes = {
 		name = "GFX_idea_SOV_Lack_Of_Innovation"
 		texturefile = "gfx/interface/ideas/idea_SOV_Lack_Of_Innovation.dds"
 	}
+	SpriteType = { 
+		name = "GFX_idea_SOV_Lack_Of_Innovation"
+		texturefile = "gfx/interface/ideas/idea_SOV_Lack_Of_Innovation.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Car_Factories"
+		texturefile = "gfx/interface/ideas/idea_RUS_Car_Factories.dds"
+	}
 }
