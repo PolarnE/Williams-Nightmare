@@ -1,0 +1,27 @@
+
+state={
+	id=864
+	name="Hastings"
+	manpower = 823521
+	state_category = city
+
+	history={
+		owner = ENG
+		victory_points = { 9458 20 }
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+			dockyard = 1
+			anti_air_building = 1
+			9458 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = ENG
+		add_core_of = GBR
+		}
+
+	provinces={
+    9458 6489
+	}
+}

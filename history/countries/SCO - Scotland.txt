@@ -62,3 +62,13 @@ create_country_leader = {
 	ENG_unpopular_leader_3
 	}
 }
+
+create_country_leader = {
+	name = "Bradford II"
+	desc = ""
+	picture = "gfx/leaders/ENG/portrait_based_bradford.dds"
+	expire = "1953.3.1"
+	ideology = despotism
+	traits = {
+	}
+}

@@ -693,7 +693,7 @@ SC2 = {
 }
 
 GBR = {
-	color = rgb { 221 56 93 }
+	color = rgb { 156 19 19 }
 	color_ui = rgb { 255 73 121 }
 }
 

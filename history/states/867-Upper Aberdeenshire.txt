@@ -1,0 +1,22 @@
+
+state={
+	id=867
+	name="Upper Aberdeenshire"
+	manpower = 127261
+	
+	state_category = rural
+
+	history={
+		add_core_of = SC2
+		add_core_of = SCO
+		add_core_of = ENG
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+		}
+	}
+
+	provinces={
+	9161 11207 200
+	}
+}
