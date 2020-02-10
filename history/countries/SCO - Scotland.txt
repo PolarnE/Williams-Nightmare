@@ -43,19 +43,19 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 93
-	fascism = 3
-	communism = 4
-	neutrality = 0
+	democratic = 43
+	fascism = 21
+	communism = 12
+	neutrality = 24
 }
 
 create_country_leader = {
 	name = "Alexander MacEwen"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+	picture = "gfx/leaders/SCO/Portrait_Scotland_Alexander_MacEwen.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
