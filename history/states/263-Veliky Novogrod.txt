@@ -4,7 +4,7 @@ state={
 	name="STATE_263"
 	manpower = 1092577
 	
-	state_category = town
+	state_category = megalopolis
 
 	history={
 		owner = SOV
@@ -12,8 +12,10 @@ state={
 			117 20
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 8
 			air_base = 2
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		add_core_of = SOV
 	}
