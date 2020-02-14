@@ -2723,3 +2723,18 @@
  DAR_communism:0 "Darfur Socialist State"
  DAR_communism_DEF:0 "the Darfur Socialist State"
  DAR_communism_ADJ:0 "Fur"
+ #########RUSSIAN FED. NATIONS#########
+ #Circassia
+ CIR_democratic:0 "Circassian Federation"
+ CIR_democratic_DEF:0 "the Circassian Federation"
+ CIR_democratic_ADJ:0 "Circassian"
+ CIR_fascism:0 "Circassian Federation"
+ CIR_fascism_DEF:0 "the Circassian Federation"
+ CIR_fascism_ADJ:0 "Circassian"
+ CIR_communism:0 "Circassian Socialist Union"
+ CIR_communism_DEF:0 "the Circassian Socialist Union"
+ CIR_communism_ADJ:0 "Circassian"
+ CIR_neutrality:0 "Circassian Federation"
+ CIR_neutrality_DEF:0 "the Circassian Federation"
+ CIR_neutrality_ADJ:0 "Cirassian"
+ ###il finish localisation rn but im bored and tired sorry

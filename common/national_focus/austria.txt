@@ -567,26 +567,6 @@ focus_tree = {
 			remove_ideas = AUS_Status_Impios
 		}
 	}
-	
-	####COLLAPSE OF THE ADRIATIC
-	
-		focus = {
-		id = AUS_crush_the_ustase
-		icon = GFX_focus_generic_home_defense
-		available = { has_country_flag = flag_ustase_revolt }
-		prerequisite = { focus = AUS_Suppress_Reactionaries
-		focus = AUS_Join_the_Coallition }
-		x = 14
-		y = 3
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		bypass = {
-		}
-		completion_reward = {
-		}
-	}
 
 	focus = {
 		id = AUS_Suppress_Reactionaries
@@ -743,6 +723,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = AUS_one_people_spirit
+		country_event = austria.12
 		}
 	}
 

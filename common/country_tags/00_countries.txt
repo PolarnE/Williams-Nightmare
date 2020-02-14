@@ -229,3 +229,11 @@ GBR = "countries/Loyalists.txt"
 CAP = "countries/Carpathia.txt"
 TRS = "countries/Transylvania.txt"
 BAT = "countries/Banat.txt"
+############RUSSIAN FED.############################
+KRA = "countries/Krasnoyarsk.txt"
+URA = "countries/Transural.txt"
+SAK = "countries/Sakhalin.txt"
+SIB = "countries/Siberia.txt"
+MUS = "countries/Muscovy.txt"
+NVG = "countries/Novgorod.txt"
+CIR = "countries/CircassianFed.txt" ##deadass nearly forgot these
