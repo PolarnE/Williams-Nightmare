@@ -94,7 +94,7 @@ give_guarantee = JAP
 #}
 
 create_country_leader = {
-	name = "Petrus Aalberse"
+	name = "Piet Aalberse Sr."
 	desc = ""
 	picture = "Portrait_Batavia_Petrus_Aalberse.dds"
 	expire = "1965.1.1"
