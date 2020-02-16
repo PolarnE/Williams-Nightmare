@@ -384,7 +384,7 @@ give_guarantee= ROM
 #Focus for Dominate the market
 focus = { 
 id = SOV_dominatethemarket
-icon = GFX_focus_usa_reestablish_the_gold_standard
+icon = GFX_RUS_Dominate_Market
 x = 7
 y = 1
 cost = 10
