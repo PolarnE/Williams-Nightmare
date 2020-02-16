@@ -1,0 +1,26 @@
+
+state={
+	id=869
+	name="Southern Congo"
+	manpower = 1231321
+	
+	state_category = rural
+
+	history={
+		owner = SCR
+		victory_points = {
+			191 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+			add_core_of = COG
+			add_core_of = SCR
+	}
+	
+
+	provinces={
+    9986 1929 12907 12795 1516 1817 1968 4515 191
+	}
+}

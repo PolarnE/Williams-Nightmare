@@ -17,6 +17,7 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = SOV
+		add_core_of = URA
 		victory_points = {
 			6502 1
 		}

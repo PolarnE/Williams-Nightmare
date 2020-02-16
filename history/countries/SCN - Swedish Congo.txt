@@ -61,7 +61,7 @@ set_popularities = {
 
 create_country_leader = {
 	
-	name = "Gustaf I"
+	name = "Gustaf V"
 	picture = "gfx//leaders//SWE//portrait_gustav_v.dds"
 	expire = "1965.1.1"
 	ideology = despotism

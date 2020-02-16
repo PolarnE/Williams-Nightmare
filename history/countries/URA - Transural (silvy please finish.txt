@@ -1,4 +1,4 @@
-﻿#capital = ##SILVY GO MAKE A CAPITAL
+﻿#capital = 398
 
 # Starting tech
 set_technology = {

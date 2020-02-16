@@ -94,9 +94,9 @@ give_guarantee = JAP
 #}
 
 create_country_leader = {
-	name = "Godfried van Voorst tot Voorst"
+	name = "Petrus Aalberse"
 	desc = ""
-	picture = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+	picture = "Portrait_Batavia_Petrus_Aalberse.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

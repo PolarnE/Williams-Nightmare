@@ -210,6 +210,7 @@ UBR = "countries/UnitedBalticRepublic.txt"
 MYS = "countries/Mysore.txt"
 ############AFRICA##################################
 SCN = "countries/SwedenCongo.txt"
+SCR = "countries/SwedenRhodesia.txt"
 FAF = "countries/FrenchAfrica.txt"
 FFR = "countries/FreeFrance.txt"
 FRM = "countries/FrenchMauritania.txt"
