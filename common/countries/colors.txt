@@ -17,7 +17,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
+	color = rgb { 122 140 176 }
 	color_ui = rgb { 74 147 255 }
 }
 FAF = {
@@ -182,8 +182,8 @@ ELS = {
 	color_ui = rgb { 198 169 248 }
 }
 ETH = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color = rgb { 146 113 90 }
+	color_ui = rgb { 146 113 90 }
 }
 GUA = {
 	color = rgb { 72 49 112 }
@@ -242,7 +242,7 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 171 190 152 }
+	color = rgb { 145 156 134 }
 	color_ui = rgb { 222 247 198 }
 }
 SIA = {
@@ -350,30 +350,29 @@ LBA = {
 }
 
 EGY = {
-	color = rgb { 230 230 70 }
+	color = rgb { 193 193 0 }
 	color_ui = rgb { 230 230 70 }
 }
 
 CYR = {
-	color = rgb { 230 230 70 }
+	color = rgb { 193 193 0 }
 	color_ui = rgb { 230 230 70 }
 }
 
 DAR = {
-	color = rgb { 230 230 70 }
+	color = rgb { 193 193 0 }
 	color_ui = rgb { 230 230 70 }
 }
 
 CHA = {
-	color = rgb { 230 230 70 }
+	color = rgb { 193 193 0 }
 	color_ui = rgb { 230 230 70 }
 }
 
 NGR = {
-	color = rgb { 230 230 70 }
+	color = rgb { 193 193 0 }
 	color_ui = rgb { 230 230 70 }
 }
-
 
 PAL = {
 	color = rgb { 170  125  80 }
@@ -705,4 +704,9 @@ GBR = {
 UBR = {
 	color = rgb { 246 239 89 }
 	color_ui = rgb { 246 239 89 }
+}
+
+HEJ = {
+	color = rgb { 162  38  0 }
+	color_ui = rgb { 162  38  0 }
 }
