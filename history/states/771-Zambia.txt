@@ -10,9 +10,9 @@ state={
 	}
 
 	history={
-		owner = SCN
+		owner = SCR
 		add_core_of = ZAM
-		add_core_of = SCN
+		add_core_of = SCR
 		victory_points = {
 			5199 1
 		}
