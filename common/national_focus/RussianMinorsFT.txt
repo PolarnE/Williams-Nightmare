@@ -1,0 +1,537 @@
+focus_tree = {
+	id = RussianGeneric
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = UKR
+				tag = KAZ
+				tag = CIR
+			}
+		}
+	}
+	
+	default = no
+	
+	#Focus for Urbanizatsiya Plan
+	focus = {
+		id = RGN_urbanizatsiyaplan
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_pillarofunity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = industrial_complex
+ level = 4
+ instant_build = yes
+ }
+set_state_flag = ROOT
+ }
+		}
+	}
+
+	#Focus for Pillar of Unity
+	focus = {
+		id = RGN_pillarofunity
+		icon = GFX_pillarofunity
+		x = 5
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = RGN_recogniserussianauthority focus = RGN_seekregionalrecognition }
+		available = {
+			has_political_power> 100
+		}
+		completion_reward = {
+			add_political_power= -100
+			add_timed_idea= { 
+			idea = Central_Government 
+			days = 365
+			}
+		}
+	}
+
+	#Focus for International Rail Connections
+	focus = {
+		id = RGN_internationalrailconnections
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_waytoprosperity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_owned_state = {
+					add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+					}
+			}
+		}
+	}
+
+	#Focus for Develop Army Manufacturing
+	focus = {
+		id = RGN_developarmymanufacturing
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_waytoprosperity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = arms_factory
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = ROOT
+ }
+		}
+	}
+
+	#Focus for Steel on Rails
+	focus = {
+		id = RGN_steelonrails
+		icon = GFX_focus_generic_steel
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_internationalrailconnections }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			any_owned_state = {
+				add_resource= { 
+				type = steel 
+				amount = 16 
+				}
+			}
+		}
+	}
+
+	#Focus for Form SUPN
+	focus = {
+		id = RGN_formsupn
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_akademiyatekhnicheskikhnauk }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			num_of_civilian_factories> 50 
+is_in_faction= yes 
+has_stability> 0.8
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Little Protektoryat
+	focus = {
+		id = RGN_littleprotektoryat
+		icon = GFX_littleprotektoryat
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_invitearmamentcompanies }
+		mutually_exclusive = { focus = RGN_policyofyednost }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			is_in_faction= yes
+		}
+		completion_reward = {
+			create_faction= 'french_entente_alliance'
+		}
+	}
+
+	#Focus for Imperative of Zakaz
+	focus = {
+		id = RGN_imperativeofzakaz
+		icon = GFX_goal_generic_neutrality_focus
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_protokultura }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= RGN_Zakaz_Codified
+		}
+	}
+
+	#Focus for Adapt TL
+	focus = {
+		id = RGN_adapttl
+		icon = GFX_goal_generic_production
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_developarmymanufacturing }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Armament Companies
+	focus = {
+		id = RGN_invitearmamentcompanies
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_steelonrails }
+		prerequisite = { focus = RGN_adapttl }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shkola Voyny
+	focus = {
+		id = RGN_shkolavoyny
+		icon = GFX_shkolavoyny
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_imperativeofzakaz }
+		prerequisite = { focus = RGN_zashchitarodiny }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 1000000
+		}
+	}
+
+	#Focus for Seek Regional Recognition
+	focus = {
+		id = RGN_seekregionalrecognition
+		icon = GFX_seekregionalrecognition
+		x = 3
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = RGN_recogniserussianauthority }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject= no
+		}
+		completion_reward = {
+			add_political_power= 200
+		}
+	}
+
+	#Focus for Akademiya Tekhnicheskikh Nauk
+	focus = {
+		id = RGN_akademiyatekhnicheskikhnauk
+		icon = GFX_focus_research2
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_akademiyaobshchikhnauk }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			num_of_available_civilian_factories> 35
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Akademiya Obshchikh Nauk
+	focus = {
+		id = RGN_akademiyaobshchikhnauk
+		icon = GFX_focus_research2
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_waytoprosperity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Way to Prosperity
+	focus = {
+		id = RGN_waytoprosperity
+		icon = GFX_waytoprosperity
+		x = 14
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= RGN_Prosperity_Efforts
+		}
+	}
+
+	#Focus for Policy of Yednost
+	focus = {
+		id = RGN_policyofyednost
+		icon = GFX_policyofyednost
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_russosphereeconomicinitiative }
+		prerequisite = { focus = RGN_ourownwhitearmy }
+		mutually_exclusive = { focus = RGN_littleprotektoryat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_faction= SOV
+		}
+	}
+
+	#Focus for Our Own White Army
+	focus = {
+		id = RGN_ourownwhitearmy
+		icon = GFX_goal_generic_cavalry
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_pogranichnayakultura }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= RGN_State_White_Army
+		}
+	}
+
+	#Focus for Cultural Claims
+	focus = {
+		id = RGN_culturalclaims
+		icon = GFX_culturalclaims
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_urbanizatsiyaplan }
+		prerequisite = { focus = RGN_protokultura focus = RGN_pogranichnayakultura }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				create_wargoal= { 
+					type = annex_everything 
+					target = AUS
+		}
+	}
+	}
+
+	#Focus for Integrate Minorities
+	focus = {
+		id = RGN_integrateminorities
+		icon = GFX_integrateminorities
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_culturalclaims }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				remove_idea = RGN_Local_Separatism
+		}
+	}
+	
+	#Focus for Seryi Den
+	focus = {
+		id = RGN_seryiden
+		icon = GFX_seryiden
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = RGN_zashchitarodiny }
+		prerequisite = { focus = RGN_integrateminorities }
+		mutually_exclusive = { focus = RGN_matterofrussia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	#Focus for Matter of Russia
+	focus = {
+		id = RGN_matterofrussia
+		icon = GFX_matterofrussia
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = RGN_russosphereeconomicinitiative }
+		prerequisite = { focus = RGN_integrateminorities }
+		mutually_exclusive = { focus = RGN_seryiden }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Russo-sphere Economic Initiative
+	focus = {
+		id = RGN_russosphereeconomicinitiative
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_pogranichnayakultura }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= RGN_REI_Member
+		}
+	}
+
+	#Focus for Zashchita Rodiny
+	focus = {
+		id = RGN_zashchitarodiny
+		icon = GFX_goal_generic_defence
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_protokultura }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= RGN_Fatherland_Defense
+		}
+	}
+
+	#Focus for Recognise Russian Authority
+	focus = {
+		id = RGN_recogniserussianauthority
+		icon = GFX_recogniserussianauthority
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = RGN_seekregionalrecognition }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+			country = SOV 
+			relation = non_aggression_pact 
+			}
+		}
+	}
+
+	#Focus for Pogranichnaya Kultura
+	focus = {
+		id = RGN_pogranichnayakultura
+		icon = GFX_pogranichnayakultura
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_recogniserussianauthority }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		NOT = { country_exists = SOV }
+		}
+		completion_reward = {
+			add_stability= 0.3
+		}
+	}
+
+	#Focus for Protokultura
+	focus = {
+		id = RGN_protokultura
+		icon = GFX_protokultura
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RGN_seekregionalrecognition }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= RGN_Protokultura
+			add_political_power= 150
+		}
+	}
+
+#End of focuses 
+ }

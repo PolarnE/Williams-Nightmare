@@ -1,0 +1,311 @@
+spriteTypes = { 
+
+ SpriteType = { 
+ name = "GFX_pillarofunity" 
+ texturefile = "gfx/interface/goals/GFX_pillarofunity.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_littleprotektoryat" 
+ texturefile = "gfx/interface/goals/GFX_littleprotektoryat.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_shkolavoyny" 
+ texturefile = "gfx/interface/goals/GFX_shkolavoyny.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_seekregionalrecognition" 
+ texturefile = "gfx/interface/goals/GFX_seekregionalrecognition.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_waytoprosperity" 
+ texturefile = "gfx/interface/goals/GFX_waytoprosperity.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_policyofyednost" 
+ texturefile = "gfx/interface/goals/GFX_policyofyednost.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_culturalclaims" 
+ texturefile = "gfx/interface/goals/GFX_culturalclaims.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_recogniserussianauthority" 
+ texturefile = "gfx/interface/goals/GFX_recogniserussianauthority.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_pogranichnayakultura" 
+ texturefile = "gfx/interface/goals/GFX_pogranichnayakultura.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_protokultura" 
+ texturefile = "gfx/interface/goals/GFX_protokultura.tga" 
+ } 
+  SpriteType = { 
+ name = "GFX_matterofrussia" 
+ texturefile = "gfx/interface/goals/GFX_matterofrussia.tga" 
+ } 
+  SpriteType = { 
+ name = "GFX_seryiden" 
+ texturefile = "gfx/interface/goals/GFX_seryiden.tga" 
+ } 
+   SpriteType = { 
+ name = "GFX_integrateminorities" 
+ texturefile = "gfx/interface/goals/GFX_integrateminorities.tga" 
+ } 
+ # Shineys
+ SpriteType = {
+ name = "GFX_pillarofunity_shine"
+ texturefile = "gfx/interface/goals/GFX_pillarofunity.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_pillarofunity.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_pillarofunity.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_littleprotektoryat_shine"
+ texturefile = "gfx/interface/goals/GFX_littleprotektoryat.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_littleprotektoryat.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_littleprotektoryat.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_shkolavoyny_shine"
+ texturefile = "gfx/interface/goals/GFX_shkolavoyny.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_shkolavoyny.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_shkolavoyny.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_seekregionalrecognition_shine"
+ texturefile = "gfx/interface/goals/GFX_seekregionalrecognition.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_seekregionalrecognition.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_seekregionalrecognition.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_waytoprosperity_shine"
+ texturefile = "gfx/interface/goals/GFX_waytoprosperity.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_waytoprosperity.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_waytoprosperity.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_policyofyednost_shine"
+ texturefile = "gfx/interface/goals/GFX_policyofyednost.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_policyofyednost.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_policyofyednost.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_culturalclaims_shine"
+ texturefile = "gfx/interface/goals/GFX_culturalclaims.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_culturalclaims.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_culturalclaims.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_recogniserussianauthority_shine"
+ texturefile = "gfx/interface/goals/GFX_recogniserussianauthority.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_recogniserussianauthority.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_recogniserussianauthority.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# Well, was too lazy to continue with shineys
+	
+	# National spirits branch
+ SpriteType = { 
+ name = "GFX_idea_generic_prosperity"
+texturefile = "gfx/interface/ideas/idea_generic_prosperity.dds"
+ }
+ }
