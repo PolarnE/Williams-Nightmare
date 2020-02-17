@@ -97,11 +97,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Adam Stankievič"
+    name = "Andrei Gromyko"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+    picture = "Portrait_Belarus_Andrei_Gromyko.dds"
     expire = "1965.1.1"
-    ideology = socialism
+    ideology = conservatism
     traits = {
         #
     }

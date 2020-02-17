@@ -9,6 +9,7 @@ state={
 	history={
 		owner = SOV
 		add_core_of = SOV
+		add_core_of = SAK
 		buildings = {
 			infrastructure = 3
 			1399 = {

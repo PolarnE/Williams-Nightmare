@@ -13,6 +13,7 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = SOV
+		add_core_of = KRA
 		victory_points = {
 			7757 1
 		}

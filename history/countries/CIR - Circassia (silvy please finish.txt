@@ -61,12 +61,36 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 100
+	fascism = 41
+	communism = 7
+	democratic = 52
+}
+
+create_country_leader = {
+	name = "Nestor Lakoba"
+	desc = ""
+	picture = "Portrait_Circassia_Nestor_Lakoba.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nestor Lakoba"
+	desc = ""
+	picture = "Portrait_Circassia_Nestor_Lakoba.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
 }
