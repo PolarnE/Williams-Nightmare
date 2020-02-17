@@ -58,16 +58,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
 	fascism = 15
 	communism = 10
-	neutrality = 75
+	democratic = 75
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate

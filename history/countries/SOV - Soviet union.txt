@@ -127,6 +127,7 @@ RUS_integrity_5
 RUS_lack_of_innovation
 RUS_legacy_of_empire
 RUS_slow_industrialisation
+RUS_industrialisation_plan
 }
 
 create_country_leader = {

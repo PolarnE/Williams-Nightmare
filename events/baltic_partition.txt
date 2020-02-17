@@ -1,0 +1,83 @@
+add_namespace = baltic_partition
+
+#UBR left by themselves - Russian event to hold conference
+country_event = {
+	id = baltic_partition.1
+	title = baltic_partition.1.t
+	desc = baltic_partition.1.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = {
+		name = baltic_partition.1.a #hold it
+		ai_chance = { base = 90 }
+		add_political_power = -50
+		SWE = { country_event = { id = baltic_partition.2 hours = 6 } }
+		}
+	option = {
+		name = baltic_partition.1.b #nah lol - ai should literally never do this tbh
+		ai_chance = { base = 10 }
+		add_political_power = 50
+		}
+	}
+	
+#Russian invitation to Minsk - Sweden
+country_event = {
+	id = baltic_partition.2
+	title = baltic_partition.2.t
+	desc = baltic_partition.2.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = {
+		name = baltic_partition.2.a #ok lol
+		SOV = { country_event = { id = baltic_partition.3 hours = 6 } }
+		}
+	}
+
+#Sweden agrees - Russia
+country_event = {
+	id = baltic_partition.3
+	title = baltic_partition.3.t
+	desc = baltic_partition.3.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = {
+		name = baltic_partition.3.a #good men
+		set_country_flag = flag_minsk_conference_sweden_agrees
+		}
+	}
+	
+#Russian invitation to Minsk - Prussia
+country_event = {
+	id = baltic_partition.4
+	title = baltic_partition.4.t
+	desc = baltic_partition.4.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = {
+		name = baltic_partition.4.a #ok lol
+		SOV = { country_event = { id = baltic_partition.5 hours = 6 } }
+		}
+	}
+
+#Prussia agrees - Russia
+country_event = {
+	id = baltic_partition.5
+	title = baltic_partition.5.t
+	desc = baltic_partition.5.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+	option = {
+		name = baltic_partition.5.a #good men
+	set_country_flag = flag_minsk_conference_prussia_agrees
+		}
+	}

@@ -17,7 +17,7 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = PAK
+		add_core_of = BLO
         add_core_of = SOV
 	}
 

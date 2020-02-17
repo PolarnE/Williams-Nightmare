@@ -131,7 +131,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Duarte Nuno I"
+	name = "Duarte II"
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "portrait_brazil_emperor.dds"
 	expire = "1965.1.1"

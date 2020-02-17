@@ -4,7 +4,8 @@ state={
 
 	history={
 		owner = SOV
-		add_core_of = KAZ
+		add_core_of = TRK
+		add_claim_by = KAZ
 		buildings = {
 			infrastructure = 1
 

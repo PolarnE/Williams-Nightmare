@@ -198,6 +198,25 @@ ideas = {
 			}
 		} 
 		
+			RUS_industrialisation_plan = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			}
+		} 
+		
 		##base game stuff
 		militarized_schools = {
 		
