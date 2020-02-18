@@ -8,6 +8,14 @@ focus_tree = {
 				tag = UKR
 				tag = KAZ
 				tag = CIR
+				tag = BLR
+				tag = SIB
+				tag = KRA
+				tag = SAK
+				tag = URA
+				tag = TRK
+				tag = MUS
+				tag = NVG
 			}
 		}
 	}
