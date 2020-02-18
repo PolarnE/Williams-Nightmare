@@ -745,3 +745,8 @@ NVG = {
     color = rgb { 97 126 37 }
 	color_ui = rgb { 97 126 37 }
 }
+
+CAT = {
+	color = rgb { 166 68 72 }
+	color_ui = rgb { 166 68 72 }
+}

@@ -240,3 +240,5 @@ NVG = "countries/Novgorod.txt"
 CIR = "countries/CircassianFed.txt" ##deadass nearly forgot these
 TRK = "countries/TurkmenRepublic.txt"
 BLO = "countries/Balochistan.txt"
+############EUROPE##################################
+CAT = "countries/Catalonia.txt"

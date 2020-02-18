@@ -71,7 +71,7 @@ ideas = {
 			}
 		}
 		
-				FRA_soldiers_striking = {
+				FRA_soldiers_striking_1 = {
 			
 			allowed = {
 				original_tag = FRA
@@ -90,10 +90,10 @@ ideas = {
 				land_doctrine = -0.75
 			}
 			modifier = {
-			conscription_factor = -0.1
+			conscription_factor = -0.5
 				war_support_factor = -0.1
-				army_morale_factor = -0.2
-				industrial_capacity_factory = -0.2
+				army_morale_factor = -0.1
+				industrial_capacity_factory = -0.1
 			}
 		}
 

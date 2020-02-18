@@ -78,26 +78,53 @@ diplomatic_relation = {
 	    name = h1936_france.3.b #theyre just trying to get by too
 		ai_chance = { base = 50  }
 		SIA = { country_event = { id = siam.3 hours = 6 } }
+	} }
+	
+#Catalonian Uprising 
+country_event = {
+	id = h1936_france.4
+	title = h1936_france.4.t
+	desc = h1936_france.4.d
+	picture = GFX_report_event_american_hunger_march
+	
+	is_triggered_only = yes
+
+   option = {
+		name = h1936_france.4.a #bang them
+   ai_chance = { base = 75 }
+   set_country_flag = flag_catalonia_bang_them
+   add_stability = -0.2
+   add_ideas = FRA_soldiers_striking_1
+   CAT = { transfer_state = 165 load_oob = CAT_uprising }
+   declare_war_on = { type = annex_everything    target = CAT }
+		}
+	 option = {
+		name = h1936_france.4.b #try negotiate
+   ai_chance = { base = 25 }
+   add_stability = -0.2
+   add_ideas = FRA_soldiers_striking_1
+   CAT = { transfer_state = 165 load_oob = CAT_uprising }
+		} }
+	
+#Catalonia Defeated
+country_event = {
+	id = h1936_france.5
+	title = h1936_france.5.t
+	desc = h1936_france.5.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = FRA
+		has_country_flag = flag_catalonia_bang_them
+		NOT = { country_exists = CAT }
 	}
 	
-#Catalonian Uprising - cba rna il do it later 
-#country_event = {
-#	id = h1936_france.4
-#	title = h1936_france.4.t
-#	desc = h1936_france.4.d
-#	picture = GFX_report_event_generic_strike
-#	
-#	is_triggered_only = yes
-#	
-#	immediate = {
-#	hidden_effect = {
-#	RAJ = { country_event = { id = maratha.1 days = 5 } }
-#	SIA = { country_event = { id = siam.1 days = 2 } }
-#	AUS = { country_event = { id = austria.7 days = 2 } }
-#	}
-#	}
-#
-#	option = {
-#		name = h1936_france.4.a
-#		}
-#	}
+	option = {
+		name = h1936_france.5.a
+		add_stability = 0.05
+		add_political_power = 15
+		 }
+	}
+	
