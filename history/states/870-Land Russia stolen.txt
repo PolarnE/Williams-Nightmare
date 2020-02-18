@@ -1,0 +1,21 @@
+state={
+	id=870
+	name="Kharkivshchyna"
+	manpower = 1261262
+	
+	state_category = rural
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 4
+			air_base = 5
+		}
+		add_core_of = SOV
+		add_core_of = MUS
+	}
+
+	provinces={
+	3491 9531 11541 3409 6554
+	}
+}

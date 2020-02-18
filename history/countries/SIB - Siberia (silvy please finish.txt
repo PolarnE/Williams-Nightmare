@@ -70,3 +70,14 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
+
+create_country_leader = {
+    name = "Aleksandr Bogomolov"
+    desc = ""
+    picture = "Portrait_Siberia_Aleksandr_Bogomolov.dds"
+    expire = "1965.1.1"
+    ideology = socialism
+    traits = {
+        #
+    }
+}

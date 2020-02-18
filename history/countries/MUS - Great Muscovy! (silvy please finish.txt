@@ -1,4 +1,4 @@
-﻿#capital = ##SILVY GO MAKE A CAPITAL
+﻿capital = 219
 
 # Starting tech
 set_technology = {
@@ -61,12 +61,12 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 100
+	neutrality = 100
 }

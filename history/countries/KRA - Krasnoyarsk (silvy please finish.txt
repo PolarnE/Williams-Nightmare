@@ -70,3 +70,14 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
+
+create_country_leader = {
+    name = "Nikolai Fedorenko"
+    desc = ""
+    picture = "Portrait_Krasnodar_Nikolai_Fedorenko.dds"
+    expire = "1965.1.1"
+    ideology = socialism
+    traits = {
+        #
+    }
+}

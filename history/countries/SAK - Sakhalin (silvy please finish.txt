@@ -70,3 +70,14 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
+
+create_country_leader = {
+    name = "Anastasy Vonsiatsky"
+    desc = ""
+    picture = "Portrait_Sakhalin_Anastasy_Vonsiatsky.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+        #
+    }
+}

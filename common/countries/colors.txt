@@ -735,3 +735,13 @@ SIB = {
     color = rgb { 179 179 179 }
 	color_ui = rgb { 179 179 179 }
 }
+
+MUS = {
+    color = rgb { 206 181 97 }
+	color_ui = rgb { 206 181 97 }
+}
+
+NVG = {
+    color = rgb { 97 126 37 }
+	color_ui = rgb { 97 126 37 }
+}
