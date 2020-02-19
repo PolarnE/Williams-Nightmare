@@ -217,6 +217,35 @@ ideas = {
 			}
 		} 
 		
+		## Seceding Republics modifiers
+		
+			RUS_Circassia_Supressed = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		##base game stuff
 		militarized_schools = {
 		

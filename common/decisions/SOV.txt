@@ -1,0 +1,219 @@
+SOV_category_struggle_for_independence = {
+### CIRCASSIA - Integrity 5 trigger | No stability req.
+	SOV_mission_circassia_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_completed_focus = SOV_onlyus
+				country_exists = CIR
+				}
+		}
+		
+		visible = {
+			tag = SOV
+			NOT = { has_idea = RUS_integrity_6 }
+		}
+
+		days_mission_timeout = 150
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_5
+				has_idea = RUS_integrity_4
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+			NOT = { country_exists = CIR }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				OR = {
+				has_idea = RUS_integrity_4
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+				}
+				country_event = {
+					id = secession.1
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+				limit = {
+					has_idea = RUS_integrity_5
+				}
+				country_event = {
+					id = secession.2
+				}
+			}
+		}
+	}
+### UKRAINE - Integrity 5 trigger | Stability lower than 60%.
+	SOV_mission_ukraine_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_completed_focus = SOV_onlyus
+				country_exists = UKR
+				AND = {
+					has_idea = RUS_integrity_5
+					has_stability > 0.6
+				}
+					}
+				}
+		
+		
+		visible = {
+			tag = SOV
+			NOT = { has_idea = RUS_integrity_6 }
+		}
+
+		days_mission_timeout = 150
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_4
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+					AND = {
+						has_idea = RUS_integrity_5
+						has_stability < 0.6
+					}
+				}
+			NOT = { country_exists = UKR }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				OR = {
+				has_idea = RUS_integrity_4
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+				}
+				country_event = {
+					id = secession.3
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+				limit = {
+					AND = {
+						has_idea = RUS_integrity_5
+						has_stability < 0.6
+					}
+				}
+				country_event = {
+					id = secession.4
+				}
+			}
+		}
+	}
+### BELARUS - Integrity 4 trigger | No stability req.
+	SOV_mission_belarus_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_idea = RUS_integrity_5
+				has_completed_focus = SOV_onlyus
+				country_exists = BLR
+				}
+		}
+		
+		
+		visible = {
+			tag = SOV
+			NOT = { has_idea = RUS_integrity_6 }
+		}
+
+		days_mission_timeout = 150
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_4
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+			NOT = { country_exists = BLR }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				OR = {
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+				}
+				country_event = {
+					id = secession.5
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+				limit = {
+					has_idea = RUS_integrity_4
+				}
+				country_event = {
+					id = secession.6
+				}
+			}
+		}
+	}
+}
+
+

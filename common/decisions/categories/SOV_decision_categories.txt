@@ -1,0 +1,15 @@
+SOV_category_struggle_for_independence = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		tag = SOV 
+		}
+
+	visible = {
+	is_puppet = no
+	}
+}
+
