@@ -96,6 +96,77 @@ ideas = {
 				industrial_capacity_factory = -0.1
 			}
 		}
+		
+			FRA_reintegration_of_catalonia = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_catalan_reintegration
+			
+			modifier = {
+			consumer_goods_factor = 0.1
+			}
+		}
+		
+			FRA_preparing_coronation_of_louis_ii = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_catalan_reintegration
+			
+			modifier = {
+		political_power_cost = 0.1
+		}
+		
+		targeted_modifier = {
+		tag = CAT
+		political_power_cost = -0.1	}
+		}
+		
+					FRA_preparing_coronation_of_louis_ii_compensation = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_catalan_reintegration
+			
+			modifier = {
+		political_power_cost = 0.1
+		consumer_goods_factor = 0.05
+		}
+		
+		targeted_modifier = {
+		tag = CAT
+		political_power_cost = -0.1	
+		consumer_goods_factor -0.05
+		}
+		}
 
 		FRA_disjointed_government = {
 			

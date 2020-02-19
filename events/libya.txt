@@ -1,0 +1,21 @@
+﻿add_namespace = libya
+
+#France is distracted with Catalonia
+country_event = {
+	id = libya.1
+	title = libya.1.t
+	desc = libya.1.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = libya.1.a #Independence time bby
+   ai_chance = { base = 100 }
+   LBA = { transfer_state = 448 annex_country = { target = FRL transfer_troops = yes } change_tag_from = FRL }
+		}
+	 option = {
+		name = libya.1.b #Yes lets be a french vassal the whole game, AI shouldnt ever do this
+   ai_chance = { base = 0 }
+   add_political_power = 150
+		} }

@@ -24,6 +24,10 @@ FAF = {
 	color = rgb { 67 123 238 }
 	color_ui = rgb { 84 157 255 }
 }
+MFR = {
+	color = rgb { 67 123 238 }
+	color_ui = rgb { 84 157 255 }
+}
 FRM = {
 	color = rgb { 67 123 238 }
 	color_ui = rgb { 84 157 255 }

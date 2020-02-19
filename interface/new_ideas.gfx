@@ -24,5 +24,10 @@ spriteTypes = {
 		name = "GFX_idea_advisors_sweden"
 		texturefile = "gfx/interface/ideas/idea_advisors_sweden.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_catalan_reintegration"
+		texturefile = "gfx/interface/ideas/idea_FRA_Catalan_Reintegration.dds"
+	}
 
 }

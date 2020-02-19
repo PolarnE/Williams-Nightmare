@@ -88,6 +88,13 @@ country_event = {
 	picture = GFX_report_event_american_hunger_march
 	
 	is_triggered_only = yes
+	
+		immediate = {
+	hidden_effect = {
+	FRL = { country_event = { id = libya.1 days = 5 } }
+	FRT = { country_event = { id = tunisia.1 days = 3 } }
+	}
+	}
 
    option = {
 		name = h1936_france.4.a #bang them
@@ -103,7 +110,8 @@ country_event = {
    ai_chance = { base = 25 }
    add_stability = -0.2
    add_ideas = FRA_soldiers_striking_1
-   CAT = { transfer_state = 165 load_oob = CAT_uprising }
+   CAT = { transfer_state = 165 load_oob = CAT_uprising 
+    country_event = { id = catalonia.1 hours = 6 } }
 		} }
 	
 #Catalonia Defeated
@@ -118,13 +126,244 @@ country_event = {
 	trigger = {
 		original_tag = FRA
 		has_country_flag = flag_catalonia_bang_them
+		OR = { 
 		NOT = { country_exists = CAT }
+		CAT = { is_subject_of = FRA }
+		}
 	}
 	
 	option = {
 		name = h1936_france.5.a
 		add_stability = 0.05
 		add_political_power = 15
+		add_timed_idea = { idea = FRA_reintegration_of_catalonia  days = 200 }
+		hidden_effect = {
+		annex_country = { target = CAT transfer_troops = no }
+		}
+		 }
+	}
+	
+#Catalonia accepts Grand Duchy status (no compensation)
+country_event = {
+	id = h1936_france.6
+	title = h1936_france.6.t
+	desc = h1936_france.6.d
+	picture = GFX_report_event_french_liberation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.6.a
+		add_political_power = 15
+		add_timed_idea = { idea = FRA_preparing_coronation_of_louis_ii  days = 365 }
+		set_country_flag = flag_catalonia_accepts_grand_duchy_no_compensation
+		puppet = CAT
+		CAT = { set_cosmetic_tag = CAT_france 
+		
+create_country_leader = {
+	name = "Louis-Napoléon of France"
+	desc = ""
+	picture = "gfx//leaders//FRA//Portrait_Napoleon_IV.dds"
+	expire = "1965.1.1"
+	ideology = bonapartism
+	traits = {
+	}
+}
+}
+		 }
+	}
+	
+	
+#Louis-Napoléon crowned Grand Duke of Catalonia
+country_event = {
+	id = h1936_france.7
+	title = h1936_france.7.t
+	desc = h1936_france.7.d
+	picture = GFX_report_event_french_liberation
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = FRA
+		has_country_flag = flag_catalonia_accepts_grand_duchy_no_compensation
+		CAT = { is_subject_of = FRA }
+		NOT = { has_idea = FRA_preparing_coronation_of_louis_ii has_idea = FRA_preparing_coronation_of_louis_ii_compensation }
+	}
+	
+	option = {
+		name = h1936_france.7.a
+		annex_country = { target = CAT transfer_troops = yes }
+		 }
+	}
+	
+#Catalonia says no to being a Grand Duchy
+country_event = {
+	id = h1936_france.8
+	title = h1936_france.8.t
+	desc = h1936_france.8.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = h1936_france.8.a #Bang them^2
+   ai_chance = { base = 50 }
+   set_country_flag = flag_catalonia_bang_them
+    declare_war_on = { type = annex_everything    target = CAT }
+		}
+	 option = {
+		name = h1936_france.8.b #Offer financial compensation too
+   ai_chance = { base = 50 }
+   CAT = { country_event = { id = catalonia.2 hours = 6 } }
+		} }
+		
+#Catalonia accepts Grand Duchy status (compensation)
+country_event = {
+	id = h1936_france.9
+	title = h1936_france.9.t
+	desc = h1936_france.9.d
+	picture = GFX_report_event_french_liberation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.9.a
+		add_timed_idea = { idea = FRA_preparing_coronation_of_louis_ii_compensation  days = 365 }
+		set_country_flag = flag_catalonia_accepts_grand_duchy_no_compensation
+		puppet = CAT
+		CAT = { set_cosmetic_tag = CAT_france 
+		
+create_country_leader = {
+	name = "Louis-Napoléon of France"
+	desc = ""
+	picture = "gfx//leaders//FRA//Portrait_Napoleon_IV.dds"
+	expire = "1965.1.1"
+	ideology = bonapartism
+	traits = {
+	}
+}
+}
+		 }
+	}
+	
+#Negotations break down with Catalonia
+country_event = {
+	id = h1936_france.10
+	title = h1936_france.10.t
+	desc = h1936_france.10.d
+	picture = GFX_report_event_french_liberation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.10.a #time to die
+		set_country_flag = flag_catalonia_bang_them
+   declare_war_on = { type = annex_everything    target = CAT }
+		 }
+	}
+	
+#North Africa ain't looking good - After Texit and Lexit
+country_event = {
+	id = h1936_france.11
+	title = h1936_france.11.t
+	desc = h1936_france.11.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = FRA
+		NOT = { country_exists = FRT country_exists = FRL }
+	}
+	
+	option = {
+		name = h1936_france.11.a #we need to examine the situation here
+       country_event = { id = h1936_france.12 hours = 6 } 
+		 }
+	}
+	
+#North Africa ain't looking good - Marrakech-Algiers
+country_event = {
+	id = h1936_france.12
+	title = h1936_france.12.t
+	desc = h1936_france.12.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.12.b #send soldiers to them + marshal petain can take charge
+		ai_chance = { base = 45 }
+		add_manpower = -30000
+		FAF = { add_manpower = 30000 
+		create_country_leader = {
+	name = "Philippe Pétain"
+	desc = ""
+	picture = "gfx//leaders//FRA//Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+} } } 
+       country_event = { id = h1936_france.13 hours = 6 } 
+	 option = {
+		name = h1936_france.12.c #dissolve marrakech-algiers and establish direct rule
+		ai_chance = { base = 15 }
+		add_stability = -0.1
+		annex_country = { target = FAF transfer_troops = yes }
+       country_event = { id = h1936_france.13 hours = 6 } 
+		 }
+	 option = {
+		name = h1936_france.12.f #dissolve marrakech-algiers and establish protectorates
+		ai_chance = { base = 25 }
+		add_stability = -0.05
+		FAF = { set_cosmetic_tag = FAF_algeria set_capital = 459 }
+		MFR = { transfer_state = 699 add_state_core = 699 transfer_state = 462 add_state_core = 462 transfer_state = 461 add_state_core = 461 }
+		puppet = MFR
+       country_event = { id = h1936_france.13 hours = 6 } 
+		 }
+	option = {
+		name = h1936_france.12.e #i mean like why tho
+		ai_chance = { base = 15 }
+		add_popularity = {
+	ideology = communism
+	popularity = 0.05
+}
+       country_event = { id = h1936_france.13 hours = 6 } 
+		 }
+	}
+
+#North Africa ain't looking good - Mauritania
+country_event = {
+	id = h1936_france.13
+	title = h1936_france.13.t
+	desc = h1936_france.13.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.13.a #send him soldiers to solve it himself
+		ai_chance = { base = 25 }
+		add_manpower = -30000
+		FRM = { add_manpower = 30000 } } 
+	 option = {
+		name = h1936_france.13.b #huntziger can do it himself
+		ai_chance = { base = 25 }
+		add_stability = -0.1
+		 }
+	 option = {
+		name = h1936_france.13.c #team up eboue and huntziger
+		ai_chance = { base = 25 }
+		add_stability = -0.05
+		 }
+	option = {
+		name = h1936_france.13.e #i mean like why tho
+		ai_chance = { base = 25 }
+		add_popularity = {
+	ideology = communism
+	popularity = 0.05
+}
 		 }
 	}
 	

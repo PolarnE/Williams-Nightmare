@@ -64,13 +64,12 @@ set_popularities = {
 	communism = 5
 	neutrality = 50
 }
-
 create_country_leader = {
-	name = "Habib Bourguiba"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = centrism
+	
+	name = "Ahmad II"
+	picture = "gfx//leaders//TUN//Portrait_Tunisia_Ahmad_II.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
-		#
 	}
-}
+} }

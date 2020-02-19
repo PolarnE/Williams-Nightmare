@@ -21,11 +21,11 @@ country_event = {
 news_event = { id = newsWN.9 hours = 6 } } }
 	}
 	
-#Independence from France - cba rn il do it later
+#Nationalist uprising forces a declaration of independence
 #country_event = {
-#	id = confedrhine.1
-#	title = confedrhine.1.t
-#	desc = confedrhine.1.d
+#	id = confedrhine.2
+#	title = confedrhine.2.t
+#	desc = confedrhine.2.d
 #	picture = GFX_report_event_communists_cheer
 #
 #	fire_only_once = yes
@@ -35,7 +35,7 @@ news_event = { id = newsWN.9 hours = 6 } } }
 #	NOT = { has_global_flag = global_paris_stock_market_crash } }
 #
 #	option = {
-#		name = confedrhine.1.a
+#		name = confedrhine.2.a
 #		add_political_power = -300
 #		hidden_effect = {
 #		FRA = { country_event = { id = h1936_france.1 days = 7 } }

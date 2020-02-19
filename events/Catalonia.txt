@@ -1,0 +1,41 @@
+﻿add_namespace = catalonia
+
+#France offers us to be a Grand Duchy
+country_event = {
+	id = catalonia.1
+	title = catalonia.1.t
+	desc = catalonia.1.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = catalonia.1.a #Yes
+   ai_chance = { base = 50 }
+   FRA = { country_event = { id = h1936_france.6 hours = 6 } }
+		}
+	 option = {
+		name = catalonia.1.b #No
+   ai_chance = { base = 50 }
+   FRA = { country_event = { id = h1936_france.8 hours = 6 } }
+		} }
+		
+#France offers us to be a Grand Duchy + economic concessions
+country_event = {
+	id = catalonia.2
+	title = catalonia.2.t
+	desc = catalonia.2.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = catalonia.2.a #Yes
+   ai_chance = { base = 90 }
+   FRA = { country_event = { id = h1936_france.9 hours = 6 } }
+		}
+	 option = {
+		name = catalonia.2.b #No
+   ai_chance = { base = 10 }
+   FRA = { country_event = { id = h1936_france.10 hours = 6 } }
+		} }

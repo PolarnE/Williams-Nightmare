@@ -1,0 +1,21 @@
+﻿add_namespace = tunisia
+
+#France is distracted with Catalonia
+country_event = {
+	id = tunisia.1
+	title = tunisia.1.t
+	desc = tunisia.1.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = tunisia.1.a #Independence time bby
+   ai_chance = { base = 100 }
+   TUN = { transfer_state = 458 annex_country = { target = FRT transfer_troops = yes } change_tag_from = FRT }
+		}
+	 option = {
+		name = tunisia.1.b #Yes lets be a french vassal the whole game, AI shouldnt ever do this
+   ai_chance = { base = 0 }
+   add_political_power = 150
+		} }

@@ -81,6 +81,17 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Chao Kung"
+	desc = ""
+	picture = "Portrait_Tibet_Nazi_Monk_Man.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
 create_field_marshal = {
 	name = " Yuthok Tashi Dhondup"
 	picture = "Yuthok_Tashi_Dondrub.dds"
