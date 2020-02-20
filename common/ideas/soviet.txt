@@ -230,7 +230,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_CIR_Supressed
+			picture = CIR_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
@@ -248,7 +248,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_BLR_Supressed
+			picture = BLR_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
@@ -267,7 +267,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_UKR_Supressed
+			picture = UKR_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
@@ -286,7 +286,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_KAZ_Supressed
+			picture = KAZ_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
@@ -304,7 +304,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_SIB_Supressed
+			picture = SIB_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
@@ -322,7 +322,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_KRA_Supressed
+			picture = KRA_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
