@@ -32,7 +32,7 @@ country_event = {
 	id = secession.2
 	title = secession.2.t
 	desc = secession.2.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_nestor_team
 	
 	fire_only_once = no
 	
@@ -44,8 +44,8 @@ country_event = {
 	option = {
 		name = secession.2.a
 		add_timed_idea = {
-			idea = GFX_report_event_nestor_team
-			days = 150
+			idea = RUS_Circassia_Supressed
+			days = 90
 		}
 	}
 	
@@ -104,7 +104,7 @@ country_event = {
 	option = {
 		name = secession.4.a
 		add_timed_idea = {
-			idea = RUS_Ukraine_Supressed
+			idea = RUS_Okhrana_Reactivated
 			days = 150
 		}
 	}
@@ -164,7 +164,7 @@ country_event = {
 	option = {
 		name = secession.6.a
 		add_timed_idea = {
-			idea = RUS_Belarus_Supressed
+			idea = RUS_Siphoning_Funds_To_Belarus
 			days = 150
 		}
 	}
@@ -224,7 +224,7 @@ country_event = {
 	option = {
 		name = secession.8.a
 		add_timed_idea = {
-			idea = RUS_Kazakhstan_Supressed
+			idea = RUS_Kazakh_Obscurantism
 			days = 150
 		}
 	}
@@ -284,7 +284,7 @@ country_event = {
 	option = {
 		name = secession.10.a
 		add_timed_idea = {
-			idea = RUS_Siberia_Supressed
+			idea = RUS_Siberian_Economic_Autonomy
 			days = 150
 		}
 	}
@@ -344,7 +344,7 @@ country_event = {
 	option = {
 		name = secession.12.a
 		add_timed_idea = {
-			idea = RUS_Krasnoyarsk_Supressed
+			idea = RUS_Compromise_With_Krasnoyarsk
 			days = 150
 		}
 	}

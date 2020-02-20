@@ -79,4 +79,28 @@ spriteTypes = {
 		name = "GFX_report_event_ultimatum"
 		texturefile = "gfx/event_pictures/report_event_ultimatum.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_BLR_Supressed"
+		texturefile = "gfx/interface/ideas/idea_BLR_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIR_Supressed"
+		texturefile = "gfx/interface/ideas/idea_CIR_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_Supressed"
+		texturefile = "gfx/interface/ideas/idea_KAZ_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KRA_Supressed"
+		texturefile = "gfx/interface/ideas/idea_SIB_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_Supressed"
+		texturefile = "gfx/interface/ideas/idea_UKR_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIB_Supressed"
+		texturefile = "gfx/interface/ideas/idea_UKR_Supressed.dds"
+	}
 }

@@ -230,12 +230,120 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = generic_volunteer_expedition_bonus
+			picture = GFX_idea_CIR_Supressed
 			
 			modifier = {
 				stability_factor = -0.3
 			}
 
+		}
+			RUS_Siphoning_Funds_To_Belarus = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_BLR_Supressed
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+
+		}
+
+			RUS_Okhrana_Reactivated = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_UKR_Supressed
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+
+		}
+		
+			RUS_Kazakh_Obscurantism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_KAZ_Supressed
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+
+		}
+			RUS_Siberian_Economic_Autonomy = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_SIB_Supressed
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+
+		}
+			RUS_Compromise_With_Krasnoyarsk = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = GFX_idea_KRA_Supressed
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+			RUS_Ural_Garrisons = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_factor = -0.3
+			}
 		}
 		
 		
