@@ -100,6 +100,7 @@ country_event = {
 		name = h1936_france.4.a #bang them
    ai_chance = { base = 75 }
    set_country_flag = flag_catalonia_bang_them
+   set_country_flag = flag_catalonia_rising_up
    add_stability = -0.2
    add_ideas = FRA_soldiers_striking_1
    CAT = { transfer_state = 165 load_oob = CAT_uprising }
@@ -110,6 +111,7 @@ country_event = {
    ai_chance = { base = 25 }
    add_stability = -0.2
    add_ideas = FRA_soldiers_striking_1
+   set_country_flag = flag_catalonia_rising_up
    CAT = { transfer_state = 165 load_oob = CAT_uprising 
     country_event = { id = catalonia.1 hours = 6 } }
 		} }
@@ -296,6 +298,7 @@ country_event = {
 		ai_chance = { base = 45 }
 		add_manpower = -30000
 		FAF = { add_manpower = 30000 
+		country_event = { id = marrakech_algiers.1 hours = 6 } 
 		create_country_leader = {
 	name = "Philippe Pétain"
 	desc = ""
@@ -307,14 +310,17 @@ country_event = {
 } } } 
        country_event = { id = h1936_france.13 hours = 6 } 
 	 option = {
-		name = h1936_france.12.c #dissolve marrakech-algiers and establish direct rule
+		name = h1936_france.12.c #dissolve marrakech-algiers and establish direct rule, results in moroccan uprising
 		ai_chance = { base = 15 }
 		add_stability = -0.1
 		annex_country = { target = FAF transfer_troops = yes }
        country_event = { id = h1936_france.13 hours = 6 } 
+	   hidden_effect = {
+	   country_event = { id = h1936_france.14 days = 30 } 
+	   }
 		 }
 	 option = {
-		name = h1936_france.12.f #dissolve marrakech-algiers and establish protectorates
+		name = h1936_france.12.f #dissolve marrakech-algiers and establish protectorates, rn this option will be the 'correct answer' but later on il give it its own consequences too
 		ai_chance = { base = 25 }
 		add_stability = -0.05
 		FAF = { set_cosmetic_tag = FAF_algeria set_capital = 459 }
@@ -329,6 +335,7 @@ country_event = {
 	ideology = communism
 	popularity = 0.05
 }
+FAF = { country_event = { id = marrakech_algiers.2 hours = 6 }  }
        country_event = { id = h1936_france.13 hours = 6 } 
 		 }
 	}
@@ -350,12 +357,23 @@ country_event = {
 	 option = {
 		name = h1936_france.13.b #huntziger can do it himself
 		ai_chance = { base = 25 }
-		add_stability = -0.1
+		add_manpower = -30000
+		FRM = { add_manpower = 30000
+		create_country_leader = {
+	name = "Charles Huntziger"
+	desc = ""
+	picture = "gfx//leaders//FRA//Portrait_France_Charles_Huntziger.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}		}
 		 }
 	 option = {
 		name = h1936_france.13.c #team up eboue and huntziger
 		ai_chance = { base = 25 }
-		add_stability = -0.05
+		add_manpower = -50000
+		FRM = { add_manpower = 50000 }
 		 }
 	option = {
 		name = h1936_france.13.e #i mean like why tho
@@ -366,4 +384,75 @@ country_event = {
 }
 		 }
 	}
+	
+#North Africa ain't looking good - Morocco rebels after direct rule
+country_event = {
+	id = h1936_france.14
+	title = h1936_france.14.t
+	desc = h1936_france.14.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.14.a #you get the event to declare war in a week
+	release = MOR
+	MOR = { load_oob = MOR_rebellion }
+	hidden_effect = {
+	country_event = { id = h1936_france.15 days = 7 } } }
+	}
+	
+#North Africa ain't looking good - declaration of war on morocco
+country_event = {
+	id = h1936_france.15
+	title = h1936_france.15.t
+	desc = h1936_france.15.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.15.a #time to bang them
+	declare_war_on = { type = annex_everything    target = MOR }
+	hidden_effect = {
+	SPR = { country_event = { id = iberia.1 days = 3 } } } }
+	}
+	
+#North Africa ain't looking good - Iberia intervenes in Morocco
+country_event = {
+	id = h1936_france.16
+	title = h1936_france.16.t
+	desc = h1936_france.16.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.16.a #whatever, they better not expect anything though
+	set_truce = {
+    target = SPR
+    days = 150
+}
+	}
+	}
+	
+#North Africa ain't looking good - Moroccan rebellion collapses
+country_event = {
+	id = h1936_france.17
+	title = h1936_france.17.t
+	desc = h1936_france.17.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	fire_only_once = yes
+	
+	trigger = {
+	has_war_with = MOR
+	MOR = { surrender_progress > 0.4 } }
+	
+	option = {
+		name = h1936_france.17.a #good
+annex_country = { target = MOR transfer_troops = no }
+	}
+	}
+	
 	

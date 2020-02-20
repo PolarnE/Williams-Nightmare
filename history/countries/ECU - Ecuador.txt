@@ -59,13 +59,13 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1933.12.15"
 	election_frequency = 84
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 100
+	fascism = 100
 }
 
 create_country_leader = {
