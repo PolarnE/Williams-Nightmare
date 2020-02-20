@@ -44,7 +44,7 @@ country_event = {
 	option = {
 		name = secession.2.a
 		add_timed_idea = {
-			idea = RUS_Circassia_Supressed
+			idea = GFX_report_event_nestor_team
 			days = 150
 		}
 	}
@@ -66,7 +66,7 @@ country_event = {
 	id = secession.3
 	title = secession.3.t
 	desc = secession.3.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_blue_army
 	
 	fire_only_once = no
 	
@@ -92,7 +92,7 @@ country_event = {
 	id = secession.4
 	title = secession.4.t
 	desc = secession.4.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_bandera
 	
 	fire_only_once = no
 	
@@ -126,7 +126,7 @@ country_event = {
 	id = secession.5
 	title = secession.5.t
 	desc = secession.5.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_free_belarus
 	
 	fire_only_once = no
 	
@@ -152,7 +152,7 @@ country_event = {
 	id = secession.6
 	title = secession.6.t
 	desc = secession.6.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_ultimatum
 	
 	fire_only_once = no
 	
@@ -186,7 +186,7 @@ country_event = {
 	id = secession.7
 	title = secession.7.t
 	desc = secession.7.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_alash_orda
 	
 	fire_only_once = no
 	
@@ -212,7 +212,7 @@ country_event = {
 	id = secession.8
 	title = secession.8.t
 	desc = secession.8.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_obscurantists
 	
 	fire_only_once = no
 	
@@ -246,7 +246,7 @@ country_event = {
 	id = secession.9
 	title = secession.9.t
 	desc = secession.9.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_bogomolov_referendum
 	
 	fire_only_once = no
 	
@@ -272,7 +272,7 @@ country_event = {
 	id = secession.10
 	title = secession.10.t
 	desc = secession.10.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_bogomolov_questions
 	
 	fire_only_once = no
 	
@@ -306,7 +306,7 @@ country_event = {
 	id = secession.11
 	title = secession.11.t
 	desc = secession.11.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_indigo_army
 	
 	fire_only_once = no
 	
@@ -332,7 +332,7 @@ country_event = {
 	id = secession.12
 	title = secession.12.t
 	desc = secession.12.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_krasnoyarsk
 	
 	fire_only_once = no
 	
@@ -366,7 +366,7 @@ country_event = {
 	id = secession.13
 	title = secession.13.t
 	desc = secession.13.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_socialist_republic
 	
 	fire_only_once = no
 	
@@ -392,7 +392,7 @@ country_event = {
 	id = secession.14
 	title = secession.14.t
 	desc = secession.14.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_mountain_communes
 	
 	fire_only_once = no
 	
@@ -427,7 +427,7 @@ country_event = {
 	id = secession.15
 	title = secession.15.t
 	desc = secession.15.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_sakhalin
 	
 	fire_only_once = no
 	
@@ -447,7 +447,7 @@ country_event = {
 	id = secession.16
 	title = secession.16.t
 	desc = secession.16.d
-	picture = GFX_report_event_rus_duma_fights
+	picture = GFX_report_event_sakhalin
 	
 	fire_only_once = no
 	
