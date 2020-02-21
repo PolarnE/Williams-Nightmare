@@ -488,6 +488,6 @@ texturefile = "gfx/interface/ideas/idea_RGN_Zakaz_Codified.dds"
  }
 SpriteType = { 
  name = "GFX_idea_RGN_Central_Government"
-texturefile = "gfx/interface/ideas/idea_RGN_Zakaz_Codified.dds"
+texturefile = "gfx/interface/ideas/idea_RGN_Central_Government.dds"
  }
  }
