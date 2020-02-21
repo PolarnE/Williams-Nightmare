@@ -34,5 +34,10 @@ spriteTypes = {
 		name = "GFX_idea_ENG_pan_germanicists"
 		texturefile = "gfx/interface/ideas/idea_ENG_pan_germanicists.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_RAJ_dissolved_military"
+		texturefile = "gfx/interface/ideas/idea_RAJ_dissolved_military.dds"
+	}
 
 }

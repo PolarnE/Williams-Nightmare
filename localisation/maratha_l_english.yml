@@ -1,5 +1,5 @@
 ﻿l_english:
-  #il include mysore in this too because theyre both basically the same country
+  #events
   ##demanding french mysore
   maratha.1.t:0 "France is Distracted"
   maratha.1.d:0 "With the Great Depression kicking off in Europe we've got a golden opportunity to expand the Maletist revolution to our brothers and sisters in Mysore, due to their isolated position and relative lack of power against France our generals are confident there will not be a response from them. It could even cause the collapse of their disgusting Empire as a whole by encouraging their many subjects to rise up in defiance."
@@ -20,3 +20,6 @@
   maratha.3.t:0 "Mysore Crisis Ends in Victory"
   maratha.3.d:0 "Whilst the tiny state of Mysore did provide resistance to their ineviatable annexation the French haven't given any indication of their backing of their supposed protectorate. Now's our chance to quickly invade them and incorporate them into our glorious revolution!"
   maratha.3.a:0 "We're the victors in the end."
+  #ideas
+  RAJ_dissolved_military:0 "Worker's Militias"
+  RAJ_dissolved_military_desc:0 "As a response to the November coup attempt, Premier Roy dissolved the military and ordered a mass purge of suspected disloyal generals on the 12th December, 1935 - stating that it had become decadent and corrupt and must be reformed into a true force of liberation for the workers. For the forseeable future though, the Marathan military is entirely composed of so called Worker's Militias."
