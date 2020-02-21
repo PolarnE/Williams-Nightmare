@@ -69,10 +69,10 @@ set_state_flag = ROOT
 		}
 		prerequisite = { focus = RGN_recogniserussianauthority focus = RGN_seekregionalrecognition }
 		available = {
-			has_political_power> 100
+			has_political_power> 50
 		}
 		completion_reward = {
-			add_political_power= -100
+			add_political_power= -50
 			add_timed_idea= { 
 			idea = Central_Government 
 			days = 365
@@ -199,7 +199,7 @@ has_stability> 0.8
 			is_in_faction= yes
 		}
 		completion_reward = {
-			create_faction= 'Menshiyprotektoryat'
+			create_faction = Menshiyprotektoryat
 		}
 	}
 
@@ -264,7 +264,7 @@ has_stability> 0.8
 		completion_reward = {
 			add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 1200
+			amount = 2200
 			producer = FRA
 		}
 		}
@@ -285,7 +285,7 @@ has_stability> 0.8
 		}
 		completion_reward = {
 			add_war_support = 0.3
-			add_manpower= 650000
+			add_manpower= 850000
 		}
 	}
 
@@ -421,7 +421,7 @@ has_stability> 0.8
 		prerequisite = { focus = RGN_protokultura focus = RGN_pogranichnayakultura }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 149999 }
+			has_army_manpower = { size > 49999 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -476,7 +476,7 @@ has_stability> 0.8
 		prerequisite = { focus = RGN_culturalclaims }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 249999 }
+			has_army_manpower = { size > 99999 }
 			has_stability > 0.5
 		}
 		ai_will_do = {
@@ -560,7 +560,7 @@ has_stability> 0.8
 			OR = {
 			SOV = { has_idea = RUS_integrity_2 }
 			SOV = { has_idea = RUS_integrity_1 }
-			has_army_manpower = { size > 549999 }
+			has_army_manpower = { size > 149999 }
 			}
 		}
 		ai_will_do = {
@@ -626,6 +626,10 @@ has_stability> 0.8
 		mutually_exclusive = { focus = RGN_seekregionalrecognition }
 		ai_will_do = {
 			factor = 1
+		}
+		available = { 
+		country_exists = SOV
+		has_war = no
 		}
 		completion_reward = {
 			diplomatic_relation= { 
