@@ -105,7 +105,7 @@ country_event = {
 		name = secession.4.a
 		add_timed_idea = {
 			idea = RUS_Okhrana_Reactivated
-			days = 150
+			days = 130
 		}
 	}
 	
@@ -165,7 +165,7 @@ country_event = {
 		name = secession.6.a
 		add_timed_idea = {
 			idea = RUS_Siphoning_Funds_To_Belarus
-			days = 150
+			days = 70
 		}
 	}
 	
@@ -225,7 +225,7 @@ country_event = {
 		name = secession.8.a
 		add_timed_idea = {
 			idea = RUS_Kazakh_Obscurantism
-			days = 150
+			days = 120
 		}
 	}
 	
@@ -285,7 +285,7 @@ country_event = {
 		name = secession.10.a
 		add_timed_idea = {
 			idea = RUS_Siberian_Economic_Autonomy
-			days = 150
+			days = 160
 		}
 	}
 	
@@ -345,7 +345,7 @@ country_event = {
 		name = secession.12.a
 		add_timed_idea = {
 			idea = RUS_Compromise_With_Krasnoyarsk
-			days = 150
+			days = 140
 		}
 	}
 	
@@ -405,7 +405,7 @@ country_event = {
 		name = secession.14.a
 		add_timed_idea = {
 			idea = RUS_Transural_Supressed
-			days = 150
+			days = 85
 		}
 	}
 	

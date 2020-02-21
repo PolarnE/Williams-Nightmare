@@ -251,7 +251,7 @@ ideas = {
 			picture = BLR_Supressed
 			
 			modifier = {
-				stability_factor = -0.3
+				consumer_goods_factor = 0.35
 			}
 
 		}
@@ -270,7 +270,8 @@ ideas = {
 			picture = UKR_Supressed
 			
 			modifier = {
-				stability_factor = -0.3
+				army_org_factor = -0.1
+				conscription = -0.02
 			}
 
 		}
@@ -289,7 +290,8 @@ ideas = {
 			picture = KAZ_Supressed
 			
 			modifier = {
-				stability_factor = -0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.1
 			}
 
 		}
@@ -307,7 +309,7 @@ ideas = {
 			picture = SIB_Supressed
 			
 			modifier = {
-				stability_factor = -0.3
+				local_resources_factor = -0.6
 			}
 
 		}
@@ -325,7 +327,8 @@ ideas = {
 			picture = KRA_Supressed
 			
 			modifier = {
-				stability_factor = -0.3
+				political_advisor_cost_factor = 0.5
+				political_power_cost = 0.2
 			}
 		}
 			RUS_Ural_Garrisons = {
@@ -342,7 +345,9 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				stability_factor = -0.3
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+				army_morale_factor = -0.1
 			}
 		}
 		

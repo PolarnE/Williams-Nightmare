@@ -93,7 +93,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_KRA_Supressed"
-		texturefile = "gfx/interface/ideas/idea_SIB_Supressed.dds"
+		texturefile = "gfx/interface/ideas/idea_KRA_Supressed.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_UKR_Supressed"
@@ -101,6 +101,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_SIB_Supressed"
-		texturefile = "gfx/interface/ideas/idea_UKR_Supressed.dds"
+		texturefile = "gfx/interface/ideas/idea_SIB_Supressed.dds"
 	}
 }

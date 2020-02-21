@@ -18,7 +18,6 @@ SOV_category_struggle_for_independence = {
 		
 		visible = {
 			tag = SOV
-			NOT = { has_idea = RUS_integrity_6 }
 		}
 
 		days_mission_timeout = 80
@@ -91,10 +90,9 @@ SOV_category_struggle_for_independence = {
 		
 		visible = {
 			tag = SOV
-			NOT = { has_idea = RUS_integrity_6 }
 		}
 
-		days_mission_timeout = 150
+		days_mission_timeout = 120
 		#days_remove = 1
 
 		activation = {
@@ -167,10 +165,9 @@ SOV_category_struggle_for_independence = {
 		
 		visible = {
 			tag = SOV
-			NOT = { has_idea = RUS_integrity_6 }
 		}
 
-		days_mission_timeout = 150
+		days_mission_timeout = 80
 		#days_remove = 1
 
 		activation = {
@@ -215,5 +212,287 @@ SOV_category_struggle_for_independence = {
 		}
 	}
 }
+### KAZAKHSTAN - Integrity 4 trigger | Stability lower than 50%.
+	SOV_mission_kazakhstan_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_idea = RUS_integrity_5
+				has_completed_focus = SOV_onlyus
+				country_exists = KAZ
+				AND = {
+					has_idea = RUS_integrity_4
+					has_stability > 0.5
+				}
+					}
+				}
+		
+		
+		visible = {
+			tag = SOV
+		}
+
+		days_mission_timeout = 110
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+					AND = {
+						has_idea = RUS_integrity_4
+						has_stability < 0.5
+					}
+				}
+			NOT = { country_exists = KAZ }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				OR = {
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+				}
+				country_event = {
+					id = secession.7
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+				limit = {
+					AND = {
+						has_idea = RUS_integrity_4
+						has_stability < 0.5
+					}
+				}
+				country_event = {
+					id = secession.8
+				}
+			}
+		}
+	}
+### SIBIR - Integrity 3 trigger | No stability req.
+	SOV_mission_siberia_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_idea = RUS_integrity_5
+				has_idea = RUS_integrity_4
+				has_completed_focus = SOV_onlyus
+				country_exists = SIB
+				}
+		}
+		
+		
+		visible = {
+			tag = SOV
+		}
+
+		days_mission_timeout = 150
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_3
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+			NOT = { country_exists = SIB }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				OR = {
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+				}
+				country_event = {
+					id = secession.9
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+				limit = {
+					has_idea = RUS_integrity_3
+				}
+				country_event = {
+					id = secession.10
+				}
+			}
+		}
+	}
+### KRASNOYARSK - Integrity 3 trigger | Stability lower than 40%.
+	SOV_mission_krasnoyarsk_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_idea = RUS_integrity_5
+				has_idea = RUS_integrity_4
+				has_completed_focus = SOV_onlyus
+				country_exists = KRA
+				AND = {
+					has_idea = RUS_integrity_3
+					has_stability > 0.4
+				}
+					}
+				}
+		
+		
+		visible = {
+			tag = SOV
+		}
+
+		days_mission_timeout = 130
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+					AND = {
+						has_idea = RUS_integrity_3
+						has_stability < 0.4
+					}
+				}
+			NOT = { country_exists = KRA }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				OR = {
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+				}
+				country_event = {
+					id = secession.11
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+				limit = {
+					AND = {
+						has_idea = RUS_integrity_3
+						has_stability < 0.4
+					}
+				}
+				country_event = {
+					id = secession.12
+				}
+			}
+		}
+	}
+### URAL - Integrity 2 trigger | No stability req.
+	SOV_mission_ural_secession = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+				OR = {
+				has_idea = RUS_integrity_6
+				has_idea = RUS_integrity_5
+				has_idea = RUS_integrity_4
+				has_idea = RUS_integrity_3
+				has_completed_focus = SOV_onlyus
+				country_exists = URA
+				}
+		}
+		
+		
+		visible = {
+			tag = SOV
+		}
+
+		days_mission_timeout = 75
+		#days_remove = 1
+
+		activation = {
+				OR = {
+				has_idea = RUS_integrity_2
+				has_idea = RUS_integrity_1
+				}
+			NOT = { country_exists = URA }
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				# 1. We go independent
+				limit = {
+				has_idea = RUS_integrity_1
+				}
+				country_event = {
+					id = secession.13
+				}
+			}
+			else_if = {
+				# 2. We go conditional
+					has_idea = RUS_integrity_2
+				country_event = {
+					id = secession.14
+				}
+			}
+		}
+	}
+}
+
 
 
