@@ -96,7 +96,7 @@ set_state_flag = ROOT
 			every_owned_state = {
 					add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 2
 					instant_build = yes
 					}
 			}
@@ -151,7 +151,7 @@ set_state_flag = ROOT
 			factor = 1
 		}
 		completion_reward = {
-			any_owned_state = {
+			random_owned_controlled_state = {
 				add_resource= { 
 				type = steel 
 				amount = 16 
@@ -263,7 +263,8 @@ has_stability> 0.8
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 1000000
+			add_war_support = 0.3
+			add_manpower= 650000
 		}
 	}
 
@@ -351,11 +352,14 @@ has_stability> 0.8
 		prerequisite = { focus = RGN_russosphereeconomicinitiative }
 		prerequisite = { focus = RGN_ourownwhitearmy }
 		mutually_exclusive = { focus = RGN_littleprotektoryat }
+		available = {
+			country_exists = SOV
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_to_faction= SOV
+			SOV = { add_to_faction = ROOT }
 		}
 	}
 
@@ -384,16 +388,59 @@ has_stability> 0.8
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
+		will_lead_to_war_with = BLR
+		will_lead_to_war_with = UKR
+		will_lead_to_war_with = KRA
+		will_lead_to_war_with = KAZ
+		will_lead_to_war_with = CIR
+		will_lead_to_war_with = SIB
+		will_lead_to_war_with = SAK
+		will_lead_to_war_with = URA
 		prerequisite = { focus = RGN_urbanizatsiyaplan }
 		prerequisite = { focus = RGN_protokultura focus = RGN_pogranichnayakultura }
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 149999 }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = RGN_Cultural_Claims_tt
+			hidden_effect = {
 				create_wargoal= { 
 					type = annex_everything 
-					target = AUS
-		}
+					target = UKR
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = CIR
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = BLR
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = KRA
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = SIB
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = KAZ
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = SAK
+				}
+				create_wargoal= { 
+					type = annex_everything 
+					target = URA
+				}
+			}
 	}
 	}
 
@@ -406,11 +453,47 @@ has_stability> 0.8
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RGN_culturalclaims }
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 249999 }
+			has_stability > 0.5
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = RGN_Minorities_Integration_tt
+			hidden_effect = {
 				remove_idea = RGN_Local_Separatism
+				every_state = {
+                limit = { is_core_of = UKR }
+                add_core_of = ROOT
+				}
+				every_state = {
+                limit = { is_core_of = BLR }
+                add_core_of = ROOT
+				}
+				every_state = {
+                limit = { is_core_of = SIB }
+                add_core_of = ROOT
+				}
+				every_state = {
+                limit = { is_core_of = KRA }
+                add_core_of = ROOT
+				}
+				every_state = {
+                limit = { is_core_of = SAK }
+                add_core_of = ROOT
+				}
+				every_state = {
+                limit = { is_core_of = URA }
+                add_core_of = ROOT
+				}
+				every_state = {
+                limit = { is_core_of = CIR }
+                add_core_of = ROOT
+				}
+            }
 		}
 	}
 	
@@ -425,10 +508,17 @@ has_stability> 0.8
 		prerequisite = { focus = RGN_zashchitarodiny }
 		prerequisite = { focus = RGN_integrateminorities }
 		mutually_exclusive = { focus = RGN_matterofrussia }
+		available = {
+			is_puppet = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
 		}
 	}
 	#Focus for Matter of Russia
@@ -442,10 +532,31 @@ has_stability> 0.8
 		prerequisite = { focus = RGN_russosphereeconomicinitiative }
 		prerequisite = { focus = RGN_integrateminorities }
 		mutually_exclusive = { focus = RGN_seryiden }
+		available = {
+			is_puppet = no
+			has_war = no
+			country_exists = SOV
+			OR = {
+			SOV = { has_idea = RUS_integrity_2 }
+			SOV = { has_idea = RUS_integrity_1 }
+			has_army_manpower = { size > 549999 }
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = RGN_Political_Fight_For_Russia_tt
+			hidden_effect = {
+				annex_country = {
+				target = SOV
+				transfer_troops = yes
+			}				
+				every_state = {
+                limit = { is_core_of = SOV }
+                add_core_of = ROOT
+				}
+            }
 		}
 	}
 
