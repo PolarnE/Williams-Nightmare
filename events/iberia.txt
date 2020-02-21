@@ -1,0 +1,46 @@
+﻿
+add_namespace = iberia
+
+#Intervene against Morcco?
+country_event = {
+	id = iberia.1
+	title = iberia.1.t
+	desc = iberia.1.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iberia.1.a #ok
+		ai_chance = { base = 50 }
+	declare_war_on = { type = annex_everything    target = MOR }
+	hidden_effect = {
+	FRA = { country_event = { id = h1936_france.16 hours = 6 } } } }
+	option = {
+		name = iberia.1.b #nahh
+		ai_chance = { base = 50 }
+	add_political_power = 15
+	}
+	}
+	
+#Independence from France - triggers a lot of them to quit
+country_event = {
+	id = iberia.2
+	title = iberia.2.t
+	desc = iberia.2.d
+	picture = GFX_report_event_carol_meeting
+	
+	fire_only_once = yes
+	
+	trigger = {
+	FRA = { has_country_flag = flag_catalonia_rising_up } }
+	
+	option = {
+		name = iberia.2.a #epic!!!
+	FRA = { set_autonomy = {
+	target = SPR
+	autonomy_state = autonomy_free
+}
+remove_from_faction = SPR
+country_event = { id = h1936_france.18 hours = 6 } }
+	}

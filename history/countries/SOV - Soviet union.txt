@@ -9,9 +9,13 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.9
+set_research_slots = 4
+# Although we consider Russian poor science base, there will be nasty parliament event to close research slot. F to pay respects
+set_stability = 0.4
+# Stability for the beggining should be about 30-40
+set_war_support = 0.1
+# It's democratic isolationist Russia after all so no war motivation
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -26,7 +30,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
+	basic_light_tank = 1
 	#basic_heavy_tank = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
@@ -127,7 +131,7 @@ RUS_integrity_5
 RUS_lack_of_innovation
 RUS_legacy_of_empire
 RUS_slow_industrialisation
-RUS_industrialisation_plan
+#RUS_Ural_Garrisons #Sure will be useful, but rather triggered by an event - Silv.
 }
 
 create_country_leader = {
@@ -140,6 +144,7 @@ create_country_leader = {
 		
 	}
 }
+#It would be rather not monarchist at all (they are in Russland), just some kind of random despotic bloke
 
 create_country_leader = {
 	name = "Léon Blum"
@@ -804,7 +809,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
+		name = "Mir Class"
 		type = ship_hull_light_1
 		name_group = SOV_DD_HISTORICAL
 		parent_version = 0
@@ -821,7 +826,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Leningrad & Minsk Class"				
+		name = "Petrograd Class"				
 		type = ship_hull_light_2
 		name_group = SOV_DD_HISTORICAL
 		parent_version = 0
@@ -854,7 +859,7 @@ if = {
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Komintern Class"
+		name = "Pobeda Class"
 		type = ship_hull_cruiser_1
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
@@ -871,7 +876,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Chervona Ukraina Class"
+		name = "Byelaya Armiya Class"
 		type = ship_hull_cruiser_1
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
@@ -959,7 +964,7 @@ if = {
 		}
 
 		create_equipment_variant = {
-			name = "Maxim Gorky Class"
+			name = "Spritnaya Class"
 			type = heavy_cruiser_2
 			upgrades = {
 				ship_reliability_upgrade = 2
@@ -973,7 +978,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
-			name = "Series XIII Leninets"				
+			name = "Series XIII Davidovka"				
 			type = ship_hull_submarine_2
 			name_group = SOV_SS_LENINETS
 			parent_version = 0

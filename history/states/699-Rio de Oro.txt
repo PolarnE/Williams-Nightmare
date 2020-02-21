@@ -8,6 +8,7 @@ state={
 	history={
 		owner = FAF
 		add_core_of = WES
+		add_core_of = MOR
 		add_core_of = FAF
 		buildings = {
 			infrastructure = 1

@@ -11,7 +11,13 @@ state={
 		add_core_of = MOR
 		add_core_of = FAF
 		victory_points = {
-			4108 1 
+			4108 20
+		}
+		victory_points = {
+			7958 1 
+		}
+		victory_points = {
+			11943 1 
 		}
 		buildings = {
 			infrastructure = 1

@@ -3,4 +3,104 @@ spriteTypes = {
 		name = "GFX_report_event_rus_duma_fights"
 		texturefile = "gfx/event_pictures/report_event_rus_duma_fights.dds"
 	}	
+	spriteType = {
+		name = "GFX_report_event_alash_orda"
+		texturefile = "gfx/event_pictures/report_event_alash_orda.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_bandera"
+		texturefile = "gfx/event_pictures/report_event_bandera.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_blue_army"
+		texturefile = "gfx/event_pictures/report_event_blue_army.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_bogomolov_questions"
+		texturefile = "gfx/event_pictures/report_event_bogomolov_questions.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_bogomolov_referendum"
+		texturefile = "gfx/event_pictures/report_event_bogomolov_referendum.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_duma_military"
+		texturefile = "gfx/event_pictures/report_event_duma_military.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_duma_moscow"
+		texturefile = "gfx/event_pictures/report_event_duma_moscow.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_duma_negative"
+		texturefile = "gfx/event_pictures/report_event_duma_negative.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_duma_positive"
+		texturefile = "gfx/event_pictures/report_event_duma_positive.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_duma_trotsky"
+		texturefile = "gfx/event_pictures/report_event_duma_positive.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_free_belarus"
+		texturefile = "gfx/event_pictures/report_event_free_belarus.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_indigo_army"
+		texturefile = "gfx/event_pictures/report_event_indigo_army.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_krasnoyarsk"
+		texturefile = "gfx/event_pictures/report_event_krasnoyarsk.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mountain_communes"
+		texturefile = "gfx/event_pictures/report_event_mountain_communes.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_nestor_team"
+		texturefile = "gfx/event_pictures/report_event_nestor_team.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_obscurantists"
+		texturefile = "gfx/event_pictures/report_event_obscurantists.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sakhalin"
+		texturefile = "gfx/event_pictures/report_event_sakhalin.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_socialist_republic"
+		texturefile = "gfx/event_pictures/report_event_socialist_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ultimatum"
+		texturefile = "gfx/event_pictures/report_event_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_Supressed"
+		texturefile = "gfx/interface/ideas/idea_BLR_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIR_Supressed"
+		texturefile = "gfx/interface/ideas/idea_CIR_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_Supressed"
+		texturefile = "gfx/interface/ideas/idea_KAZ_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KRA_Supressed"
+		texturefile = "gfx/interface/ideas/idea_KRA_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_Supressed"
+		texturefile = "gfx/interface/ideas/idea_UKR_Supressed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIB_Supressed"
+		texturefile = "gfx/interface/ideas/idea_SIB_Supressed.dds"
+	}
 }

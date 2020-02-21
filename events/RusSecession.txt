@@ -1,0 +1,516 @@
+
+add_namespace = secession
+
+###### Event for Circassia/Full independence
+country_event = {
+	id = secession.1
+	title = secession.1.t
+	desc = secession.1.d
+	picture = GFX_report_event_rus_duma_fights
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.1.a
+		release = CIR
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.1.b
+		release = CIR
+		CIR = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Circassia/Conditional
+country_event = {
+	id = secession.2
+	title = secession.2.t
+	desc = secession.2.d
+	picture = GFX_report_event_nestor_team
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.2.a
+		add_timed_idea = {
+			idea = RUS_Circassia_Supressed
+			days = 90
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.2.b
+		release = CIR
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.2.c
+		release = CIR
+		CIR = { change_tag_from = ROOT }
+		}
+} 
+###### Event for Ukraine/Full independence
+country_event = {
+	id = secession.3
+	title = secession.3.t
+	desc = secession.3.d
+	picture = GFX_report_event_blue_army
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.3.a
+		release = UKR
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.3.b
+		release = UKR
+		UKR = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Ukraine/Conditional
+country_event = {
+	id = secession.4
+	title = secession.4.t
+	desc = secession.4.d
+	picture = GFX_report_event_bandera
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.4.a
+		add_timed_idea = {
+			idea = RUS_Okhrana_Reactivated
+			days = 130
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.4.b
+		release = UKR
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.4.c
+		release = UKR
+		UKR = { change_tag_from = ROOT }
+		}
+} 
+###### Event for Belarus/Full independence
+country_event = {
+	id = secession.5
+	title = secession.5.t
+	desc = secession.5.d
+	picture = GFX_report_event_free_belarus
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.5.a
+		release = BLR
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.5.b
+		release = BLR
+		BLR = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Belarus/Conditional
+country_event = {
+	id = secession.6
+	title = secession.6.t
+	desc = secession.6.d
+	picture = GFX_report_event_ultimatum
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.6.a
+		add_timed_idea = {
+			idea = RUS_Siphoning_Funds_To_Belarus
+			days = 70
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.6.b
+		release = BLR
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.6.c
+		release = BLR
+		BLR = { change_tag_from = ROOT }
+		}
+} 
+###### Event for Kazakhstan/Full independence
+country_event = {
+	id = secession.7
+	title = secession.7.t
+	desc = secession.7.d
+	picture = GFX_report_event_alash_orda
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.7.a
+		release = KAZ
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.7.b
+		release = KAZ
+		KAZ = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Kazakhstan/Conditional
+country_event = {
+	id = secession.8
+	title = secession.8.t
+	desc = secession.8.d
+	picture = GFX_report_event_obscurantists
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.8.a
+		add_timed_idea = {
+			idea = RUS_Kazakh_Obscurantism
+			days = 120
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.8.b
+		release = KAZ
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.8.c
+		release = KAZ
+		KAZ = { change_tag_from = ROOT }
+		}
+} 
+###### Event for Siberia/Full independence
+country_event = {
+	id = secession.9
+	title = secession.9.t
+	desc = secession.9.d
+	picture = GFX_report_event_bogomolov_referendum
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.9.a
+		release = SIB
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.9.b
+		release = SIB
+		SIB = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Siberia/Conditional
+country_event = {
+	id = secession.10
+	title = secession.10.t
+	desc = secession.10.d
+	picture = GFX_report_event_bogomolov_questions
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.10.a
+		add_timed_idea = {
+			idea = RUS_Siberian_Economic_Autonomy
+			days = 160
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.10.b
+		release = SIB
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.10.c
+		release = SIB
+		SIB = { change_tag_from = ROOT }
+		}
+}
+###### Event for Krasnoyarsk/Full independence
+country_event = {
+	id = secession.11
+	title = secession.11.t
+	desc = secession.11.d
+	picture = GFX_report_event_indigo_army
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.11.a
+		release = KRA
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.11.b
+		release = KRA
+		KRA = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Krasnoyarsk/Conditional
+country_event = {
+	id = secession.12
+	title = secession.12.t
+	desc = secession.12.d
+	picture = GFX_report_event_krasnoyarsk
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.12.a
+		add_timed_idea = {
+			idea = RUS_Compromise_With_Krasnoyarsk
+			days = 140
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.12.b
+		release = KRA
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.12.c
+		release = KRA
+		KRA = { change_tag_from = ROOT }
+		}
+}
+###### Event for Trans-Ural/Full independence
+country_event = {
+	id = secession.13
+	title = secession.13.t
+	desc = secession.13.d
+	picture = GFX_report_event_socialist_republic
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing... URAAAA!
+	option = {
+		name = secession.13.a
+		release = URA
+	}
+	#2. We want to play this nation
+	option = {
+		name = secession.13.b
+		release = URA
+		URA = { change_tag_from = ROOT }
+		}
+		
+	}
+# Event for Trans-Ural/Conditional
+country_event = {
+	id = secession.14
+	title = secession.14.t
+	desc = secession.14.d
+	picture = GFX_report_event_mountain_communes
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can prevent disaster, but at what cost?
+	option = {
+		name = secession.14.a
+		add_timed_idea = {
+			idea = RUS_Ural_Garrisons
+			days = 85
+		}
+	}
+	
+	#2. We can do nothing
+	option = {
+		name = secession.14.b
+		release = URA
+	}
+	#3. We want to play this nation
+	option = {
+		name = secession.14.c
+		release = URA
+		URA = { change_tag_from = ROOT }
+		}
+}
+######################### SPECIAL SEPARATION EVENTS
+###### Event for Sakhalin/Total Russia Collapse
+country_event = {
+	id = secession.15
+	title = secession.15.t
+	desc = secession.15.d
+	picture = GFX_report_event_sakhalin
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing
+	option = {
+		name = secession.15.a
+		release = SAK
+	}
+	#2. DELETED. In case of Nogvorod-Muscovy civil war - tag switch would be irrational
+	}
+# Event for Sakhalin/Novy Russland focus trigger
+country_event = {
+	id = secession.16
+	title = secession.16.t
+	desc = secession.16.d
+	picture = GFX_report_event_sakhalin
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. We can do nothing (Sakhalin should be considered as Nov-Rus puppet at this point)
+	option = {
+		name = secession.16.a
+		release = SAK
+	}
+	#2. We want to play this nation (Suicidal but why not)
+	option = {
+		name = secession.16.b
+		release = SAK
+		SAK = { change_tag_from = ROOT }
+		}
+}
+###### Event for Mus-Nov Civil War - Scene! - UNDONE
+country_event = {
+	id = secession.17
+	title = secession.17.t
+	desc = secession.17.d
+	picture = GFX_report_event_rus_duma_fights
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. Let's continue hoping for the best...
+	option = {
+		name = secession.17.a
+	}
+	}
+###### Event for Mus-Nov Civil War - Ignited! - UNDONE
+country_event = {
+	id = secession.18
+	title = secession.18.t
+	desc = secession.18.d
+	picture = GFX_report_event_rus_duma_fights
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { hours = 6 }
+	
+	#1. Join Savinkov's Novgorod!
+	option = {
+		name = secession.18.a
+		release = NVG
+		release = MUS
+		NVG = { change_tag_from = ROOT }
+	}
+	#2. Join Kolchak's Muscovy!
+	option = {
+		name = secession.18.b
+		release = NVG
+		release = MUS
+		MUS = { change_tag_from = ROOT }
+		}
+}
+

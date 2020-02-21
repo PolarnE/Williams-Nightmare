@@ -1,0 +1,46 @@
+﻿add_namespace = marrakech_algiers
+
+#France sends Marshal Petain to take back control
+country_event = {
+	id = marrakech_algiers.1
+	title = marrakech_algiers.1.t
+	desc = marrakech_algiers.1.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = marrakech_algiers.1.a #Heck yeah it works
+   ai_chance = { base = 65 }
+   add_stability = 0.1
+		}
+	 option = {
+		name = marrakech_algiers.1.b #Nah doesn't work
+   ai_chance = { base = 35 }
+   release = MOR 
+   release = ALG
+		} }
+		
+#France does nothing
+country_event = {
+	id = marrakech_algiers.2
+	title = marrakech_algiers.2.t
+	desc = marrakech_algiers.2.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+
+   option = {
+		name = marrakech_algiers.2.a #Play Algeria
+   ai_chance = { base = 50 }
+   release = MOR 
+   release = ALG
+   ALG = { change_tag_from = FAF }
+		}
+	 option = {
+		name = marrakech_algiers.2.b #Play Morocco
+   ai_chance = { base = 50 }
+   release = MOR 
+   release = ALG
+  MOR = { change_tag_from = FAF }
+		} }
