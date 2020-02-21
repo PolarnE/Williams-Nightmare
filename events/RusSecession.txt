@@ -404,7 +404,7 @@ country_event = {
 	option = {
 		name = secession.14.a
 		add_timed_idea = {
-			idea = RUS_Transural_Supressed
+			idea = RUS_Ural_Garrisons
 			days = 85
 		}
 	}
