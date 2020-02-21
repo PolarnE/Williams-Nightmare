@@ -12,7 +12,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = GFX_idea_RGN_Central_Government
+			picture = idea_RGN_Central_Government
 			
 			modifier = {
 			political_power_factor = 0.2
@@ -29,7 +29,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_RGN_Zakaz_Codified
+			picture = idea_RGN_Zakaz_Codified
 
 			removal_cost = -1
 			
@@ -48,7 +48,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_generic_prosperity
+			picture = idea_generic_prosperity
 
 			removal_cost = -1
 			
@@ -69,7 +69,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_RGN_State_White_Army
+			picture = idea_RGN_State_White_Army
 
 			removal_cost = -1
 			
@@ -88,7 +88,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_RGN_Local_Separatism
+			picture = idea_RGN_Local_Separatism
 
 			removal_cost = -1
 			
@@ -107,7 +107,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_RGN_REI_Member
+			picture = idea_RGN_REI_Member
 
 			removal_cost = -1
 			
@@ -126,7 +126,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_RGN_Fatherland_Defense
+			picture = idea_RGN_Fatherland_Defense
 
 			removal_cost = -1
 			
@@ -150,7 +150,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			
-			picture = GFX_idea_RGN_Protokultura
+			picture = idea_RGN_Protokultura
 
 			removal_cost = -1
 			

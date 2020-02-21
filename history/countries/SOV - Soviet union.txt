@@ -16,6 +16,16 @@ set_stability = 0.4
 set_war_support = 0.1
 # It's democratic isolationist Russia after all so no war motivation
 
+# I was generally too lazy to change names for these variables, huh - but they should not obstruct anything unless we want to create more parliaments
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+USA_recalc_congress_icon_frames = yes
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
