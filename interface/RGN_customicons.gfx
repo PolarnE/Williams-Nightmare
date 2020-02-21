@@ -301,11 +301,193 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	# Well, was too lazy to continue with shineys
+ SpriteType = {
+ name = "GFX_pogranichnayakultura_shine"
+ texturefile = "gfx/interface/goals/GFX_pogranichnayakultura.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_pogranichnayakultura.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_pogranichnayakultura.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_protokultura_shine"
+ texturefile = "gfx/interface/goals/GFX_protokultura.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_protokultura.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_protokultura.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_matterofrussia_shine"
+ texturefile = "gfx/interface/goals/GFX_matterofrussia.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_matterofrussia.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_matterofrussia.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_seryiden_shine"
+ texturefile = "gfx/interface/goals/GFX_seryiden.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_seryiden.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_seryiden.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ SpriteType = {
+ name = "GFX_integrateminorities_shine"
+ texturefile = "gfx/interface/goals/GFX_integrateminorities.tga"
+ effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_integrateminorities.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_integrateminorities.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no	
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 	
 	# National spirits branch
  SpriteType = { 
  name = "GFX_idea_generic_prosperity"
 texturefile = "gfx/interface/ideas/idea_generic_prosperity.dds"
+ }
+ SpriteType = { 
+ name = "GFX_idea_RGN_Fatherland_Defense"
+texturefile = "gfx/interface/ideas/idea_RGN_Fatherland_Defense.dds"
+ }
+ SpriteType = { 
+ name = "GFX_idea_RGN_Local_Separatism"
+texturefile = "gfx/interface/ideas/idea_RGN_Local_Separatism.dds"
+ }
+ SpriteType = { 
+ name = "GFX_idea_RGN_Protokultura"
+texturefile = "gfx/interface/ideas/idea_RGN_Protokultura.dds"
+ }
+ SpriteType = { 
+ name = "GFX_idea_RGN_REI_Member"
+texturefile = "gfx/interface/ideas/idea_RGN_REI_Member.dds"
+ }
+ SpriteType = { 
+ name = "GFX_idea_RGN_State_White_Army"
+texturefile = "gfx/interface/ideas/idea_RGN_State_White_Army.dds"
+ }
+  SpriteType = { 
+ name = "GFX_idea_RGN_Zakaz_Codified"
+texturefile = "gfx/interface/ideas/idea_RGN_Zakaz_Codified.dds"
+ }
+SpriteType = { 
+ name = "GFX_idea_RGN_Central_Government"
+texturefile = "gfx/interface/ideas/idea_RGN_Zakaz_Codified.dds"
  }
  }
