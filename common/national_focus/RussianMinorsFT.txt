@@ -199,7 +199,7 @@ has_stability> 0.8
 			is_in_faction= yes
 		}
 		completion_reward = {
-			create_faction= 'menshiy_protektoryat'
+			create_faction= 'Menshiyprotektoryat'
 		}
 	}
 
@@ -232,6 +232,20 @@ has_stability> 0.8
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+					name = med_armor_bonus
+					bonus = 1.0
+					ahead_reduction = 2
+					technology = basic_medium_tank
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 2
+					category = armor
+				}
+			}
 	}
 
 	#Focus for Invite Armament Companies
