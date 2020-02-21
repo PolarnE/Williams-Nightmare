@@ -199,7 +199,7 @@ has_stability> 0.8
 			is_in_faction= yes
 		}
 		completion_reward = {
-			create_faction= 'french_entente_alliance'
+			create_faction= 'menshiy_protektoryat'
 		}
 	}
 
@@ -246,6 +246,13 @@ has_stability> 0.8
 		prerequisite = { focus = RGN_adapttl }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1200
+			producer = FRA
+		}
 		}
 	}
 
