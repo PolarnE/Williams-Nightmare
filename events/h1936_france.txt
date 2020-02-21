@@ -98,17 +98,18 @@ country_event = {
 
    option = {
 		name = h1936_france.4.a #bang them
-   ai_chance = { base = 75 }
+   ai_chance = { base = 65 }
    set_country_flag = flag_catalonia_bang_them
    set_country_flag = flag_catalonia_rising_up
    add_stability = -0.2
+   add_ideas = FRA_catalan_revolution
    add_ideas = FRA_soldiers_striking_1
    CAT = { transfer_state = 165 load_oob = CAT_uprising }
    declare_war_on = { type = annex_everything    target = CAT }
 		}
 	 option = {
 		name = h1936_france.4.b #try negotiate
-   ai_chance = { base = 25 }
+   ai_chance = { base = 35 }
    add_stability = -0.2
    add_ideas = FRA_soldiers_striking_1
    set_country_flag = flag_catalonia_rising_up
@@ -138,6 +139,7 @@ country_event = {
 		name = h1936_france.5.a
 		add_stability = 0.05
 		add_political_power = 15
+		remove_ideas = FRA_catalan_revolution
 		add_timed_idea = { idea = FRA_reintegration_of_catalonia  days = 200 }
 		hidden_effect = {
 		annex_country = { target = CAT transfer_troops = no }
@@ -211,6 +213,7 @@ country_event = {
 		name = h1936_france.8.a #Bang them^2
    ai_chance = { base = 50 }
    set_country_flag = flag_catalonia_bang_them
+   add_ideas = FRA_catalan_revolution
     declare_war_on = { type = annex_everything    target = CAT }
 		}
 	 option = {
@@ -260,6 +263,7 @@ country_event = {
 	option = {
 		name = h1936_france.10.a #time to die
 		set_country_flag = flag_catalonia_bang_them
+		add_ideas = FRA_catalan_revolution
    declare_war_on = { type = annex_everything    target = CAT }
 		 }
 	}
@@ -452,6 +456,21 @@ country_event = {
 	option = {
 		name = h1936_france.17.a #good
 annex_country = { target = MOR transfer_troops = no }
+	}
+	}
+	
+#Iberia withdraws from the Entente Impérial
+country_event = {
+	id = h1936_france.18
+	title = h1936_france.18.t
+	desc = h1936_france.18.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_france.18.a #france pouts and is unhappy
+	add_political_power = -50
 	}
 	}
 	

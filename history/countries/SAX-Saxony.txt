@@ -95,7 +95,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "George V"
+	name = "Georg V"
 	desc = ""
 	picture = "gfx/leaders/SAX/portrait_george_v.dds"
 	ideology = despotism
