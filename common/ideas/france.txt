@@ -97,6 +97,28 @@ ideas = {
 			}
 		}
 		
+			FRA_catalan_revolution = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_catalan_reintegration
+			
+			modifier = {
+				army_morale_factor = -0.05
+				ai_call_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+			}
+		}
+		
 			FRA_reintegration_of_catalonia = {
 			
 			allowed = {

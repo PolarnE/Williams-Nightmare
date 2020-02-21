@@ -124,7 +124,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = hol_caved_to_the_germans
+			picture = ENG_pan_germanicists
 			
 			modifier = {
 			consumer_goods_factor = 0.05
@@ -143,7 +143,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = hol_caved_to_the_germans
+			picture = ENG_pan_germanicists
 			
 			modifier = {
 			stability_factor = 0.05
@@ -163,7 +163,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = hol_caved_to_the_germans
+			picture = ENG_pan_germanicists
 			
 			modifier = {
 			consumer_goods_factor = 0.02
@@ -182,7 +182,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = hol_caved_to_the_germans
+			picture = ENG_pan_germanicists
 			
 			modifier = {
 			production_speed_buildings_factor = 0.1

@@ -35,6 +35,12 @@ country_event = {
 	trigger = {
 	FRA = { has_country_flag = flag_catalonia_rising_up } }
 	
+	immediate = {
+	hidden_effect = {
+	ITA = { country_event = { id = h1936_italy.1 days = 4 } }
+	}
+	}
+	
 	option = {
 		name = iberia.2.a #epic!!!
 	FRA = { set_autonomy = {

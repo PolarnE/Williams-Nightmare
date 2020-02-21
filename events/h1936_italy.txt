@@ -1,0 +1,52 @@
+﻿add_namespace = h1936_italy
+	
+#Independence from France
+country_event = {
+	id = h1936_italy.1
+	title = h1936_italy.1.t
+	desc = h1936_italy.1.d
+	picture = GFX_report_event_german_italian_pact
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+	country_event = { id = h1936_italy.2 days = 3 }
+	}
+	}
+	
+	option = {
+		name = h1936_italy.1.a #epic!!!
+	create_country_leader = {
+	name = "Italo Balbo"
+	desc = ""
+	picture = "portrait_italy_italo_balbo.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+	FRA = { set_autonomy = {
+	target = ITA
+	autonomy_state = autonomy_free
+}
+remove_from_faction = ITA
+country_event = { id = h1936_france.19 hours = 6 } }country_event = { id = h1936_france.19 hours = 6 } }
+	}
+	
+#Independence from France
+country_event = {
+	id = h1936_italy.2
+	title = h1936_italy.2.t
+	desc = h1936_italy.2.d
+	picture = GFX_report_event_german_advisors_remain
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = h1936_italy.2.a #good
+		add_political_power = 5
+	set_cosmetic_tag = ITA_republic
+	set_party_name = { ideology = neutrality long_name = ITA_junta_party_long name = ITA_junta_party }
+	 }
+	}
