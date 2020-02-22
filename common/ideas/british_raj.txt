@@ -53,10 +53,32 @@ ideas = {
 
 			modifier = {
 			conscription_factor = -0.7
-		    planning_speed = 0.10
 			army_org_factor = 0.05
 			land_reinforce_rate = 0.03
 			army_morale_factor = -0.1
+			#Planning moved and replaced with Insane Roy attack factor
+			}
+		}
+		# OIII INSANE BOIII
+			RAJ_Insane_Roy = {
+			picture = Insane_Roy
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = 1
+				trade_laws_cost_factor = 1
+				economy_cost_factor = 1
+				army_attack_factor = 0.1
+				war_support_factor = 0.3
 			}
 		}
 	
@@ -161,7 +183,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-
+			
 			}
 		}
 

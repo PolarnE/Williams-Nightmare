@@ -23,6 +23,7 @@ set_technology = {
 
 
 	add_ideas = {
+	RAJ_Insane_Roy
     RAJ_dissolved_military
 	}
 	
