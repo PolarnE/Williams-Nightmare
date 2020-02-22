@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_NE_Pobeda_Bad"
 		texturefile = "gfx/event_pictures/newsWN_event_Pobeda_Bad.dds"
 	}	
+	spriteType = {
+		name = "GFX_report_event_gamers_capture_jerusalem"
+		texturefile = "gfx/event_pictures/report_event_gamers_liberated.dds"
+	}	
 }

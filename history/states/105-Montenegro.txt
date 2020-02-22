@@ -22,6 +22,7 @@ state={
 
 		}
 		add_core_of = AUS
+		add_core_of = SER
 	}
 
 	provinces={

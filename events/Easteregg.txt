@@ -1,0 +1,62 @@
+﻿add_namespace = easteregg
+
+country_event = {
+	id = easteregg.1
+	title = easteregg.1.t
+	desc = easteregg.1.d
+	picture = GFX_report_event_gamers_capture_jerusalem
+
+	is_triggered_only = yes
+
+	option = {
+		name = easteregg.1.a
+		JER = { change_tag_from = ROOT }
+		JER = { add_state_core = 454
+		transfer_state = 454 
+		create_faction = crasumod_faction 
+		load_oob = JER_crusaders }
+	}
+	
+	option = {
+	name = easteregg.1.b
+JER = { add_state_core = 454
+		transfer_state = 454 
+		create_faction = crasumod_faction 
+		load_oob = JER_crusaders }
+} } } }
+
+country_event = {
+	id = easteregg.2
+	title = easteregg.2.t
+	desc = easteregg.2.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = easteregg.2.a
+		RAJ = { 
+		set_country_flag = flag_maratha_m_n_roy_disabled
+		load_focus_tree = Maratha_meme
+		create_country_leader = {
+	name = "M. N. Roy"
+	desc = ""
+	picture = "gfx//leaders//Meme//Portrait_Disabled_M_N_Roy.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { } }
+    hidden_effect = {
+	set_cosmetic_tag = RAJ_memes
+    	create_country_leader = {
+	name = "Zero Two"
+	desc = ""
+	picture = "gfx//leaders//Meme//Portrait_Zero_Two.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { war_criminal } } }
+		}
+	}
+	
+	option = {
+	name = easteregg.2.b
+} }

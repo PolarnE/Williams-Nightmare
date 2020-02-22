@@ -1,9 +1,9 @@
 focus_tree = {
-	id = Maratha
+	id = Maratha_meme
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 1
 			tag = RAJ
 		}
 	}

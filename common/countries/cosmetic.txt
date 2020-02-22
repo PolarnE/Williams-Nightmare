@@ -226,3 +226,8 @@ CAT_france = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
+
+SER_yugoslavia = {
+	color = rgb { 72 73 126 }
+	color_ui = rgb { 94 95 164 }
+}

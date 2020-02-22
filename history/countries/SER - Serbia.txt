@@ -150,9 +150,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Peter II"
+	name = "Aleksandar I"
 	desc = ""
-	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Alexander_I.dds"
 	expire = "1965.1.1"
 	ideology = Despotism
 	traits = {
