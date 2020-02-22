@@ -53,7 +53,7 @@ spriteTypes = {
  texturefile = "gfx/interface/goals/GFX_firstgenerationsupertank.tga" 
  } 
   SpriteType = { 
- name = "GFX_Insane_Roy" 
+ name = "GFX_idea_Insane_Roy" 
  texturefile = "gfx/interface/ideas/idea_Insane_Roy.dds" 
  } 
  }
