@@ -1,0 +1,415 @@
+focus_tree = {
+	id = Maratha
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RAJ
+		}
+	}
+	#Focus for What now
+	focus = {
+		id = RAJ_whatnow
+		icon = GFX_whatnow
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_banasiancartoon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_whatnow_tt
+		}
+	}
+
+	#Focus for Birma Punitive War
+	focus = {
+		id = RAJ_birmapunitivewar
+		icon = GFX_focus_smiling_buddha
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_letskillbengal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Comrades from Himalaya Are Traitors
+	focus = {
+		id = RAJ_comradesfromhimalayaaretraitors
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_askrussiatosurrendertomarathanforces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maletizing East Turkestan
+	focus = {
+		id = RAJ_maletizingeastturkestan
+		icon = GFX_goal_poland_goal
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_comradesfromhimalayaaretraitors }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strike at The Centre of The World
+	focus = {
+		id = RAJ_strikeatthecentreoftheworld
+		icon = GFX_goal_generic_secret_weapon
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_birmapunitivewar }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_strikeatthecentreoftheworld_tt
+		}
+	}
+
+	#Focus for Fleet in Existing
+	focus = {
+		id = RAJ_fleetinexisting
+		icon = GFX_goal_generic_navy_battleship
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_modernpiracydoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_fleetinexisting_tt
+		}
+	}
+
+	#Focus for Import Foreign Books
+	focus = {
+		id = RAJ_importforeignbooks
+		icon = GFX_importforeignbooks
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_invitevenezuelanministerofeconomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modern Piracy Doctrine
+	focus = {
+		id = RAJ_modernpiracydoctrine
+		icon = GFX_modernpiracydoctrine
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_strikeatthecentreoftheworld }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Who needs generals
+	focus = {
+		id = RAJ_whoneedsgenerals
+		icon = GFX_goal_generic_political_pressure
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_armyofhypermaletism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_whoneedsgenerals
+		}
+	}
+
+	#Focus for Salvage guns
+	focus = {
+		id = RAJ_salvageguns
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_strikeatthecentreoftheworld }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_salvageguns_tt
+		}
+	}
+
+	#Focus for Proclaim Greater Maratha
+	focus = {
+		id = RAJ_proclaimgreatermaratha
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_askrussiatosurrendertomarathanforces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ask Russia to surrender to Marathan Forces
+	focus = {
+		id = RAJ_askrussiatosurrendertomarathanforces
+		icon = GFX_askrussiatosurrendertomarathanforces
+		x = 3
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_askrussiatosurrendertomarathanforces_tt
+		}
+	}
+
+	#Focus for Army of Hyper-Maletism
+	focus = {
+		id = RAJ_armyofhypermaletism
+		icon = GFX_armyofhypermaletism
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_whatnow }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_armyofhypermaletism_tt
+		}
+	}
+
+	#Focus for Moment of Sanity
+	focus = {
+		id = RAJ_momentofsanity
+		icon = GFX_goal_tripartite_pact
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_whatnow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban Buddha
+	focus = {
+		id = RAJ_banbuddha
+		icon = GFX_banbuddha
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_worldmaletismdebate }
+		mutually_exclusive = { focus = RAJ_banasiancartoon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_banbuddha_tt
+		}
+	}
+
+	#Focus for Ban Asian Cartoon
+	focus = {
+		id = RAJ_banasiancartoon
+		icon = GFX_banasiancartoon
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_worldmaletismdebate }
+		mutually_exclusive = { 
+			focus = RAJ_bancows 
+		}
+		mutually_exclusive = { 
+			focus = RAJ_banbuddha 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_banasiancartoon_tt
+		}
+	}
+
+	#Focus for World Maletism Debate
+	focus = {
+		id = RAJ_worldmaletismdebate
+		icon = GFX_worldmaletismdebate
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_worldmaletismdebate_tt
+		}
+		completion_reward = {
+			country_event= {
+			days = 1 
+			id = maratha.1 
+			}
+		}
+	}
+
+	#Focus for Ban cows
+	focus = {
+		id = RAJ_bancows
+		icon = GFX_bancows
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_worldmaletismdebate }
+		mutually_exclusive = { focus = RAJ_banasiancartoon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_bancows_tt
+		}
+	}
+
+	#Focus for Telegram to Austrian Maletists
+	focus = {
+		id = RAJ_telegramtoaustrianmaletists
+		icon = GFX_telegramtoaustrianmaletists
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_whatnow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Venezuelan Minister of Economy
+	focus = {
+		id = RAJ_invitevenezuelanministerofeconomy
+		icon = GFX_invitevenezuelanministerofeconomy
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_whatnow }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_invitevenezuelanministerofeconomy_tt
+		}
+	}
+
+	#Focus for Let's kill Bengal
+	focus = {
+		id = RAJ_letskillbengal
+		icon = GFX_goal_generic_territory_or_war
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_askrussiatosurrendertomarathanforces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proclaim Greatest Maratha!
+	focus = {
+		id = RAJ_proclaimgreatestmaratha
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_proclaimgreatermaratha }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Who needs food
+	focus = {
+		id = RAJ_whoneedsfood
+		icon = GFX_whoneedsfood
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_telegramtoaustrianmaletists }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			custom_effect_tooltip = RAJ_whoneedsfood_tt
+		}
+	}
+
+	#Focus for First Generation Super Tank
+	focus = {
+		id = RAJ_firstgenerationsupertank
+		icon = GFX_firstgenerationsupertank
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_salvageguns }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = RAJ_firstgenerationsupertank_tt
+		}
+	}
+
+	#Focus for Catch Defectors
+	focus = {
+		id = RAJ_catchdefectors
+		icon = GFX_focus_prc_infiltration
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RAJ_whoneedsgenerals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
