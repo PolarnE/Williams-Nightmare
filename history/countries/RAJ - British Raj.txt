@@ -22,7 +22,9 @@ set_technology = {
 }
 
 
-	add_ideas = { }
+	add_ideas = {
+    RAJ_dissolved_military
+	}
 	
 set_politics = {
 	ruling_party = communism
@@ -71,7 +73,7 @@ create_country_leader = {
 	desc = ""
 	picture = "portrait_m_n_roy.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = stalinism
 	traits = {
 		
 	}
