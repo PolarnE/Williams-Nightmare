@@ -53,3 +53,23 @@ country_event = {
 			}
 		}
 	}
+#Gandhi Goverment
+country_event = {	
+	fire_only_once = yes
+
+	trigger = {
+		has_idea = RAJ_nogood
+		}
+	mean_time_to_happen = {
+		months = 1
+	}
+	id = maratha.4
+	title = martaha.4.t
+	desc = martaha.4.d 
+	picture = GFX_leader
+	option = {
+		name = maratha.4.a
+		unlock_national_focus = RAJ_election
+		}
+	}
+		
