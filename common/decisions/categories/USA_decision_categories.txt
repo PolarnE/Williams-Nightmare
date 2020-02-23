@@ -13,4 +13,3 @@ USA_congress = {
 
 	priority = 99
 }
-}
