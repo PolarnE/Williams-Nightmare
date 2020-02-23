@@ -1,0 +1,32 @@
+state=
+{
+	id=788
+	name= "Suez Canal"
+	manpower = 121352
+	
+	state_category = metropolis
+
+	history=
+	{
+		owner = RSE
+		buildings = {
+			infrastructure = 6
+			12049 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			12049 5
+		}
+		victory_points = {
+			4073 3
+		}
+
+		add_core_of = EGY
+
+	}
+
+	provinces={
+	4073 12049 9947 1155
+	}
+}

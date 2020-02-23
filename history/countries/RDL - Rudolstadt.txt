@@ -95,9 +95,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Wilhelm I"
+	name = "Prinz Ulrich II"
 	desc = ""
-	picture = "gfx/leaders/RDL/portrait_wilhelm_i.dds"
+	picture = "gfx/leaders/RDL/Portrait_Schwarzburg_Prinz_Ulrich.dds"
 	ideology = despotism
 	traits = {
 		#

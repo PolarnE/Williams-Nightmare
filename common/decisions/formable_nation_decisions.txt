@@ -2793,6 +2793,7 @@ form_greater_serbia_category = {
 			controls_state = 811
 			controls_state = 817
 			controls_state = 102
+			controls_state = 872
 		}
 
 		visible = {
