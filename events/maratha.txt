@@ -56,7 +56,7 @@ country_event = {
 #Gandhi Goverment
 country_event = {	
 	fire_only_once = yes
-
+	#Need to make news localisation etc 
 	trigger = {
 		has_idea = RAJ_nogood
 		}
@@ -64,12 +64,131 @@ country_event = {
 		months = 1
 	}
 	id = maratha.4
-	title = martaha.4.t
-	desc = martaha.4.d 
+	title = maratha.4.t
+	desc = maratha.4.d 
 	picture = GFX_leader
 	option = {
 		name = maratha.4.a
 		unlock_national_focus = RAJ_election
+		}
+	}
+
+#EastOrissaLetterSent
+country_event = {
+	is_triggered_only = yes
+	#need to make news
+	id = maratha.5
+	title = maratha.5.t
+	desc = maratha.5.d
+	picture = GFX_Eorissa
+	
+	option = {
+		name = maratha.5.a
+		BAN = {
+			country_event {
+				days = 1
+				id = maratha.6
+			}
+		}
+	}
+}
+#BengalChoose
+country_event = {
+	is_triggered_only = yes
+	#makenews
+	id = maratha.6
+	title = maratha.6.t
+	desc = maratha.6.d
+	picture = GFX_Eorissa
+		
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = maratha.6.a
+		RAJ = {
+			transfer_state = 837
+			add_to_faction = BAN
+			add_state_core = 837
+		}
+		add_popularity = {
+					ideology = communism
+					popularity = 0.3
+			}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 10
+			}
+		name = maratha.6.b
+		add_popularity = {
+					ideology = communism
+					popularity = -0.15
+			}
+		RAJ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BAN
+				generator = { 837 }
+				}
+			}
+		}
+	}
+	
+#Batavia
+country_event = {
+	is_triggered_only = yes
+	#need to make news
+	id = maratha.7
+	title = maratha.7.t
+	desc = maratha.7.d
+	picture = GFX_Batavia
+	
+	option = {
+		name = maratha.7.a
+		HOL = {
+			country_event {
+				days = 1
+				id = maratha.8
+			}
+		}
+	}
+}
+#BataviaChoose
+country_event = {
+	is_triggered_only = yes
+	#makenews
+	id = maratha.8
+	title = maratha.8.t
+	desc = maratha.8.d
+	picture = GFX_Batavia
+		
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = maratha.8.a
+		RAJ = {
+			transfer_state = 847
+			transfer_state = 851
+			add_state_core = 847
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+			}
+		name = maratha.8.b
+		RAJ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HOL
+				generator = { 847 851 }
+				add_state_core = 847
+				}
+			}
 		}
 	}
 		

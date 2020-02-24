@@ -24,6 +24,7 @@ set_technology = {
 
 	add_ideas = {
 		RAJ_nogood
+		RAJ_dissolved_military
 	}
 	
 set_politics = {
@@ -68,7 +69,7 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Indian parliament"
+	name = "Maratha congress"
 	desc = ""
 	picture = "RAJ_parl.dds"
 	expire = "1965.1.1"

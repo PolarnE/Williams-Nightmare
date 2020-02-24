@@ -62,7 +62,7 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_roy
-		icon = GFX_roy
+		icon = GFX_Roy
 		x = 12
 		y = 1
 		cost = 3
@@ -110,6 +110,7 @@ focus_tree = {
 				remove_idea = RAJ_nogood
 				add_idea= RAJ_wechoz
 			}
+			add_ideas = RAJ_Insane_Bose
 			create_country_leader = {
 					name = "Subhas Chandra Bose"
 					desc = "POLITICS_BOSE_DESC"
@@ -124,7 +125,7 @@ focus_tree = {
 		icon = GFX_industry
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = RAJ_gandhi
 			}
@@ -140,7 +141,7 @@ focus_tree = {
 		icon = GFX_industry
 		x = 6
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = RAJ_gandhi
 			}
@@ -153,7 +154,7 @@ focus_tree = {
 		icon = GFX_bunker
 		x = 5
 		y = 3
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = RAJ_ind
 			focus = RAJ_ind1
@@ -165,8 +166,8 @@ focus_tree = {
 	focus = {
 		id = RAJ_plan
 		icon = GFX_build
-		x = 2
-		y = 3
+		x = 25
+		y = 1
 		cost = 5
 		completion_reward = {
 			add_ideas = RAJ_4year
@@ -175,8 +176,8 @@ focus_tree = {
 	focus = {
 		id = RAJ_oil
 		icon = GFX_oil
-		x= 2
-		y = 6
+		x= 25
+		y = 4
 		cost = 10
 		prerequisite = {
 			focus = RAJ_highway
@@ -190,13 +191,63 @@ focus_tree = {
 				amount = 49
 				state = 428
 			}
+		}
+	}
+	focus = {
+		id = RAJ_delhi
+		icon = GFX_delhi
+		x = 5
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = RAJ_defend }
+		completion_reward = {
+			439 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+	focus = {
+		id = RAJ_defencecore
+		icon = GFX_defence
+		x = 7
+		y = 4
+		cost = 10
+		prerequisite = { focus = RAJ_defend }
+		completion_reward = {
+			add_ideas = RAJ_madaland
+		}
+	}
+	focus = {
+		id = RAJ_eorissa
+		icon = GFX_influence
+		x = 7
+		cost = 10
+		y = 5
+		prerequisite = {
+			focus = RAJ_defencecore
+			}
+		completion_reward = {
+					country_event = { id = maratha.5 days = 1 }
+		
+			BAN = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.3
+			}
+		}
 	}
 	}
 	focus = {
 		id = RAJ_rubber
 		icon = GFX_rubber
-		x= 2
-		y = 7
+		x= 25
+		y = 5
 		cost = 10
 		prerequisite = {
 			focus = RAJ_oil
@@ -211,7 +262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_educate
-		x = 5
+		x = 3
 		y = 4
 		cost = 10
 		prerequisite = {
@@ -222,10 +273,21 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = RAJ_batavia
+		x = 7
+		y = 6
+		cost = 10
+		prerequisite = { focus = RAJ_eorissa
+		}
+		completion_reward = {
+			country_event = { id = maratha.7 days = 1 }
+			}
+		}
+	focus = {
 		id = RAJ_uni
 		icon = GFX_uni
-		x = 2
-		y = 4
+		x = 25
+		y = 2
 		prerequisite = {
 			focus = RAJ_plan
 			}
@@ -237,8 +299,8 @@ focus_tree = {
 	focus = {
 		id= RAJ_highway
 		icon = GFX_road
-		x = 1
-		y = 5
+		x = 24
+		y = 3
 		cost = 10
 		prerequisite = {
 			focus = RAJ_uni
@@ -276,8 +338,8 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_civs
-		x = 3
-		y = 5
+		x = 26
+		y = 3
 		prerequisite = {
 			focus = RAJ_uni
 			}
@@ -293,5 +355,82 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = RAJ_civs3
+		x = 3
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = RAJ_educate
+			}
+		completion_reward = {
+			add_ideas = RAJ_civs3
+			}
+		}
+	focus = {
+		id = RAJ_popo
+		x = 3
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = RAJ_civs3
+			}
+		completion_reward = {
+			add_ideas = RAJ_pop
+			}
+		}
+	focus = {
+		id = RAJ_scienceboii
+		x = 5
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = RAJ_popo
+			}
+		prerequisite = {	focus = RAJ_batavia
+			}
+		prerequisite = {	focus = RAJ_indore
+			}
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = RAJ_guajrat
+		icon = GFX_dockyards
+		x = 5
+		y = 5
+		cost = 10
+		prerequisite = { focus = RAJ_delhi }
+		completion_reward = {
+			428 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_indore
+		icon = GFX_civs
+		x = 5
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = RAJ_guajrat }
+		completion_reward = {
+			437 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
 #End of focuses 
  }

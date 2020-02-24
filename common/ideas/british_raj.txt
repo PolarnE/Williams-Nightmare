@@ -60,8 +60,8 @@ ideas = {
 			}
 		}
 		# OIII INSANE BOIII
-			RAJ_Insane_Roy = {
-			picture = Insane_Roy
+			RAJ_Insane_Bose = {
+			picture = Insane_Bose
 
 			allowed = {
 				original_tag = RAJ
@@ -74,11 +74,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_advisor_cost_factor = 1
-				trade_laws_cost_factor = 1
-				economy_cost_factor = 1
-				army_attack_factor = 0.1
-				war_support_factor = 0.3
+				stability_factor = -0.15
+				army_attack_factor = 0.05
+				war_support_factor = 0.15
 			}
 		}
 		#industralization
@@ -149,18 +147,44 @@ ideas = {
 			}
 		RAJ_4year = {
 			picture = 
-			alloed = {	
+			allowed = {	
 			original_TAG = RAJ
 		}
 		removal_cost = -1
 		modifier = {
 				production_speed_buildings_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.10
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05	
 			}
 		}
-	
+		RAJ_pop = {
+			picutre = 
+			removal_cost = -1
+			modifier = {
+					monthly_population = 0.02
+					political_power_cost = -0.25
+				}
+			}
+		RAJ_civs3 = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+			
+		RAJ_madaland = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+				}
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				}
+			}
 	RAJ_azad_hind = {
 			picture = generic_morale_bonus
 
