@@ -123,6 +123,16 @@ ideas = {
 				research_speed_factor = 0.03
 				}
 			}
+		RAJ_milschool = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ 
+				}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.015
+				}
+			}
 		RAJ_nogood = {
 			picture = 
 			allowed = {
@@ -174,7 +184,17 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-			
+		RAJ_bosest = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.3
+				war_support_factor = 0.1
+			}
+			}
 		RAJ_madaland = {
 			picture = 
 			allowed = {
@@ -185,6 +205,24 @@ ideas = {
 				army_core_defence_factor = 0.1
 				}
 			}
+		RAJ_medmex = {
+			picture = GFX_medmex
+			allowed = {	original_TAG =RAJ
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				}
+			}
+		RAJ_gunz = {
+			picture = RAJ_guns
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
 	RAJ_azad_hind = {
 			picture = generic_morale_bonus
 
@@ -289,11 +327,9 @@ ideas = {
 			
 			}
 		}
-
 		RAJ_famine = {
 
-			picture = ENG_the_war_to_end_all_wars
-
+			picture = ENG_the_war_to_end_all_warsprerequisite = {
 			allowed = {
 				original_tag = RAJ
 			}
@@ -312,8 +348,8 @@ ideas = {
 				conscription_factor = -0.1
 				consumer_goods_factor = 0.05
 			}
+			}
 		}
-
 		RAJ_princely_states = {
 
 			picture = generic_morale_bonus

@@ -110,6 +110,7 @@ focus_tree = {
 				remove_idea = RAJ_nogood
 				add_idea= RAJ_wechoz
 			}
+			add_war_support = 0.15
 			add_ideas = RAJ_Insane_Bose
 			create_country_leader = {
 					name = "Subhas Chandra Bose"
@@ -152,17 +153,29 @@ focus_tree = {
 	focus = {
 		id = RAJ_defend
 		icon = GFX_bunker
-		x = 5
+		x = 6
 		y = 3
 		cost = 8
 		prerequisite = {
-			focus = RAJ_ind
 			focus = RAJ_ind1
 		}
 		completion_reward = {
 			add_ideas = RAJ_fort
 			}
 		}
+	focus = {
+		id = RAJ_famfix
+		icon = GFX_famine
+		x = 4
+		y = 3
+		cost = 8
+		prerequisite = {
+			focus = RAJ_ind
+		}
+		completion_reward = {
+			remove_ideas = RAJ_famine
+			}
+	}
 	focus = {
 		id = RAJ_plan
 		icon = GFX_build
@@ -200,7 +213,9 @@ focus_tree = {
 		y = 4
 		cost = 10
 		prerequisite = {
-			focus = RAJ_defend }
+			focus = RAJ_defend
+			focus = RAJ_famfix
+			}
 		completion_reward = {
 			439 = {
 				add_extra_state_shared_building_slots = 2
@@ -218,7 +233,10 @@ focus_tree = {
 		x = 7
 		y = 4
 		cost = 10
-		prerequisite = { focus = RAJ_defend }
+		prerequisite = {
+			focus = RAJ_defend
+			focus = RAJ_famfix
+			}
 		completion_reward = {
 			add_ideas = RAJ_madaland
 		}
@@ -267,6 +285,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = RAJ_defend
+			focus = RAJ_famfix
 			}
 		completion_reward = {
 			add_ideas = RAJ_education
@@ -432,5 +451,141 @@ focus_tree = {
 			}
 		}
 		}
+	focus = {
+		id = RAJ_bos1
+		icon = GFX_miliatry
+		x = 18
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = RAJ_bose
+		}
+		completion_reward = {
+			add_ideas = RAJ_bosest
+		}
+	}
+	focus = {
+		id = RAJ_bos2
+		icon = GFX_military
+		x = 20
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = RAJ_bose
+			}
+		completion_reward  = { 
+			add_ideas= RAJ_medmex
+		}
+		}
+	focus = {
+		id = RAJ_awakening
+		icon = GFX_wokeaf
+		x = 19
+		y = 3
+		prerequisite = {
+			focus = RAJ_bos1
+			focus = RAJ_bos2
+		}
+		cost = 5
+		completion_reward = {
+				add_political_power = 100
+				add_ideas = war_economy
+			}
+		}
+	focus = {
+		id = RAJ_milbuild
+		icon = GFX_milfac
+		x = 18
+		y = 4
+		prerequisite = {
+			focus = RAJ_awakening
+			}
+		cost = 10
+		completion_reward = {
+			439 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_miltrain
+		icon = GFX_training
+		x = 18
+		y = 5
+		prerequisite = {
+			focus = RAJ_milbuild
+			}
+		cost = 10
+		completion_reward = {
+			add_ideas = RAJ_gunz
+		}
+	}
+	focus = {
+		id = RAJ_doct
+		icon = GFX_doctrine
+		x = 20
+		cost = 10
+		y = 4
+		prerequisite = {
+			focus = RAJ_awakening
+			}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		
+		}
+	}
+	focus = {
+		id = RAJ_milskul
+		icon = GFX_milskul
+		x = 20
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = RAJ_doct }
+		completion_reward = {
+			add_ideas= RAJ_milschool
+			}
+		}
+	focus = {
+		id = RAJ_miluni
+		icon = GFX_uni2
+		x = 19
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = RAJ_milskul
+			}
+		prerequisite= {
+			focus = RAJ_miltrain
+			}
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = RAJ_bengal
+		icon = GFX_bengal
+		x = 19
+		y = 7
+		cost = 10
+		prerequisite = { focus = RAJ_miluni }
+		completion_reward = {
+			BAN = {
+				country_event = { id = maratha.9 days = 1 }
+			}
+		}
+	}
+			
 #End of focuses 
  }

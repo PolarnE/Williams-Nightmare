@@ -25,6 +25,7 @@ set_technology = {
 	add_ideas = {
 		RAJ_nogood
 		RAJ_dissolved_military
+		RAJ_famine
 	}
 	
 set_politics = {
