@@ -227,3 +227,210 @@ country_event = {
 	}
 	}
 }	
+country_event = {	
+	is_triggered_only = yes
+	id = maratha.10
+	title = maratha.10.t
+	desc = maratha.10.d
+	picture = GFX_Burma
+	
+	option = {
+		ai_chance = {
+			factor = 95
+		}
+		name = maratha.10.a
+		RAJ = {
+				transfer_technology = yes
+				annex_country = {
+					target = BRM
+					transfer_troops = yes
+				}
+			}
+		}
+	option = {
+		ai_chance = {
+			factor = 5
+			}
+			name = maratha.10.b
+				RAJ = {
+				declare_war_on = {
+					target = BRM
+					type = annex_everything
+				}
+	}
+	}
+}
+country_event = {
+	is_triggered_only = yes
+	#need to make news
+	id = maratha.12
+	title = maratha.12.t
+	desc = maratha.12.d
+	picture = GFX_Batavia
+	
+	option = {
+		name = maratha.12.a
+		HOL = {
+			country_event {
+				days = 1
+				id = maratha.11
+			}
+		}
+	}
+}
+country_event = {
+	is_triggered_only = yes
+	id = maratha.11
+	title = maratha.11.t
+	desc = maratha.11.d
+	
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = maratha.11.a
+		RAJ = {
+			transfer_state = 847
+			transfer_state = 851
+			add_state_core = 847
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+			}
+		name = maratha.11.b
+		RAJ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HOL
+				generator = { 847 851 }
+				add_state_core = 847
+				}
+			}
+		}
+}
+country_event = {
+	is_triggered_only = yes
+	#need to make news
+	id = maratha.13
+	title = maratha.13.t
+	desc = maratha.13.d
+	picture = GFX_Batavia
+	
+	option = {
+		name = maratha.13.a
+		ENG = {
+			country_event {
+				days = 1
+				id = maratha.14
+			}
+		}
+	}
+}
+country_event = {
+	is_triggered_only = yes
+	id = maratha.14
+	title = maratha.14.t
+	desc = maratha.14.d
+	
+	option = {
+		ai_chance = {
+			factor = 85
+		}
+		name = maratha.14.a
+		RAJ = {
+			transfer_state = 850
+			transfer_state = 849
+			transfer_state = 733
+			add_state_core = 850
+			add_state_core = 849
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 15
+			}
+		name = maratha.14.b
+		RAJ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 850 849 }
+				add_state_core = 850
+				add_state_core = 849
+				}
+			}
+		}
+}
+
+country_event = {
+	is_triggered_only = yes
+	#need to make news
+	id = maratha.15
+	title = maratha.15.t
+	desc = maratha.15.d
+	picture = GFX_France
+	
+	option = {
+		name = maratha.15.a
+		FRA = {
+			country_event {
+				days = 1
+				id = maratha.16
+			}
+		}
+	}
+}
+country_event = {
+	is_triggered_only = yes
+	id = maratha.16
+	title = maratha.16.t
+	desc = maratha.16.d
+	
+	option = {
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				any_enemy_country = { is_actual_major = yes }
+			}
+		}
+		name = maratha.16.a
+		RAJ = {
+			transfer_state = 423
+			transfer_state = 320
+			transfer_state = 424
+			transfer_state = 422
+			add_state_core = 422
+			add_state_core = 424
+			add_state_core = 423
+			add_state_core = 320
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 30
+			any_enemy_country = { is_actual_major = yes }
+			}
+		name = maratha.16.b
+		RAJ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				generator = { 424 423 422 320 }
+				add_state_core = 423
+				add_state_core = 422
+				add_state_core = 424
+				add_state_core = 320
+				}
+			}
+		}
+}
+	
+
+
+	

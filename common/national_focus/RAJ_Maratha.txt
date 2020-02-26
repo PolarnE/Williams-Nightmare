@@ -26,6 +26,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = 50
 			custom_effect_tooltip = unlock_focuses
 			
 		}
@@ -173,7 +174,7 @@ focus_tree = {
 			focus = RAJ_ind
 		}
 		completion_reward = {
-			remove_ideas = RAJ_famine
+			remove_ideas = RAJ_needfood
 			}
 	}
 	focus = {
@@ -495,7 +496,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_milbuild
 		icon = GFX_milfac
-		x = 18
+		x = 17
 		y = 4
 		prerequisite = {
 			focus = RAJ_awakening
@@ -526,9 +527,23 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = RAJ_famfiix
+		icon = GFX_famfiix
+		x = 19
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = RAJ_awakening
+			}
+		completion_reward = {
+			remove_ideas = RAJ_needfood
+			}
+			
+	}
+	focus = {
 		id = RAJ_doct
 		icon = GFX_doctrine
-		x = 20
+		x = 21
 		cost = 10
 		y = 4
 		prerequisite = {
@@ -578,7 +593,7 @@ focus_tree = {
 		icon = GFX_bengal
 		x = 19
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = { focus = RAJ_miluni }
 		completion_reward = {
 			BAN = {
@@ -586,6 +601,96 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = RAJ_burma
+		icon = GFX_burma
+		x = 18
+		y = 8
+		available = {
+			RAJ = {
+				owns_state = 432
+				}
+			}
+		prerequisite = {
+			focus = RAJ_bengal
+			}
+		cost = 10
+		completion_reward = {
+			BRM = {
+				country_event = {
+					id = maratha.10 days = 1
+					}
+				}
+			}
+		}
+	focus  {
+		id = RAJ_fkwest
+		icon = GFX_fkwest1
+		x = 20
+		y= 8
+		available = {
+			RAJ = {
+				owns_state = 432
+				}
+			}
+		cost = 10
+		prerequisite = {
+			focus = RAJ_bengal
+		}
+		completion_reward = {
+			country_event = {	id = maratha.12 days = 1
+			}}
+	}
+	focus = {
+		id = RAJ_fktea
+		icon = GFX_brexit
+		x = 18
+		y = 9
+		cost = 10
+		available = {
+			owns_state = 288
+		}
+		prerequisite = {
+			focus = RAJ_burma
+			}
+		completion_reward = {
+			country_event = { id = maratha.13 days = 1}
+		}
+	}
+	focus = {
+		id = RAJ_fronce
+		icon = GFX_fronce
+		x = 20
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = RAJ_fkwest
+			}
+		available = {
+			owns_state = 425
+			}
+		completion_reward = {
+			country_event = { id = maratha.15 days 1
+			}
+		}
+	}
+	focus = {
+		id =RAJ_india
+		icon = GFX_india
+		x = 19
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = RAJ_fronce
+			}
+		prerequisite = {
+			focus = RAJ_fktea
+			}
+		completion_reward = {
+			add_ideas = RAJ_wewonzulul
+			}
+		}	
+	
 			
 #End of focuses 
  }

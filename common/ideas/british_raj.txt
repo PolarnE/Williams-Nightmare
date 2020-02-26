@@ -133,6 +133,20 @@ ideas = {
 				research_speed_factor = 0.015
 				}
 			}
+		RAJ_needfood = {
+			picture = 
+			allowed = { original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
 		RAJ_nogood = {
 			picture = 
 			allowed = {
@@ -144,6 +158,17 @@ ideas = {
 				political_power_cost = 0.8
 				}
 			}
+		RAJ_wewonzulul = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.4
+				army_morale_factor = 0.15
+			}
+		}
 		RAJ_wechoz = {
 			picture = 
 			allowed = {
