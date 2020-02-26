@@ -321,6 +321,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_What_Was_Taken
 		icon = GFX_focus_generic_strike_at_democracy1
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Early_Mobilisation }
 		mutually_exclusive = { focus = AUS_Adriatisch_Patentamt }
 		x = 0
@@ -345,6 +346,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Organize_Plebiscite_In_Bavaria
 		icon = GFX_AUS_Bavaria
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_What_Was_Taken }
 		x = 0
 		y = 1
@@ -400,6 +402,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Deal_With_Czech_Defectors
 		icon = GFX_AUS_Forche_Czech
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_What_Was_Taken }
 		prerequisite = { focus = AUS_Suppress_Reactionaries }
 		mutually_exclusive = { focus = AUS_Offer_Protection_To_Czech }
@@ -427,6 +430,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_March_South
 		icon = GFX_goal_generic_position_armies
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Deal_With_Czech_Defectors }
 		x = 0
 		y = 1
@@ -458,6 +462,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Reintegration_By_Force
 		icon = GFX_AUS_Force_Hungary
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_March_South }
 		mutually_exclusive = { focus = AUS_Reunite_Hungarian_Nobles }
 		x = 0
@@ -501,6 +506,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_revise_dezemberverfassung
 		icon = GFX_AUS_revise_dezemberverfassung
+		search_filters = {FOCUS_FILTER_STABILITY}
 		x = 12
 		y = 0
 		cost = 10
@@ -528,6 +534,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Reform_Staatsgrundgesetz
 		icon = GFX_AUS_Reform_Staatsgrundgesetz
+		search_filters = {FOCUS_FILTER_STABILITY}
 		x = 14
 		y = 0
 		cost = 10
@@ -545,6 +552,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Rewrite_Oktoberdiplom
 		icon = GFX_AUS_Rewrite_Oktoberdiplom
+		search_filters = {FOCUS_FILTER_STABILITY}
 		x = 16
 		y = 0
 		cost = 10
@@ -569,6 +577,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Fate_Of_The_Adriatic
 		icon = GFX_AUS_Fate_Of_The_Adriatic
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_revise_dezemberverfassung }
 		prerequisite = { focus = AUS_Reform_Staatsgrundgesetz }
 		prerequisite = { focus = AUS_Rewrite_Oktoberdiplom }
@@ -589,6 +598,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Suppress_Reactionaries
 		icon = GFX_AUS_Suppress_Reactionaries
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Fate_Of_The_Adriatic }
 		mutually_exclusive = { focus = AUS_Join_the_Coallition }
 		available = { has_country_flag = flag_hitler_is_prime_minister }
@@ -616,6 +626,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Split_The_Crown
 		icon = GFX_AUS_Split_The_Crown
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Suppress_Reactionaries }
 		mutually_exclusive = { focus = AUS_Endlosung }
 		available = { NOT = { has_country_flag = flag_hitlers_coup } }
@@ -663,6 +674,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Reunite_Hungarian_Nobles
 		icon = GFX_AUS_Reunite_Hungarian_Nobles
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Quality_Over_Quantity }
 		mutually_exclusive = { focus = AUS_Reintegration_By_Force }
 		available = { is_puppet = no }
@@ -705,6 +717,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Endlosung
 		icon = GFX_AUS_Endlosung
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Suppress_Reactionaries }
 		mutually_exclusive = { focus = AUS_Split_The_Crown }
 		available = { has_offensive_war = no }
@@ -726,6 +739,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Generic_Gosterism_1 #One People
 		icon = GFX_AUS_One_People_Focus
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		prerequisite = { focus = AUS_Endlosung }
 		available = { has_government = fascism }
 		x = 0
@@ -748,6 +762,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Generic_Gosterism_2 #One Empire
 		icon = GFX_AUS_Generic_Gosterism
+		search_filters = {FOCUS_FILTER_STABILITY}
 		prerequisite = { focus = AUS_Generic_Gosterism_1 }
 		x = 0
 		y = 1
@@ -766,6 +781,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Generic_Gosterism_3 #One Leader
 		icon = GFX_AUS_One_Leader_Focus
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Generic_Gosterism_2 }
 		x = 0
 		y = 1
@@ -785,6 +801,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Generic_Gosterism_6
 		icon = GFX_AUS_Greater_Germany_Focus
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Generic_Gosterism_3 }
 		mutually_exclusive = { focus = AUS_Generic_Gosterism_7 }
 		x = 0
@@ -818,6 +835,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Generic_Gosterism_4
 		icon = GFX_AUS_Reclaim_Dalmatia_Focus
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Generic_Gosterism_3 
 		focus = AUS_Modern_Imperialism }
 		x = -2
@@ -837,6 +855,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Generic_Gosterism_5
 		icon = GFX_AUS_Reclaim_Galicia_Focus
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Generic_Gosterism_4 }
 		bypass = {
 		}
@@ -854,6 +873,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Join_the_Coallition
 		icon = GFX_AUS_Join_the_Coallition
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Fate_Of_The_Adriatic }
 		mutually_exclusive = { focus = AUS_Suppress_Reactionaries }
 		available = { has_country_flag = flag_hitler_isnt_prime_minister 
@@ -888,6 +908,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Legalize_Unionist_Movements
 		icon = GFX_AUS_Legalize_Unionist_Movements
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Join_the_Coallition }
 		mutually_exclusive = { focus = AUS_Allow_Referendum }
 		available = { 
@@ -913,6 +934,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Red_Night
 		icon = GFX_AUS_Red_Night
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Legalize_Unionist_Movements }
 		available = { 
 			is_puppet = no
@@ -958,6 +980,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Cut_Imperialism_Down
 		icon = GFX_AUS_Cut_Imperialism_Down
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Red_Militia }
 		prerequisite = { focus = AUS_Collectivization }
 		available = {
@@ -1036,6 +1059,7 @@ army_experience = 20 }
 	focus = {
 		id = AUS_Allow_Referendum
 		icon = GFX_AUS_Allow_Referendum
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = AUS_Join_the_Coallition }
 		mutually_exclusive = { focus = AUS_Legalize_Unionist_Movements }
 		available = {			
