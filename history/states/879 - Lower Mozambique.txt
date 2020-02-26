@@ -1,0 +1,27 @@
+state={
+	id=879
+	name="Lower Mozambique" #Mozambique
+	manpower = 3125000
+	
+	state_category = rural
+	
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			8245 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8245 1 
+		}
+		add_core_of = MZB
+		add_core_of = SAF
+	}
+
+	provinces={
+	5155 2120 12935 2193 5212 5177 8245
+	}
+}

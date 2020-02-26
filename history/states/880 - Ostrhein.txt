@@ -1,0 +1,45 @@
+
+state={
+	id=880
+	name="Ostrhein"
+	manpower = 2048247
+	resources={
+		steel= 10 # was: 31
+	}
+
+
+	state_category = metropolis
+	
+	history={
+		owner = DDE
+		victory_points = {
+			6469 20 
+		}
+		victory_points = {
+			6570 25
+		}
+		#victory_points = {
+		#	3444 5
+		#}
+		#victory_points = {
+		#	3547 1
+		#}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = DDE
+		add_core_of = COR
+		add_claim_by = BRN
+		add_claim_by = GER
+
+	}
+
+	provinces={
+		529 3512 6469 6570 9482
+	}
+	
+}

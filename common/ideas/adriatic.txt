@@ -49,7 +49,7 @@ ideas = {
 				has_government = fascism
 			}
 			
-			picture = GFX_idea_AUS_Factionalism
+			picture = AUS_Factionalism
 
 			removal_cost = -1
 			
@@ -72,7 +72,7 @@ ideas = {
 				has_government = fascism
 			}
 			
-			picture = GFX_idea_AUS_Factionalism
+			picture = AUS_Factionalism
 
 			removal_cost = -1
 			
@@ -95,7 +95,7 @@ ideas = {
 				has_government = fascism
 			}
 			
-			picture = GFX_idea_AUS_Factionalism
+			picture = AUS_Factionalism
 
 			removal_cost = -1
 			
@@ -105,6 +105,47 @@ ideas = {
 				democratic_drift = 0.03
 				conscription_factor = -0.35
 				conscription = -0.005
+			}
+		}
+		
+		AUS_rotate_high_command_spirit = {
+			
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = general_staff
+			
+			removal_cost = -1
+
+			modifier = {
+			planning_speed = 0.10
+			}
+			}
+			
+				AUS_school_of_war_spirit = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = CZE_planning_bonus
+		
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.05
+				max_planning = 0.05
+				experience_gain_army = 0.05
 			}
 		}
 		
@@ -346,12 +387,12 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.25 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
 		
-		AUS_What_Was_Taken = {
+		AUS_austrian_irredentism = {
 			
 			allowed = {
 				always = no
@@ -366,7 +407,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				justify_war_goal_time = -0.4
+				justify_war_goal_time = -0.2
 				war_support_factor = 0.1
 			}
 		}

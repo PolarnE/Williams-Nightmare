@@ -1,0 +1,24 @@
+state={
+	id=875
+	name="South Switzerland"
+	manpower = 134692
+	resources={
+		aluminium=3 # was: 3
+	}
+
+	state_category = large_city
+
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+	 636 9587 3612 
+	}
+}

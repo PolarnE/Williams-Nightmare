@@ -39,8 +39,14 @@ austria.14.t:0 "Resettlement of Croatia"
 austria.14.d:0 "The Croatian people have long resented their status as subjects of the Empire, and their uprising proves that the Croatian people are terrorists at heart and can't be trusted without the supervision of Austrians. After the success of the campaign into Slovenia, Hitler has organised another expedition to 'Austrify' Croatia.\nWe wish the best luck to these brave heroes of Austria, who will undoubtably face deep opposition within the racist and degenerate population of Croatia."
 austria.14.a:0 "Heil Hitler!"
 ##spirits - done by silvy and crasu
+AUS_rotate_high_command_spirit:0 "High Command Rotation"
+AUS_rotate_high_command_spirit_desc:0 "The Austrian high command suffers from being composed of mostly old veterans, whilst this does add experience to the table it also means that new military theory and strategies are rare to come by and slowly adopted. By rotating high command with younger men we can hopefully bring freshness to the Austrian military."
+AUS_school_of_war_spirit:0 "School of War"
+AUS_school_of_war_spirit_desc:0 "Generals and soldiers alike must be taught the current state of warfare and what to do in it, there's no point in sticking to old military tactics that the rest of Europe long abandoned."
 AUS_one_people_spirit:0 "One People"
 AUS_one_people_spirit_desc:0 "The people of the Adriatic must be united under the great military legacy our nation holds, an all Austrian military will remind the people of our untapped potential!"
+AUS_austrian_irredentism:0 "Austrian Irredentism"
+AUS_austrian_irredentism_desc:0 "Austria has lost so much in so little time, with the world burning around us it's finally time to reclaim our rightful territory."
 ##most of the tree - done by silvy
 ##Undead Unicorn wuz here---- I fixed MOST of Silv's Rusglish but honestly I got the most important ones and I am bored as nails right now so there are still a few mistakes here and there
 AUS_High_Command_Rotation:0 "High Command Rotation"

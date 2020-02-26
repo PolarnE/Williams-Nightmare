@@ -70,11 +70,11 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Maratha congress"
+	name = "Marathan Worker's Congress"
 	desc = ""
 	picture = "RAJ_parl.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = marxism
 	traits = {
 		
 	}

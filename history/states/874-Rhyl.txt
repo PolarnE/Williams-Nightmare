@@ -1,0 +1,28 @@
+state= {
+	id=874
+	name="Rhyl"
+	manpower = 609230
+	
+	state_category = city
+	
+	resources={
+		steel=3 # was: 7
+		aluminium=1 # was: 2
+	}
+
+	history=
+	{
+		owner = ENG
+		victory_points = { 3274 1 } #aberystwyth
+		victory_points = { 9364 1 } #rhyl
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = WLS
+		add_core_of = ENG
+	}
+
+	provinces=
+	{
+ 311 3274 6363 9364	}
+}

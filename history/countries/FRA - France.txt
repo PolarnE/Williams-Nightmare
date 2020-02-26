@@ -1,6 +1,9 @@
 ﻿capital = 16
 
 oob = "FRA_1936"
+
+set_variable = { var = eng_gateway_to_europe_influence value = 0 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"

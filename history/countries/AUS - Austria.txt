@@ -2,6 +2,8 @@
 
 oob = "AUS_1936"
 
+set_variable = { var = ger_gateway_to_europe_influence value = 0 }
+
 set_research_slots = 3
 
 set_technology = {

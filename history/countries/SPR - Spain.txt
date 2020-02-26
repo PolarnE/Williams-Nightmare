@@ -1,5 +1,7 @@
 ﻿capital = 41
 
+set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
+
 oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

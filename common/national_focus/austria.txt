@@ -26,7 +26,7 @@ focus_tree = {
 		
 		completion_reward = {
 			army_experience = 20
-			add_political_power = 50
+			add_ideas = AUS_rotate_high_command_spirit
 		}
 	}
 
@@ -53,7 +53,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = AUS_Small_Arms_Manufacturing		
+			add_ideas = AUS_Small_Arms_Manufacturing
+random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					} }			
 		}
 	}
 
@@ -71,11 +78,12 @@ focus_tree = {
 			factor = 2
 		}	
 		completion_reward = {
-			army_experience = 50
+			army_experience = 10
+			add_ideas = AUS_school_of_war_spirit
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
-				uses = 4
+				uses = 2
 				category = land_doctrine
 			}
 		
@@ -188,7 +196,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = 0.1
+	    add_war_support = 0.1
+			if =  {  limit = { has_idea = disarmed_nation }
+     add_ideas = limited_conscription }
+else_if = { limit = { has_idea = volunteer_only }
+add_ideas = limited_conscription  }
+else_if = { limit = { has_idea = limited_conscription }
+army_experience = 20 }
 		}
 	}
 
@@ -320,7 +334,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = AUS_What_Was_Taken
+			add_ideas = AUS_austrian_irredentism
+			add_popularity = {
+		ideology = fascism
+		popularity = 0.05
+		}	
 		}
 	}
 
@@ -1212,6 +1230,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+			prioritize = { 102 817 811 109 818 104 819 105 }
 				limit = {
 					industrial_complex > 0
 					free_building_slots = {

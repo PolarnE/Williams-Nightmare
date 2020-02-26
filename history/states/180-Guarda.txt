@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = SPR
+		owner = POR
 		victory_points = {
 			9817 10
 		}
@@ -15,15 +15,14 @@ state={
 			11673 5
 		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
-			dockyard = 2
+			infrastructure = 5
+			industrial_complex = 2
+			dockyard = 1
 			9817 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = POR
-		add_core_of = SPR
 	}
 
 	provinces={

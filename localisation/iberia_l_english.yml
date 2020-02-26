@@ -1,4 +1,5 @@
 ﻿l_english:
+##EVENTS
  iberia.1.t:0 "Intervention in Morocco?"
  iberia.1.d:0 "Despite our rather cloudy relations with France due to our recent declaration of independence, many people are suggesting that we actually aid them in their war against the Moroccan rebels - arguing that our indecisiveness will only show Iberian weakness and encourage the people of our colonial empire to attempt making their own independent states. But, then again, it is France - who could just use us in this war and not give us anything out of it."
  iberia.1.a:0 "Intervene!"
@@ -6,3 +7,10 @@
  iberia.2.t:0 "A Historic Day for Iberia"
  iberia.2.d:0 "Because of the Great Depression the rotting French hegemony over Europe is finally starting to collapse in on itself, France is facing several internal and external issues that put them in their weakest state since the French Revolution. This is our moment to finally leave the oppressive French sphere that we've been subjected to ever since the Peninsular War, Iberia will finally have a history by itself and not as a measly client state of the French."
  iberia.2.a:0 "Freedom!"
+ ##DECISIONS
+ SPR_election_france_category:0 "Iberian Regency Council Elections"
+ SPR_election_france_category_desc:0 "The Iberian Regency Council has finally decided to solve the long standing issue of there being no legal head of state for the Iberian Confederation, we can support our own candidate - the noble Albert from house Saxe-Coburg and Gotha."
+ SPR_election_austria_category:0 "Iberian Regency Council Elections"
+ SPR_election_austria_category_desc:0 "The Iberian Regency Council has finally decided to solve the long standing issue of there being no legal head of state for the Iberian Confederation, we can support our own candidate - Franz Ferdinand's son, Maximilian."
+ SPR_election_iberia_category:0 "Iberian Regency Council Elections"
+ SPR_election_iberia_category_desc:0 "We've finally decided to solve the major political issue of the Iberian Confederation having no legal head of state by choosing to have the European nations push their own candidates and whoever is deemed the most suitable become King."
