@@ -170,9 +170,6 @@ idea_colonial_nation_eng = {
 		
 			removal_cost = -1
 			
-			allowed = {
-			OVERLORD = { original_tag = ENG }
-			}
 
 			allowed_civil_war = {
 			}
@@ -194,9 +191,6 @@ idea_colonial_nation_eng = {
 		
 			removal_cost = -1
 			
-			allowed = {
-			OVERLORD = { original_tag = ENG }
-			}
 
 			allowed_civil_war = {
 			}
@@ -218,10 +212,6 @@ idea_colonial_nation_eng = {
 idea_colonial_eng_suppressed = {
 		
 			removal_cost = -1
-			
-			allowed = {
-			OVERLORD = { original_tag = ENG }
-			}
 
 			allowed_civil_war = {
 			}
@@ -236,10 +226,7 @@ idea_colonial_eng_suppressed = {
 		idea_colonial_eng_suppressed_secret_police = {
 		
 			removal_cost = -1
-			
-			allowed = {
-			OVERLORD = { original_tag = ENG }
-			}
+
 
 			allowed_civil_war = {
 			}
@@ -256,10 +243,6 @@ idea_colonial_eng_suppressed = {
 				idea_colonial_eng_suppressed_empower_colonists = {
 		
 			removal_cost = -1
-			
-			allowed = {
-			OVERLORD = { original_tag = ENG }
-			}
 
 			allowed_civil_war = {
 			}
