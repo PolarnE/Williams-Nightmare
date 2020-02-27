@@ -1,4 +1,11 @@
 #Most of GFX are placeholders for future ones
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
 	id = Maratha_meme
@@ -1206,6 +1213,355 @@ focus_tree = {
 			completion_reward = {
 				add_political_power = 150
 				add_ideas =RAJ_moralee
+				}
+			}
+		focus = {
+			id = RAJ_Indianpentagon
+			x = 50
+			y = 0
+			cost = 5
+			completion_reward = {
+			add_ideas = RAJ_pentagon
+				}
+			}
+		focus = {
+		id = RAJ_specialservice
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = RAJ_Indianpentagon }
+		x = 45
+		y = 1
+		cost = 10
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 2
+				technology = paratroopers
+				technology = paratroopers2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+			}
+		}
+		}
+		focus = {
+		id = RAJ_delhimovement
+		icon = GFX_goal_generic_cavalry
+		x = 47
+		y = 1
+		prerequisite = { focus = RAJ_Indianpentagon }
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = RAJ_airborne
+		icon = GFX_focus_generic_paratrooper
+		x = 45
+		y = 2
+		prerequisite = { focus = RAJ_specialservice }
+		cost = 10
+		completion_reward = {
+			add_ideas = RAJ_specialforces
+		}
+	}
+	focus = {
+		id = RAJ_moblization
+		icon = Placeholder
+		x = 47
+		y = 2
+		prerequisite = {
+			focus = RAJ_delhimovement
+			}
+		cost = 10
+		completion_reward = {
+			add_ideas = RAJ_army
+		}
+	}
+	focus = {
+		id = RAJ_wemen
+		icon = placeholder 
+		x = 46
+		y = 3
+		prerequisite = {
+			focus = RAJ_moblization
+			focus = RAJ_airborne
+			}
+		cost = 10
+		completion_reward = {
+			add_ideas = RAJ_wemen1
+		}
+	}
+	focus = {
+		id = RAJ_artillery
+		icon = GFX_goal_generic_army_artillery
+		x = 50
+		y = 1
+		cost = 10
+		prerequisite = { focus = RAJ_Indianpentagon }
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1.0
+				category = artillery
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = RAJ_tank
+		icon = GFX_goal_generic_army_tanks
+		x = 50
+		y = 2
+		prerequisite = { focus = RAJ_artillery }
+		cost = 10
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1.0
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = RAJ_motorized
+		icon = GFX_goal_generic_build_tank
+		x = 50
+		y = 3
+		prerequisite = { focus = RAJ_tank }
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1.0
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = RAJ_planess
+		icon = GFX_plan
+		x = 54
+		y = 1
+		prerequisite = {
+			focus = RAJ_Indianpentagon
+		}
+		cost = 10
+		completion_reward = {
+			add_ideas = RAJ_planes
+		}
+	}
+	focus = {
+		id = RAJ_air_support
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = RAJ_planess }
+		mutually_exclusive = { focus = RAJ_strategic_bombing }
+		x = 53
+		y = 2
+		cost = 10
+		completion_reward = {
+			air_experience = 25
+			add_ideas = air_support_focus
+		}
+	}
+
+	focus = {
+		id = RAJ_strategic_bombing
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = RAJ_planess }
+		mutually_exclusive = { focus = RAJ_air_support }
+		x = 55
+		y = 2
+		cost = 10
+		completion_reward = {
+			air_experience = 25
+			add_ideas = strategic_bombing_focus
+		}
+	}
+	focus = {
+		id = RAJ_TAC
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = RAJ_air_support }
+		x = 0
+		y = 2
+		relative_position_id = RAJ_air_support
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1.0
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_CAS
+		text = CAS_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = RAJ_air_support }
+		x = -1
+		y = 1
+		relative_position_id = RAJ_air_support
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1.0
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = RAJ_bombers
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = RAJ_strategic_bombing }
+		x = 0
+		y = 2
+		relative_position_id = RAJ_strategic_bombing
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = heavy_air
+			}
+			add_ideas = combined_bomber_offensive
+		}
+	}
+	focus = {
+		id = RAJ_fighters
+		icon = GFX_focus_usa_escort_fighters
+		x = 1
+		y = 1
+		prerequisite = { focus =  RAJ_strategic_bombing }
+		relative_position_id = RAJ_strategic_bombing
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	focus = {
+		id = RAJ_militas
+		icon = GFX_militas
+		x = 46
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = RAJ_wemen
+			}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_dissolved_military
+				add_idea= RAJ_lessdissolved_military
+			}
+		}
+	}
+	focus = {
+		id = RAJ_navy
+		icon  = GFX_focus_generic_navy_battleship2
+		x = 59
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = RAJ_Indianpentagon }
+		completion_reward = {
+					navy_experience = 100
+			}
+		}
+		focus = {
+			id = RAJ_navi
+			x = 58
+			y = 2
+			cost = 10
+			prerequisite = {
+				focus = RAJ_navy
+			}
+		completion_reward = {
+			add_ideas = RAJ_dockyards
+		}
+	}
+	focus = {
+		id = RAJ_ships
+		x = 60
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = RAJ_navy
+			}
+			completion_reward = {
+				add_ideas = RAJ_ships
+				}
+			}
+	focus = {
+		id = RAJ_dockyards1
+		x = 58
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = RAJ_navi
+			}
+			completion_reward = {
+					810 = { 
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					} }
+			}
+		}
+		focus = {
+		id = RAJ_dockyards2
+		x = 60
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = RAJ_ships
+			}
+			completion_reward = {
+				429 = { 
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 5
+						instant_build = yes
+					}
+				}
 				}
 			}
 #End of focuses 

@@ -59,6 +59,72 @@ ideas = {
 			#Planning moved and replaced with Insane Roy attack factor
 			}
 		}
+			RAJ_dockyards = {
+			picture = generic_sea_focused_navy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.1	
+			}
+		}
+		RAJ_ships = {
+			
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				naval_equipment_upgrade_xp_cost = -0.1
+			}
+			
+			equipment_bonus = {
+
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				
+				ship_hull_submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		RAJ_lessdissolved_military = {
+			picture = RAJ_dissolved_military
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			conscription_factor = -0.5
+			army_org_factor = 0.1
+			land_reinforce_rate = 0.05
+			#Planning moved and replaced with Insane Roy attack factor
+			}
+		}
 		# OIII INSANE BOIII
 			RAJ_Insane_Bose = {
 			picture = Insane_Bose
@@ -206,6 +272,68 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1
 				industrial_capacity_factory = -0.15
+			}
+		}
+		RAJ_pentagon = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				max_command_power = 50		
+			}
+		}
+		RAJ_specialforces = {
+			picture =
+			allowed = {
+				original_TAG= RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				special_forces_cap = 0.05	
+			}
+		}
+		RAJ_planes = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+				}
+			removal_cost = -1
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		RAJ_wemen1 = {
+			picture = placeholder
+			removal_cost = -1
+			allowed = {
+				original_TAG = RAJ
+			}
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		RAJ_army = {
+			picture = HUN_secret_rearmament
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.1
 			}
 		}
 		RAJ_exe = {
