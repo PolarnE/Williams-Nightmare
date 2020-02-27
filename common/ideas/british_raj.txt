@@ -579,8 +579,8 @@ ideas = {
 				original_TAG = RAJ
 			}
 			modifier = {
-				communism_drift = 0.1
-				stability_weekly = 0.05
+				communism_drift = 0.03
+				stability_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
