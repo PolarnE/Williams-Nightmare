@@ -140,11 +140,11 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				war_support_factor = -0.1
+				war_support_factor = -0.2
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25
-				conscription_factor = -0.1
-				consumer_goods_factor = 0.05
+				conscription_factor = -0.2
+				consumer_goods_factor = 0.1
 			}
 		}
 		RAJ_nogood = {
@@ -158,6 +158,64 @@ ideas = {
 				political_power_cost = 0.8
 				}
 			}
+		RAJ_easierfam = {
+			picture = 
+			allowed = {
+				original_TAG= RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		RAJ_build = {
+			picture = 
+			allowed = {
+				original_TAG= RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		RAJ_tradee = {
+			picture = 
+			allowed = {	original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				}
+			}
+		RAJ_opentrade = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.2
+				min_export = 0.1 
+			}
+		}
+		RAJ_royfinal = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
 		RAJ_wewonzulul = {
 			picture = 
 			allowed = {
@@ -199,6 +257,34 @@ ideas = {
 					political_power_cost = -0.25
 				}
 			}
+		RAJ_compliance = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.1
+			}
+		}
+		RAJ_oil = {
+			picture = oil
+			allowed = {	original_TAG= RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				production_oil_factor = 0.1
+			}
+		}
+		RAJ_food = {
+			picture = food
+			allowed = {	original_TAG= RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+			}
+		}
 		RAJ_civs3 = {
 			picture = 
 			allowed = {
@@ -238,6 +324,15 @@ ideas = {
 				production_speed_arms_factory_factor = 0.15
 				}
 			}
+		RAJ_moralee = {
+			picture =
+			allowed = { original_TAG = RAJ
+				}
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.1
+			}
+		}
 		RAJ_gunz = {
 			picture = RAJ_guns
 

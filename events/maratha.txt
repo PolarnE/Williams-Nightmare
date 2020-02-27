@@ -384,6 +384,67 @@ country_event = {
 		}
 	}
 }
+
+#BengalChoose
+country_event = {
+	is_triggered_only = yes
+	#makenews
+	id = maratha.18
+	title = maratha.18.t
+	desc = maratha.18.d
+	picture = GFX_Eorissa
+		
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = maratha.18.a
+		RAJ = {
+			puppet = BAN
+			transfer_state = 837
+			add_to_faction = BAN
+			add_state_core = 837
+		}
+		add_popularity = {
+					ideology = communism
+					popularity = 0.8
+			}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 10
+			}
+		name = maratha.18.b
+		add_popularity = {
+					ideology = communism
+					popularity = -0.15
+			}
+		RAJ = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BAN
+				generator = { 837 }
+				}
+			}
+		}
+}
+country_event = {
+	is_triggered_only = yes
+	id = maratha.17
+	title = maratha.17.t
+	desc = maratha.17.d
+	picture = GFX_Eorissa
+	
+	option = {
+		BAN = {
+			country_event = {
+				id = maratha.18
+				days = 1
+			}
+		}
+	}
+}
 country_event = {
 	is_triggered_only = yes
 	id = maratha.16
@@ -414,7 +475,6 @@ country_event = {
 	option = {
 		ai_chance = {
 			factor = 30
-			any_enemy_country = { is_actual_major = yes }
 			}
 		name = maratha.16.b
 		RAJ = {
@@ -430,6 +490,57 @@ country_event = {
 			}
 		}
 }
+country_event = {
+	is_triggered_only = yes
+	id = maratha.19
+	title = maratha.19.t
+	desc = maratha.19.d
+	picture = GFX_Tibet
+	
+	option = {
+	name = maratha.19.a
+		TIB = {
+			country_event = {
+				id = maratha.20
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	is_triggered_only = yes
+	#makenews
+	id = maratha.20
+	title = maratha.20.t
+	desc = maratha.20.d
+	picture = GFX_Tibet
+		
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = maratha.20.a
+		RAJ = {
+			puppet = TIB
+		}
+		add_popularity = {
+					ideology = communism
+					popularity = 0.8
+			}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+			}
+		name = maratha.20.b
+		add_popularity = {
+					ideology = communism
+					popularity = -0.15
+			}
+		}
+}
+
 	
 
 
