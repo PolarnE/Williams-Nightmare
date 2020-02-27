@@ -166,6 +166,20 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		RAJ_biteasierfam = {
+			picture = 
+			allowed = {
+				original_TAG= RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
 				war_support_factor = -0.05
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
@@ -173,6 +187,89 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		RAJ_rese = {
+			picture = GFX_edu
+			allowed = {
+				original_TAG = RAJ
+				}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		RAJ_invest = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+					}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.15
+			}
+		}
+		RAJ_exe = {
+			picture =
+			allowed = {
+				original_TAG = RAJ
+					}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		RAD_rodeo = {
+			picture = 
+			allowed = {
+				original_TAG= RAJ
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+			removal_cost = -1
+		}
+		RAJ_speedo = {
+			picture = 
+			allowed = {
+				original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				state_production_speed_buildings_factor = 0.1
+				}
+			}
+		RAJ_buildingss = {
+			picture =
+			allowed = {
+				original_TAG = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}	
+		RAJ_subsidesL = {
+			picture = 
+			allowed = {
+				original_tag = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				}
+			}
+		RAJ_subsidesN = {
+			picture = 
+			allowed = {
+				original_tag = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				}
+			}
+				
 		RAJ_build = {
 			picture = 
 			allowed = {
@@ -245,8 +342,7 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-				production_speed_buildings_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05	
+				production_speed_buildings_factor = 0.08
 			}
 		}
 		RAJ_pop = {
@@ -343,6 +439,32 @@ ideas = {
 				}
 			}
 		}
+		RAJ_oilz = {
+			picture = OIL
+			modifier = {
+				base_fuel_gain_factor = 0.1
+			}
+		}
+		RAJ_nationalizationn = {
+			picture = something idk
+			ALLOWED = {
+				original_TAG = RAJ
+			}
+			modifier = {
+				communism_drift = 0.1
+				stability_weekly = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		RAJ_moresluts = {
+			picture = Building
+			allowed = {
+				original_TAG = RAJ
+				}
+				modifier = {
+					global_building_slots = 0.1
+				}
+			}
 	RAJ_azad_hind = {
 			picture = generic_morale_bonus
 
