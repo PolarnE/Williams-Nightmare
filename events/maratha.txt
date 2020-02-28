@@ -69,6 +69,9 @@ country_event = {
 	desc = maratha.4.d 
 	picture = GFX_leader
 	option = {
+		ai_chance = {
+			factor = 100
+		}
 		name = maratha.4.a
 		unlock_national_focus = RAJ_election
 		}
@@ -85,6 +88,9 @@ country_event = {
 	
 	option = {
 		name = maratha.5.a
+		ai_chance = {
+			factor = 100
+		}
 		BAN = {
 			country_event {
 				days = 1
@@ -148,6 +154,9 @@ country_event = {
 	
 	option = {
 		name = maratha.7.a
+		ai_chance = {
+			factor = 100
+		}
 		HOL = {
 			country_event {
 				days = 1
@@ -270,6 +279,9 @@ country_event = {
 	
 	option = {
 		name = maratha.12.a
+		ai_chance = {
+			factor = 100
+		}
 		HOL = {
 			country_event {
 				days = 1
@@ -321,6 +333,9 @@ country_event = {
 	
 	option = {
 		name = maratha.13.a
+		ai_chance = {
+			factor = 100
+		}
 		ENG = {
 			country_event {
 				days = 1
@@ -376,6 +391,9 @@ country_event = {
 	
 	option = {
 		name = maratha.15.a
+		ai_chance = {
+			factor = 100
+		}
 		FRA = {
 			country_event {
 				days = 1
@@ -498,7 +516,10 @@ country_event = {
 	picture = GFX_Tibet
 	
 	option = {
-	name = maratha.19.a
+		name = maratha.19.a
+		ai_chance = {
+			factor = 100
+		}
 		TIB = {
 			country_event = {
 				id = maratha.20
@@ -540,6 +561,78 @@ country_event = {
 			}
 		}
 }
+country_event = {
+	id = maratha.21
+	title = maratha.21.t
+	desc = maratha.21.d
+	picture = gfx_peacyoffer
+	
+	trigger = {
+		controls_state = 423
+		controls_state = 424
+		controls_state = 425
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+		}
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = maratha.21.a
+		FRA = {
+			country_event = { id = maratha.22 days = 1}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = maratha.21.b
+		}
+}
+country_event = {
+	is_triggered_only = yes
+	id = maratha.22
+	title = maratha.22.t
+	desc = maratha.22.d
+	
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = maratha.22.a
+		RAJ = {
+			transfer_state = 423
+			transfer_state = 320
+			transfer_state = 424
+			transfer_state = 422
+			transfer_state = 425
+			add_state_core = 422
+			add_state_core = 424
+			add_state_core = 423
+			add_state_core = 320
+			add_state_core = 425
+		}
+		RAJ = {
+			white_peace = FRA
+		}
+		FRA = {
+			white_peace = RAJ
+		}
+	}
+	option = {
+		name = maratha.22.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.2
+		}
+	}
+
+		
+	
 
 	
 
