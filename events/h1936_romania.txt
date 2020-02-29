@@ -1,0 +1,17 @@
+
+add_namespace = h1936_romania
+
+#Carolite March on Buharest
+country_event = {
+	id = h1936_romania.1
+	title = h1936_romania.1.t
+	desc = h1936_romania.1.d
+	picture = GFX_report_event_carol_party
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = h1936_romania.1.a
+	add_political_power = 120
+}
+}

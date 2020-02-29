@@ -48,10 +48,16 @@ if = {
 	}
 }
 	add_ideas = {
-		ROM_king_carol_ii_hedonist
+		ROM_king_carol_ii
+		ROM_crown_prince_michael
+		ROM_1935_constitution
+		ROM_revanchist_populace
+		M_constitutional
+		education_large
+		censored_press
 	}
-
-add_ideas = neutrality_idea
+	
+give_guarantee = BUK
 
 #Kick off kings crazy life
 if = {
@@ -77,33 +83,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	democratic = 30
 	fascism = 18
-	communism = 2
-	neutrality = 60
-}
-
-create_country_leader = {
-				name = "Carol II"
-				desc = "POLITICS_CAROL_II_DESC"
-				picture = GFX_Portrait_romania_Carol_II				
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					hedonist
-					camarilla_leader
-				}
-				}
-
-create_country_leader = {
-	name = "Constantin Ion Parhon"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "Portrait_Romania_Constantin_Parhon.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
+	communism = 20
+	neutrality = 32
 }
 
 create_country_leader = {
@@ -122,9 +105,9 @@ create_country_leader = {
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "Portrait_Romania_Octavian_Goga.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = moderatism
 	traits = {
-		#
+    romania_trait_carolite
 	}
 }
 

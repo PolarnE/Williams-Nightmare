@@ -39,5 +39,14 @@ spriteTypes = {
 		name = "GFX_idea_RAJ_dissolved_military"
 		texturefile = "gfx/interface/ideas/idea_RAJ_dissolved_military.dds"
 	}
-
+	
+		  spriteType = {
+		name = "GFX_idea_rom_king_carol_frame"
+		texturefile = "gfx/interface/ideas/idea_rom_king_carol_frame.dds"
+	}	
+	
+	 spriteType = {
+		name = "GFX_idea_rom_crown_prince_michael_frame"
+		texturefile = "gfx/interface/ideas/idea_rom_crown_prince_michael_frame.dds"
+	}	
 }
