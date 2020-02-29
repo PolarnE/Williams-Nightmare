@@ -40,7 +40,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_gandhi
-		icon = GFX_gandhi
+		icon = GFX_focus_maratha_gandhi
 		x = 5
 		y = 1
 		ai_will_do = {
@@ -65,7 +65,7 @@ focus_tree = {
 				name = "Mahatma Gandhi"
 				desc = ""
 				picture = "Gandhi123.dds"
-				ideology = stalinism
+				ideology = marxism
 				traits = {
 			}
 			}
@@ -73,7 +73,7 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_roy
-		icon = GFX_Roy
+		icon = GFX_focus_maratha_roy
 		x = 12
 		y = 1
 		ai_will_do = {
@@ -95,10 +95,10 @@ focus_tree = {
 				add_idea= RAJ_wechoz
 			}
 			create_country_leader = {
-				name = "M. N. Roy"
+				name = "M.N. Roy"
 				desc = ""
 				picture = "portrait_m_n_roy.dds"
-				ideology = stalinism
+				ideology = marxism
 				traits = {
 			}
 			}
@@ -106,7 +106,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_bose
-		icon = GFX_bose
+		icon = GFX_focus_maratha_bose
 		x = 19
 		y = 1
 		ai_will_do = {

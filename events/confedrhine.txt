@@ -9,35 +9,202 @@ country_event = {
 
 	fire_only_once = yes
 	
+	immediate = { hidden_effect = { COR = { country_event = { id = confedrhine.2 days = 10 } } } }
+	
         trigger = { date > 1936.2.4
 		country_exists = FRA
+		original_tag = COR
 		NOT = { has_global_flag = global_paris_stock_market_crash } }
 
 	option = {
 		name = confedrhine.1.a
-		add_political_power = -300
+		add_political_power = -100
 		hidden_effect = {
 		FRA = { country_event = { id = h1936_france.1 days = 7 } }
 news_event = { id = newsWN.9 hours = 6 } } }
 	}
 	
 #Nationalist uprising forces a declaration of independence
-#country_event = {
-#	id = confedrhine.2
-#	title = confedrhine.2.t
-#	desc = confedrhine.2.d
-#	picture = GFX_report_event_communists_cheer
-#
-#	fire_only_once = yes
-#	
-#       trigger = { date > 1936.2.4
-#	country_exists = FRA
-#	NOT = { has_global_flag = global_paris_stock_market_crash } }
-#
-#	option = {
-#		name = confedrhine.2.a
-#		add_political_power = -300
-#		hidden_effect = {
-#		FRA = { country_event = { id = h1936_france.1 days = 7 } }
-#news_event = { id = newsWN.9 hours = 6 } } }
-#	}
+country_event = {
+	id = confedrhine.2
+	title = confedrhine.2.t
+	desc = confedrhine.2.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	option = {
+		name = confedrhine.2.a
+		add_stability = -0.1
+		FRA = { set_autonomy = {
+	target = COR
+	autonomy_state = autonomy_free
+}
+remove_from_faction = COR
+country_event = { id = h1936_france.19 hours = 6 } }
+		hidden_effect = {
+country_event = { id = confedrhine.3 days = 7 } } }
+	}
+	
+#New constitution dissolving the Confederation of the Rhine
+country_event = {
+	id = confedrhine.3
+	title = confedrhine.3.t
+	desc = confedrhine.3.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	immediate = { hidden_effect = { BAV = { country_event = { id = confedrhine.4 hours = 12 } } } }
+	
+	option = {
+		name = confedrhine.3.a
+	set_cosmetic_tag = COR_germany
+	set_party_name = { ideology = neutrality long_name = COR_federation_party name = COR_federation_party }
+	hidden_effect = {
+	create_country_leader = {
+	name = "Provisional Congress"
+	desc = ""
+	picture = "Portrait_Confed_Provisional_Congress.dds"
+	ideology = conservatism
+	traits = {
+		quarreling_administration
+	}
+}
+	create_country_leader = {
+	name = "Provisional Congress"
+	desc = ""
+	picture = "Portrait_Confed_Provisional_Congress.dds"
+	ideology = oligarchism
+	traits = {
+	quarreling_administration
+	}
+} }
+	}
+	}
+	
+#New constitution bad!!!
+country_event = {
+	id = confedrhine.4
+	title = confedrhine.4.t
+	desc = confedrhine.4.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	immediate = { 
+	hidden_effect = {
+	COR = { country_event = { id = confedrhine.6 days = 16 } }
+	WST = { country_event = { id = confedrhine.5 days = 14 } }
+	DDE = { country_event = { id = confedrhine.5 days = 14 } }
+	NSA = { country_event = { id = confedrhine.5 days = 14 } }
+	HNO = { country_event = { id = confedrhine.5 days = 14 } }
+    RDL = { country_event = { id = confedrhine.5 days = 14 } }
+	SAX = { country_event = { id = confedrhine.5 days = 14 } }
+	WRB = { country_event = { id = confedrhine.5 days = 14 } }
+	WUE = { country_event = { id = confedrhine.5 days = 14 } }
+	BDN = { country_event = { id = confedrhine.5 days = 14 } }
+	RGN = { country_event = { id = confedrhine.5 days = 14 } }
+	}
+	}
+	
+	option = {
+		name = confedrhine.4.a
+	set_cosmetic_tag = BAV_united
+	every_state = {
+                limit = { is_core_of = GER }
+                add_core_of = ROOT
+            }
+			COR = { set_autonomy = {
+	target = BAV
+	autonomy_state = autonomy_free
+} }
+	declare_war_on = { type = annex_everything target = COR }
+	hidden_effect = {
+				COR = { set_autonomy = {
+	target = WST
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = DDE
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = NSA
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = HNO
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = RDL
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = SAX
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = WRB
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = WUE
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = BDN
+	autonomy_state = autonomy_free
+} }
+			COR = { set_autonomy = {
+	target = RGN
+	autonomy_state = autonomy_free
+} }
+	}
+	}
+	}
+
+#Bavaria or Rhine?????
+country_event = {
+	id = confedrhine.5
+	title = confedrhine.5.t
+	desc = confedrhine.5.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	option = {
+		name = confedrhine.4.a
+	ai_chance = { base = 50 }
+	BAV = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = confedrhine.4.b
+	ai_chance = { base = 50 }
+	COR = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	}
+	
+#Von Schleicher requests to assume temporary power in government
+country_event = {
+	id = confedrhine.6
+	title = confedrhine.6.t
+	desc = confedrhine.6.d
+	picture = GFX_report_event_communists_cheer
+
+	is_triggered_only = yes
+	
+	option = {
+		name = confedrhine.6.a
+	add_political_power = -50
+		create_country_leader = {
+	name = "Kurt von Schleicher"
+	desc = ""
+	picture = "Portrait_Confed_Kurt_Von_Schleicher.dds"
+	ideology = despotism
+	traits = {
+	hero_of_leipzig
+	}
+}
+	}
