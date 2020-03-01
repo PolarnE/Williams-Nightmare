@@ -42,7 +42,7 @@ set_war_support = 0.60
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1933.3.5"
+	last_election = "1932.3.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -61,11 +61,11 @@ idea_germanys_germany_divided
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	name = "Otto Wels"
+	desc = ""
+	picture = "Portrait_Brandenburg_Otto_Wels.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socialism
 	traits = {
 	}
 }

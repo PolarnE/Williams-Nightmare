@@ -1,0 +1,28 @@
+state={
+	id=882
+	name="Qinghai Nanbu"
+
+	history={
+		owner = TIB
+		add_core_of = XSM
+		add_core_of = MAN
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = TIB
+		victory_points = {
+			7940 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+	10817 1882 8018 4964 12899
+	}
+	manpower=421521
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

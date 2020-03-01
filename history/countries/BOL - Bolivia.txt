@@ -99,6 +99,17 @@ create_country_leader = {
 	}
 }
 
+create_corps_commander = {
+	name = "Ernst Rohm"
+	portrait_path = "gfx/leaders/BOL/Portrait_PeruBolivia_Ernst_Rohm.dds"
+	traits = { infantry_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality

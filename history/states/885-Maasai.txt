@@ -1,0 +1,20 @@
+
+state={
+	id=885
+	name="Maasai"
+	manpower = 813123
+	
+	state_category = rural
+
+	history={
+		owner = MAA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MAA
+	}
+
+	provinces={
+	5196
+	}
+}

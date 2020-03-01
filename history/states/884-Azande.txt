@@ -1,0 +1,21 @@
+state={
+	id=884
+	name="Azande"
+	manpower = 1236131
+	
+	state_category = rural
+	
+	
+	history={
+		owner = AZA
+		add_core_of = AZA
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+	7996 1953 10764 10857
+	}
+}

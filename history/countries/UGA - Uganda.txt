@@ -53,14 +53,11 @@ set_convoys = 0
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 33
-	fascism = 28
-	communism = 37
-	neutrality = 2
+	neutrality = 100
 }

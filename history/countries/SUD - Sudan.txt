@@ -59,15 +59,15 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-democratic = 100
+neutrality = 100
 }
 
 create_country_leader = {
-	name = "No Leadership"
+	name = "Tribal Leadership"
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "gfx/leaders/ENG/portrait_no_leader.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = despotism
 	traits = {
 	}
 }

@@ -200,7 +200,7 @@ ideas = {
 				}
 			}
 		RAJ_needfood = {
-			picture = 
+			picture = raj_risk_of_famine
 			allowed = { original_TAG = RAJ
 			}
 			removal_cost = -1
@@ -214,7 +214,7 @@ ideas = {
 			}
 		}
 		RAJ_nogood = {
-			picture = 
+			picture = trotskyite_plot
 			allowed = {
 				original_TAG= RAJ
 			}
@@ -225,7 +225,7 @@ ideas = {
 				}
 			}
 		RAJ_easierfam = {
-			picture = 
+			picture = raj_risk_of_famine
 			allowed = {
 				original_TAG= RAJ
 				}
@@ -239,7 +239,7 @@ ideas = {
 			}
 		}
 		RAJ_biteasierfam = {
-			picture = 
+			picture = raj_risk_of_famine
 			allowed = {
 				original_TAG= RAJ
 				}

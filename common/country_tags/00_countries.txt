@@ -230,6 +230,10 @@ FRT = "countries/FrenchTunisia.txt"
 MFR = "countries/FrenchMorocco.txt"
 CYR = "countries/Cyrenaica.txt"
 DAR = "countries/Darfur.txt"
+DNK = "countries/Dinka.txt"
+AZA = "countries/Azande.txt"
+MAA = "countries/Maasai.txt"
+MIJ = "countries/Mijikenoa.txt"
 ############MEMES###################################
 JER = "countries/CrasuMOD.txt"
 ############MIDDLE EAST#############################

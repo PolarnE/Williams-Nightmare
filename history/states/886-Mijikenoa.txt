@@ -1,0 +1,26 @@
+
+state={
+	id=886
+	name="Mijikenoa"
+	manpower = 1131268
+	
+	state_category = rural
+
+	history={
+		owner = MIJ
+		victory_points = {
+			5210 1
+		}
+		buildings = {
+			infrastructure = 3
+		5210 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = MIJ
+	}
+
+	provinces={
+	5210 6020
+	}
+}

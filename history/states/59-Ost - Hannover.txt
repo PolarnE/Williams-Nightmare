@@ -28,6 +28,7 @@ state={
 
 		}
 		add_core_of = HNO
+		add_core_of = COR
 		add_claim_by = BRN
 		add_claim_by = GER
 

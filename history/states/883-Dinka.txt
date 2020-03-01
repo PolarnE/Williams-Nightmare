@@ -1,0 +1,21 @@
+state={
+	id=883
+	name="Dinka"
+	manpower = 826312
+	
+	state_category = rural
+	
+	
+	history={
+		owner = DNK
+		add_core_of = DNK
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+	12800 12887 4918 1914 10795 10851 12744 4033 10908
+	}
+}

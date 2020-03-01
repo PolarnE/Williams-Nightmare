@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_report_event_gamers_capture_jerusalem"
 		texturefile = "gfx/event_pictures/report_event_gamers_liberated.dds"
 	}	
+	spriteType = {
+		name = "GFX_report_event_ungern_sternberg"
+		texturefile = "gfx/event_pictures/report_event_roman_von_ungern_sternberg.dds"
+	}	
 }

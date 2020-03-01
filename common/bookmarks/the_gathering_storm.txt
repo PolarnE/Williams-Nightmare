@@ -22,7 +22,7 @@ bookmarks = {
 			history = "RUS_lore"
 			ideology = democratic
 			ideas = {
-		    RUS_closed_borders
+		    RUS_integrity_6
 			RUS_lack_of_innovation
 			RUS_slow_industrialisation
 			}	
@@ -92,11 +92,14 @@ bookmarks = {
 			history = "RAJ_lore"
 			ideology = communism
 			ideas = {
+			RAJ_nogood
+			RAJ_dissolved_military
+			RAJ_needfood
 			}	
 			focuses = {
-		    	political_effort
-				nuclear_effort
-				army_effort
+		    	RAJ_gandhi
+				RAJ_roy
+				RAJ_bose
 			}		
 		}
 		"---"={
