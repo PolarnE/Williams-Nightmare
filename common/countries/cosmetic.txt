@@ -231,13 +231,3 @@ SER_yugoslavia = {
 	color = rgb { 72 73 126 }
 	color_ui = rgb { 94 95 164 }
 }
-
-COR_germany = {
-	color = rgb { 255 87 87 }
-	color_ui = rgb { 255 132 132 }
-}
-
-BAV_united = {
-	color = rgb { 0 153 213 }
-	color_ui = rgb { 0 135 192 }
-}

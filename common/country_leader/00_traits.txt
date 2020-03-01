@@ -28,38 +28,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
-romania_trait_carolite = {
-		random = no
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-		romania_trait_michaelite = {
-		random = no
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-		champion_of_the_monarchy = {
-		random = no
-		political_advisor_cost_factor = -0.15
-		trade_laws_cost_factor = -0.15
-		mobilization_laws_cost_factor = -0.15
-		economy_cost_factor = -0.15
-		high_command_cost_factor = -0.15
-		air_chief_cost_factor = -0.15
-		army_chief_cost_factor = -0.15
-		navy_chief_cost_factor = -0.15
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 				butcher_of_birmingham = {
 		random = no
@@ -88,27 +56,6 @@ romania_trait_carolite = {
 		stability_factor = -0.1
 		political_power_factor = 0.15
 		offensive_war_stability_factor = 0.4
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-		quarreling_administration = {
-		random = no
-		stability_factor = -0.1
-		army_org_factor = -0.05
-		planning_speed = -0.10
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-		hero_of_leipzig = {
-		random = no
-		planning_speed = 0.05
-		army_morale_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1

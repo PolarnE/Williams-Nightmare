@@ -19,16 +19,7 @@
  COR_destroy_westphalia_desc:0 "Westphalia's ideology tends far towards what Bavaria is aiming for to our concern, we must gain the upper hand on them and integrate them now before they catch us by surprise and conquer their old territories."
  COR_russian_support:0 "Protektoryat Membership"
  COR_russian_support_desc:0 "The Russian global organisation of the Protektoryat is the world's leading force against the oppression of monarchies and other violent ideologies, we will greatly benefit under Russian aid if we join them officially."
- #cosmetic tags:
- COR_germany_democratic:0 "German Federation"
- COR_germany_democratic_DEF:0 "the German Federation"
- COR_germany_democratic_ADJ:0 "German"
- COR_germany_neutrality:0 "German Federation"
- COR_germany_neutrality_DEF:0 "the German Federation"
- COR_germany_neutrality_ADJ:0 "German"
- #traits:
- quarreling_administration:0 "Quarreling Administration"
- hero_of_leipzig:0 "Hero of Leipzig"
+ 
  #events:
  confederationoftherhine.1.t:0 "Independence from France"
  confederationoftherhine.1.d:0 "In the wake of the French Collapse we have gained independence from the French yoke and are now free to control the German states as we please, with this we can try aim for our ultimate goal of a German Confederation that is able to unite Germany."

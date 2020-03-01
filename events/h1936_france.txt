@@ -143,7 +143,6 @@ country_event = {
 		add_timed_idea = { idea = FRA_reintegration_of_catalonia  days = 200 }
 		hidden_effect = {
 		annex_country = { target = CAT transfer_troops = no }
-		transfer_state = 165
 		}
 		 }
 	}
@@ -470,23 +469,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = h1936_france.18.a #france pouts and she is unhappy
-	add_political_power = -5
-	}
-	}
-	
-#Confed Rhine nationalist rebellion results in them leaving France to establish a "centralised" german state
-country_event = {
-	id = h1936_france.19
-	title = h1936_france.19.t
-	desc = h1936_france.19.d
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = h1936_france.19.a #france pouts and she is unhappy
-	add_political_power = -5
+		name = h1936_france.18.a #france pouts and is unhappy
+	add_political_power = -50
 	}
 	}
 	

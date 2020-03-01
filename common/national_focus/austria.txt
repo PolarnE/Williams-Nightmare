@@ -507,7 +507,7 @@ army_experience = 20 }
 		id = AUS_revise_dezemberverfassung
 		icon = GFX_AUS_revise_dezemberverfassung
 		search_filters = {FOCUS_FILTER_STABILITY}
-		x = 13
+		x = 12
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -535,7 +535,7 @@ army_experience = 20 }
 		id = AUS_Reform_Staatsgrundgesetz
 		icon = GFX_AUS_Reform_Staatsgrundgesetz
 		search_filters = {FOCUS_FILTER_STABILITY}
-		x = 15
+		x = 14
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -553,7 +553,7 @@ army_experience = 20 }
 		id = AUS_Rewrite_Oktoberdiplom
 		icon = GFX_AUS_Rewrite_Oktoberdiplom
 		search_filters = {FOCUS_FILTER_STABILITY}
-		x = 17
+		x = 16
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -581,7 +581,7 @@ army_experience = 20 }
 		prerequisite = { focus = AUS_revise_dezemberverfassung }
 		prerequisite = { focus = AUS_Reform_Staatsgrundgesetz }
 		prerequisite = { focus = AUS_Rewrite_Oktoberdiplom }
-		x = 15
+		x = 14
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -630,7 +630,7 @@ army_experience = 20 }
 		prerequisite = { focus = AUS_Suppress_Reactionaries }
 		mutually_exclusive = { focus = AUS_Endlosung }
 		available = { NOT = { has_country_flag = flag_hitlers_coup } }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = AUS_Suppress_Reactionaries
 		cost = 10
@@ -721,7 +721,7 @@ army_experience = 20 }
 		prerequisite = { focus = AUS_Suppress_Reactionaries }
 		mutually_exclusive = { focus = AUS_Split_The_Crown }
 		available = { has_offensive_war = no }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = AUS_Suppress_Reactionaries
 		cost = 10
@@ -775,7 +775,6 @@ army_experience = 20 }
 		bypass = {
 		}
 		completion_reward = {
-		add_timed_idea = { idea = AUS_one_empire_spirit days = 420 }
 		}
 	}
 
@@ -796,18 +795,6 @@ army_experience = 20 }
 		}
 
 		completion_reward = {
-		set_cosmetic_tag = AUS_goster
-		create_country_leader = {
-	name = "Adolf Hitler"
-	desc = ""
-	picture = "portrait_Adolf_Hitler.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-	adolf_hitler_trait_1
-	adolf_hitler_trait_2
-	}
-}
 		}
 	}
 
@@ -817,7 +804,7 @@ army_experience = 20 }
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Generic_Gosterism_3 }
 		mutually_exclusive = { focus = AUS_Generic_Gosterism_7 }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = AUS_Generic_Gosterism_3
 		cost = 10
@@ -826,10 +813,6 @@ army_experience = 20 }
 			factor = 10
 		}
 		completion_reward = {
-		every_state = {
-                limit = { is_core_of = GER }
-                add_core_of = ROOT
-            }
 		}
 	}
 
@@ -838,8 +821,7 @@ army_experience = 20 }
 		icon = GFX_AUS_Generic_Gosterism
 		prerequisite = { focus = AUS_Generic_Gosterism_3 }
 		mutually_exclusive = { focus = AUS_Generic_Gosterism_6 }
-		available = { NOT = { OR = { GER = { has_government = democratic has_government = communism } } } }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = AUS_Generic_Gosterism_3
 		cost = 10
@@ -847,7 +829,6 @@ army_experience = 20 }
 			factor = 10
 		}
 		completion_reward = {
-		GER = { news_event = { id = generic.2 hours = 12 } }
 		}
 	}
 
@@ -857,7 +838,7 @@ army_experience = 20 }
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = AUS_Generic_Gosterism_3 
 		focus = AUS_Modern_Imperialism }
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = AUS_Generic_Gosterism_3
 		cost = 10

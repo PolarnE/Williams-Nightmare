@@ -92,14 +92,11 @@ bookmarks = {
 			history = "RAJ_lore"
 			ideology = communism
 			ideas = {
-			RAJ_nogood
-			RAJ_dissolved_military
-			RAJ_needfood
 			}	
 			focuses = {
-		    	RAJ_gandhi
-				RAJ_roy
-				RAJ_bose
+		    	political_effort
+				nuclear_effort
+				army_effort
 			}		
 		}
 		"---"={
