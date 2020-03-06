@@ -147,7 +147,7 @@ country_event = {
 	option = {
 		name = austria.4.a
 		set_country_flag = flag_ustase_revolt
-	CRO = { transfer_state = 109 load_oob = CRO_ustase_revolt }
+	CRO = { transfer_state = 109 transfer_state = 818 load_oob = CRO_ustase_revolt }
 	declare_war_on = {
 			target = CRO
 			type = annex_everything

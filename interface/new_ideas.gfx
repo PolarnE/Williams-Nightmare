@@ -49,4 +49,9 @@ spriteTypes = {
 		name = "GFX_idea_rom_crown_prince_michael_frame"
 		texturefile = "gfx/interface/ideas/idea_rom_crown_prince_michael_frame.dds"
 	}	
+	
+	 spriteType = {
+		name = "GFX_idea_sia_french_tribute"
+		texturefile = "gfx/interface/ideas/idea_SIA_tribute_to_france.dds"
+	}
 }

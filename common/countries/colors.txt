@@ -754,3 +754,8 @@ CAT = {
 	color = rgb { 166 68 72 }
 	color_ui = rgb { 166 68 72 }
 }
+
+JBL = {
+	color = rgb { 112 42 42 }
+	color_ui = rgb { 112 42 42 }
+}

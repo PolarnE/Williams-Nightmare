@@ -238,6 +238,7 @@ MIJ = "countries/Mijikenoa.txt"
 JER = "countries/CrasuMOD.txt"
 ############MIDDLE EAST#############################
 HEJ = "countries/Hejaz.txt"
+JBL = "countries/Shammar.txt"
 ############ENGLAND ALL THAT STUFF##################
 ENG = "countries/United Kingdom.txt"
 SC2 = "countries/ScottishRepublicans.txt"

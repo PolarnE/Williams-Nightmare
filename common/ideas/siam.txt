@@ -15,7 +15,7 @@ country = {
 		
 		removal_cost = -1
 
-		picture = generic_deal_with_the_devil2
+		picture = sia_french_tribute
 		
 		modifier = {
 		political_power_cost = 0.1

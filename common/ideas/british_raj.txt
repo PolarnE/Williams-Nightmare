@@ -154,7 +154,32 @@ ideas = {
 		removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.1
-				industrial_capacity_factory = 0.2
+				industrial_capacity_factory = -0.1
+				political_power_factor = 0.1
+			}
+		}
+		#income from gujarat
+		RAJ_gujarat_income = {
+		picture = fra_market_dynamism
+		allowed = {
+			original_TAG = RAJ
+			}
+		removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.025
+			}
+		}
+			#uni of delhi
+		RAJ_uni_of_delhi = {
+		picture = jap_the_unthinkable_option
+		allowed = {
+			original_TAG = RAJ
+			}
+		removal_cost = -1
+			modifier = {
+			research_speed_factor = 0.075
 			}
 		}
 		RAJ_moreandmore = {
@@ -397,7 +422,16 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				}
 			}
-				
+			RAJ_subsidesN_2 = {
+			picture = chi_hyper_inflation4
+			allowed = {
+				original_tag = RAJ
+			}
+			removal_cost = -1
+			modifier = {
+			production_factory_max_efficiency_factor = 0.1
+				}
+			}	
 		RAJ_build = {
 			picture = 
 			allowed = {
@@ -406,7 +440,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.2
-				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = -0.1
 			}
 		}
 		RAJ_tradee = {
@@ -416,6 +451,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.1
+				drift_defence_factor = -0.25
 				}
 			}
 		RAJ_opentrade = {

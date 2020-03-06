@@ -110,12 +110,22 @@ country_event = {
 		
 	option = {
 		ai_chance = {
-			factor = 90
+			factor = 45
 		}
 		name = maratha.6.a
 		RAJ = {
+		annex_country = { target = ROOT transfer_troops = yes }
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 45
+		}
+		name = maratha.6.b
+		RAJ = {
 			transfer_state = 837
-			add_to_faction = BAN
+			add_to_faction = ROOT
 			add_state_core = 837
 		}
 		add_popularity = {
@@ -128,7 +138,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			}
-		name = maratha.6.b
+		name = maratha.6.c
 		add_popularity = {
 					ideology = communism
 					popularity = -0.15

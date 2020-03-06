@@ -1,0 +1,27 @@
+
+state={
+	id=887
+	name="Shammar"
+	manpower=423121
+	
+	state_category = rural
+
+	history={
+		owner = JBL
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+				1955 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 5027 3 }
+		add_core_of = JBL
+		add_core_of = SAU
+	}
+
+	provinces={
+	5099 7970 12455 11976 4603 5027 2057 10901 8101 10815 4974 5058 4968 12749 10850 1955
+	}
+}

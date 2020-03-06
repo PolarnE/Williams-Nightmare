@@ -54,5 +54,35 @@ spriteTypes = {
 		name = "GFX_focus_maratha_gandhi"
 		texturefile = "gfx/interface/goals/focus_maratha_gandhi.dds"
 	}
+	
+		SpriteType = { 
+		name = "GFX_focus_maratha_election"
+		texturefile = "gfx/interface/goals/focus_maratha_election.dds"
+	}
+	
+			SpriteType = { 
+		name = "GFX_focus_maratha_housing"
+		texturefile = "gfx/interface/goals/focus_maratha_housing.dds"
+	}
+	
+				SpriteType = { 
+		name = "GFX_focus_maratha_housing_2"
+		texturefile = "gfx/interface/goals/focus_maratha_housing_2.dds"
+	}
+	
+				SpriteType = { 
+		name = "GFX_focus_maratha_famine"
+		texturefile = "gfx/interface/goals/focus_maratha_famine.dds"
+	}
+	
+					SpriteType = { 
+		name = "GFX_focus_maratha_india"
+		texturefile = "gfx/interface/goals/focus_maratha_india.dds"
+	}
+	
+						SpriteType = { 
+		name = "GFX_focus_maratha_gommunism"
+		texturefile = "gfx/interface/goals/focus_maratha_gommunism.dds"
+	}
 
 }

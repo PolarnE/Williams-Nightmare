@@ -95,5 +95,25 @@ units = {
 		division_template = "Hrvatsko domobranstvo"
 		start_experience_factor = 0
 	}
+		division= {	
+		#name = "4. Pesadijska Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11577
+		division_template = "Hrvatsko domobranstvo"
+		start_experience_factor = 0
+	}
+		division= {	
+		#name = "4. Pesadijska Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3601
+		division_template = "Hrvatsko domobranstvo"
+		start_experience_factor = 0
+	}
 }
 

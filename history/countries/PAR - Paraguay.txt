@@ -8,7 +8,6 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 }
-set_country_flag = monroe_doctrine
 
 1939.1.1 = {
 
@@ -59,14 +58,14 @@ set_country_flag = monroe_doctrine
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	fascism = 56
-	neutrality = 14
+	neutrality = 56
+	fascism = 14
 	communism = 10
 	democratic = 20
 }
@@ -76,7 +75,7 @@ create_country_leader = {
 	desc = ""
 	picture = "portrait_paraguay_leader.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = centrism
 	traits = {
 		#
 	}
