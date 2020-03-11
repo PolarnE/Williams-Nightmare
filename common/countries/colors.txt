@@ -13,7 +13,7 @@ SOV = {
 	color_ui = rgb { 2 94 19 }
 }
 SWE = {
-	color = rgb { 36 132 247 }
+	color = rgb { 120 175 247 }
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
@@ -676,12 +676,12 @@ CST = {
 }
 
 SCN = {
-	color = rgb { 36 132 247 }
+	color = rgb { 120 175 247 }
 	color_ui = rgb { 47 172 255 }
 }
 
 SCR = {
-	color = rgb { 36 132 247 }
+	color = rgb { 120 175 247 }
 	color_ui = rgb { 47 172 255 }
 }
 

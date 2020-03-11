@@ -1,0 +1,24 @@
+state={
+	id=890
+	name="Maastricht"
+
+	history={
+		owner = FRA
+		add_claim_by = HOL
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 7
+		}
+		victory_points = {
+			11562 1 
+		}
+
+	}
+
+	provinces={
+	11562 
+	}
+	manpower=38232
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

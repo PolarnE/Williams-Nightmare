@@ -20,6 +20,20 @@
 	}
 }
 division_template = {
+	name = "Colonial Garrison"
+	division_names_group = ENG_COL_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
 	name = "Cavalry Brigade"
 	division_names_group = ENG_CAV_01
 
@@ -315,6 +329,52 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0
 		start_equipment_factor = 1 
+		}
+		#colonial garrisons
+							division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3284
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25 
+		}
+							division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 2050
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25 
+		}
+							division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 10836
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25 
+		}
+							division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 7382
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25 
+		}
+							division= {  
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4245
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25 
 		}
 	}
 	

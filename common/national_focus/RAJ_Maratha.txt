@@ -20,6 +20,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_election
 		icon = GFX_focus_maratha_election
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		x = 12
 		y = 0
 		ai_will_do = {
@@ -39,6 +40,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_gandhi
 		icon = GFX_focus_maratha_gandhi
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		x = 5
 		y = 1
 		ai_will_do = {
@@ -72,6 +74,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_roy
 		icon = GFX_focus_maratha_roy
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		x = 12
 		y = 1
 		ai_will_do = {
@@ -105,6 +108,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_bose
 		icon = GFX_focus_maratha_bose
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		x = 19
 		y = 1
 		ai_will_do = {
@@ -139,6 +143,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_ind
 		icon = GFX_focus_maratha_india
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		x = 4
 		y = 2
 		ai_will_do = {
@@ -159,6 +164,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_ind1
 		icon = GFX_focus_generic_self_management
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		x = 6
 		ai_will_do = {
 			factor = 14
@@ -175,6 +181,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_defend
 		icon = GFX_goal_generic_defence
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		ai_will_do = {
 			factor = 14
 		}
@@ -191,6 +198,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_famfix
 		icon = GFX_focus_maratha_famine
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		available = { NOT = { has_idea = RAJ_industralisation } }
 		x = 4
 		y = 3
@@ -230,6 +238,7 @@ focus_tree = {
 			factor = 4
 		}
 		icon = GFX_focus_mex_privatisation
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		x = 32
 		y = 0
 		cost = 5
@@ -502,6 +511,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_delhi
 		icon = GFX_goal_generic_construct_civ_factory
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		ai_will_do = {
 			factor = 13
 		}
@@ -639,6 +649,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_dockyards_focus
 		icon = GFX_goal_generic_construct_naval_dockyard
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 			ai_will_do = {
 			factor = 10
 		}
@@ -819,6 +830,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_popo
 		icon = GFX_focus_maratha_housing
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		x = 3
 		y = 6
 		ai_will_do = {
@@ -1227,7 +1239,7 @@ focus_tree = {
 	}
 		focus = {
 			id = RAJ_uni2
-			icon = GFX_research
+			icon = GFX_focus_research
 			x = 13
 			y = 2
 		ai_will_do = {
@@ -1366,7 +1378,7 @@ focus_tree = {
 		}
 		focus = {
 			id = RAJ_bengaljka
-			icon = GFX_idfk
+			icon = GFX_focus_generic_tank_production
 			ai_will_do = {
 			factor = 25
 			}
@@ -1385,7 +1397,7 @@ focus_tree = {
 			}
 		focus = {
 			id = RAJ_benga
-			icon = GFX_bengal
+			icon = GFX_goal_generic_position_armies
 			ai_will_do = {
 			factor = 30
 			}
@@ -1401,7 +1413,7 @@ focus_tree = {
 			}
 		focus = {
 			id = RAJ_tibet
-			icon = GFX_tibet
+			icon = GFX_goal_generic_political_pressure
 			x = 13
 			y = 4
 			ai_will_do = {
@@ -1420,7 +1432,7 @@ focus_tree = {
 		}
 		focus = {
 			id = RAJ_french
-			icon = RAJ_frenchh
+			icon = GFX_goal_generic_territory_or_war
 			ai_will_do = {
 			factor = 30
 			}
@@ -1437,7 +1449,7 @@ focus_tree = {
 		}
 		focus = {
 			id = RAJ_comply
-			icon = RAJ_gentle
+			icon = GFX_focus_generic_diplomatic_treaty
 			ai_will_do = {
 			factor = 20
 			}
@@ -1451,6 +1463,7 @@ focus_tree = {
 			}
 		focus = {
 			id = RAJ_oill
+			icon = GFX_goal_generic_oil_refinery
 			x = 15
 			y = 4
 			ai_will_do = {
@@ -1466,6 +1479,7 @@ focus_tree = {
 			}
 		focus = {
 			id = RAJ_rations
+			icon = GFX_focus_generic_manpower
 			x = 15
 			ai_will_do = {
 			factor = 10
@@ -1480,6 +1494,7 @@ focus_tree = {
 			}
 		focus = {
 			id = RAJ_bind
+			icon = GFX_goal_generic_demand_territory
 			x = 14
 			y = 6
 			ai_will_do = {

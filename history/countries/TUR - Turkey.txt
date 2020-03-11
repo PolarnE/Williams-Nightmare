@@ -9,6 +9,9 @@ if = {
 	}
 }
 
+set_stability = 0.1
+set_war_support = 0.05
+
 set_research_slots = 3
 
 add_ideas = {
@@ -136,13 +139,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 51
+	democratic = 24
+	fascism = 30
 	communism = 7
-	neutrality = 42
+	neutrality = 39
 }
 
 set_convoys = 20
-set_stability = 0.55
 
 1939.1.1 = {
 	set_politics = {

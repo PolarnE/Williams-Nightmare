@@ -1,0 +1,24 @@
+
+state={
+	id=894
+	name="Wallonie Est"
+	manpower = 1232314
+	
+	state_category = city
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 1
+
+		}
+		add_core_of = BEL
+		add_core_of = FRA
+	}
+
+	provinces={
+	6537 9444 11407 9418 3488
+	}
+}

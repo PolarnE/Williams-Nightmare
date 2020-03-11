@@ -1,0 +1,22 @@
+state={
+	id=893
+	name="Nancy"
+	manpower = 62312
+	
+	state_category = town
+
+	history={
+	owner = FRA
+			victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+	521 11516
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=889
+	name="Rotterdam"
+
+	history={
+		owner = FRA
+		add_claim_by = HOL
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+9498 = {
+				naval_base = 10
+
+			}
+		}
+		victory_points = {
+			9498 20 
+		}
+
+	}
+
+	provinces={
+	11456 9498 
+	}
+	manpower=547900
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

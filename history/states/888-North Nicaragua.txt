@@ -1,0 +1,21 @@
+state=
+{
+	id=888
+	name="Norte de Nicaragua"
+	manpower=23132
+	
+	state_category = rural
+	history=
+	{
+		owner = HON
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = HON
+		add_core_of = NIC
+
+	}
+	provinces={
+	13234
+	}
+}

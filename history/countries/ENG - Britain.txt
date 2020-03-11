@@ -106,10 +106,6 @@ add_ideas = {
 limited_conscription
 limited_exports
 partial_economic_mobilisation
-ENG_scottish_oppression_1
-ENG_overmilitarisation
-ENG_pan_germanicist_corruption
-ENG_weak_government
 }
 
 create_country_leader = {

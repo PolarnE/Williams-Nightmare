@@ -69,7 +69,18 @@ create_country_leader = {
 	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
 	picture = "GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Agustín Martí Rodríguez"
+	desc = ""
+	picture = "Portrait_El_Salvador_Agustin_Rodriguez.dds"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 		#
 	}

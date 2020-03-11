@@ -83,6 +83,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Augusto César Sandino"
+	desc = ""
+	picture = "Portrait_Nicaragua_Augusto_Sandino.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	ENG_unpopular_leader_3
+	}
+}
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
@@ -97,7 +108,7 @@ create_country_leader = {
 	desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
 	picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = despotism
 	traits = {
 		#
 	}
