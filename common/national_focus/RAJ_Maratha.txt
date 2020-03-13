@@ -930,7 +930,7 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_bos1
-		icon = GFX_miliatry
+		icon = GFX_goal_generic_national_unity
 		x = 18
 		ai_will_do = {
 			factor = 14
@@ -946,7 +946,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_bos2
-		icon = GFX_military
+		icon = GFX_goal_generic_consumer_goods
 		x = 20
 		ai_will_do = {
 			factor = 15
@@ -966,7 +966,7 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_awakening
-		icon = GFX_wokeaf
+		icon = GFX_focus_RAJ_all_india_forward_bloc
 		x = 19
 		y = 3
 		ai_will_do = {
@@ -976,7 +976,7 @@ focus_tree = {
 			focus = RAJ_bos1
 			focus = RAJ_bos2
 		}
-		cost = 5
+		cost = 15
 		completion_reward = {
 				add_political_power = 100
 				add_ideas = war_economy
@@ -984,7 +984,7 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_milbuild
-		icon = GFX_milfac
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 17
 		y = 4
 		ai_will_do = {
@@ -1007,7 +1007,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_miltrain
-		icon = GFX_training
+		icon = GFX_goal_generic_production
 		x = 18
 		y = 5
 		ai_will_do = {
@@ -1023,7 +1023,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_famfiix
-		icon = GFX_famfiix
+		icon = GFX_focus_generic_concessions
 		x = 19
 		y = 4
 		ai_will_do = {
@@ -1043,7 +1043,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_doct
-		icon = GFX_doctrine
+		icon = GFX_goal_generic_army_doctrines
 		x = 21
 		ai_will_do = {
 			factor = 24
@@ -1066,7 +1066,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_milskul
-		icon = GFX_milskul
+		icon = GFX_focus_YUG_pan_slavic_congress
 		x = 20
 		y = 5
 		ai_will_do = {
@@ -1081,7 +1081,7 @@ focus_tree = {
 		}
 	focus = {
 		id = RAJ_miluni
-		icon = GFX_uni2
+		icon = GFX_goal_generic_demand_territory
 		ai_will_do = {
 			factor = 25
 		}
@@ -1094,13 +1094,16 @@ focus_tree = {
 		prerequisite= {
 			focus = RAJ_miltrain
 			}
+		prerequisite = {
+		    focus = RAJ_famfiix
+			}
 		completion_reward = {
 			add_research_slot = 1
 			}
 		}
 	focus = {
 		id = RAJ_bengal
-		icon = GFX_bengal
+		icon = GFX_goal_generic_territory_or_war
 		x = 19
 		y = 7
 		ai_will_do = {
@@ -1116,7 +1119,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_burma
-		icon = GFX_burma
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 18
 		y = 8
 		ai_will_do = {
@@ -1141,7 +1144,7 @@ focus_tree = {
 		}
 	focus  {
 		id = RAJ_fkwest
-		icon = GFX_fkwest1
+		icon = GFX_goal_demand_sudetenland
 		x = 20
 		y= 8
 		ai_will_do = {
@@ -1162,8 +1165,10 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_fktea
-		icon = GFX_brexit
+		icon = GFX_focus_generic_strike_at_democracy1
 		x = 18
+		will_lead_to_war_with = ENG
+		will_lead_to_war_with = GBR
 		ai_will_do = {
 			factor = 25
 		}
@@ -1181,8 +1186,9 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_fronce
-		icon = GFX_fronce
+		icon = GFX_goal_generic_major_war
 		x = 20
+		will_lead_to_war_with = FRA
 		ai_will_do = {
 			factor = 24
 		}
@@ -1191,17 +1197,14 @@ focus_tree = {
 		prerequisite = {
 			focus = RAJ_fkwest
 			}
-		available = {
-			owns_state = 425
-			}
 		completion_reward = {
 			country_event = { id = maratha.15 days 1
 			}
 		}
 	}
 	focus = {
-		id =RAJ_india
-		icon = GFX_india
+		id = RAJ_india
+		icon = GFX_goal_support_communism
 		x = 19
 		ai_will_do = {
 			factor = 15
