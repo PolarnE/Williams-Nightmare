@@ -1,0 +1,26 @@
+
+state={
+	id=897
+	name="Palembang"
+	manpower = 532165
+	
+	state_category = city
+
+	history={
+		owner = IAA
+		victory_points = {
+			12268 1 
+		}
+		buildings = {
+			infrastructure = 3
+			12268 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = IAA
+	}
+
+	provinces={
+	12268
+	}
+}

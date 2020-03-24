@@ -296,9 +296,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hideki Tojo"
+	name = "Tokugawa Iesato"
 	desc = ""
-	picture = "Portrait_Japan_Generic_land_2.dds"
+	picture = "Portrait_Japan_Tokugawa_Iesato.dds"
 	expire = "1989.1.1"
 	ideology = despotism
 	traits = {

@@ -54,6 +54,13 @@ add_ideas = {
 SIA_french_tribute
 }
 
+give_guarantee = IAA # Paris Conference
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
+}
+
 create_country_leader = {
 	name = "Phraya Phahon"
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"

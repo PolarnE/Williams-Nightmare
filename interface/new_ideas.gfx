@@ -54,4 +54,19 @@ spriteTypes = {
 		name = "GFX_idea_sia_french_tribute"
 		texturefile = "gfx/interface/ideas/idea_SIA_tribute_to_france.dds"
 	}
+	
+	 spriteType = {
+		name = "GFX_idea_generic_corruption"
+		texturefile = "gfx/interface/ideas/idea_generic_corruption.dds"
+	}
+	
+	 spriteType = {
+		name = "GFX_idea_eng_rampant_corruption"
+		texturefile = "gfx/interface/ideas/idea_eng_rampant_corruption.dds"
+	}
+	
+	 spriteType = {
+		name = "GFX_idea_eng_france_bad"
+		texturefile = "gfx/interface/ideas/idea_eng_france_bad.dds"
+	}
 }

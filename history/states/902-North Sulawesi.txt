@@ -1,0 +1,25 @@
+state={
+	id=902
+	name="North Sulawesi"
+	manpower = 936823
+	resources={
+		rubber=5 # was: 20
+	}
+
+	state_category = town
+
+
+	history= {
+		owner = MAL
+		add_core_of = MAL
+		buildings = {
+			infrastructure = 3
+		10153 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces={
+	1098 4307 4262 1289 10169 7311 10197 10153
+	}
+}

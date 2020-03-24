@@ -1,0 +1,26 @@
+
+state={
+	id=898
+	name="Medan"
+	manpower = 723571
+	
+	state_category = city
+
+	history={
+		owner = IAA
+		victory_points = {
+			4652 1 
+		}
+		buildings = {
+			infrastructure = 3
+			4652 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = IAA
+	}
+
+	provinces={
+	4652
+	}
+}

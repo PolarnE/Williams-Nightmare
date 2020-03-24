@@ -49,6 +49,13 @@ if = {
 	}
 }
 
+give_guarantee = IAA # Paris Conference
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
+}
+
 
 1939.1.1 = {
 

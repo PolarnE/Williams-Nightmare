@@ -1,80 +1,8 @@
 ideas = {
 
 	country = {
-	
-						ENG_scottish_oppression_1 = {
 		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = chi_wargaming_division
-			
-			modifier = {
-			political_power_cost = 0.35
-			}
-		}
-		
-								ENG_scottish_oppression_2 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = chi_wargaming_division
-			
-			modifier = {
-			political_power_cost = 0.5
-			}
-		}
-		
-								ENG_scottish_oppression_3 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = chi_wargaming_division
-			
-			modifier = {
-			political_power_cost = 0.25
-			}
-		}
-		
-										ENG_scottish_oppression_4 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = chi_wargaming_division
-			
-			modifier = {
-			political_power_cost = 0.1
-			}
-		}
-		
-					ENG_overmilitarisation = {
+					ENG_english_militarism = {
 		
 			removal_cost = -1
 			
@@ -88,14 +16,12 @@ ideas = {
 			picture = eng_imperial_conscription
 			
 			modifier = {
-			conscription = 0.015
-			conscription_factor = 0.07
-			consumer_goods_factor = 0.1
-			industrial_capacity_factory = -0.1
+			conscription = 0.005
+			conscription_factor = 0.1
 			}
 		}
 		
-				ENG_weak_government = {
+							ENG_in_the_shadow_of_france = {
 		
 			removal_cost = -1
 			
@@ -106,14 +32,41 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = generic_oppression
+			picture = eng_france_bad
 			
 			modifier = {
-			stability_factor = -0.3
+			war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
 			}
 		}
 		
-						ENG_pan_germanicist_corruption = {
+				ENG_rampant_corruption_1 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = eng_rampant_corruption
+			
+			modifier = {
+			custom_modifier_tooltip = SPR_military_disloyalty_tt
+			stability_factor = -0.3
+			stability_weekly = -0.005
+			political_power_cost = 0.5
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+						ENG_pan_germanicist_corruption_1 = { #loyalty
 		
 			removal_cost = -1
 			
@@ -127,12 +80,14 @@ ideas = {
 			picture = ENG_pan_germanicists
 			
 			modifier = {
+			stability_weekly = 0.005
+			drift_defence_factor = -0.25
 			consumer_goods_factor = 0.05
 			production_speed_buildings_factor = 0.1
 			}
 		}
 		
-								ENG_pan_germanicist_corruption_empowered = {
+						ENG_pan_germanicist_corruption_2 = { #content
 		
 			removal_cost = -1
 			
@@ -146,13 +101,14 @@ ideas = {
 			picture = ENG_pan_germanicists
 			
 			modifier = {
-			stability_factor = 0.05
-			consumer_goods_factor = 0.07
-			production_speed_buildings_factor = 0.1
+			stability_weekly = 0.005
+			drift_defence_factor = -0.2
+			consumer_goods_factor = 0.08
+			production_speed_buildings_factor = 0.07
 			}
 		}
 		
-										ENG_pan_germanicist_corruption_weakened = {
+						ENG_pan_germanicist_corruption_3 = { #worried
 		
 			removal_cost = -1
 			
@@ -164,14 +120,77 @@ ideas = {
 			}
 
 			picture = ENG_pan_germanicists
+			
+			modifier = {
+			stability_weekly = 0.005
+			drift_defence_factor = -0.15
+			consumer_goods_factor = 0.1
+			production_speed_buildings_factor = 0.05
+			}
+		}
+		
+						ENG_pan_germanicist_corruption_4 = { #angered
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = ENG_pan_germanicists
+			
+			modifier = {
+			stability_weekly = 0.004
+			drift_defence_factor = -0.1
+			consumer_goods_factor = 0.15
+			production_speed_buildings_factor = 0.02
+			}
+		}
+		
+						ENG_pan_germanicist_corruption_5 = { #disloyal - they attempt a coup at this point
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = ENG_pan_germanicists
+			
+			modifier = {
+			stability_weekly = 0.003
+			consumer_goods_factor = 0.2
+			}
+		}
+		
+					ENG_economy_1 = { #weak economy, idea at the start - pan-germanicists will make it worse and worse if you dont do anything
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = chi_hyper_inflation
 			
 			modifier = {
 			consumer_goods_factor = 0.02
-			production_speed_buildings_factor = 0.1
+			production_speed_buildings_factor = -0.1
+			production_factory_efficiency_gain_factor = -0.025
+			industrial_capacity_factory = -0.05
 			}
 		}
 		
-												ENG_pan_germanicist_corruption_controlled = {
+							ENG_economy_2 = { #weak economy 2 - this should be gained pretty quick cos of great depression
 		
 			removal_cost = -1
 			
@@ -182,14 +201,17 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = ENG_pan_germanicists
+			picture = chi_hyper_inflation2
 			
 			modifier = {
-			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.05
+			industrial_capacity_factory = -0.075
 			}
 		}
 		
-			ENG_bail_out_pan_germanicists_idea = { 
+				ENG_economy_3 = { #weak economy 3 - its gets really bad past this point
 		
 			removal_cost = -1
 			
@@ -200,15 +222,38 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-            picture = generic_goods_red_bonus
+			picture = chi_hyper_inflation3
 			
 			modifier = {
-			political_power_cost = 0.5
+			consumer_goods_factor = 0.08
+			production_speed_buildings_factor = -0.2
+			production_factory_efficiency_gain_factor = -0.075
+			industrial_capacity_factory = -0.1
+			}
+		}
+		
+				ENG_economy_4 = { # destroyed economy - uh oh
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = chi_hyper_inflation4
+			
+			modifier = {
 			consumer_goods_factor = 0.1
+			production_speed_buildings_factor = -0.25
+			production_factory_efficiency_gain_factor = -0.1
+			industrial_capacity_factory = -0.125
 			}
 		}
 		
-			ENG_pan_germanicist_corruption_1 = {
+				ENG_economy_5 = { # hyperinflation - rip anglo-scottish commonwealth
 		
 			removal_cost = -1
 			
@@ -219,105 +264,13 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = hol_caved_to_the_germans
-			
-			modifier = {
-			industrial_capacity_factory = 0.15
-			}
-		}
-		
-					ENG_economic_collapse = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = great_depression
-			
-			modifier = {
-			consumer_goods_factor = 0.5
-			production_speed_buildings_factor = -0.75
-			}
-		}
-		
-							ENG_depression_1 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = great_depression
-			
-			modifier = {
-			consumer_goods_factor = 0.3
-			production_speed_buildings_factor = -0.5
-			}
-		}
-		
-									ENG_depression_2 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = usa_great_depression_2
+			picture = chi_hyper_inflation5
 			
 			modifier = {
 			consumer_goods_factor = 0.2
-			production_speed_buildings_factor = -0.3
-			}
-		}
-		
-											ENG_depression_3 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = usa_great_depression_2
-			
-			modifier = {
-			consumer_goods_factor = 0.15
-			production_speed_buildings_factor = -0.25
-			}
-		}
-		
-				ENG_depression_4 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = usa_great_depression_3
-			
-			modifier = {
-			consumer_goods_factor = 0.07
-			production_speed_buildings_factor = -0.15
+			production_speed_buildings_factor = -0.35
+			production_factory_efficiency_gain_factor = -0.2
+			industrial_capacity_factory = -0.25
 			}
 		}
 		

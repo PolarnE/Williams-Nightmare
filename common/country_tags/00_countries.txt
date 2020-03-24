@@ -212,6 +212,7 @@ WST = "countries/Westphalia.txt"
 RGN = "countries/Regensburg.txt"
 ############CHING CHONG#############################
 HVK = "countries/HeavenlyKingdom.txt"
+IAA = "countries/InternationalAsianAssociation.txt"
 ############RUSSIAN STUFF###########################
 RSE = "countries/RussianEmpire.txt"
 RSL = "countries/RussianLevant.txt"

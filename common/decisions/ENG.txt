@@ -1,216 +1,459 @@
-ENG_cooperate_with_germanicists = {
+ENG_inevitable_civil_war = {
 
-ENG_request_pan_germanicist_factory_building = {
+ENG_second_civil_war_fires_republicans = {
 
-		icon = eng_trade_unions_support
+		icon = GFX_decision_second_english_civil_war_fire
 
 		allowed = {
 			tag = ENG
 		}
 
 		available = {
+			hidden_trigger = { always = no }
 		}
 
-		cost = 100
+		activation = {
+			NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+			has_completed_focus = ENG_toe_the_line
+		}
 
-		fire_only_once = no
+		fire_only_once = yes
 		
-		days_remove = 35
-		
-		available = {
-		has_war = no }
+		days_mission_timeout = 300
 
 		visible = {
 			tag = ENG
-			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		has_completed_focus = ENG_toe_the_line
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
 		}
 
+		timeout_effect = {
+		set_country_flag = ENG_second_english_civil_war_fired
+		hidden_effect = {
+		GBR = {
+			inherit_technology = ENG
+		transfer_state = 130
+		every_state = {
+                limit = { is_core_of = ENG }
+                add_core_of = GBR
+				}
+		}
+		if = {
+		limit = {
+	    125 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 125
+         } 
+		 }
+		if = {
+		limit = {
+	    863 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 863
+         } 
+		 }
+		if = {
+		limit = {
+	    129 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 129
+         } 
+		 }
+			if = {
+		limit = {
+	    128 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 128
+         } 
+		 }	
+		 		if = {
+		limit = {
+	    338 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 338
+         } 
+		 }
+			if = {
+		limit = {
+	    123 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 123
+         } 
+		 }
+			if = {
+		limit = {
+	    865 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 865
+         } 
+		 }
+			if = {
+		limit = {
+	    864 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 864
+         } 
+		 }
+			if = {
+		limit = {
+	    127 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 127
+         } 
+		 }
+		 			if = {
+		limit = {
+	    132 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 132
+         } 
+		 }
+					if = {
+		limit = {
+	    866 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 866
+         } 
+		 }
+			if = {
+		limit = {
+	    122 = {
+		has_state_flag = ENG_monarchist_state
+		}
+		NOT = {
+		has_country_flag = flag_commonwealth_of_britain
+		}
+	    }
+		GBR = {
+		transfer_state = 122
+         } 
+		 }
+			if = {
+		limit = {
+	    874 = {
+		has_state_flag = ENG_monarchist_state
+		}
+		NOT = {
+		has_country_flag = flag_commonwealth_of_britain
+		}
+	    }
+		GBR = {
+		transfer_state = 874
+         } 
+		 }
+			if = {
+		limit = {
+	    131 = {
+		has_state_flag = ENG_monarchist_state
+		}
+	    }
+		GBR = {
+		transfer_state = 131
+         } 
+		 }
+		 }
+	} 
+	}
+	
+	ENG_second_civil_war_debug_fire_1 = {
+
+		icon = GFX_decision_second_english_civil_war_fire
+
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+		is_debug = yes
+		}
+
+		fire_only_once = yes
+
 		complete_effect = {
-		add_stability = -0.005
-		random_list = {
-						50 = { 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-                   }
-		} }
-						50 = {			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-                   }
-		} }
+		            if = {
+					limit = {
+						126 = {
+						has_state_flag = ENG_monarchist_state
+						}
+					}
+					GBR = {
+						transfer_state = 126
 					} }
-		modifier = {
-			political_power_cost = 0.5
-			consumer_goods_factor = 0.05
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
+	}
 	}
 	
-	ENG_request_pan_germanicist_production_bonus = {
+		ENG_second_civil_war_debug_monarchist_country = {
 
-		icon = eng_trade_unions_support
+		icon = GFX_decision_second_english_civil_war_fire
 
 		allowed = {
 			tag = ENG
 		}
 
-		available = {
-		}
-
-		cost = 75
-
-		fire_only_once = no
-		
-		days_remove = 35
-		
-		available = {
-		has_war = no }
-
 		visible = {
-			tag = ENG
-			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		is_debug = yes
 		}
+
+		fire_only_once = yes
 
 		complete_effect = {
-		add_timed_idea = { idea = ENG_pan_germanicist_corruption_1 days = 200 }
-	      }
-		
-		modifier = {
-			political_power_cost = 0.5
-			consumer_goods_factor = 0.05
-		}
-
-		ai_will_do = {
-			factor = 15
-		}
+		 every_owned_state = {
+		 set_state_flag = ENG_monarchist_state }
+		 add_days_mission_timeout = {
+				mission = ENG_second_civil_war_fires_republicans
+				days = -290
+			}
+	}
 	}
 	
+		ENG_make_land_commonwealth_london_debug = {
+
+		icon = GFX_eng_commonwealth_map_icon
+
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+		is_debug = yes
+		owns_state = 126
+		}
+		
+		highlight_states = { state = 126 }
+
+		fire_only_once = yes
+		
+		on_map_mode = map_only
 	
-	ENG_request_pan_germanicist_financial_aid = {
+	    days_remove = 10
 
-		icon = eng_trade_unions_support
+		remove_effect = {
+		126 = { set_state_flag = ENG_commonwealth_state clr_state_flag = ENG_monarchist_state }
+	}
+	}
+	
+		ENG_make_land_monarchist_london_debug = {
+
+		icon = GFX_gbr_royalist_map_icon
+
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+		is_debug = yes
+		owns_state = 126
+		}
+
+        highlight_states = { state = 126 }
+
+		fire_only_once = yes
+		
+		on_map_mode = map_only
+		
+		days_remove = 10
+
+		remove_effect = {
+		126 = { set_state_flag = ENG_monarchist_state clr_state_flag = ENG_commonwealth_state }
+	}
+	}
+	
+	}
+	
+ENG_fight_corruption = {
+
+	ENG_pan_germanicists_great_depression = { #they debase after the great depression 
+
+		icon = GFX_decision_eng_trade_unions_demand
 
 		allowed = {
 			tag = ENG
 		}
 
 		available = {
+			has_country_flag = ENG_bailed_pan_germanicists_out
 		}
 
-		cost = 150
+		activation = {
+			has_global_flag = global_paris_stock_market_crash
+			NOT = { 
+			has_country_flag = ENG_bailed_pan_germanicists_out
+			}
+		}
 
 		fire_only_once = no
 		
-		days_remove = 75
+		days_mission_timeout = 25
 		
-		available = {
-		has_war = no }
+		is_good = no
 
 		visible = {
 			tag = ENG
-			has_completed_focus = ENG_cooperate_with_pan_germanicists
+		has_global_flag = global_paris_stock_market_crash
+		NOT = { 
+			has_country_flag = ENG_bailed_pan_germanicists_out
+			}
 		}
 
-		complete_effect = {
-	      }
-		
-		modifier = {
-			consumer_goods_factor = -0.1
+		timeout_effect = {
+		ENG_weaken_economy = yes
+		 add_days_mission_timeout = {
+				mission = ENG_second_civil_war_fires_republicans
+				days = -20
+			}
+	} 
+	}
+	
+	ENG_bail_pan_germanicists_out = {
+		icon = eng_trade_unions_support
+		available = { 
+	    has_global_flag = global_paris_stock_market_crash
+		NOT = { has_country_flag = ENG_bailed_pan_germanicists_out }
 		}
-
+		visible = {
+		has_global_flag = global_paris_stock_market_crash
+		NOT = { has_country_flag = ENG_bailed_pan_germanicists_out }
+		}
+		cost = 5
 		ai_will_do = {
-			factor = 15
+			factor = 100
+			modifier = {
+				has_idea = ENG_economy_5
+				factor = -1000
+			}
+			modifier = {
+				has_idea = ENG_economy_4
+				factor = 100
+			}
+			modifier = {
+				has_idea = ENG_economy_3
+				factor = 50
+			}
 		}
-	}                         
-		ENG_request_pan_germanicist_ties = {
+		
+		days_remove = 5
+		
+				remove_effect = {
+	set_country_flag = ENG_bailed_pan_germanicists_out
+	ENG_weaken_economy = yes
+	ENG_increase_pan_germanicist_loyalty = yes
+	}
+	}
 
+ENG_increase_coin_value = {
 		icon = eng_trade_unions_support
-
-		allowed = {
-			tag = ENG
+		available = { 
+		NOT = {
+				has_decision = ENG_decrease_coin_value
+			}
 		}
-
-		available = {
-		}
-
-		cost = 50
-
-		fire_only_once = no
-		
-		days_remove = 50
-		
-		available = {
-		has_war = no }
-
 		visible = {
-			tag = ENG
-			has_completed_focus = ENG_cooperate_with_pan_germanicists
+			OR = {
+			has_idea = ENG_economy_2
+			has_idea = ENG_economy_3
+			has_idea = ENG_economy_4
+			has_idea = ENG_economy_5
+			}
 		}
-
-		complete_effect = {
-	      }
-		
-		modifier = {
-		political_advisor_cost_factor = -0.25
-		trade_laws_cost_factor = -0.25
-		mobilization_laws_cost_factor = -0.25
-		economy_cost_factor = -0.25
-		high_command_cost_factor = -0.25
-		air_chief_cost_factor = -0.25
-		army_chief_cost_factor = -0.25
-		navy_chief_cost_factor = -0.25
-		}
-
+		cost = 10
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				has_idea = ENG_economy_5
+				factor = 100
+			}
+			modifier = {
+				has_idea = ENG_economy_4
+				factor = 10
+			}
+			modifier = {
+				has_idea = ENG_economy_3
+				factor = 5
+			}
 		}
-	}   }
-
-ENG_civil_war_foreign_support = {
-ENG_seek_swedish_support_decision = {
-
-icon = generic_army_support
-
-allowed = { tag = ENG }
-
-available = { NOT = { has_war_with = SWE } }
-
-cost = 15
-
-fire_only_once = yes
-
-visible = { tag = ENG has_war_with = GBR
-has_country_flag = ENG_civil_war_began
-NOT = { has_country_flag = ENG_civil_war_ended } }
-
-complete_effect = { SWE = { country_event = { id = commonwealthsupport.1 } } }
-ai_will_do = { factor = 5000 } }
-
-ENG_seek_russianfed_support_decision = {
-
-icon = generic_army_support
-
-allowed = { tag = ENG
-SOV = { has_government = democratic } }
-
-available = { NOT = { has_war_with = SOV } }
-
-cost = 15
-
-fire_only_once = yes
-
-visible = { tag = ENG has_war_with = GBR
-has_country_flag = ENG_civil_war_began
-NOT = { has_country_flag = ENG_civil_war_ended } }
-
-complete_effect = { SOV = { country_event = { id = commonwealthsupport.4 } } }
-ai_will_do = { factor = 5000 } } }
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 30
+				remove_effect = {
+	ENG_strengthen_economy = yes
+	ENG_decrease_pan_germanicist_loyalty = yes
+	}
+	}
+	
+	ENG_decrease_coin_value = {
+		icon = eng_trade_unions_support
+		available = { 
+		NOT = {
+				has_decision = ENG_increase_coin_value
+			}
+		}
+	    visible = {
+			OR = {
+			has_idea = ENG_pan_germanicist_corruption_2
+			has_idea = ENG_pan_germanicist_corruption_3
+			has_idea = ENG_pan_germanicist_corruption_4
+			has_idea = ENG_pan_germanicist_corruption_5
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_idea = ENG_pan_germanicist_corruption_5
+				factor = 100
+			}
+			modifier = {
+				has_idea = ENG_pan_germanicist_corruption_4
+				factor = 10
+			}
+			modifier = {
+				has_idea = ENG_pan_germanicist_corruption_2
+				factor = 5
+			}
+		}
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 30
+				remove_effect = {
+	ENG_weaken_economy = yes
+	ENG_increase_pan_germanicist_loyalty = yes
+	}
+	}
+	
+	
+	}

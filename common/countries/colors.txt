@@ -202,8 +202,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 150 150 150 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -258,7 +258,7 @@ SIK = {
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
-	color = rgb { 80 115 45}
+	color = rgb { 155 21 38 }
 	color_ui = rgb { 222 247 198 }
 }
 URG = {
@@ -758,4 +758,9 @@ CAT = {
 JBL = {
 	color = rgb { 112 42 42 }
 	color_ui = rgb { 112 42 42 }
+}
+
+IAA = {
+	color = rgb { 0 148 255 }
+	color_ui = rgb { 4 63 141 }
 }

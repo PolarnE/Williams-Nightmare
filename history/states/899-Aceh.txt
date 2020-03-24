@@ -1,0 +1,28 @@
+state={
+	id=899
+	name="Aceh"
+	manpower = 1372132
+	
+	state_category = town
+	
+	resources={
+		rubber=40 # was: 70
+	}
+
+
+	history=
+	{
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			1648 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+	1648 10509 7658 12488 8360 10522 7673
+	}
+}

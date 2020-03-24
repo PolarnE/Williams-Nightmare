@@ -976,12 +976,12 @@ opinion_modifiers = {
 	}
 	
 	#####################WILLIAM'S NIGHTMARE#############################
-	#COMMONWEALTH:
 	ENG_betrayed_by_sweden_opinion = { value = -100 }
 	ENG_swedish_loyalty_opinion = { value = 50 }
 	ENG_anti_monarchism_opinion = { value = 25 }
 	ENG_anti_anti_monarchism_opinion = { value = -25 }
 	empire_of_china_claims_mandate = { value = -250 }
+	opinion_modifier_antipope = { value = -250 }
 	CORP_sided_with_us = { value = 25 }
 	CORP_sided_against_us = { value = -50 }
 	CORP_bavarian_leadership_opinion = { value = 100 }

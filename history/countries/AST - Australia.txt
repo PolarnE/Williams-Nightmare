@@ -183,6 +183,8 @@ set_popularities = {
 	communism = 20
 }
 
+add_opinion_modifier = { target = VAT modifier = opinion_modifier_antipope }
+
 create_country_leader = {
 	name = "John Curtin"
 	desc = "POLITICS_JOHN_CURTIN_DESC"
@@ -195,15 +197,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Eric Campbell"
-	desc = "POLITICS_ERIC_CAMPBELL_DESC"
-	picture = "GFX_AST_eric_campbell"
+	name = "Urban IX"
+	desc = ""
+	picture = "Portrait_Australia_Urban_IX.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = rexism
 	traits = {
 		#
 	}
 }
+
+#create_country_leader = {
+#	name = "Eric Campbell"
+#	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+#	picture = "GFX_AST_eric_campbell"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#		#
+#	}
+#}
 
 create_country_leader = {
 	name = "Richard Dixon"
@@ -211,6 +224,17 @@ create_country_leader = {
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
 	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Urban IX"
+	desc = ""
+	picture = "Portrait_Australia_Urban_IX.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		#
 	}

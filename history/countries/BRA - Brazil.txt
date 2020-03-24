@@ -46,7 +46,13 @@ if = {
 	}
 	set_naval_oob = "BRA_1936_naval"	
 }
-set_country_flag = monroe_doctrine
+
+give_guarantee = IAA # Paris Conference
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
+}
 
 1939.1.1 = {
 

@@ -87,6 +87,8 @@ set_popularities = {
 	neutrality = 100
 }
 
+add_opinion_modifier = { target = AST modifier = opinion_modifier_antipope }
+
 create_country_leader = {
 	name = "Pius XI"
 	desc = ""

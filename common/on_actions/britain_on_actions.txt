@@ -1,0 +1,16 @@
+on_actions = {
+on_startup = {
+		effect = {
+			ENG = {
+				if = {
+					limit = {
+					OR = { has_idea = ENG_rampant_corruption_1
+					has_idea = ENG_rampant_corruption_2 }
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+	}
+}

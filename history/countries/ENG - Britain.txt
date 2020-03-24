@@ -7,7 +7,7 @@ oob = "ENG_1936"
 set_research_slots = 4
 
 set_stability = 0.35
-set_war_support = 0.4
+set_war_support = 0.3
 
 # Starting tech
 set_technology = {
@@ -91,7 +91,12 @@ create_faction = duumvirate
 add_to_faction = ENG
 add_to_faction = SWE
 give_guarantee = JAP
-
+give_guarantee = IAA # Paris Conference
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
+}
 # DIPLOMACY
 set_autonomy = {
 		target = MAL
@@ -106,6 +111,11 @@ add_ideas = {
 limited_conscription
 limited_exports
 partial_economic_mobilisation
+ENG_english_militarism
+ENG_in_the_shadow_of_france
+ENG_rampant_corruption_1
+ENG_pan_germanicist_corruption_2
+ENG_economy_2
 }
 
 create_country_leader = {
@@ -125,6 +135,16 @@ create_country_leader = {
 	picture = "portrait_based_bradford.dds"
 	expire = "1953.3.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Louis Mountbatten"
+	desc = ""
+	picture = "Portrait_Commonwealth_Louis_Mountbatten.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
 	traits = {
 	}
 }

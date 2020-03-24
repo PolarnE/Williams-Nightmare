@@ -107,10 +107,16 @@ add_to_faction = MON
 give_guarantee = BUL
 give_guarantee = POL
 give_guarantee = JAP
+give_guarantee = IAA # Paris Conference
 diplomatic_relation = {
 	country = PER
 	relation = military_access
 	active = yes
+}
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
 }
 
 if = {

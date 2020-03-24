@@ -335,10 +335,16 @@ if = {
 give_guarantee = VAT
 give_guarantee = SIA
 give_guarantee = JAP
+give_guarantee = IAA # Paris Conference
 diplomatic_relation = {
 	country = SIA
 	relation = military_access
 	active = yes
+}
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
 }
 
 add_ideas = {

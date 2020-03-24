@@ -677,5 +677,30 @@ spriteTypes = {
 		name = "GFX_decision_form_yugoslavia"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_yugoslavia.dds"
 	}
+	
+		spriteType = {
+		name = "GFX_decision_form_papal_italy"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_kingdom_of_god.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_second_english_civil_war"
+		texturefile = "gfx/interface/decisions/decision_category_eng_second_civil_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_second_english_civil_war_fire"
+		texturefile = "gfx/interface/decisions/decision_category_eng_second_civil_war_fire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_eng_commonwealth_map_icon"
+		texturefile = "gfx/interface/decisions/decision_eng_commonwealth_land.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gbr_royalist_map_icon"
+		texturefile = "gfx/interface/decisions/decision_eng_royalist_land.dds"
+	}
 
 }

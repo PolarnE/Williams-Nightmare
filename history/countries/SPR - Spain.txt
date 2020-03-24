@@ -75,6 +75,12 @@ set_popularities = {
 }
 
 give_guarantee = JAP
+give_guarantee = IAA # Paris Conference
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
+}
 
 set_convoys = 150
 set_stability = 0.65

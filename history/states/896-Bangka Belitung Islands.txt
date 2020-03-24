@@ -1,0 +1,27 @@
+
+state={
+	id=896
+	name="Bangka Belitung Islands"
+	manpower = 623211
+	
+	state_category = town
+	
+	resources={
+		rubber=20 # was: 30
+	}
+
+	history={
+		owner = IAA
+		buildings = {
+			infrastructure = 3
+			7384 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = IAA
+	}
+
+	provinces={
+	7384 7396 4211
+	}
+}

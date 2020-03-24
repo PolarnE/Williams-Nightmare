@@ -46,6 +46,12 @@ add_ideas = {
 }
 
 give_guarantee = JAP
+give_guarantee = IAA # Paris Conference
+diplomatic_relation = {
+    country = IAA
+    relation = docking_rights
+    active = yes
+}
 
 if = {
 	limit = {

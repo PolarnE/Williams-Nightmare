@@ -1,0 +1,30 @@
+state={
+	id=900
+	name="Riau"
+	manpower = 3451689
+	
+	state_category = city
+	
+	resources={
+		rubber=80 # was: 100
+	}
+
+
+	history = {
+		owner = HOL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+			12184 = {
+				naval_base = 1
+			}
+			10194 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+	1428 12126 10194 7368 10382 10354 1460 4446 12343 12181 7327 12302 7463 1277 12168 10209 10225 12184 12212 1332
+	}
+}

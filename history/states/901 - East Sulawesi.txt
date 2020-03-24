@@ -1,0 +1,25 @@
+state={
+	id=901
+	name="East Sulawesi"
+	manpower = 1482157
+	resources={
+		rubber=10 # was: 15
+	}
+
+	state_category = town
+
+
+	history= {
+		owner = FRA
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			10222 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+	10222 12444 4564 10450 4537 1484 1505 4493
+	}
+}

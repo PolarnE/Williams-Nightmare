@@ -1,0 +1,33 @@
+
+state={
+	id=895
+	name="Singapore"
+	manpower = 1261048
+	
+	state_category = city
+	
+	resources={
+		rubber=50 # was: 100
+	}
+
+	history={
+		owner = IAA
+		victory_points = {
+			12299 20
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 6
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = IAA
+	}
+
+	provinces={
+	12113 12299 10313 4424 4367 7427 4412
+	}
+}

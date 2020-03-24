@@ -2815,3 +2815,71 @@ form_greater_serbia_category = {
 	}
 }
 
+form_kingdom_of_god_eu4_category = {
+
+	form_kingdom_of_god_eu4_decision = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = VAT
+		}
+
+		available = {
+			is_subject = no
+			#Papal States
+			controls_state = 2
+			controls_state = 829
+			#Tuscany
+			controls_state = 162
+			#Italy
+			controls_state = 813
+			controls_state = 157
+			controls_state = 161
+			controls_state = 159
+			controls_state = 39
+			controls_state = 160
+			controls_state = 736
+		}
+
+		visible = {
+			original_tag = VAT
+			NOT = { has_global_flag = flag_kingdom_of_god_on_earth }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = VAT_kingdom_of_god
+			custom_effect_tooltip = form_country_kingdom_of_god_cores_tooltip
+			hidden_effect = {
+				set_global_flag = flag_kingdom_of_god_on_earth
+				add_state_core = 2
+				add_state_core = 829
+				add_state_core = 162
+				add_state_core = 813
+				add_state_core = 157
+				add_state_core = 161
+				add_state_core = 159
+				add_state_core = 39
+				add_state_core = 160
+				add_state_core = 736
+				add_state_core = 162
+				add_state_core = 814
+				add_state_core = 800
+				add_state_core = 158
+				add_state_core = 875
+				add_state_core = 812
+				add_state_core = 117
+				add_state_core = 162
+				add_state_core = 156
+				add_state_core = 115
+				add_state_core = 116
+				add_state_core = 114
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+

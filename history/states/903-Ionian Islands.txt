@@ -1,0 +1,29 @@
+
+state={
+	id=903
+	name="Ionian Islands"
+	manpower = 82321
+	
+	state_category = small_island
+
+	history={
+		victory_points = {
+			10203 1
+		}
+		owner = FRA
+		buildings = {
+			infrastructure = 3
+			10203 = {
+				naval_base = 2
+			}
+			1106 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = GRE
+	}
+
+	provinces={
+	10203 1106
+	}
+}

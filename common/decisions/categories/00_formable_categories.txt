@@ -228,3 +228,10 @@ form_greater_serbia_category = {
 
 	picture = GFX_decision_form_yugoslavia
 }
+
+form_kingdom_of_god_eu4_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_form_papal_italy
+}
