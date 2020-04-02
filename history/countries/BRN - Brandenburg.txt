@@ -58,6 +58,7 @@ set_popularities = {
 add_ideas = {
 disarmed_nation
 idea_germanys_germany_divided
+BRN_gathering_storm
 }
 
 create_country_leader = {

@@ -1,6 +1,6 @@
 ENG_inevitable_civil_war = {
 
-ENG_second_civil_war_fires_republicans = {
+ENG_second_civil_war_fires = {
 
 		icon = GFX_decision_second_english_civil_war_fire
 
@@ -14,7 +14,6 @@ ENG_second_civil_war_fires_republicans = {
 
 		activation = {
 			NOT = { has_country_flag = ENG_second_english_civil_war_fired }
-			has_completed_focus = ENG_toe_the_line
 		}
 
 		fire_only_once = yes
@@ -23,21 +22,24 @@ ENG_second_civil_war_fires_republicans = {
 
 		visible = {
 			tag = ENG
-		has_completed_focus = ENG_toe_the_line
 		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
 		}
 
 		timeout_effect = {
 		set_country_flag = ENG_second_english_civil_war_fired
-		hidden_effect = {
 		GBR = {
+	    hidden_effect = {
 			inherit_technology = ENG
-		transfer_state = 130
-		every_state = {
+				every_state = {
                 limit = { is_core_of = ENG }
                 add_core_of = GBR
 				}
 		}
+		}
+		transfer_state = 130
+		transfer_state = 129
+		transfer_state = 131
+		add_ideas = ENG_civil_war
 		if = {
 		limit = {
 	    125 = {
@@ -56,16 +58,6 @@ ENG_second_civil_war_fires_republicans = {
 	    }
 		GBR = {
 		transfer_state = 863
-         } 
-		 }
-		if = {
-		limit = {
-	    129 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 129
          } 
 		 }
 			if = {
@@ -174,17 +166,10 @@ ENG_second_civil_war_fires_republicans = {
 		transfer_state = 874
          } 
 		 }
-			if = {
-		limit = {
-	    131 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 131
-         } 
-		 }
-		 }
+		 	declare_war_on = {
+					    target = GBR
+					    type = civil_war
+					}
 	} 
 	}
 	
@@ -203,6 +188,7 @@ ENG_second_civil_war_fires_republicans = {
 		fire_only_once = yes
 
 		complete_effect = {
+	    add_ideas = ENG_civil_war
 		            if = {
 					limit = {
 						126 = {
@@ -211,7 +197,12 @@ ENG_second_civil_war_fires_republicans = {
 					}
 					GBR = {
 						transfer_state = 126
+						load_oob = GBR_1936
 					} }
+		declare_war_on = {
+					    target = GBR
+					    type = civil_war
+					}
 	}
 	}
 	
@@ -236,6 +227,62 @@ ENG_second_civil_war_fires_republicans = {
 				mission = ENG_second_civil_war_fires_republicans
 				days = -290
 			}
+	}
+	}
+	
+			ENG_make_chetwode_leader_debug = {
+
+		icon = GFX_decision_second_english_civil_war_fire
+
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+		is_debug = yes
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+		 create_country_leader = {
+	name = "Philip Chetwode"
+	desc = ""
+	picture = "Portrait_Commonwealth_Philip_Chetwode.dds"
+	expire = "1953.3.1"
+	ideology = cromwellian
+	traits = {
+	chetwode_caesar
+	}
+}
+	}
+	}
+	
+				ENG_make_mountbatten_leader_debug = {
+
+		icon = GFX_decision_second_english_civil_war_fire
+
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+		is_debug = yes
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+create_country_leader = {
+	name = "Louis Mountbatten"
+	desc = ""
+	picture = "Portrait_Commonwealth_Louis_Mountbatten.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+   mountbatten_puppet
+	}
+}
 	}
 	}
 	

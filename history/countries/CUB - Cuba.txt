@@ -58,14 +58,16 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.10"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 98
+	neutrality = 48
 	communism = 2
+	democratic = 40
+	fascism = 10
 }
 
 create_country_leader = {
@@ -74,6 +76,17 @@ create_country_leader = {
 	picture = "GFX_portrait_cuba_jose_barnet"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henrique de Paiva Couceiro"
+	desc = ""
+	picture = "Portrait_Cuba_Monarchist.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		#
 	}

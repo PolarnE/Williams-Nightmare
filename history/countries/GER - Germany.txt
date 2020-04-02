@@ -160,6 +160,8 @@ create_country_leader = {
 	}
 }
 
+set_cosmetic_tag = GER_cromwellian
+
 add_namespace = {
 	name = "ger_unit_leader"
 	type = unit_leader

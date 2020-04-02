@@ -5,6 +5,8 @@
  ENG_unpopular_leader_2:0 "Controversial Leader"
  ENG_unpopular_leader_3:0 "Popular Leader"
  ironside_generalissimo:0 "Generalissimo of Britain"
+ chetwode_caesar:0 "Sulla of Britain"
+ mountbatten_puppet:0 "Pan-Germanicist Puppet"
  ########################country flags
  ENG_france_doesnt_lift_sanctions:0 "France doesn't lift sanctions." #damn this was from the old tree lol
  ENG_dyer_chosen_successor:0 "Dyer chosen as the successor."
@@ -19,6 +21,7 @@
  ##civil war - republicans
  ENG_inevitable_civil_war:0 "The Threat of Civil War"
  ENG_second_civil_war_fires_republicans:0 "Royalist Coup"
+ ENG_second_civil_war_fires:0 "Royalist Coup"
  ##corruption
  ENG_fight_corruption:0 "Fight Corruption"
  ENG_increase_coin_value:0 "Curb Inflation"

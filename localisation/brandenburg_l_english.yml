@@ -1,0 +1,11 @@
+﻿l_english:
+ ##############################IDEAS 
+ BRN_gathering_storm:0 "Gathering Storm"
+ ##############################EVENTS
+ #brandenburg falls to maletism
+ brandenburg.1.t:0 "Elections of 1936"
+ brandenburg.1.d:0 "Despite the huge national crisis going on, President Wels begrudgingly didn't step in and intefere with the elections despite it being fairly clear that a maletist government was inevitable.\nFrom any outsider's perspective it would seem that our republic isn't even remotely democratic; huge swarms of people voting for the same party - the Spartacus League. They've been a long thorn in our side, slowly gaining power through the years because of the great instability we've faced which has only resulted in people losing faith in our democratic ideals.\nThe so-called "Great Depression" has caused an overwhelming victory for the Spartacus League and the almost certain demise of the republic. A new era dawns for us, not one of liberty and peace, but one of authoritarianism and war."
+ brandenburg.1.a:0 "This is a dark day for Brandenburg."
+ newsWN.5.t:0 "Brandenburg Falls to Maletism"
+ newsWN.5.desc:0 "Due to the wealthy nature of the continent, Maletism has largely struggled to make a stronghold in Europe besides fringe parties. Today this changes, only hours ago the parliament of Brandenburg was stormed and overthrown by Thälmann and a relatively large amount of supporters. Many governments are now really worried about the possibilities of a Maletist coup in their own country with crack downs on major parties issued in some.\nThe new government of Brandenburg has rapidly changed the country already, with many gigantic business assets being seized within the first few hours of the Maletists seizing power. This shows a turn in the global scale, with Maratha quickly moving the recognise the new government and a sign of the old ideals of global Maletism.\nThis is a dark day for Brandenburg."
+ newsWN.5.a:0 "The global stage is changing."
