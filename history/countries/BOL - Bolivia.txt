@@ -91,7 +91,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Eloy G. Ureta"
 	desc = "POLITICS_OSCAR_UNZAGA_DESC"
-	picture = "portrait_peru_bolivia_leader.dds"
+	picture = "Portrait_PeruBolivia_Eloy_Ureta.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -99,8 +99,20 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Eloy G. Ureta"
+	picture = "Portrait_PeruBolivia_Eloy_Ureta.dds"
+	traits = { offensive_doctrine }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+	id = 1
+}
+
 create_corps_commander = {
-	name = "Ernst Rohm"
+	name = "Ernst Röhm"
 	portrait_path = "gfx/leaders/BOL/Portrait_PeruBolivia_Ernst_Rohm.dds"
 	traits = { infantry_leader }
 	skill = 4

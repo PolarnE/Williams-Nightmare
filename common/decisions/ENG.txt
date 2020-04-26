@@ -27,151 +27,37 @@ ENG_second_civil_war_fires = {
 
 		timeout_effect = {
 		set_country_flag = ENG_second_english_civil_war_fired
-		GBR = {
-	    hidden_effect = {
-			inherit_technology = ENG
-				every_state = {
-                limit = { is_core_of = ENG }
-                add_core_of = GBR
-				}
-		}
-		}
-		transfer_state = 130
-		transfer_state = 129
-		transfer_state = 131
-		add_ideas = ENG_civil_war
-		if = {
-		limit = {
-	    125 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 125
-         } 
-		 }
-		if = {
-		limit = {
-	    863 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 863
-         } 
-		 }
-			if = {
-		limit = {
-	    128 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 128
-         } 
-		 }	
-		 		if = {
-		limit = {
-	    338 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 338
-         } 
-		 }
-			if = {
-		limit = {
-	    123 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 123
-         } 
-		 }
-			if = {
-		limit = {
-	    865 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
+		hidden_effect = {
 		GBR = {
 		transfer_state = 865
-         } 
-		 }
-			if = {
-		limit = {
-	    864 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
 		transfer_state = 864
-         } 
-		 }
-			if = {
-		limit = {
-	    127 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 127
-         } 
-		 }
-		 			if = {
-		limit = {
-	    132 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 132
-         } 
-		 }
-					if = {
-		limit = {
-	    866 = {
-		has_state_flag = ENG_monarchist_state
-		}
-	    }
-		GBR = {
-		transfer_state = 866
-         } 
-		 }
-			if = {
-		limit = {
-	    122 = {
-		has_state_flag = ENG_monarchist_state
-		}
-		NOT = {
-		has_country_flag = flag_commonwealth_of_britain
-		}
-	    }
-		GBR = {
 		transfer_state = 122
-         } 
-		 }
-			if = {
-		limit = {
-	    874 = {
-		has_state_flag = ENG_monarchist_state
-		}
-		NOT = {
-		has_country_flag = flag_commonwealth_of_britain
-		}
-	    }
-		GBR = {
-		transfer_state = 874
-         } 
-		 }
-		 	declare_war_on = {
-					    target = GBR
-					    type = civil_war
-					}
-	} 
+		transfer_state = 863
+		transfer_state = 129
+		transfer_state = 130
+		transfer_state = 131
+		transfer_state = 866
+		load_oob = GBR_1936
 	}
+	SCO = {
+	transfer_state = 136
+	transfer_state = 133
+	transfer_state = 121
+	}
+	declare_war_on = {
+					    target = GBR
+					    type = annex_everything
+					}
+	declare_war_on = {
+					    target = SCO
+					    type = annex_everything
+					}
+	}
+	}
+	}
+	}
+	
+	ENG_debug_decisions_category = {
 	
 	ENG_second_civil_war_debug_fire_1 = {
 
@@ -224,7 +110,7 @@ ENG_second_civil_war_fires = {
 		 every_owned_state = {
 		 set_state_flag = ENG_monarchist_state }
 		 add_days_mission_timeout = {
-				mission = ENG_second_civil_war_fires_republicans
+				mission = ENG_second_civil_war_fires
 				days = -290
 			}
 	}

@@ -1,0 +1,142 @@
+﻿###########################
+#   Commonwealth Events
+###########################
+
+add_namespace = commonwealth
+
+# Great Depression - Commonwealth
+country_event = {
+	id = commonwealth.1
+	title = commonwealth.1.t
+	desc = commonwealth.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+	ENG = { country_event = { id = commonwealth.2 days = 5 } }
+	}
+	}
+	
+	option = {
+		name = commonwealth.1.a
+		 ENG_weaken_economy = yes
+		}
+	}
+
+# Mass Protests
+country_event = {
+	id = commonwealth.2
+	title = commonwealth.2.t
+	desc = commonwealth.2.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+	ENG = { country_event = { id = commonwealth.3 days = 15 } }
+	}
+	}
+	
+	option = {
+		name = commonwealth.2.a
+		 add_political_power = -50
+		 126 = {
+		 damage_building = { type = industrial_complex damage = 0.5 }
+		 damage_building = { type = arms_factory damage = 0.5 }
+		 damage_building = { type = infrastructure damage = 0.5 }
+		 }
+		}
+	}
+	
+# Protests Continue
+country_event = {
+	id = commonwealth.3
+	title = commonwealth.3.t
+	desc = commonwealth.3.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+	random_list = {
+			35 = { ENG = { country_event = { id = commonwealth.4 days = 10 } } }# Protests Descend Into Violence
+			65 = { ENG = { country_event = { id = commonwealth.5 days = 10 } } }# Protests Clear
+	}
+	}
+	}
+	
+	option = {
+		name = commonwealth.3.a
+		 add_political_power = -50
+		 random_state = {
+		 limit = {
+		 is_core_of = ENG
+		 }
+		 damage_building = { type = industrial_complex damage = 0.5 }
+		 damage_building = { type = arms_factory damage = 0.5 }
+		 damage_building = { type = infrastructure damage = 0.5 }
+		 }
+		}
+	}
+	
+# Protests Descend Into Violence
+country_event = {
+	id = commonwealth.4
+	title = commonwealth.4.t
+	desc = commonwealth.4.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	#immediate = {
+	#hidden_effect = {
+	#ENG = { country_event = { id = commonwealth.3 days = 15 } }
+	#}
+	#}
+	
+	option = {
+		name = commonwealth.4.a
+		 add_political_power = -50
+		 random_state = {
+		 limit = {
+		 is_core_of = ENG
+		 }
+		 damage_building = { type = industrial_complex damage = 0.5 }
+		 damage_building = { type = arms_factory damage = 0.5 }
+		 damage_building = { type = infrastructure damage = 0.5 }
+		 }
+		  random_state = {
+		 limit = {
+		 is_core_of = ENG
+		 }
+		 damage_building = { type = industrial_complex damage = 0.5 }
+		 damage_building = { type = arms_factory damage = 0.5 }
+		 damage_building = { type = infrastructure damage = 0.5 }
+		 }
+		}
+	}
+
+# Protests Clear
+country_event = {
+	id = commonwealth.5
+	title = commonwealth.5.t
+	desc = commonwealth.5.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	#immediate = {
+	#hidden_effect = {
+	#ENG = { country_event = { id = commonwealth.3 days = 15 } }
+	#}
+	#}
+	
+	option = {
+		name = commonwealth.5.a
+		 add_political_power = 50
+		}
+	}

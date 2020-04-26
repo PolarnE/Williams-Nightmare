@@ -43,32 +43,59 @@ set_technology = {
 }
 if = {
 	limit = {
-		not = { has_dlc = "Man the Guns"}
+		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
 		early_submarine = 1
 		early_destroyer = 1
+		basic_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
 		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
 		transport = 1
 	}
 }
 if = {
-	limit = { has_dlc = "Man the Guns"}
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
 		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-	}	
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
 }
 
 set_convoys = 500
@@ -168,6 +195,17 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "William Rust"
+	desc = ""
+	picture = "Portrait_England_William_Rust.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+	editor
 	}
 }
 
@@ -521,7 +559,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Hugh Dowding" # Aristocrat
 	id = 2002
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "Portrait_Commonwealth_Hugh_Dowding.dds"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 4
@@ -533,7 +571,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Arthur Harris" # Aristocrat
 	id = 2003
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "Portrait_Commonwealth_Bomber_Harris.dds"
 	traits = { politically_connected }
 	skill = 4
 	attack_skill = 5
@@ -545,7 +583,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Vernon Sturdee" # Aristocrat
 	id = 2004
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "Portrait_Commonwealth_Vernon_Sturdee.dds"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 3
@@ -569,7 +607,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Percy Hobart" # Aristocrat
 	id = 2007
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "Portrait_Commonwealth_Percy_Hobart.dds"
 	traits = { politically_connected }
 	skill = 2
 	attack_skill = 2
@@ -581,7 +619,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Bernard Freyberg" # Aristocrat
 	id = 2005
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "Portrait_Commonwealth_Bernard_Freyberg.dds"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 3
@@ -593,7 +631,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Anthony Eden" # Aristocrat
 	id = 2009
-	picture = "Portrait_Britain_Harold_Alexander.dds"
+	picture = "Portrait_Commonwealth_Anthony_Eden.dds"
 	traits = { politically_connected }
 	skill = 1
 	attack_skill = 1
@@ -603,7 +641,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "John Vereker Lord Gort" # Aristocrat
+	name = "John Vereker" # Aristocrat
 	id = 994
 	picture = "Portrait_Britain_John_Vereker.dds"
 	traits = { politically_connected trait_cautious }

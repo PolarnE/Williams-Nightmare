@@ -38,9 +38,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Edvard Beneš"
-	desc = "POLITICS_EDVARD_BENES_DESC"
-	picture = "Portrait_Czech_Edvard_Benes.dds"
+	name = "Tomáš Masaryk"
+	desc = ""
+	picture = "Portrait_Czechia_Tomas_Masaryk.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

@@ -297,22 +297,52 @@ ideas = {
 		}
 		
 		
-													ENG_state_controlled_economy = {
+			ENG_churchill_plan_spirit = {
 		
 			removal_cost = -1
 			
 			allowed = {
-				always = no
+		    NOT = { has_country_flag = ENG_second_english_civil_war_fired }
 			}
 
 			allowed_civil_war = {
 			}
-
-			picture = generic_goods_red_bonus
 			
 			modifier = {
-			consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.05
 			production_speed_buildings_factor = 0.05
+			}
+		}
+		
+				ENG_prioritise_the_economy_spirit = {
+		
+			removal_cost = -1
+			
+			allowed = {
+		    NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			modifier = {
+			consumer_goods_factor = -0.03
+			}
+		}
+		
+						ENG_prioritise_the_military_spirit = {
+		
+			removal_cost = -1
+			
+			allowed = {
+		    NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			modifier = {
+			command_power_gain = 0.25
 			}
 		}
 		
@@ -927,31 +957,6 @@ ideas = {
 			}
 		}
 
-		ENG_winston_churchill = {
-			
-			#picture = generic_democratic_reformer_western_european_2d
-
-			available = {
-				has_government = neutrality
-				has_completed_focus = ENG_the_kings_party
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			allowed = {
-				original_tag = ENG
-				has_dlc = "Man the Guns"
-			}
-			
-			traits = { royalist_bulldog }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		ENG_oswald_mosley = {
 			
 			#picture = generic_political_advisor_europe_3
@@ -1354,6 +1359,21 @@ ideas = {
 			
 			traits = { navy_chief_decisive_battle_1 }
 			# REVISIT Secondary trait for anti-sub efforts?
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ENG_winston_churchill = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1

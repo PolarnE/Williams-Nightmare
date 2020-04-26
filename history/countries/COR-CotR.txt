@@ -242,10 +242,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Council of Princes"
+	name = "Joseph Berchtold"
 	desc = ""
-	picture = "portrait_princes.dds"
-	ideology = fascism_ideology
+	picture = "Portrait_Confed_Joseph_Berchtold.dds"
+	ideology = nazism
 	traits = {
 		#
 	}

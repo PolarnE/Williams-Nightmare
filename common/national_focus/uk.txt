@@ -37,28 +37,389 @@ focus_tree = {
 	#		}
 	#	}
 	
-	#################COMMONWEALTH BRANCH!!!
+	#################PRE-CIVIL WAR BRANCH
 	
 		focus = {
-		id = ENG_toe_the_line
+		id = ENG_churchill_plan
 		icon = GFX_
-		mutually_exclusive = { focus = ENG_destroy_the_rot }
-		x = 20
+		x = 5
 		y = 0
-		cost = 2.9
+		cost = 10
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
 			completion_reward = {
+			custom_effect_tooltip = ENG_tooltip_spirit_removed_on_civil_war
+			add_ideas = ENG_churchill_plan_spirit
 			}
 		}
-	
-	#################EMPIRE BRANCH!!!
-	
+		
 		focus = {
-		id = ENG_destroy_the_rot
+		id = ENG_prioritise_the_economy
 		icon = GFX_
-		mutually_exclusive = { focus = ENG_toe_the_line }
-		x = 22
-		y = 0
-		cost = 2.9
+		x = 2
+		y = 1
+		prerequisite = { focus = ENG_churchill_plan }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
 			completion_reward = {
+			custom_effect_tooltip = ENG_tooltip_spirit_removed_on_civil_war
+			add_ideas = ENG_prioritise_the_economy_spirit
 			}
 		}
+		
+					focus = {
+		id = ENG_economic_modernisation
+		icon = GFX_
+		x = 4
+		y = 2
+		prerequisite = { focus = ENG_prioritise_the_economy }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			add_tech_bonus = {
+				name = ENG_economic_modernisation_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			}
+		}
+		
+							focus = {
+		id = ENG_production_efforts
+		icon = GFX_
+		x = 3
+		y = 3
+		prerequisite = { focus = ENG_prioritise_the_economy }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+						random_owned_controlled_state = {
+						prioritize = { 126 127 338 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+		
+							focus = {
+		id = ENG_synthetic_oil
+		icon = GFX_
+		x = 1
+		y = 3
+		prerequisite = { focus = ENG_prioritise_the_economy }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			add_tech_bonus = {
+				name = ENG_synthetic_oil_bonus
+				bonus = 3.0
+				uses = 1
+				category = synth_resources
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 123
+				}
+				123 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			}
+		}
+		
+			focus = {
+		id = ENG_all_roads_lead_to_london
+		icon = GFX_
+		x = 2
+		y = 2
+		prerequisite = { focus = ENG_prioritise_the_economy }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			custom_effect_tooltip = ENG_roads_to_london_tt
+			hidden_effect = {
+	130 = {
+			set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+} }
+129 = {
+set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+} }
+125 = {
+set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+} }
+126 = {
+set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+} } }
+			}
+		}
+		
+					focus = {
+		id = ENG_industrial_expansion
+		icon = GFX_
+		x = 0
+		y = 2
+		prerequisite = { focus = ENG_prioritise_the_economy }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+						random_owned_controlled_state = {
+						prioritize = { 126 127 338 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
+		}
+		
+			focus = {
+		id = ENG_prioritise_the_military
+		icon = GFX_
+		x = 8
+		y = 1
+		prerequisite = { focus = ENG_churchill_plan }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			custom_effect_tooltip = ENG_tooltip_spirit_removed_on_civil_war
+			add_ideas = ENG_prioritise_the_military_spirit
+			}
+		}
+		
+		focus = {
+		id = ENG_expand_recruitment
+		icon = GFX_
+		x = 6
+		y = 2
+		prerequisite = { focus = ENG_prioritise_the_military }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			add_manpower = 75000
+			}
+		}
+		
+		focus = {
+		id = ENG_new_doctrines
+		icon = GFX_
+		x = 8
+		y = 2
+		prerequisite = { focus = ENG_prioritise_the_military }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			add_tech_bonus = {
+				name = ENG_new_doctrines_bonus
+				bonus = 0.5
+				uses = 3
+				category = land_doctrine
+			}
+			}
+		}
+		
+		focus = {
+		id = ENG_naval_expansion
+		icon = GFX_
+		x = 10
+		y = 2
+		prerequisite = { focus = ENG_prioritise_the_military }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}		
+			}
+		}
+		
+		focus = {
+		id = ENG_air_force_doctrines
+		icon = GFX_
+		x = 7
+		y = 3
+		prerequisite = { focus = ENG_prioritise_the_military }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			add_tech_bonus = {
+				name = ENG_air_force_doctrines_bonus
+				bonus = 0.5
+				uses = 3
+				category = air_doctrine
+			}
+			}
+	    }
+
+        focus = {
+		id = ENG_naval_doctrines
+		icon = GFX_
+		x = 9
+		y = 3
+		prerequisite = { focus = ENG_prioritise_the_military }
+		available = { NOT = { has_country_flag = ENG_second_english_civil_war_fired } }
+		cost = 5
+			completion_reward = {
+			add_tech_bonus = {
+				name = ENG_naval_doctrines_bonus
+				bonus = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+			}
+		}		

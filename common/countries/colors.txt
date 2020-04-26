@@ -150,8 +150,8 @@ BHU = {
 	color_ui = rgb { 172 122 88 }
 }
 BOL = {
-	color = rgb { 217 16 35 } #217,16,35
-	color_ui = rgb { 255 234 177 }
+	color = rgb { 218 7 30 } #249,227,0 for not peru-bolivia
+	color_ui = rgb { 218 7 30 }
 }
 BRA = {
 	color = rgb { 76 145 63 }
@@ -238,8 +238,12 @@ PHI = {
 	color_ui = rgb { 198 169 248 }
 }
 PRU = {
-	color = rgb { 196 189 204 }
-	color_ui = rgb { 255 246 255 }
+	color = rgb { 255 20 43 }
+	color_ui = rgb { 255 20 43 }
+}
+PR2 = {
+	color = rgb { 3 143 61 }
+	color_ui = rgb { 3 143 61 }
 }
 SAF = {
 	color = rgb { 195 107 160 }
