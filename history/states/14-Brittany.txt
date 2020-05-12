@@ -15,7 +15,7 @@ state={
 			6536 5
 		}
 		victory_points = {
-			9495 1
+			9495 25
 		}
 		buildings = {
 			infrastructure = 6
@@ -34,6 +34,7 @@ state={
 			}
 		}
 		add_core_of = FRA
+		add_core_of = BRI
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

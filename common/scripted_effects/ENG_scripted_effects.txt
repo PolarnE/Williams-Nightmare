@@ -120,7 +120,6 @@ ENG_increase_pan_germanicist_loyalty = {
 ENG_decrease_pan_germanicist_loyalty = {
 	if = {
 		limit = { has_idea = ENG_pan_germanicist_corruption_5 }
-		stability_factor = -0.025
 	}
 	else_if = {
 		limit = { has_idea = ENG_pan_germanicist_corruption_4 }
@@ -152,6 +151,41 @@ ENG_decrease_pan_germanicist_loyalty = {
 		swap_ideas = {
 			remove_idea = ENG_pan_germanicist_corruption_1
 			add_idea = ENG_pan_germanicist_corruption_2
+		}		
+	}
+}
+
+ENG_decrease_corruption = {
+	if = {
+		limit = { has_idea = ENG_rampant_corruption_5 }
+		remove_ideas = ENG_rampant_corruption_5
+	}
+	else_if = {
+		limit = { has_idea = ENG_rampant_corruption_4 }
+		swap_ideas = {
+			remove_idea = ENG_rampant_corruption_4
+			add_idea = ENG_rampant_corruption_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_rampant_corruption_3 }
+		swap_ideas = {
+			remove_idea = ENG_rampant_corruption_3
+			add_idea = ENG_rampant_corruption_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_rampant_corruption_2 }
+		swap_ideas = {
+			remove_idea = ENG_rampant_corruption_2
+			add_idea = ENG_rampant_corruption_3
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ENG_rampant_corruption_1 }
+		swap_ideas = {
+			remove_idea = ENG_rampant_corruption_1
+			add_idea = ENG_rampant_corruption_2
 		}		
 	}
 }

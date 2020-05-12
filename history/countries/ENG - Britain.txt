@@ -125,14 +125,38 @@ diplomatic_relation = {
     active = yes
 }
 # DIPLOMACY
-set_autonomy = {
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
 		target = MAL
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
 	}
-set_autonomy = {
+	else = {
+		puppet = MAL
+	}
+}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
 		target = INS
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
 	}
+	else = {
+		puppet = INS
+	}
+}
 
 add_ideas = {
 limited_conscription

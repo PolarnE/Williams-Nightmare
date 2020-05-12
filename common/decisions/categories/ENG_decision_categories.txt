@@ -16,7 +16,7 @@ ENG_debug_decisions_category = {
 
 	icon = GFX_decision_second_english_civil_war
 	
-	priority = 98
+	priority = 20
 	
 	allowed = {
 		tag = ENG }
@@ -44,5 +44,20 @@ ENG_fight_corruption = {
 	has_idea = ENG_rampant_corruption_5
 	has_idea = ENG_rampant_corruption_6
 	has_idea = ENG_rampant_corruption_7
+	}
+	}
+}
+
+ENG_churchill_plan_decisions = {
+
+	icon = category_ger_mefo_bills
+	
+	priority = 98
+	
+	allowed = {
+		tag = ENG }
+
+	visible = {
+	has_completed_focus = ENG_churchill_plan
 	}
 }

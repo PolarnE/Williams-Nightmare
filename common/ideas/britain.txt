@@ -65,6 +65,93 @@ ideas = {
 			production_speed_buildings_factor = -0.1
 			}
 		}
+						
+						ENG_rampant_corruption_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = eng_rampant_corruption
+			
+			modifier = {
+			custom_modifier_tooltip = SPR_military_disloyalty_tt
+			stability_factor = -0.24
+			stability_weekly = -0.005
+			political_power_cost = 0.4
+			consumer_goods_factor = 0.04
+			production_speed_buildings_factor = -0.08
+			}
+		}
+		
+						ENG_rampant_corruption_3 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = eng_rampant_corruption
+			
+			modifier = {
+			stability_factor = -0.18
+			stability_weekly = -0.005
+			political_power_cost = 0.3
+			consumer_goods_factor = 0.03
+			production_speed_buildings_factor = -0.06
+			}
+		}
+		
+						ENG_rampant_corruption_4 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = eng_rampant_corruption
+			
+			modifier = {
+			stability_factor = -0.12
+			political_power_cost = 0.2
+			consumer_goods_factor = 0.02
+			production_speed_buildings_factor = -0.04
+			}
+		}
+		
+						ENG_rampant_corruption_5 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = eng_rampant_corruption
+			
+			modifier = {
+			stability_factor = -0.06
+			political_power_cost = 0.1
+			consumer_goods_factor = 0.01
+			production_speed_buildings_factor = -0.02
+			}
+		}
 		
 						ENG_pan_germanicist_corruption_1 = { #loyalty
 		
@@ -346,7 +433,7 @@ ideas = {
 			}
 		}
 		
-							ENG_attempt_stabilisation_idea = {
+							ENG_improve_lives_spirit = {
 		
 			removal_cost = -1
 			
@@ -356,370 +443,9 @@ ideas = {
 
 			allowed_civil_war = {
 			}
-
-			picture = generic_disjointed_gov
 			
 			modifier = {
-			stability_weekly = 0.003
-			}
-		}
-		
-									ENG_grander_military = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = eng_imperial_conscription
-			
-			modifier = {
-			conscription = 0.015
-			conscription_factor = 0.07
-			consumer_goods_factor = 0.1
-			industrial_capacity_factory = -0.1
-			training_time_factor = -0.1
-			war_support_factor = 0.05
-			}
-		}
-		
-											ENG_limit_conscription_idea = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = eng_imperial_conscription
-			
-			modifier = {
-			conscription = 0.01
-			consumer_goods_factor = 0.05
-			industrial_capacity_factory = -0.03
-			}
-		}
-		
-		
-											ENG_fight_unemployment = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_goods_red_bonus
-			
-			modifier = {
-			consumer_goods_factor = -0.05
-			production_speed_buildings_factor = 0.1
-			}
-		}
-		
-		ENG_rally_the_people_protectorate = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = mex_politicised_army
-			
-			modifier = {
-			surrender_limit = 0.2
-			war_support_factor = 0.15
-			ai_focus_aggressive_factor = 0.5
-			}
-		}
-		
-				ENG_military_confusion = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = chi_incompetent_officers
-			
-			modifier = {
-			army_core_defence_factor = -0.1
-			war_support_factor = -0.2
-			}
-		}
-		
-		ENG_civil_war_support_sweden = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = advisors_sweden
-			
-			modifier = {
-				army_org_factor = 0.02
-				planning_speed = 0.10
-			}
-		}
-		
-				ENG_civil_war_support_russianfed = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = advisors_russianfed
-			
-			modifier = {
-				army_org_factor = 0.02
-				planning_speed = 0.10
-			}
-		}
-		
-				ENG_political_purge = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_purge
-			
-			modifier = {
-				political_advisor_cost_factor = 0.5
-		trade_laws_cost_factor = 0.25
-		mobilization_laws_cost_factor = 0.25
-		economy_cost_factor = 0.25
-		high_command_cost_factor = 0.5
-		air_chief_cost_factor = 0.5
-		army_chief_cost_factor = 0.5
-		navy_chief_cost_factor = 0.5
-			}
-		}
-		
-						ENG_cult_of_progress_idea = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_research_bonus
-			
-			modifier = {
-		research_speed_factor = 0.05
-			}
-		}
-		
-								ENG_the_greater_state_idea = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_political_support
-			
-			modifier = {
-		political_power_cost = 0.75
-			}
-		}
-		
-										ENG_the_greater_state_idea_2 = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_political_support
-			
-			modifier = {
-			fascism_drift = 0.05
-		political_power_cost = 0.5
-			}
-		}
-		
-												ENG_strengthened_secret_police = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_secret_police
-			
-			modifier = {
-				subversive_activites_upkeep = -0.5
-				enemy_partisan_effect = -0.2
-			}
-		}
-		
-														ENG_church_threat = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = chi_war_of_resistance3
-			
-			modifier = {
-			political_power_cost = 0.8
-			}
-		}
-		
-														ENG_military_threat = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = hun_secret_rearmament
-			
-			modifier = {
-			planning_speed = -0.5
-			}
-		}
-		
-														ENG_political_threat = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_deal_with_the_devil
-			
-			modifier = {
-			stability_factor = -0.15
-			}
-		}
-	
-	ENG_london_promises_idea = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_goods_red_bonus
-			
-			modifier = {
-			political_power_cost = -0.15
-			}
-		}
-		
-		ENG_colonial_concessions_idea = { 
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-            picture = generic_political_support
-			
-			modifier = {
-			political_power_cost = -0.15
-			}
-			
-			targeted_modifier = {
-				tag = INS
-			political_power_cost = -0.2
-			}
-			
-			targeted_modifier = {
-				tag = MAL
-			political_power_cost = -0.2
-			}
-		}
-		
-					ENG_tarrifs_idea = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-			consumer_goods_factor = -0.15
-			trade_laws_cost_factor = 0.25
-			trade_opinion_factor = -0.5
+			production_speed_buildings_factor = 0.05
 			}
 		}
 	}

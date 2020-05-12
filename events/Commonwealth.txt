@@ -42,7 +42,7 @@ country_event = {
 	
 	option = {
 		name = commonwealth.2.a
-		 add_political_power = -50
+		 add_political_power = -10
 		 126 = {
 		 damage_building = { type = industrial_complex damage = 0.5 }
 		 damage_building = { type = arms_factory damage = 0.5 }
@@ -71,7 +71,7 @@ country_event = {
 	
 	option = {
 		name = commonwealth.3.a
-		 add_political_power = -50
+		 add_political_power = -10
 		 random_state = {
 		 limit = {
 		 is_core_of = ENG
@@ -92,15 +92,15 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	#immediate = {
-	#hidden_effect = {
-	#ENG = { country_event = { id = commonwealth.3 days = 15 } }
-	#}
-	#}
+	immediate = {
+	hidden_effect = {
+	ENG = { country_event = { id = commonwealth.6 days = 20 } }
+	}
+	}
 	
 	option = {
 		name = commonwealth.4.a
-		 add_political_power = -50
+		 add_political_power = -10
 		 random_state = {
 		 limit = {
 		 is_core_of = ENG
@@ -129,14 +129,247 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+	hidden_effect = {
+	ENG = { country_event = { id = commonwealth.6 days = 20 } }
+	}
+	}
+	
+	option = {
+		name = commonwealth.5.a
+		 add_political_power = 10
+		}
+	}
+	
+# Rumors of a Plot?
+country_event = {
+	id = commonwealth.6
+	title = commonwealth.6.t
+	desc = commonwealth.6.d
+	picture = GFX_report_event_french_resistance_02
+	
+	is_triggered_only = yes
+	
 	#immediate = {
 	#hidden_effect = {
-	#ENG = { country_event = { id = commonwealth.3 days = 15 } }
+	#ENG = { country_event = { id = commonwealth.7 days = 20 } }
 	#}
 	#}
 	
 	option = {
-		name = commonwealth.5.a
-		 add_political_power = 50
+		name = commonwealth.6.a #we shall look into this
+		ai_chance = { base = 60 }
+		 add_political_power = -10
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.9 days = 3 } } #arguably more important since you gain 3 okay divisions in the civil war if you do this (if you come to the conclusion that a coup is impending)
+		 }
+		}
+	option = {
+		name = commonwealth.6.b #theres bigger concerns
+		ai_chance = { base = 40 }
+		 add_political_power = 25
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.8 days = 3 } } #you get buffs which are removed on the start of the civil war
+		 }
 		}
 	}
+	
+# Rumors of a Plot? - There's Bigger Concerns
+country_event = {
+	id = commonwealth.8
+	title = commonwealth.8.t
+	desc = commonwealth.8.d
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.8.a #Focus on improving people's lives
+		ai_chance = { base = 50 }
+		custom_effect_tooltip = ENG_tooltip_spirit_removed_on_civil_war
+		add_ideas = ENG_improve_lives_spirit
+		}
+	option = {
+		name = commonwealth.8.b #Focus on fighting government corruption - this will be really powerful to do early but it will be costly and you lose the ability as soon as the civil war starts and just have to do it via focuses
+		ai_chance = { base = 0 }
+		custom_effect_tooltip = ENG_tooltip_lower_corruption_decision_unlock
+		set_country_flag = flag_commonwealth_fighting_corruption
+		}
+    option = {
+		name = commonwealth.8.c #Focus on improving the economy
+		ai_chance = { base = 50 }
+		ENG_strengthen_economy = yes
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation
+country_event = {
+	id = commonwealth.9
+	title = commonwealth.9.t
+	desc = commonwealth.9.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	#CHOICES OF WHO TO GET TO INVESTIGATE A POSSIBLE COUP
+	
+	option = {
+		name = commonwealth.9.a #Government Loyalists
+		ai_chance = { base = 25 }
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.10 days = 3 } }
+		 }
+		}
+	option = {
+		name = commonwealth.9.b #The Military
+		ai_chance = { base = 25 }
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.11 days = 3 } }
+		 }
+		}
+    option = {
+		name = commonwealth.9.c #Pan-Germanicists
+		ai_chance = { base = 25 }
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.12 days = 3 } }
+		 }
+		}
+	 option = {
+		name = commonwealth.9.e #Nasapo
+		ai_chance = { base = 25 }
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.13 days = 3 } }
+		 }
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - Government Loyalists
+country_event = {
+	id = commonwealth.10
+	title = commonwealth.10.t
+	desc = commonwealth.10.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.10.a #Carry on
+		 hidden_effect = {
+		 random_list = {
+			35 = { ENG = { country_event = { id = commonwealth.14 days = 10 } } }# A Possible Lead - leads to a Nasapo raid, you can beat them into confessing shit too
+			65 = { ENG = { country_event = { id = commonwealth.19 days = 10 } } }# They Covered Their Tracks - continue searching
+	     }
+		 }
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - Government Loyalists - A Lead
+country_event = {
+	id = commonwealth.14
+	title = commonwealth.14.t
+	desc = commonwealth.14.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.14.a #Organise a Nasapo Raid on the Compound Immediately
+		 hidden_effect = {
+		 random_list = {
+			65 = { ENG = { country_event = { id = commonwealth.15 days = 10 } } }# Raid is a sucess - time to interrogate the captured
+		    35 = { ENG = { country_event = { id = commonwealth.16 days = 10 } } }# Bittersweet success
+	     }
+		 }
+		}
+	option = {
+		name = commonwealth.14.b #Bide your time
+		 hidden_effect = {
+		 random_list = {
+			50 = { ENG = { country_event = { id = commonwealth.17 days = 15 } } }# Capture of Mosley
+		    50 = { ENG = { country_event = { id = commonwealth.18 days = 15 } } }# Nothing
+	     }
+		 }
+		}
+	}
+	
+	# Rumors of a Plot? - Begin Investigation - Government Loyalists - A Lead - Sucessful Raid
+country_event = {
+	id = commonwealth.15
+	title = commonwealth.15.t
+	desc = commonwealth.15.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.15.a #Beat a confession out of them, admitting that Mosley is in on this
+		add_stability = 0.05
+		hidden_effect = {
+		ENG = { country_event = { id = commonwealth.19 days = 5 } }
+		}
+	}
+	
+		# Rumors of a Plot? - Begin Investigation - Government Loyalists - A Lead - Bittersweet Success
+country_event = {
+	id = commonwealth.16
+	title = commonwealth.16.t
+	desc = commonwealth.16.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.16.a #All of the defenders kill themselves when they realise there's no hope left, you get 4 extra Nasapo divisions when the civil war fires though
+		set_country_flag = flag_discovered_plot_bittersweet_sucess
+	}
+	}
+	
+			# Rumors of a Plot? - Begin Investigation - Government Loyalists - A Lead - Capture of Mosley
+country_event = {
+	id = commonwealth.17
+	title = commonwealth.17.t
+	desc = commonwealth.17.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.17.a #Mosley is publicly executed after he refuses to say anything
+		add_stability = 0.05
+	}
+	}
+	
+		# Rumors of a Plot? - Begin Investigation - Government Loyalists - A Lead - Nothing
+country_event = {
+	id = commonwealth.18
+	title = commonwealth.18.t
+	desc = commonwealth.18.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.18.a #Comes up with nothing, chain ends here
+	}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - Government Loyalists - They Covered Their Tracks
+country_event = {
+	id = commonwealth.19
+	title = commonwealth.19.t
+	desc = commonwealth.19.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.19.a #Carry on
+		 hidden_effect = {
+		 random_list = {
+			35 = { ENG = { country_event = { id = commonwealth.14 days = 10 } } }# A Possible Lead - leads to a Nasapo raid, you can beat them into confessing shit too
+			65 = { ENG = { country_event = { id = commonwealth.15 days = 10 } } }# They Covered Their Tracks - continue searching
+	     }
+		 }
+		}
+	}
+	

@@ -170,58 +170,7 @@ create_country_leader = {
 	}
 }
 	}
-	}
 	
-		ENG_make_land_commonwealth_london_debug = {
-
-		icon = GFX_eng_commonwealth_map_icon
-
-		allowed = {
-			tag = ENG
-		}
-
-		visible = {
-		is_debug = yes
-		owns_state = 126
-		}
-		
-		highlight_states = { state = 126 }
-
-		fire_only_once = yes
-		
-		on_map_mode = map_only
-	
-	    days_remove = 10
-
-		remove_effect = {
-		126 = { set_state_flag = ENG_commonwealth_state clr_state_flag = ENG_monarchist_state }
-	}
-	}
-	
-		ENG_make_land_monarchist_london_debug = {
-
-		icon = GFX_gbr_royalist_map_icon
-
-		allowed = {
-			tag = ENG
-		}
-
-		visible = {
-		is_debug = yes
-		owns_state = 126
-		}
-
-        highlight_states = { state = 126 }
-
-		fire_only_once = yes
-		
-		on_map_mode = map_only
-		
-		days_remove = 10
-
-		remove_effect = {
-		126 = { set_state_flag = ENG_monarchist_state clr_state_flag = ENG_commonwealth_state }
-	}
 	}
 	
 	}
@@ -315,6 +264,7 @@ ENG_increase_coin_value = {
 		}
 		visible = {
 			OR = {
+			has_idea = ENG_economy_1
 			has_idea = ENG_economy_2
 			has_idea = ENG_economy_3
 			has_idea = ENG_economy_4
@@ -356,6 +306,7 @@ ENG_increase_coin_value = {
 		}
 	    visible = {
 			OR = {
+			has_idea = ENG_pan_germanicist_corruption_1
 			has_idea = ENG_pan_germanicist_corruption_2
 			has_idea = ENG_pan_germanicist_corruption_3
 			has_idea = ENG_pan_germanicist_corruption_4
@@ -388,5 +339,117 @@ ENG_increase_coin_value = {
 	}
 	}
 	
+		ENG_fight_corruption_1_government_census = {
+		icon = generic_political_discourse
+		available = { 
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+	    visible = {
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+				remove_effect = {
+	add_stability = 0.03
+	set_country_flag = ENG_fight_corruption_government_census_flag
+	}
+	}
+	
+			ENG_fight_corruption_1_scan_the_military = {
+		icon = generic_prepare_civil_war
+		available = { 
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+	    visible = {
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+				remove_effect = {
+          add_command_power = 50
+		  set_country_flag = ENG_fight_corruption_scan_the_military_flag
+	}
+	}
+	
+				ENG_fight_corruption_1_reinforce_bureaucracy = {
+		icon = eng_blackshirt_speech
+		available = { 
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+	    visible = {
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+				remove_effect = {
+        add_stability = 0.03
+		set_country_flag = ENG_fight_corruption_reinforce_bureaucracy_flag
+	}
+	}
+	
+					ENG_fight_corruption_1_investigate_economy = {
+		icon = generic_industry
+		available = { 
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+	    visible = {
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+				remove_effect = {
+       ENG_strengthen_economy = yes
+	   ENG_increase_pan_germanicist_loyalty = yes
+	   set_country_flag = ENG_fight_corruption_investigate_economy_flag
+	}
+	}
+	
+						ENG_fight_corruption_1_increase_government_efficiency = {
+		icon = generic_decision
+		available = { 
+		has_country_flag = ENG_fight_corruption_government_census_flag
+		has_country_flag = ENG_fight_corruption_scan_the_military_flag
+		has_country_flag = ENG_fight_corruption_reinforce_bureaucracy_flag
+		has_country_flag = ENG_fight_corruption_investigate_economy_flag
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+	    visible = {
+		has_country_flag = flag_commonwealth_fighting_corruption
+		NOT = { has_country_flag = ENG_second_english_civil_war_fired }
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+				remove_effect = {
+      ENG_decrease_corruption = yes
+	}
+	}
 	
 	}

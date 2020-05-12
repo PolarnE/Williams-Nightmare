@@ -1,0 +1,2875 @@
+focus_tree = {
+	id = russianfed_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+#####################################
+### Industrializatsya Main Branch ###
+#####################################
+
+	focus = {
+		id = SOV_industrializatsya
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		icon = GFX_RUS_Industrializatsya
+		x = 3
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_One_Year_Plan
+		prerequisite = { focus = SOV_industrializatsya }
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		icon = goal_generic_production2
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		relative_position_id = SOV_industrializatsya
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Budget_For_Local_Republics
+		prerequisite = { focus = SOV_One_Year_Plan }
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		relative_position_id = SOV_One_Year_Plan
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Local_Builder_Teams
+		prerequisite = { focus = SOV_Budget_For_Local_Republics }
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		relative_position_id = SOV_Budget_For_Local_Republics
+
+		completion_reward = {
+		}
+	}
+
+#############################
+### Heavy Industry Branch ###
+#############################
+
+	focus = {
+		id = SOV_Eastern_Heavy_Industry
+		available = {
+		}
+		
+		prerequisite = { focus = SOV_industrializatsya }
+		icon = GFX_RUS_Russian_Generic
+		x = -3
+		y = 1
+		relative_position_id = SOV_industrializatsya
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_First_Rostec_Factories
+		available = {
+		}
+		prerequisite = { focus = SOV_Eastern_Heavy_Industry }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Eastern_Heavy_Industry
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Allow_Private_Research_Subsiding
+		available = {
+		}
+		
+		prerequisite = { focus = SOV_First_Rostec_Factories }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_First_Rostec_Factories
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Novyi_Morskoi_Flot
+		available = {
+		}
+		prerequisite = { focus = SOV_First_Rostec_Factories }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 2
+		relative_position_id = SOV_First_Rostec_Factories
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Nationalise_Tupolev
+		available = {
+
+		}
+		prerequisite = { focus = SOV_Novyi_Morskoi_Flot }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Novyi_Morskoi_Flot
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Airport_In_Every_Metropolis
+		available = {
+		}
+		prerequisite = { focus = SOV_Nationalise_Tupolev }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Nationalise_Tupolev
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Approach_Yakovlev
+		available = {
+		}
+		prerequisite = { focus = SOV_Airport_In_Every_Metropolis }
+		icon = GFX_RUS_Russian_Generic
+		mutually_exclusive = { focus = SOV_Found_Ilyushin_Aviation_Complex }
+		x = -1
+		y = 1
+		relative_position_id = SOV_Airport_In_Every_Metropolis
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Found_Ilyushin_Aviation_Complex
+		available = {
+		}
+		prerequisite = { focus = SOV_Airport_In_Every_Metropolis }
+		icon = GFX_RUS_Russian_Generic
+		mutually_exclusive = { focus = SOV_Approach_Yakovlev }
+		x = 1
+		y = 1
+		relative_position_id = SOV_Airport_In_Every_Metropolis
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Nebo_Ne_Predel
+		available = {
+		}
+		prerequisite = { focus = SOV_Found_Ilyushin_Aviation_Complex focus = SOV_Approach_Yakovlev }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Found_Ilyushin_Aviation_Complex
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+############################
+### Car Factories Branch ###
+############################
+
+	focus = {
+		id = SOV_Car_Factories
+		available = {
+
+		}
+		prerequisite = { focus = SOV_industrializatsya }
+		icon = GFX_RUS_Russian_Generic
+		x = 3
+		y = 1
+		relative_position_id = SOV_industrializatsya
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Open_Litpunkty
+		available = {
+		}
+		prerequisite = { focus = SOV_Car_Factories }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Car_Factories
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Novyi_Vozdushnyi_Flot
+		available = {
+		}
+		prerequisite = { focus = SOV_Open_Litpunkty }
+		icon = GFX_RUS_Russian_Generic
+		x = -2
+		y = 2
+		relative_position_id = SOV_Open_Litpunkty
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Grand_Land_Selling_Plan
+		available = {
+		}
+		prerequisite = { focus = SOV_Novyi_Morskoi_Flot focus = SOV_Novyi_Vozdushnyi_Flot }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Novyi_Vozdushnyi_Flot
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Develop_Western_Industrial_Districts
+		available = {
+		}
+		prerequisite = { focus = SOV_Open_Litpunkty }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Open_Litpunkty
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Moscow_Academy_Of_War
+		available = {
+		}
+		prerequisite = { focus = SOV_Open_Litpunkty }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Open_Litpunkty
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+###########################
+### Mid-Industry Branch ###
+###########################
+
+ 	focus = {
+		id = SOV_Hire_Weapon_Designers
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SOV_Car_Factories }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 3
+		relative_position_id = SOV_Car_Factories
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Trans-Siberian_Railroad_Branching
+		prerequisite = { focus = SOV_Develop_Western_Industrial_Districts }
+		prerequisite = { focus = SOV_Moscow_Academy_Of_War }
+		prerequisite = { focus = SOV_Hire_Weapon_Designers }
+		available = {
+		}
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 2
+		relative_position_id = SOV_Develop_Western_Industrial_Districts
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Invite_Scientists_From_West
+		available = {
+		}
+		prerequisite = { focus = SOV_Trans-Siberian_Railroad_Branching }
+		icon = GFX_RUS_Russian_Generic
+		mutually_exclusive = { focus = SOV_Fund_Domestic_Universities }
+		x = -1
+		y = 1
+		relative_position_id = SOV_Trans-Siberian_Railroad_Branching
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Fund_Domestic_Universities
+		prerequisite = { focus = SOV_Trans-Siberian_Railroad_Branching }
+		icon = GFX_RUS_Russian_Generic
+		mutually_exclusive = { focus = SOV_Invite_Scientists_From_West }
+		available = {
+		}
+		x = 1
+		y = 1
+		relative_position_id = SOV_Trans-Siberian_Railroad_Branching
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Military_Contracts
+		available = {
+		}
+		prerequisite = { focus = SOV_Invite_Scientists_From_West }
+		prerequisite = { focus = SOV_Grand_Land_Selling_Plan }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Invite_Scientists_From_West
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Small_Rural_Industry_Plan
+		available = {
+		}
+		prerequisite = { focus = SOV_Invite_Scientists_From_West }
+		prerequisite = { focus = SOV_Fund_Domestic_Universities }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Invite_Scientists_From_West
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Finalizing_Industrializatsya
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SOV_Military_Contracts }
+		prerequisite = { focus = SOV_Small_Rural_Industry_Plan }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Military_Contracts
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Chudo-Oruzhiye
+		available = {
+		}
+		prerequisite = { focus = SOV_Finalizing_Industrializatsya }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Finalizing_Industrializatsya
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+###########################
+### Russian Colonialism ###
+###########################
+
+	focus = {
+		id = SOV_fateofthecolonies
+		available = {
+			has_full_control_of_state = 7
+		}
+		bypass = {
+		}
+		icon = GFX_RUS_Russian_Generic
+		x = 11
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_keeppartnershiprelations
+		available = {
+		}
+		bypass = {
+			RSE = { exists = no }
+		}
+		prerequisite = { focus = SOV_fateofthecolonies }
+		mutually_exclusive = { focus = SOV_dominateformercolonies }
+		icon = GFX_RUS_Russian_Generic
+		x = 9
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_dominateformercolonies
+		available = {
+		}
+		bypass = {
+			RSE = { exists = no }
+		}
+		prerequisite = { focus = SOV_fateofthecolonies }
+		mutually_exclusive = { focus = SOV_keeppartnershiprelations }
+		icon = GFX_RUS_Russian_Generic
+		x = 13
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_russianinfluencesphere
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SOV_dominateformercolonies focus = SOV_keeppartnershiprelations }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 1
+		relative_position_id = SOV_keeppartnershiprelations
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_takelevantbyforce
+		prerequisite = { focus = SOV_dominateformercolonies	}
+		prerequisite = { focus = SOV_russianinfluencesphere	}
+		icon = GFX_RUS_Russian_Generic
+		mutually_exclusive = {focus = SOV_offerprotectiontolevant }
+		x = 1
+		y = 1
+		relative_position_id = SOV_russianinfluencesphere
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_offerprotectiontolevant
+		prerequisite = { focus = SOV_keeppartnershiprelations }
+		prerequisite = { focus = SOV_russianinfluencesphere	}
+		mutually_exclusive = {focus = SOV_takelevantbyforce }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_russianinfluencesphere
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Offer_City-State_Freedoms_To_Contstantinople
+		prerequisite = { focus = SOV_offerprotectiontolevant focus = SOV_takelevantbyforce }
+		mutually_exclusive = {focus = SOV_Constantinople_Claim }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_offerprotectiontolevant
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Recognise_Vikarovs_Government
+		prerequisite = { focus = SOV_Constantinople_Claim focus = SOV_Offer_City-State_Freedoms_To_Contstantinople }
+		mutually_exclusive = { focus = SOV_Strike_At_Imperialistic_Traitors }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Offer_City-State_Freedoms_To_Contstantinople
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Constantinople_Claim
+		prerequisite = { focus = SOV_takelevantbyforce focus = SOV_offerprotectiontolevant }
+		mutually_exclusive = {focus = SOV_Offer_City-State_Freedoms_To_Contstantinople }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_takelevantbyforce
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+ 	focus = {
+		id = SOV_Strike_At_Imperialistic_Traitors
+		available = {
+		}
+		prerequisite = { focus = SOV_Constantinople_Claim focus = SOV_Offer_City-State_Freedoms_To_Contstantinople }
+		mutually_exclusive = { focus = SOV_Recognise_Vikarovs_Government }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Constantinople_Claim
+		cost = 30
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+
+	}
+
+	focus = {
+		id = SOV_Development_Overseas
+		available = {
+		}
+		prerequisite = { focus = SOV_Strike_At_Imperialistic_Traitors focus = SOV_Recognise_Vikarovs_Government }
+		mutually_exclusive = { focus = SOV_Country_Of_No_Borders }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Strike_At_Imperialistic_Traitors
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Subsidize_Colonial_Army_Of_Russia
+		available = {
+			has_full_control_of_state = 7
+		}
+		prerequisite = { focus = SOV_Development_Overseas }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Development_Overseas
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Cultivate_Ex-Russian_Culture
+		available = {
+		}
+		prerequisite = { focus = SOV_Subsidize_Colonial_Army_Of_Russia }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Subsidize_Colonial_Army_Of_Russia
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Integrated_Union_Administration
+		prerequisite = { focus = SOV_Cultivate_Ex-Russian_Culture focus = SOV_Union_Of_Soviets }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Cultivate_Ex-Russian_Culture
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Country_Of_No_Borders
+		available = {
+		}
+		prerequisite = { focus = SOV_Strike_At_Imperialistic_Traitors }
+		prerequisite = { focus = SOV_Compromise_With_Trotsky }
+		mutually_exclusive = { focus = SOV_Development_Overseas }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Strike_At_Imperialistic_Traitors
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Create_Russosphere_Academy_Of_Sciences
+		available = {
+		}
+		prerequisite = { focus = SOV_Country_Of_No_Borders }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Country_Of_No_Borders
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Avant-Garde_Of_Soviet_Men
+		available = {
+		}
+		prerequisite = { focus = SOV_Create_Russosphere_Academy_Of_Sciences }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Create_Russosphere_Academy_Of_Sciences
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_International_Bund_League
+		prerequisite = { focus = SOV_Avant-Garde_Of_Soviet_Men }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Avant-Garde_Of_Soviet_Men
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Russkaya_Zyemya
+		available = {
+		}
+		prerequisite = { focus = SOV_Cultivate_Ex-Russian_Culture focus = SOV_Avant-Garde_Of_Soviet_Men }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 2
+		relative_position_id = SOV_Cultivate_Ex-Russian_Culture
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Continental_Urbanisation
+		prerequisite = { focus = SOV_Small_Rural_Industry_Plan focus = SOV_Cultivate_Ex-Russian_Culture focus = SOV_Avant-Garde_Of_Soviet_Men }
+		available = {
+		}
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 2
+		relative_position_id = SOV_Cultivate_Ex-Russian_Culture
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Expand_Russian_Mining_Industry
+		prerequisite = { focus = SOV_Continental_Urbanisation }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Continental_Urbanisation
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Bureau_Of_Universal_Blueprints
+		prerequisite = { focus = SOV_Continental_Urbanisation }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Continental_Urbanisation
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+#################################################
+### MAIN BRANCHES - RUSSIAN CONSTITUTIONALISM ###
+#################################################
+
+	focus = {
+		id = SOV_leninsreforms
+		icon = GFX_RUS_Lenins_Reform
+		mutually_exclusive = { focus = SOV_enactfederalconstitution	}
+		x = 21
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SOV_enactfederalconstitution
+		icon = GFX_RUS_Enact_Constitution
+		mutually_exclusive = { focus = SOV_leninsreforms }
+		x = 27
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SOV_presidentalauthority
+		icon = GFX_RUS_Russian_Generic
+		prerequisite = { focus = SOV_leninsreforms focus = SOV_enactfederalconstitution }
+		x = 23
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_war_support = 0.1
+		}
+	}
+
+#####################################
+### Bundist Communism Alternative ###
+#####################################
+
+
+	focus = {
+		id = SOV_Legacy_Of_Potemkin_Mutiny
+		prerequisite = { focus = SOV_leninsreforms }
+		icon = GFX_RUS_Russian_Generic
+		x = -6
+		y = 1
+		relative_position_id = SOV_leninsreforms
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SOV_Ban_Referendum_Law }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Contact_French_Revolutionists
+		available = {
+		}
+		bypass = {
+			has_defensive_war_with = FRA
+		}
+		prerequisite = { focus = SOV_Legacy_Of_Potemkin_Mutiny }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Legacy_Of_Potemkin_Mutiny
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Improve_Russian_Workers_Wages
+		available = {
+		}
+		prerequisite = { focus = SOV_Contact_French_Revolutionists }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Contact_French_Revolutionists
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Russian_United_Communes_Solution
+		available = {
+		}
+		prerequisite = { focus = SOV_Improve_Russian_Workers_Wages }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Improve_Russian_Workers_Wages
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Contact_Marathan_Maletists
+		available = {
+		}
+		bypass = {
+			has_defensive_war_with = GER
+			NOT = {
+				focus_progress = {
+					focus = SOV_Contact_French_Revolutionists
+					progress > 0
+				}
+			}
+		}
+		prerequisite = { focus = SOV_Legacy_Of_Potemkin_Mutiny }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Legacy_Of_Potemkin_Mutiny
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {	
+		}
+	}
+
+	focus = {
+		id = SOV_Create_Red_Army
+		available = {
+		}
+		prerequisite = { focus = SOV_Contact_Marathan_Maletists }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Contact_Marathan_Maletists
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Invite_Lenin_To_Constitution_Works
+		available = {
+		}
+		prerequisite = { focus = SOV_Create_Red_Army }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Create_Red_Army
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {	
+		}
+	}
+
+	focus = {
+		id = SOV_Compromise_With_Trotsky
+		available = {
+		}
+		prerequisite = { focus = SOV_Contact_French_Revolutionists focus = SOV_Contact_Marathan_Maletists }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 3
+		relative_position_id = SOV_Contact_French_Revolutionists
+		cost = 10
+
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Swedish_Bundists_Coup
+		available = {
+		}
+		prerequisite = { focus = SOV_Compromise_With_Trotsky }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Compromise_With_Trotsky
+		cost = 10
+
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Between_Hammer_And_Sickle
+		available = {
+		}
+		prerequisite = { focus = SOV_Swedish_Bundists_Coup }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Swedish_Bundists_Coup
+		cost = 10
+
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Union_Of_Soviets
+		available = {
+		}
+		prerequisite = { focus = SOV_Between_Hammer_And_Sickle }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Between_Hammer_And_Sickle
+		cost = 10
+
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Soviet_Thinktank_Project
+		available = {
+		}
+		prerequisite = { focus = SOV_Union_Of_Soviets }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Union_Of_Soviets
+		cost = 10
+
+		cancel_if_invalid = no
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+######################################
+### A Very Cursed Russian Fascismo ###
+######################################
+
+
+	focus = {
+		id = SOV_Ban_Referendum_Law
+		prerequisite = { focus = SOV_leninsreforms }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_leninsreforms
+		cost = 10
+
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SOV_Legacy_Of_Potemkin_Mutiny }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Patriotic_Propaganda
+		prerequisite = { focus = SOV_Ban_Referendum_Law }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Ban_Referendum_Law
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Night_Of_Judgement
+		prerequisite = { focus = SOV_Ban_Referendum_Law }
+
+		available = {
+		}
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Ban_Referendum_Law
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Assure_Loyalty_Of_Generals
+		prerequisite = { focus = SOV_Patriotic_Propaganda focus = SOV_Night_Of_Judgement }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Patriotic_Propaganda
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Gain_Anarchists_Support
+		available = {
+
+		}
+
+		prerequisite = { focus = SOV_Patriotic_Propaganda focus = SOV_Night_Of_Judgement }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+
+		relative_position_id = SOV_Patriotic_Propaganda
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Enact_Permament_Martial_Law
+		prerequisite = { focus = SOV_Patriotic_Propaganda focus = SOV_Night_Of_Judgement }
+		icon = GFX_RUS_Russian_Generic
+		x = 3
+		y = 1
+		relative_position_id = SOV_Patriotic_Propaganda
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+#######################################################
+### Russian civil war for fasicsm  (hardcore cursed)###
+#######################################################
+	focus = {
+		id = SOV_Kill_The_Last_Eagle
+		prerequisite = { focus = SOV_Gain_Anarchists_Support }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Gain_Anarchists_Support
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Greater_Motherland_Indoctrination
+		prerequisite = { focus = SOV_Kill_The_Last_Eagle }
+		icon = GFX_RUS_Russian_Generic
+		x = -2
+		y = 1
+		relative_position_id = SOV_Kill_The_Last_Eagle
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Finish_Turkish_Hegemony
+		prerequisite = { focus = SOV_Greater_Motherland_Indoctrination }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Greater_Motherland_Indoctrination
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Unlimited_Power_Projection
+		prerequisite = { focus = SOV_Kill_The_Last_Eagle }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 1
+		relative_position_id = SOV_Kill_The_Last_Eagle
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = SOV_Integrated_Secret_Police_Of_New_Russia
+		prerequisite = { focus = SOV_Kill_The_Last_Eagle }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Kill_The_Last_Eagle
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = SOV_Rebuilding_After_Second_Motherland_War
+		prerequisite = { focus = SOV_Integrated_Secret_Police_Of_New_Russia}
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Integrated_Secret_Police_Of_New_Russia
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Serious_Partner_of_Duumvirate
+		prerequisite = { focus = SOV_Rebuilding_After_Second_Motherland_War}
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Rebuilding_After_Second_Motherland_War
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Preserve_Might_of_Russian_Empire
+		prerequisite = { focus = SOV_Finish_Turkish_Hegemony }
+		icon = GFX_RUS_Russian_Generic
+		x = -3
+		y = 1
+		relative_position_id = SOV_Rebuilding_After_Second_Motherland_War
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Decentralised_Strike_On_Entente
+		prerequisite = { focus = SOV_Preserve_Might_of_Russian_Empire focus = SOV_Between_Hammer_And_Sickle }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Preserve_Might_of_Russian_Empire
+		mutually_exclusive = { focus = SOV_Dover-Petrograd_Pact }
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Stomp_On_Austrian_Imperialism
+		prerequisite = { focus = SOV_Decentralised_Strike_On_Entente focus = SOV_Dover-Petrograd_Pact }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Dover-Petrograd_Pact
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Dover-Petrograd_Pact
+		prerequisite = { focus = SOV_Serious_Partner_of_Duumvirate}
+		mutually_exclusive = { focus = SOV_Decentralised_Strike_On_Entente}
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Serious_Partner_of_Duumvirate
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+###################################################
+### Enact Fed Constitution Sub-Branch (neutral) ###
+###################################################
+
+	focus = {
+		id = SOV_Demarcation_Of_New_Russian_Borders
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SOV_enactfederalconstitution }
+		icon = GFX_RUS_Russian_Generic
+		x = 4
+		y = 2
+		relative_position_id = SOV_leninsreforms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Delegalize_Paramilitary_Groups
+		bypass = {
+		}
+		prerequisite = { focus = SOV_Demarcation_Of_New_Russian_Borders }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Demarcation_Of_New_Russian_Borders
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Pass_Article_14
+		bypass = {
+		}
+		prerequisite = { focus = SOV_Demarcation_Of_New_Russian_Borders }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Demarcation_Of_New_Russian_Borders
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Question_of_Quing
+		prerequisite = { focus = SOV_Delegalize_Paramilitary_Groups focus = SOV_Pass_Article_14 }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Delegalize_Paramilitary_Groups
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Army_Rehabilitation
+		available = {
+		}
+		prerequisite = { focus = SOV_Question_of_Quing focus = SOV_Kill_The_Last_Eagle }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Question_of_Quing
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Allow_Astrovs_Guidance
+		prerequisite = { focus = SOV_Army_Rehabilitation }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Army_Rehabilitation
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Voyna_Is_Our_Spirit
+		available = {
+
+		}
+		prerequisite = { focus = SOV_Army_Rehabilitation }
+		mutually_exclusive = { focus = SOV_Update_Offensive_Doctrines focus = SOV_Flowers_To_Replace_Bullets }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Army_Rehabilitation
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Superpower_Arsenal_Aspirations
+		prerequisite = { focus = SOV_Allow_Astrovs_Guidance focus = SOV_Voyna_Is_Our_Spirit }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Allow_Astrovs_Guidance
+		mutually_exclusive = { focus = SOV_Project_Gamma focus = SOV_Permit_Pavlovs_Experiments }
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Project_Gamma
+		prerequisite = { focus = SOV_Allow_Astrovs_Guidance focus = SOV_Voyna_Is_Our_Spirit }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Allow_Astrovs_Guidance
+		mutually_exclusive = { focus = SOV_Permit_Pavlovs_Experiments focus = SOV_Superpower_Arsenal_Aspirations }
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Permit_Pavlovs_Experiments
+		prerequisite = { focus = SOV_Allow_Astrovs_Guidance }
+		prerequisite = { focus = SOV_Rebuilding_After_Second_Motherland_War }
+		mutually_exclusive = { focus = SOV_Project_Gamma focus = SOV_Superpower_Arsenal_Aspirations }
+		icon = GFX_RUS_Russian_Generic
+		x = -3
+		y = 1
+		relative_position_id = SOV_Allow_Astrovs_Guidance
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Fight_With_Illiteracy
+		prerequisite = { focus = SOV_enactfederalconstitution }
+		available = {
+		}
+		icon = GFX_RUS_Russian_Generic
+		x = 8
+		y = 2
+		relative_position_id = SOV_leninsreforms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Form_Generalnoye_Konsulstvo
+		prerequisite = { focus = SOV_Fight_With_Illiteracy }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Fight_With_Illiteracy
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Appease_Duumvirate
+		prerequisite = { focus = SOV_Form_Generalnoye_Konsulstvo }
+		mutually_exclusive = { focus = SOV_Trust_In_Entente_Imperial }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Form_Generalnoye_Konsulstvo
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+###########################################################
+### State Policy Route of Russia (democracy/monarchism) ###
+###########################################################
+
+	focus = {
+		id = SOV_Seventh_Cabinet_Meeting
+		icon = GFX_RUS_Seventh_Cab_Meeting
+		x = 38
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_Proclaim_Succession_of_the_Russian_state
+		prerequisite = { focus = SOV_Seventh_Cabinet_Meeting }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Seventh_Cabinet_Meeting
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = SOV_Total_Isolationism
+		prerequisite = { focus = SOV_Proclaim_Succession_of_the_Russian_state }
+		mutually_exclusive = { focus = SOV_Dominate_Global_Stock_Market focus = SOV_Continue_Policy_of_Public_Referendum }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		
+		available = {
+		}
+		
+		icon = GFX_RUS_Total_Isolation
+		cancel_if_invalid = no
+		x = -4
+		y = 1
+		relative_position_id = SOV_Proclaim_Succession_of_the_Russian_state
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Dominate_Global_Stock_Market
+		prerequisite = { focus = SOV_Proclaim_Succession_of_the_Russian_state }
+		mutually_exclusive = { focus = SOV_Total_Isolationism focus = SOV_Continue_Policy_of_Public_Referendum }
+		available = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
+		icon = GFX_RUS_Dominate_Market
+		cancel_if_invalid = no
+		x = 0
+		y = 1
+		relative_position_id = SOV_Proclaim_Succession_of_the_Russian_state
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Continue_Policy_of_Public_Referendum
+		prerequisite = { focus = SOV_Proclaim_Succession_of_the_Russian_state }
+		mutually_exclusive = { focus = SOV_Total_Isolationism focus = SOV_Dominate_Global_Stock_Market }
+		available = {
+		}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
+		icon = GFX_RUS_Russian_Generic
+		cancel_if_invalid = no
+		x = 4
+		y = 1
+		relative_position_id = SOV_Proclaim_Succession_of_the_Russian_state
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				# Public Referendum will require special conditions to fire, like date condition (date < 1939.01.01) so if none of default presidents wins, it should be preferred option
+			}
+		}
+		
+		completion_reward = {
+		}
+	}
+
+#######################
+#### ISOLATIONISMO ####
+#######################
+
+	focus = {
+		id = SOV_Act_Of_National_Deterrence
+		prerequisite = { focus = SOV_Total_Isolationism }
+		icon = GFX_RUS_Preserve_Russia
+		x = 0
+		y = 1
+		relative_position_id = SOV_Total_Isolationism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Tank_In_Every_City
+		prerequisite = { focus = SOV_Total_Isolationism }
+		icon = GFX_RUS_Russian_Generic
+		x = -3
+		y = 1
+		relative_position_id = SOV_Total_Isolationism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+######################################################################
+### Enact Fed Const/Bear Slumbers shared - Geopolitical Allignment ###
+######################################################################
+
+	focus = {
+		id = SOV_Grant_State_Privileges
+		available = {
+		}
+		prerequisite = { focus = SOV_Tank_In_Every_City }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Tank_In_Every_City
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Trust_In_Entente_Imperial
+		available = {
+		}
+		
+		prerequisite = { focus = SOV_Tank_In_Every_City }
+		mutually_exclusive - { focus = SOV_Appease_Duumvirate }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Tank_In_Every_City
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+ 
+	focus = {
+		id = SOV_French_Attache_Group
+		available = {
+			NOT = { has_war_with = FRA }
+		}
+		
+		prerequisite = { focus = SOV_Trust_In_Entente_Imperial }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Trust_In_Entente_Imperial
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Acceptance_For_The_New_Order
+		available = {
+			NOT = { has_war_with = ENG }
+		}
+
+		prerequisite = { focus = SOV_Appease_Duumvirate }
+		icon = GFX_RUS_Russian_Generic
+		x = -3
+		y = 1
+		relative_position_id = SOV_Trust_In_Entente_Imperial
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Flowers_To_Replace_Bullets
+		prerequisite = { focus = SOV_French_Attache_Group }
+		mutually_exclusive = { focus = SOV_Update_Offensive_Doctrines focus = SOV_Voyna_Is_Our_Spirit}
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_French_Attache_Group
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Proclaim_Russian_Neutrality
+		prerequisite = { focus = SOV_Flowers_To_Replace_Bullets }
+		available = {
+		}
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 3
+		relative_position_id = SOV_Flowers_To_Replace_Bullets
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Petrograd_Conference
+		available = {
+		}
+
+		prerequisite = { focus = SOV_Flowers_To_Replace_Bullets focus = SOV_Update_Offensive_Doctrines }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_French_Attache_Group
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Wardens_Of_The_World_Are_Two
+		available = {
+			NOT = { has_war_with = FRA }
+			threat > 40
+		}
+		
+		prerequisite = { focus = SOV_Petrograd_Conference }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Petrograd_Conference
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+#####################################
+### Dominate Market Intruder Mode ###
+#####################################
+
+	focus = {
+		id = SOV_Support_Of_German_Reforms
+		available = {
+			NOT = { has_war_with = GER }
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+		prerequisite = { focus = SOV_Trust_In_Entente_Imperial }
+		mutually_exclusive = { focus = SOV_French_Attache_Group }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Trust_In_Entente_Imperial
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Intervention_In_Poland
+		available = {
+			NOT = { has_war_with = POL }
+			NOT = {
+				is_in_faction_with = POL
+			}
+		}
+		prerequisite = { focus = SOV_Support_Of_German_Reforms }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Support_Of_German_Reforms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Stop_The_Red_Spectre
+		available = {
+			NOT = { has_war_with = RAJ }
+			NOT = {
+				is_in_faction_with = RAJ
+			}
+		}
+		prerequisite = { focus = SOV_Intervention_In_Poland }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Intervention_In_Poland
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Update_Offensive_Doctrines
+		available = {
+		}
+
+		prerequisite = { focus = SOV_French_Attache_Group focus = SOV_Support_Of_German_Reforms }
+		mutually_exclusive = { focus = SOV_Flowers_To_Replace_Bullets focus = SOV_Voyna_Is_Our_Spirit}
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_French_Attache_Group
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Mercenaries_Recruitment_Campaign
+		available = {
+		}
+
+		prerequisite = { focus = SOV_Update_Offensive_Doctrines }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Update_Offensive_Doctrines
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_French-Russian_Military-Co-operation
+		available = {
+			NOT = { has_war_with = FRA }
+		}
+
+		prerequisite = { focus = SOV_Mercenaries_Recruitment_Campaign }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Mercenaries_Recruitment_Campaign
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+###########################################
+### Dominate The Market - Global Branch ###
+###########################################
+
+ 	focus = {
+		id = SOV_Tverskaya_Street
+		prerequisite = { focus = SOV_Dominate_Global_Stock_Market }
+		icon = GFX_RUS_Tverskaya_Street
+		x = -2
+		y = 1
+		relative_position_id = SOV_Dominate_Global_Stock_Market
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Create_New_State_Companies
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SOV_Tverskaya_Street }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Tverskaya_Street
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Secure_Treaty_Ports
+		available = {
+		}
+		prerequisite = { focus = SOV_Tverskaya_Street }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Tverskaya_Street
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Interventionism_In_Eastern_Europe
+		available = {
+		}
+		prerequisite = { focus = SOV_Create_New_State_Companies }
+		prerequisite = { focus = SOV_Secure_Treaty_Ports }
+		icon = GFX_RUS_Russian_Generic
+		x = -2
+		y = 1
+		relative_position_id = SOV_Create_New_State_Companies
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Proclamation_Of_Common_Liberties
+		prerequisite = { focus = SOV_Interventionism_In_Eastern_Europe }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Interventionism_In_Eastern_Europe
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Russian_Customs_Union
+		available = {
+		}
+		
+		prerequisite = { focus = SOV_Proclamation_Of_Common_Liberties }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Proclamation_Of_Common_Liberties
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+############################################
+### Dominate The Market - Agressive Wars ###
+############################################
+
+ 	focus = {
+		id = SOV_Trade_Wars
+		available = {
+		}
+
+		prerequisite = { focus = SOV_Create_New_State_Companies }
+		prerequisite = { focus = SOV_Secure_Treaty_Ports }
+		mutually_exclusive = { focus = SOV_Aggressive_Influence_Politics }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Create_New_State_Companies
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Secure_Baltic_Zone
+		prerequisite = { focus = SOV_Trade_Wars }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Trade_Wars
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Rakovskys_Doctrine_Of_Wide_Protection
+		prerequisite = { focus = SOV_Interventionism_In_Eastern_Europe focus = SOV_Trade_Wars }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Interventionism_In_Eastern_Europe
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_International_Hi-Tech_Academy
+		prerequisite = { focus = SOV_Rakovskys_Doctrine_Of_Wide_Protection }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Rakovskys_Doctrine_Of_Wide_Protection
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Guide_Emerging_Democracies
+		prerequisite = { focus = SOV_Rakovskys_Doctrine_Of_Wide_Protection }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Rakovskys_Doctrine_Of_Wide_Protection
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+############################################
+### Dominate The Market - Influence Wars ###
+############################################
+
+	focus = {
+		id = SOV_Aggressive_Influence_Politics
+		available = {
+		}
+		prerequisite = { focus = SOV_Create_New_State_Companies }
+		prerequisite = { focus = SOV_Secure_Treaty_Ports }
+		mutually_exclusive = { focus = SOV_Trade_Wars }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 1
+		relative_position_id = SOV_Create_New_State_Companies
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Awake_French_Republicans
+		available = {
+		}
+
+		prerequisite = { focus = SOV_Aggressive_Influence_Politics focus = SOV_Trade_Wars focus = SOV_Interventionism_In_Eastern_Europe }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Aggressive_Influence_Politics
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Finance_Worldwide_Democratic_Movements
+		prerequisite = { focus = SOV_Aggressive_Influence_Politics }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Awake_French_Republicans
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Form_United_Nations
+		prerequisite = { focus = SOV_Finance_Worldwide_Democratic_Movements }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Finance_Worldwide_Democratic_Movements
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Normalise_Stock_Rates
+		available = {
+		}
+		prerequisite = { focus = SOV_Secure_Baltic_Zone focus = SOV_Finance_Worldwide_Democratic_Movements }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Secure_Baltic_Zone
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+##########################################
+### Dominate The Market - Local Branch ###
+##########################################
+
+	focus = {
+		id = SOV_Motherland_Needs
+		available = {
+		}
+		prerequisite = { focus = SOV_Dominate_Global_Stock_Market }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 1
+		relative_position_id = SOV_Dominate_Global_Stock_Market
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Novgorodian_Academy_Of_Law
+		prerequisite = { focus = SOV_Motherland_Needs }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Motherland_Needs
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Food_For_All
+		prerequisite = { focus = SOV_Motherland_Needs focus = SOV_Push_Semya_Laws }
+		available = {
+		}
+
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Motherland_Needs
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_East_European_Manpower
+		available = {
+		}
+		prerequisite = { focus = SOV_Novgorodian_Academy_Of_Law }
+		prerequisite = { focus = SOV_Food_For_All }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Novgorodian_Academy_Of_Law
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Acceptance_For_Asian_Landlords
+		prerequisite = { focus = SOV_East_European_Manpower }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_East_European_Manpower
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Russian_Model_Of_Stratification
+		prerequisite = { focus = SOV_East_European_Manpower }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_East_European_Manpower
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = SOV_Free_Radio
+		prerequisite = { focus = SOV_Acceptance_For_Asian_Landlords focus = SOV_Russian_Model_Of_Stratification }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Acceptance_For_Asian_Landlords
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = SOV_Remove_Corrupt_Ministers
+		available = {
+		}
+		mutually_exclusive = { focus = SOV_Way_To_Oligarchy }
+		prerequisite = { focus = SOV_Free_Radio }
+		prerequisite = { focus = SOV_Parliamental_Okhrana }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Free_Radio
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Way_To_Oligarchy
+		available = {
+			
+		}
+		prerequisite = { focus = SOV_Acceptance_For_Asian_Landlords }
+		mutually_exclusive = { focus = SOV_Remove_Corrupt_Ministers }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Acceptance_For_Asian_Landlords
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Shadow_Council_Of_Duma
+		available = {
+		}
+		cancel_if_invalid = yes
+		prerequisite = { focus = SOV_Way_To_Oligarchy }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Way_To_Oligarchy
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Public_Duma_Meetings
+		available = {
+		}
+		cancel_if_invalid = yes
+		prerequisite = { focus = SOV_Remove_Corrupt_Ministers }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Remove_Corrupt_Ministers
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+###################################
+### Status Quo Policies Gateway ###
+###################################
+
+	focus = {
+		id = SOV_Push_Semya_Laws
+		prerequisite = { focus = SOV_Continue_Policy_of_Public_Referendum }
+		icon = GFX_RUS_Russian_Generic
+		x = 3
+		y = 1
+		relative_position_id = SOV_Continue_Policy_of_Public_Referendum
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+##################################################
+### Status Quo Policies - Monarchy Alternative ###
+##################################################
+
+
+	focus = {
+		id = SOV_Revolution_Forgives
+		available = {
+		}
+		prerequisite = { focus = SOV_Motherland_Needs focus = SOV_Push_Semya_Laws }
+		mutually_exclusive = { focus = SOV_Legacy_of_Kniazdoms }
+		icon = GFX_RUS_Russian_Generic
+		x = 3
+		y = 1
+		relative_position_id = SOV_Motherland_Needs
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Reform_Against_Corruption
+		prerequisite = { focus = SOV_Food_For_All }
+		prerequisite = { focus = SOV_Revolution_Forgives }
+		mutually_exclusive = { focus = SOV_The_Unthinkable_Reform }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Food_For_All
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Parliamental_Okhrana
+		available = {
+		}
+		prerequisite = { focus = SOV_Reform_Against_Corruption }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 2
+		relative_position_id = SOV_Reform_Against_Corruption
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_The_Unthinkable_Reform
+		prerequisite = { focus = SOV_Revolution_Forgives }
+		mutually_exclusive = { focus = SOV_Reform_Against_Corruption }
+		available = {
+		}
+
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Revolution_Forgives
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Amendment_Of_Revolutionary_Doctrine
+		available = {
+		}
+		prerequisite = { focus = SOV_Reform_Against_Corruption focus = SOV_The_Unthinkable_Reform }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Reform_Against_Corruption
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Honorary_Noble_Generals
+		prerequisite = { focus = SOV_The_Unthinkable_Reform }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_The_Unthinkable_Reform
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Monarchy_With_A_Human_Face
+		available = {
+			has_war = yes
+			NOT = { has_war_with = USA }
+		}
+		prerequisite = { focus = SOV_Amendment_Of_Revolutionary_Doctrine }
+		prerequisite = { focus = SOV_Honorary_Noble_Generals }
+		icon = GFX_RUS_Royal_Russia
+		x = 1
+		y = 1
+		relative_position_id = SOV_Amendment_Of_Revolutionary_Doctrine
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Reunify_Great_Russia
+		available = {
+		}
+		prerequisite = { focus = SOV_Monarchy_With_A_Human_Face }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Parliamental_Okhrana
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Revolution_Forgives_Noble_Hearts
+		available = {
+		}
+		prerequisite = { focus = SOV_Reunify_Great_Russia }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_Reunify_Great_Russia
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_World_Of_United_Kings
+		available = {
+		}
+		prerequisite = { focus = SOV_Monarchy_With_A_Human_Face }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 2
+		relative_position_id = SOV_Monarchy_With_A_Human_Face
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+###################################################
+### Status Quo Policies - Democracy Alternative ###
+###################################################
+
+	focus = {
+		id = SOV_Legacy_of_Kniazdoms
+		available = {
+		}
+		prerequisite = { focus = SOV_Push_Semya_Laws }
+		mutually_exclusive = { focus = SOV_Revolution_Forgives }
+		icon = GFX_RUS_Russian_Generic
+		x = 2
+		y = 1
+		relative_position_id = SOV_Push_Semya_Laws
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Modern_Sudiebnik
+		available = {
+		}
+
+		prerequisite = { focus = SOV_Legacy_of_Kniazdoms }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Legacy_of_Kniazdoms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Nation_Of_Hundred_States
+		prerequisite = { focus = SOV_Legacy_of_Kniazdoms }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Legacy_of_Kniazdoms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_United_Bastion_Of_Democracy
+		prerequisite = { focus = SOV_Modern_Sudiebnik }
+		prerequisite = { focus = SOV_Nation_Of_Hundred_States }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Modern_Sudiebnik
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Public_Research_Initiative
+		available = {
+		}
+		prerequisite = { focus = SOV_United_Bastion_Of_Democracy }
+		icon = GFX_RUS_Russian_Generic
+		x = 0
+		y = 1
+		relative_position_id = SOV_United_Bastion_Of_Democracy
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Early_Ecology_Efforts
+		prerequisite = { focus = SOV_Public_Research_Initiative }
+		icon = GFX_RUS_Russian_Generic
+		x = -1
+		y = 1
+		relative_position_id = SOV_Public_Research_Initiative
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_Free_Public_Welfare
+		available = {
+		}
+		prerequisite = { focus = SOV_Public_Research_Initiative }
+		icon = GFX_RUS_Russian_Generic
+		x = 1
+		y = 1
+		relative_position_id = SOV_Public_Research_Initiative
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+}

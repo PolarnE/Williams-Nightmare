@@ -18,8 +18,14 @@
  ENG_dyer_chosen_successor:0 "Dyer chosen as the successor."
  ENG_dyers_britain_tooltip:0 "§RDyer will begin his reign.§!"
  ENG_tooltip_spirit_removed_on_civil_war:0 "§RYou will lose the spirit upon the civil war starting!§!"
+ ENG_tooltip_lower_corruption_decision_unlock:0 "Unlocks decisions to §Ylower corruption,§! however §Ryou won't be able to do this upon the civil war starting!§!"
  ENG_roads_to_london_tt:0 "Add maximum §YInfrastructure§! in §YGreater London Area, East Anglia, East Midlands§! and §YYorkshire.§!"
  ENG_second_english_civil_war_fired:0 "Second English Civil War has started."
+ flag_commonwealth_fighting_corruption:0 "Has prioritised fighting corruption."
+ ENG_fight_corruption_government_census_flag:0 "Has completed decision §YGovernment Census.§!"
+ ENG_fight_corruption_scan_the_military_flag:0 "Has completed decision §YInspect the Military.§!"
+ ENG_fight_corruption_reinforce_bureaucracy_flag:0 "Has completed decision §YReinforce Bureaucracy.§!"
+ ENG_fight_corruption_investigate_economy_flag:0 "Has completed decision §YInvestigate Economy.§!"
  ########################parties
  ENG_democratic_party:1 "Pan-Germanicist League" #Pan-Germanicism League
  ENG_neutrality_party:1 "Royalists" #Loyalists
@@ -34,11 +40,16 @@
  ENG_second_civil_war_fires:0 "Royalist Coup"
  ENG_lead_up_to_civil_war_1:0 "Anti-Government Protests"
  ##corruption
- ENG_fight_corruption:0 "Fight Corruption"
+ ENG_fight_corruption:0 "Government Corruption"
  ENG_increase_coin_value:0 "Curb Inflation"
  ENG_decrease_coin_value:0 "Embezzle Funds to the Pan-Germanicists"
  ENG_bail_pan_germanicists_out:0 "Bail out the Pan-Germanicists"
  ENG_pan_germanicists_great_depression:0 "Pan Germanicists - Debase Currency"
+ ENG_fight_corruption_1_government_census:0 "Government Census"
+ ENG_fight_corruption_1_scan_the_military:0 "Inspect the Military"
+ ENG_fight_corruption_1_reinforce_bureaucracy:0 "Reinforce Bureaucracy"
+ ENG_fight_corruption_1_investigate_economy:0 "Investigate Economy"
+ ENG_fight_corruption_1_increase_government_efficiency:0 "Anti-Corruption Sweep"
  ########################national spirits
  ENG_english_militarism:0 "English Militarism"
  ENG_english_militarism_desc:0 "Ever since the early days of the old Empire the English have had a proud military culture that rivals even France or what the Prussians once had. Greatly encouraged by Cromwell and his New Model Army the English people have retained their heavily militarised culture despite the huge defeats we've suffered at the hands of our greatest enemy.\nLike all proud English people, we shall continue fighting and fighting until the day that our banner is raised over Paris and we can finally say that we've triumphed against our most steadfast foe."

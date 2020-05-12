@@ -694,6 +694,11 @@ FFR = {
 	color_ui = rgb { 26 53 107 }
 }
 
+FR2 = {
+	color = rgb { 26 53 107 }
+	color_ui = rgb { 26 53 107 }
+}
+
 JER = {
     color = rgb { 204 0 0 }
 	color_ui = rgb { 163 17 31 }
@@ -767,4 +772,9 @@ JBL = {
 IAA = {
 	color = rgb { 0 148 255 }
 	color_ui = rgb { 4 63 141 }
+}
+
+BRG = {
+	color = rgb { 112 12 36 }
+	color_ui = rgb { 138 155 116 }
 }
