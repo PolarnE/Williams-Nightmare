@@ -1,5 +1,5 @@
 spriteTypes = {	
-
+### Ideas
 	SpriteType = { 
 		name = "GFX_idea_SOV_Integrity_1"
 		texturefile = "gfx/interface/ideas/idea_SOV_Integrity_1.dds"
@@ -44,22 +44,11 @@ spriteTypes = {
 		name = "GFX_idea_SOV_Lack_Of_Innovation"
 		texturefile = "gfx/interface/ideas/idea_SOV_Lack_Of_Innovation.dds"
 	}
+	
+### Goals
 	SpriteType = { 
 		name = "GFX_RUS_Dominate_Market"
 		texturefile = "gfx/interface/goals/RUS_Dominate_Market.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/RUS_Dominate_Market.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
 	}
 	SpriteType = { 
 		name = "GFX_RUS_Enact_Constitution"
@@ -104,5 +93,90 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_RUS_Tverskaya_Street"
 		texturefile = "gfx/interface/goals/RUS_Tverskaya_Street.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_RUS_Aggressive_Influence_Politics"
+		texturefile = "gfx/interface/goals/RUS_Aggressive_Influence_Politics.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Awake_French_Republicans"
+		texturefile = "gfx/interface/goals/RUS_Awake_French_Republicans.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Ban_Referendum_Law"
+		texturefile = "gfx/interface/goals/RUS_Ban_Referendum_Law.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Car_Factories"
+		texturefile = "gfx/interface/goals/RUS_Car_Factories.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Chudo-Oruzhiye"
+		texturefile = "gfx/interface/goals/RUS_Chudo-Oruzhiye.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Fight_With_Illiteracy"
+		texturefile = "gfx/interface/goals/RUS_Fight_With_Illiteracy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Form_United_Nations"
+		texturefile = "gfx/interface/goals/RUS_Form_United_Nations.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Grant_State_Priviledges"
+		texturefile = "gfx/interface/goals/RUS_Grant_State_Priviledges.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Invite_Lenin_To_Constitution_Works"
+		texturefile = "gfx/interface/goals/RUS_Invite_Lenin_To_Constitution_Works.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Legacy_Of_Potemkin_Mutiny"
+		texturefile = "gfx/interface/goals/RUS_Legacy_Of_Potemkin_Mutiny.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Motherland_Needs"
+		texturefile = "gfx/interface/goals/RUS_Motherland_Needs.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Permit_Pavlovs_Experiment"
+		texturefile = "gfx/interface/goals/RUS_Permit_Pavlovs_Experiment.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Rakovskys_Doctrine_Of_Wide_Protection"
+		texturefile = "gfx/interface/goals/RUS_Rakovskys_Doctrine_Of_Wide_Protection.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Reunify_Great_Russia"
+		texturefile = "gfx/interface/goals/RUS_Reunify_Great_Russia.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Seventh_Cabinet_Meeting"
+		texturefile = "gfx/interface/goals/RUS_Seventh_Cabinet_Meeting.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Swedish_Defense_Line"
+		texturefile = "gfx/interface/goals/RUS_Swedish_Defense_Line.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_The_Unthinkable_Reform"
+		texturefile = "gfx/interface/goals/RUS_The_Unthinkable_Reform.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Trade_Wars"
+		texturefile = "gfx/interface/goals/RUS_Trade_Wars.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_Way_To_Oligarchy"
+		texturefile = "gfx/interface/goals/RUS_Way_To_Oligarchy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_One_Year_Plan"
+		texturefile = "gfx/interface/goals/RUS_One_Year_Plan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_RUS_fateofthecolonies"
+		texturefile = "gfx/interface/goals/RUS_fateofthecolonies.dds"
 	}
 }

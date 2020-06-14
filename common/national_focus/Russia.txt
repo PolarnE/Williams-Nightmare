@@ -46,7 +46,7 @@ focus_tree = {
 		bypass = {
 		}
 		
-		icon = goal_generic_production2
+		icon = GFX_RUS_One_Year_Plan
 		x = 0
 		y = 1
 		cost = 10
@@ -86,7 +86,7 @@ focus_tree = {
 		bypass = {
 		}
 		
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construction
 		x = 0
 		y = 1
 		cost = 10
@@ -108,7 +108,7 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = SOV_industrializatsya }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -3
 		y = 1
 		relative_position_id = SOV_industrializatsya
@@ -125,7 +125,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Eastern_Heavy_Industry }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_industry_1
 		x = 0
 		y = 1
 		relative_position_id = SOV_Eastern_Heavy_Industry
@@ -143,7 +143,7 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = SOV_First_Rostec_Factories }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_research
 		x = 0
 		y = 1
 		relative_position_id = SOV_First_Rostec_Factories
@@ -161,7 +161,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_First_Rostec_Factories }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 2
 		y = 2
 		relative_position_id = SOV_First_Rostec_Factories
@@ -180,7 +180,7 @@ focus_tree = {
 
 		}
 		prerequisite = { focus = SOV_Novyi_Morskoi_Flot }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_air_bomber
 		x = -1
 		y = 1
 		relative_position_id = SOV_Novyi_Morskoi_Flot
@@ -196,7 +196,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Nationalise_Tupolev }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_build_airforce
 		x = 0
 		y = 1
 		relative_position_id = SOV_Nationalise_Tupolev
@@ -213,7 +213,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Airport_In_Every_Metropolis }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_air_fighter
 		mutually_exclusive = { focus = SOV_Found_Ilyushin_Aviation_Complex }
 		x = -1
 		y = 1
@@ -230,7 +230,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Airport_In_Every_Metropolis }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_air_fighter
 		mutually_exclusive = { focus = SOV_Approach_Yakovlev }
 		x = 1
 		y = 1
@@ -247,7 +247,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Found_Ilyushin_Aviation_Complex focus = SOV_Approach_Yakovlev }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_rocketry
 		x = -1
 		y = 1
 		relative_position_id = SOV_Found_Ilyushin_Aviation_Complex
@@ -269,7 +269,7 @@ focus_tree = {
 
 		}
 		prerequisite = { focus = SOV_industrializatsya }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Car_Factories
 		x = 3
 		y = 1
 		relative_position_id = SOV_industrializatsya
@@ -286,7 +286,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Car_Factories }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_research
 		x = 0
 		y = 1
 		relative_position_id = SOV_Car_Factories
@@ -303,7 +303,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Open_Litpunkty }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_air_production
 		x = -2
 		y = 2
 		relative_position_id = SOV_Open_Litpunkty
@@ -320,7 +320,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Novyi_Morskoi_Flot focus = SOV_Novyi_Vozdushnyi_Flot }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_civilian
 		x = -1
 		y = 1
 		relative_position_id = SOV_Novyi_Vozdushnyi_Flot
@@ -337,7 +337,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Open_Litpunkty }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
 		y = 1
 		relative_position_id = SOV_Open_Litpunkty
@@ -355,7 +355,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Open_Litpunkty }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_army_doctrines
 		x = 1
 		y = 1
 		relative_position_id = SOV_Open_Litpunkty
@@ -378,7 +378,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SOV_Car_Factories }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_army_artillery2
 		x = 2
 		y = 3
 		relative_position_id = SOV_Car_Factories
@@ -398,7 +398,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_Hire_Weapon_Designers }
 		available = {
 		}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 2
 		relative_position_id = SOV_Develop_Western_Industrial_Districts
@@ -415,7 +415,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Trans-Siberian_Railroad_Branching }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_scientific_exchange
 		mutually_exclusive = { focus = SOV_Fund_Domestic_Universities }
 		x = -1
 		y = 1
@@ -432,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Fund_Domestic_Universities
 		prerequisite = { focus = SOV_Trans-Siberian_Railroad_Branching }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_research2
 		mutually_exclusive = { focus = SOV_Invite_Scientists_From_West }
 		available = {
 		}
@@ -453,7 +453,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Invite_Scientists_From_West }
 		prerequisite = { focus = SOV_Grand_Land_Selling_Plan }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_build_tank
 		x = -1
 		y = 1
 		relative_position_id = SOV_Invite_Scientists_From_West
@@ -472,7 +472,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Invite_Scientists_From_West }
 		prerequisite = { focus = SOV_Fund_Domestic_Universities }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 1
 		relative_position_id = SOV_Invite_Scientists_From_West
@@ -492,7 +492,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Military_Contracts }
 		prerequisite = { focus = SOV_Small_Rural_Industry_Plan }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_production2
 		x = 1
 		y = 1
 		relative_position_id = SOV_Military_Contracts
@@ -510,7 +510,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Finalizing_Industrializatsya }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Chudo-Oruzhiye
 		x = 0
 		y = 1
 		relative_position_id = SOV_Finalizing_Industrializatsya
@@ -533,7 +533,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_fateofthecolonies
 		x = 11
 		y = 0
 		cost = 10
@@ -553,7 +553,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_fateofthecolonies }
 		mutually_exclusive = { focus = SOV_dominateformercolonies }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_improve_relations
 		x = 9
 		y = 1
 		cost = 10
@@ -573,7 +573,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_fateofthecolonies }
 		mutually_exclusive = { focus = SOV_keeppartnershiprelations }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 13
 		y = 1
 		cost = 10
@@ -591,7 +591,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SOV_dominateformercolonies focus = SOV_keeppartnershiprelations }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_jap_strike_south
 		x = 2
 		y = 1
 		relative_position_id = SOV_keeppartnershiprelations
@@ -607,7 +607,7 @@ focus_tree = {
 		id = SOV_takelevantbyforce
 		prerequisite = { focus = SOV_dominateformercolonies	}
 		prerequisite = { focus = SOV_russianinfluencesphere	}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_political_pressure
 		mutually_exclusive = {focus = SOV_offerprotectiontolevant }
 		x = 1
 		y = 1
@@ -624,7 +624,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_keeppartnershiprelations }
 		prerequisite = { focus = SOV_russianinfluencesphere	}
 		mutually_exclusive = {focus = SOV_takelevantbyforce }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_defence
 		x = -1
 		y = 1
 		relative_position_id = SOV_russianinfluencesphere
@@ -639,7 +639,7 @@ focus_tree = {
 		id = SOV_Offer_City-State_Freedoms_To_Contstantinople
 		prerequisite = { focus = SOV_offerprotectiontolevant focus = SOV_takelevantbyforce }
 		mutually_exclusive = {focus = SOV_Constantinople_Claim }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_tripartite_pact
 		x = 0
 		y = 1
 		relative_position_id = SOV_offerprotectiontolevant
@@ -654,7 +654,7 @@ focus_tree = {
 		id = SOV_Recognise_Vikarovs_Government
 		prerequisite = { focus = SOV_Constantinople_Claim focus = SOV_Offer_City-State_Freedoms_To_Contstantinople }
 		mutually_exclusive = { focus = SOV_Strike_At_Imperialistic_Traitors }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_major_alliance
 		x = 0
 		y = 1
 		relative_position_id = SOV_Offer_City-State_Freedoms_To_Contstantinople
@@ -669,7 +669,7 @@ focus_tree = {
 		id = SOV_Constantinople_Claim
 		prerequisite = { focus = SOV_takelevantbyforce focus = SOV_offerprotectiontolevant }
 		mutually_exclusive = {focus = SOV_Offer_City-State_Freedoms_To_Contstantinople }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = SOV_takelevantbyforce
@@ -687,7 +687,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Constantinople_Claim focus = SOV_Offer_City-State_Freedoms_To_Contstantinople }
 		mutually_exclusive = { focus = SOV_Recognise_Vikarovs_Government }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_major_war
 		x = 0
 		y = 1
 		relative_position_id = SOV_Constantinople_Claim
@@ -706,7 +706,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Strike_At_Imperialistic_Traitors focus = SOV_Recognise_Vikarovs_Government }
 		mutually_exclusive = { focus = SOV_Country_Of_No_Borders }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construction2
 		x = -1
 		y = 1
 		relative_position_id = SOV_Strike_At_Imperialistic_Traitors
@@ -721,10 +721,10 @@ focus_tree = {
 	focus = {
 		id = SOV_Subsidize_Colonial_Army_Of_Russia
 		available = {
-			has_full_control_of_state = 7
+			has_full_control_of_state = 1
 		}
 		prerequisite = { focus = SOV_Development_Overseas }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_military_sphere
 		x = 0
 		y = 1
 		relative_position_id = SOV_Development_Overseas
@@ -741,7 +741,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Subsidize_Colonial_Army_Of_Russia }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 1
 		relative_position_id = SOV_Subsidize_Colonial_Army_Of_Russia
@@ -756,7 +756,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Integrated_Union_Administration
 		prerequisite = { focus = SOV_Cultivate_Ex-Russian_Culture focus = SOV_Union_Of_Soviets }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
 		relative_position_id = SOV_Cultivate_Ex-Russian_Culture
@@ -792,7 +792,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Country_Of_No_Borders }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_research
 		x = 0
 		y = 1
 		relative_position_id = SOV_Country_Of_No_Borders
@@ -809,7 +809,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Create_Russosphere_Academy_Of_Sciences }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_war_with_comintern
 		x = 0
 		y = 1
 		relative_position_id = SOV_Create_Russosphere_Academy_Of_Sciences
@@ -824,7 +824,7 @@ focus_tree = {
 	focus = {
 		id = SOV_International_Bund_League
 		prerequisite = { focus = SOV_Avant-Garde_Of_Soviet_Men }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_ger_great_red_menace
 		x = 0
 		y = 1
 		relative_position_id = SOV_Avant-Garde_Of_Soviet_Men
@@ -841,7 +841,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Cultivate_Ex-Russian_Culture focus = SOV_Avant-Garde_Of_Soviet_Men }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 1
 		y = 2
 		relative_position_id = SOV_Cultivate_Ex-Russian_Culture
@@ -858,7 +858,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_Small_Rural_Industry_Plan focus = SOV_Cultivate_Ex-Russian_Culture focus = SOV_Avant-Garde_Of_Soviet_Men }
 		available = {
 		}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_industry_2
 		x = -1
 		y = 2
 		relative_position_id = SOV_Cultivate_Ex-Russian_Culture
@@ -873,7 +873,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Expand_Russian_Mining_Industry
 		prerequisite = { focus = SOV_Continental_Urbanisation }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_steel
 		x = -1
 		y = 1
 		relative_position_id = SOV_Continental_Urbanisation
@@ -888,7 +888,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Bureau_Of_Universal_Blueprints
 		prerequisite = { focus = SOV_Continental_Urbanisation }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_self_management
 		x = 1
 		y = 1
 		relative_position_id = SOV_Continental_Urbanisation
@@ -923,7 +923,7 @@ focus_tree = {
 		id = SOV_enactfederalconstitution
 		icon = GFX_RUS_Enact_Constitution
 		mutually_exclusive = { focus = SOV_leninsreforms }
-		x = 27
+		x = 26
 		y = 0
 		cost = 10
 
@@ -936,7 +936,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_presidentalauthority
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = SOV_leninsreforms focus = SOV_enactfederalconstitution }
 		x = 23
 		y = 1
@@ -958,7 +958,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Legacy_Of_Potemkin_Mutiny
 		prerequisite = { focus = SOV_leninsreforms }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Legacy_Of_Potemkin_Mutiny
 		x = -6
 		y = 1
 		relative_position_id = SOV_leninsreforms
@@ -977,7 +977,7 @@ focus_tree = {
 			has_defensive_war_with = FRA
 		}
 		prerequisite = { focus = SOV_Legacy_Of_Potemkin_Mutiny }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_chi_reach_out_to_france
 		x = -1
 		y = 1
 		relative_position_id = SOV_Legacy_Of_Potemkin_Mutiny
@@ -994,7 +994,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Contact_French_Revolutionists }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 0
 		y = 1
 		relative_position_id = SOV_Contact_French_Revolutionists
@@ -1011,7 +1011,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Improve_Russian_Workers_Wages }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 1
 		relative_position_id = SOV_Improve_Russian_Workers_Wages
@@ -1037,7 +1037,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SOV_Legacy_Of_Potemkin_Mutiny }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 1
 		y = 1
 		relative_position_id = SOV_Legacy_Of_Potemkin_Mutiny
@@ -1054,7 +1054,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Contact_Marathan_Maletists }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_join_comintern
 		x = 0
 		y = 1
 		relative_position_id = SOV_Contact_Marathan_Maletists
@@ -1071,7 +1071,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Create_Red_Army }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Invite_Lenin_To_Constitution_Works
 		x = 0
 		y = 1
 		relative_position_id = SOV_Create_Red_Army
@@ -1088,7 +1088,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Contact_French_Revolutionists focus = SOV_Contact_Marathan_Maletists }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_fra_loyalty_trotzky
 		x = 1
 		y = 3
 		relative_position_id = SOV_Contact_French_Revolutionists
@@ -1106,7 +1106,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Compromise_With_Trotsky }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_soviet_politics
 		x = 0
 		y = 1
 		relative_position_id = SOV_Compromise_With_Trotsky
@@ -1124,7 +1124,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Swedish_Bundists_Coup }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_spr_class_war
 		x = 0
 		y = 1
 		relative_position_id = SOV_Swedish_Bundists_Coup
@@ -1142,7 +1142,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Between_Hammer_And_Sickle }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_prc_agrarian_socialism
 		x = 0
 		y = 1
 		relative_position_id = SOV_Between_Hammer_And_Sickle
@@ -1160,7 +1160,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Union_Of_Soviets }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 0
 		y = 1
 		relative_position_id = SOV_Union_Of_Soviets
@@ -1182,7 +1182,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Ban_Referendum_Law
 		prerequisite = { focus = SOV_leninsreforms }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Ban_Referendum_Law
 		x = -1
 		y = 1
 		relative_position_id = SOV_leninsreforms
@@ -1197,7 +1197,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Patriotic_Propaganda
 		prerequisite = { focus = SOV_Ban_Referendum_Law }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_propaganda
 		x = -1
 		y = 1
 		relative_position_id = SOV_Ban_Referendum_Law
@@ -1215,7 +1215,7 @@ focus_tree = {
 
 		available = {
 		}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_secret_weapon
 		x = 1
 		y = 1
 		relative_position_id = SOV_Ban_Referendum_Law
@@ -1230,7 +1230,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Assure_Loyalty_Of_Generals
 		prerequisite = { focus = SOV_Patriotic_Propaganda focus = SOV_Night_Of_Judgement }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_military_mission
 		x = -1
 		y = 1
 		relative_position_id = SOV_Patriotic_Propaganda
@@ -1249,7 +1249,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = SOV_Patriotic_Propaganda focus = SOV_Night_Of_Judgement }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_spr_crush_the_revolution
 		x = 1
 		y = 1
 
@@ -1265,7 +1265,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Enact_Permament_Martial_Law
 		prerequisite = { focus = SOV_Patriotic_Propaganda focus = SOV_Night_Of_Judgement }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_manpower
 		x = 3
 		y = 1
 		relative_position_id = SOV_Patriotic_Propaganda
@@ -1283,7 +1283,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Kill_The_Last_Eagle
 		prerequisite = { focus = SOV_Gain_Anarchists_Support }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		x = 0
 		y = 1
 		relative_position_id = SOV_Gain_Anarchists_Support
@@ -1297,7 +1297,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Greater_Motherland_Indoctrination
 		prerequisite = { focus = SOV_Kill_The_Last_Eagle }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_propaganda
 		x = -2
 		y = 1
 		relative_position_id = SOV_Kill_The_Last_Eagle
@@ -1311,7 +1311,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Finish_Turkish_Hegemony
 		prerequisite = { focus = SOV_Greater_Motherland_Indoctrination }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
 		relative_position_id = SOV_Greater_Motherland_Indoctrination
@@ -1326,7 +1326,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Unlimited_Power_Projection
 		prerequisite = { focus = SOV_Kill_The_Last_Eagle }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_CAS
 		x = 2
 		y = 1
 		relative_position_id = SOV_Kill_The_Last_Eagle
@@ -1342,7 +1342,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Integrated_Secret_Police_Of_New_Russia
 		prerequisite = { focus = SOV_Kill_The_Last_Eagle }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_support_the_left_right
 		x = 0
 		y = 1
 		relative_position_id = SOV_Kill_The_Last_Eagle
@@ -1358,7 +1358,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Rebuilding_After_Second_Motherland_War
 		prerequisite = { focus = SOV_Integrated_Secret_Police_Of_New_Russia}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_construct_civilian
 		x = 0
 		y = 1
 		relative_position_id = SOV_Integrated_Secret_Police_Of_New_Russia
@@ -1372,7 +1372,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Serious_Partner_of_Duumvirate
 		prerequisite = { focus = SOV_Rebuilding_After_Second_Motherland_War}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_dangerous_deal
 		x = -1
 		y = 1
 		relative_position_id = SOV_Rebuilding_After_Second_Motherland_War
@@ -1386,7 +1386,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Preserve_Might_of_Russian_Empire
 		prerequisite = { focus = SOV_Finish_Turkish_Hegemony }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_attack_allies
 		x = -3
 		y = 1
 		relative_position_id = SOV_Rebuilding_After_Second_Motherland_War
@@ -1400,7 +1400,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Decentralised_Strike_On_Entente
 		prerequisite = { focus = SOV_Preserve_Might_of_Russian_Empire focus = SOV_Between_Hammer_And_Sickle }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_major_war
 		x = 0
 		y = 1
 		relative_position_id = SOV_Preserve_Might_of_Russian_Empire
@@ -1415,7 +1415,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Stomp_On_Austrian_Imperialism
 		prerequisite = { focus = SOV_Decentralised_Strike_On_Entente focus = SOV_Dover-Petrograd_Pact }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_major_war
 		x = -1
 		y = 1
 		relative_position_id = SOV_Dover-Petrograd_Pact
@@ -1430,7 +1430,7 @@ focus_tree = {
 		id = SOV_Dover-Petrograd_Pact
 		prerequisite = { focus = SOV_Serious_Partner_of_Duumvirate}
 		mutually_exclusive = { focus = SOV_Decentralised_Strike_On_Entente}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = SOV_Serious_Partner_of_Duumvirate
@@ -1453,7 +1453,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SOV_enactfederalconstitution }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_fortify_city
 		x = 4
 		y = 2
 		relative_position_id = SOV_leninsreforms
@@ -1470,7 +1470,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SOV_Demarcation_Of_New_Russian_Borders }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		x = -1
 		y = 1
 		relative_position_id = SOV_Demarcation_Of_New_Russian_Borders
@@ -1487,7 +1487,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SOV_Demarcation_Of_New_Russian_Borders }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 1
 		y = 1
 		relative_position_id = SOV_Demarcation_Of_New_Russian_Borders
@@ -1502,7 +1502,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Question_of_Quing
 		prerequisite = { focus = SOV_Delegalize_Paramilitary_Groups focus = SOV_Pass_Article_14 }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_position_armies
 		x = 1
 		y = 1
 		relative_position_id = SOV_Delegalize_Paramilitary_Groups
@@ -1519,7 +1519,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Question_of_Quing focus = SOV_Kill_The_Last_Eagle }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_rhineland
 		x = 0
 		y = 1
 		relative_position_id = SOV_Question_of_Quing
@@ -1534,7 +1534,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Allow_Astrovs_Guidance
 		prerequisite = { focus = SOV_Army_Rehabilitation }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_trade
 		x = -1
 		y = 1
 		relative_position_id = SOV_Army_Rehabilitation
@@ -1553,7 +1553,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Army_Rehabilitation }
 		mutually_exclusive = { focus = SOV_Update_Offensive_Doctrines focus = SOV_Flowers_To_Replace_Bullets }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_small_arms
 		x = 1
 		y = 1
 		relative_position_id = SOV_Army_Rehabilitation
@@ -1568,7 +1568,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Superpower_Arsenal_Aspirations
 		prerequisite = { focus = SOV_Allow_Astrovs_Guidance focus = SOV_Voyna_Is_Our_Spirit }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_poland_goal
 		x = 1
 		y = 1
 		relative_position_id = SOV_Allow_Astrovs_Guidance
@@ -1584,7 +1584,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Project_Gamma
 		prerequisite = { focus = SOV_Allow_Astrovs_Guidance focus = SOV_Voyna_Is_Our_Spirit }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_wonderweapons
 		x = -1
 		y = 1
 		relative_position_id = SOV_Allow_Astrovs_Guidance
@@ -1602,7 +1602,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_Allow_Astrovs_Guidance }
 		prerequisite = { focus = SOV_Rebuilding_After_Second_Motherland_War }
 		mutually_exclusive = { focus = SOV_Project_Gamma focus = SOV_Superpower_Arsenal_Aspirations }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Permit_Pavlovs_Experiment
 		x = -3
 		y = 1
 		relative_position_id = SOV_Allow_Astrovs_Guidance
@@ -1619,8 +1619,8 @@ focus_tree = {
 		prerequisite = { focus = SOV_enactfederalconstitution }
 		available = {
 		}
-		icon = GFX_RUS_Russian_Generic
-		x = 8
+		icon = GFX_RUS_Fight_With_Illiteracy
+		x = 7
 		y = 2
 		relative_position_id = SOV_leninsreforms
 		cost = 10
@@ -1634,7 +1634,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Form_Generalnoye_Konsulstvo
 		prerequisite = { focus = SOV_Fight_With_Illiteracy }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_self_management
 		x = 0
 		y = 1
 		relative_position_id = SOV_Fight_With_Illiteracy
@@ -1650,8 +1650,8 @@ focus_tree = {
 		id = SOV_Appease_Duumvirate
 		prerequisite = { focus = SOV_Form_Generalnoye_Konsulstvo }
 		mutually_exclusive = { focus = SOV_Trust_In_Entente_Imperial }
-		icon = GFX_RUS_Russian_Generic
-		x = -1
+		icon = GFX_goal_generic_dangerous_deal
+		x = 0
 		y = 1
 		relative_position_id = SOV_Form_Generalnoye_Konsulstvo
 		cost = 10
@@ -1668,7 +1668,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_Seventh_Cabinet_Meeting
-		icon = GFX_RUS_Seventh_Cab_Meeting
+		icon = GFX_RUS_Seventh_Cabinet_Meeting
 		x = 38
 		y = 0
 		cost = 10
@@ -1683,7 +1683,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Proclaim_Succession_of_the_Russian_state
 		prerequisite = { focus = SOV_Seventh_Cabinet_Meeting }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_demand_territory
 		x = 0
 		y = 1
 		relative_position_id = SOV_Seventh_Cabinet_Meeting
@@ -1753,7 +1753,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_neutrality_focus
 		cancel_if_invalid = no
 		x = 4
 		y = 1
@@ -1797,8 +1797,23 @@ focus_tree = {
 	focus = {
 		id = SOV_Tank_In_Every_City
 		prerequisite = { focus = SOV_Total_Isolationism }
-		icon = GFX_RUS_Russian_Generic
-		x = -3
+		icon = GFX_goal_generic_army_tanks
+		x = -2
+		y = 1
+		relative_position_id = SOV_Total_Isolationism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_Swedish_Defense_Line
+		prerequisite = { focus = SOV_Total_Isolationism }
+		icon = GFX_RUS_Swedish_Defense_Line
+		x = -4
 		y = 1
 		relative_position_id = SOV_Total_Isolationism
 		cost = 10
@@ -1818,8 +1833,8 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Tank_In_Every_City }
-		icon = GFX_RUS_Russian_Generic
-		x = 1
+		icon = GFX_RUS_Grant_State_Priviledges
+		x = 0
 		y = 1
 		relative_position_id = SOV_Tank_In_Every_City
 		cost = 10
@@ -1837,8 +1852,8 @@ focus_tree = {
 		
 		prerequisite = { focus = SOV_Tank_In_Every_City }
 		mutually_exclusive - { focus = SOV_Appease_Duumvirate }
-		icon = GFX_RUS_Russian_Generic
-		x = -1
+		icon = GFX_goal_generic_major_alliance
+		x = -2
 		y = 1
 		relative_position_id = SOV_Tank_In_Every_City
 		cost = 10
@@ -1856,7 +1871,7 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = SOV_Trust_In_Entente_Imperial }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_intelligence_exchange
 		x = -1
 		y = 1
 		relative_position_id = SOV_Trust_In_Entente_Imperial
@@ -1875,7 +1890,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = SOV_Appease_Duumvirate }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_attack_allies
 		x = -3
 		y = 1
 		relative_position_id = SOV_Trust_In_Entente_Imperial
@@ -1891,7 +1906,7 @@ focus_tree = {
 		id = SOV_Flowers_To_Replace_Bullets
 		prerequisite = { focus = SOV_French_Attache_Group }
 		mutually_exclusive = { focus = SOV_Update_Offensive_Doctrines focus = SOV_Voyna_Is_Our_Spirit}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		x = -1
 		y = 1
 		relative_position_id = SOV_French_Attache_Group
@@ -1908,7 +1923,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_Flowers_To_Replace_Bullets }
 		available = {
 		}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_defence
 		x = -1
 		y = 3
 		relative_position_id = SOV_Flowers_To_Replace_Bullets
@@ -1926,7 +1941,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = SOV_Flowers_To_Replace_Bullets focus = SOV_Update_Offensive_Doctrines }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 2
 		relative_position_id = SOV_French_Attache_Group
@@ -1946,7 +1961,7 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = SOV_Petrograd_Conference }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 0
 		y = 2
 		relative_position_id = SOV_Petrograd_Conference
@@ -1972,7 +1987,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Trust_In_Entente_Imperial }
 		mutually_exclusive = { focus = SOV_French_Attache_Group }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_military_academy
 		x = 1
 		y = 1
 		relative_position_id = SOV_Trust_In_Entente_Imperial
@@ -1993,7 +2008,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SOV_Support_Of_German_Reforms }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 2
 		relative_position_id = SOV_Support_Of_German_Reforms
@@ -2014,7 +2029,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SOV_Intervention_In_Poland }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_anti_comintern_pact
 		x = 0
 		y = 2
 		relative_position_id = SOV_Intervention_In_Poland
@@ -2033,7 +2048,7 @@ focus_tree = {
 
 		prerequisite = { focus = SOV_French_Attache_Group focus = SOV_Support_Of_German_Reforms }
 		mutually_exclusive = { focus = SOV_Flowers_To_Replace_Bullets focus = SOV_Voyna_Is_Our_Spirit}
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_army_doctrines
 		x = 1
 		y = 1
 		relative_position_id = SOV_French_Attache_Group
@@ -2051,7 +2066,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = SOV_Update_Offensive_Doctrines }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 2
 		relative_position_id = SOV_Update_Offensive_Doctrines
@@ -2070,7 +2085,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = SOV_Mercenaries_Recruitment_Campaign }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_license_production
 		x = 0
 		y = 2
 		relative_position_id = SOV_Mercenaries_Recruitment_Campaign
@@ -2108,7 +2123,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SOV_Tverskaya_Street }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_generic_industry_3
 		x = -1
 		y = 1
 		relative_position_id = SOV_Tverskaya_Street
@@ -2125,7 +2140,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Tverskaya_Street }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_amphibious_assault
 		x = 1
 		y = 1
 		relative_position_id = SOV_Tverskaya_Street
@@ -2143,7 +2158,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Create_New_State_Companies }
 		prerequisite = { focus = SOV_Secure_Treaty_Ports }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_goal_generic_position_armies
 		x = -2
 		y = 1
 		relative_position_id = SOV_Create_New_State_Companies
@@ -2158,7 +2173,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Proclamation_Of_Common_Liberties
 		prerequisite = { focus = SOV_Interventionism_In_Eastern_Europe }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_focus_hol_the_foundations_of_defense
 		x = -1
 		y = 1
 		relative_position_id = SOV_Interventionism_In_Eastern_Europe
@@ -2200,7 +2215,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_Create_New_State_Companies }
 		prerequisite = { focus = SOV_Secure_Treaty_Ports }
 		mutually_exclusive = { focus = SOV_Aggressive_Influence_Politics }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Trade_Wars
 		x = 0
 		y = 1
 		relative_position_id = SOV_Create_New_State_Companies
@@ -2230,7 +2245,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Rakovskys_Doctrine_Of_Wide_Protection
 		prerequisite = { focus = SOV_Interventionism_In_Eastern_Europe focus = SOV_Trade_Wars }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Rakovskys_Doctrine_Of_Wide_Protection
 		x = 1
 		y = 1
 		relative_position_id = SOV_Interventionism_In_Eastern_Europe
@@ -2283,7 +2298,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_Create_New_State_Companies }
 		prerequisite = { focus = SOV_Secure_Treaty_Ports }
 		mutually_exclusive = { focus = SOV_Trade_Wars }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Aggressive_Influence_Politics
 		x = 2
 		y = 1
 		relative_position_id = SOV_Create_New_State_Companies
@@ -2301,7 +2316,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = SOV_Aggressive_Influence_Politics focus = SOV_Trade_Wars focus = SOV_Interventionism_In_Eastern_Europe }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Awake_French_Republicans
 		x = -1
 		y = 1
 		relative_position_id = SOV_Aggressive_Influence_Politics
@@ -2331,7 +2346,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Form_United_Nations
 		prerequisite = { focus = SOV_Finance_Worldwide_Democratic_Movements }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Form_United_Nations
 		x = 0
 		y = 2
 		relative_position_id = SOV_Finance_Worldwide_Democratic_Movements
@@ -2368,8 +2383,8 @@ focus_tree = {
 		id = SOV_Motherland_Needs
 		available = {
 		}
-		prerequisite = { focus = SOV_Dominate_Global_Stock_Market }
-		icon = GFX_RUS_Russian_Generic
+		prerequisite = { focus = SOV_Dominate_Global_Stock_Market focus = SOV_Continue_Policy_of_Public_Referendum }
+		icon = GFX_RUS_Motherland_Needs
 		x = 2
 		y = 1
 		relative_position_id = SOV_Dominate_Global_Stock_Market
@@ -2505,7 +2520,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SOV_Acceptance_For_Asian_Landlords }
 		mutually_exclusive = { focus = SOV_Remove_Corrupt_Ministers }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Way_To_Oligarchy
 		x = 0
 		y = 2
 		relative_position_id = SOV_Acceptance_For_Asian_Landlords
@@ -2581,7 +2596,7 @@ focus_tree = {
 		id = SOV_Revolution_Forgives
 		available = {
 		}
-		prerequisite = { focus = SOV_Motherland_Needs focus = SOV_Push_Semya_Laws }
+		prerequisite = { focus = SOV_Push_Semya_Laws }
 		mutually_exclusive = { focus = SOV_Legacy_of_Kniazdoms }
 		icon = GFX_RUS_Russian_Generic
 		x = 3
@@ -2636,7 +2651,7 @@ focus_tree = {
 		available = {
 		}
 
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_The_Unthinkable_Reform
 		x = 1
 		y = 1
 		relative_position_id = SOV_Revolution_Forgives
@@ -2652,7 +2667,7 @@ focus_tree = {
 		id = SOV_Amendment_Of_Revolutionary_Doctrine
 		available = {
 		}
-		prerequisite = { focus = SOV_Reform_Against_Corruption focus = SOV_The_Unthinkable_Reform }
+		prerequisite = { focus = SOV_The_Unthinkable_Reform }
 		icon = GFX_RUS_Russian_Generic
 		x = 1
 		y = 1
@@ -2705,7 +2720,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SOV_Monarchy_With_A_Human_Face }
-		icon = GFX_RUS_Russian_Generic
+		icon = GFX_RUS_Reunify_Great_Russia
 		x = 1
 		y = 1
 		relative_position_id = SOV_Parliamental_Okhrana
