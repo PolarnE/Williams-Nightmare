@@ -10,8 +10,8 @@ if = {
 }
 
 set_research_slots = 3
-set_stability = 0.15
-set_war_support = 1
+set_stability = 0.41
+set_war_support = 0.35
 
 # Starting tech
 set_technology = {
@@ -70,7 +70,6 @@ add_ideas = {
 tot_economic_mobilisation
 service_by_requirement
 closed_economy
-POL_bortnowski_dictatorship
 }
 
 create_country_leader = {
@@ -107,15 +106,25 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Władysław Bortnowski"
+	name = "Executive Directorate"
 	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
-	picture = "GFX_POL_wladyslaw_bortnowski"
+	picture = "Portrait_Poland_Directorate.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-	bortnowski_trait
 	}
 }
+
+#create_country_leader = {
+#	name = "Władysław Bortnowski"
+#	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
+#	picture = "GFX_POL_wladyslaw_bortnowski"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#	bortnowski_trait
+#	}
+#}
 
 create_field_marshal = {
 	name = "Władysław Sikorski"

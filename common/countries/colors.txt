@@ -778,3 +778,18 @@ BRG = {
 	color = rgb { 112 12 36 }
 	color_ui = rgb { 138 155 116 }
 }
+
+BHC = {
+	color = rgb { 88 109 152 }
+	color_ui = rgb { 87 160 255 }
+}
+
+DST = {
+	color = rgb { 141 62 114 }
+	color_ui = rgb { 181 12 124 }
+}
+
+CAL = {
+	color = rgb { 153 116 93 }
+	color_ui = rgb { 199 151 121 }
+}

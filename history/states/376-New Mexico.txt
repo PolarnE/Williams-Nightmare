@@ -1,8 +1,8 @@
 
 state={
 	id=376
-	name="New Mexico Territory"
-	manpower = 73316
+	name="Farmington"
+	manpower = 34439
 	
 	state_category = rural
 	
@@ -13,19 +13,17 @@ state={
 
 
 	history={
-		owner = MEX
+		owner = DST
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		add_core_of = DST
 		add_core_of = MEX
-		victory_points = {
-			4975 1
-		}
 	}
 
 	provinces={
-		1972 2102 3867 3883 4975 5044 8070 10642 10645 10867 10914 12552 12684 12720 12791 7999 9792 12627 1738 868 7684 1658 12624 
+		1972 2102 10642 10645 12552 12684 7999 9792 12627 1738 868 7684 1658 12624 9908 2055
 	}
 	
 }

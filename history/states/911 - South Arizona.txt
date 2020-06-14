@@ -1,0 +1,21 @@
+
+state={
+	id=911
+	name="South Arizona"
+	manpower = 36371
+	
+	state_category = wasteland
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MEX
+
+	}
+
+	provinces={
+	10783 3834 7920
+	}
+}

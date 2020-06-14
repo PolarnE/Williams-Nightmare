@@ -1,0 +1,27 @@
+
+state={
+	id=910
+	name="Outer California"
+	manpower = 26213
+	
+	state_category = rural
+	
+	resources={
+		steel=20 # was: 27
+		tungsten=12 # was: 42
+		aluminium=10 # was: 20
+	}
+
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CAL
+		add_core_of = MEX
+	}
+
+	provinces={
+	4799 12425 4521 4607 10422 12134
+	}
+}

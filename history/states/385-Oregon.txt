@@ -2,19 +2,16 @@
 state={
 	id=385
 	name="STATE_385"
-	manpower = 81613
+	manpower = 69302
 	
-	state_category = town
+	state_category = rural
 
 	history={
-		owner = USA
+		owner = BHC
 		buildings = {
-			infrastructure = 5
-			12211 = {
-				naval_base = 3
-			}
+			infrastructure = 4
 		}
-		add_core_of = USA
+		add_core_of = BHC
 		victory_points = {
 			3513 1 
 		}
@@ -22,6 +19,6 @@ state={
 	}
 
 	provinces={
-		 1414 3513 4274 4328 4380 4826 7398 7721 7865 10183 10625 12183 12211 12553 
+		 1414 3513 4274 4328 4826 7398 7721 7865 10625 12183 12553 
 	}
 }

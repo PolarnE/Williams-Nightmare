@@ -1,0 +1,30 @@
+
+state={
+	id=908
+	name="Tulsa"
+	manpower = 42572
+	
+	state_category = city
+	
+	resources={
+		oil=20 # was: 40
+	}
+
+
+	history={
+		owner = BHC
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+		add_core_of = BHC
+		victory_points = {
+			1806 1 
+		}
+
+	}
+
+	provinces={
+	1806 1618 7904 5103 11802 10798 7762
+	}
+}

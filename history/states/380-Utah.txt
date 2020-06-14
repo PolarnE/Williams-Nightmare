@@ -10,11 +10,15 @@ state= {
 	}
 
 	history={
-		owner = MEX
+	victory_points = {
+	4865 1 
+	}
+		owner = DST
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		add_core_of = DST
 		add_core_of = MEX
 	}
 	provinces={

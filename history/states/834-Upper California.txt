@@ -7,11 +7,12 @@ state={
 	state_category = town
 
 	history={
-		owner = MEX
+		owner = CAL
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = MEX
+		add_core_of = CAL
 	}
 
 	provinces={

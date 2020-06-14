@@ -34,16 +34,16 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	democratic = 5
-	fascism = 65
+	neutrality = 65
 	communism = 15
-	neutrality = 15
+	fascism = 15
 }
 
 create_country_leader = {
@@ -58,7 +58,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Yi Kang"
+	name = "Yi Un"
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
@@ -74,17 +74,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Un"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
 		#
 	}

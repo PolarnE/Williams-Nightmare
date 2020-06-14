@@ -1,7 +1,7 @@
 
 state={
 	id=389
-	name="STATE_389"
+	name="East Dakota"
 	manpower = 680844
 	state_category = rural
 	resources={
@@ -23,6 +23,6 @@ state={
 	}
 
 	provinces={
-		1752 1836 1870 3719 4772 6722 7877 10685 10709 12566 12685 1767
+		1752 1836 1870 3719 4772 10685 10709 12685 10569 12620 7862 4880 12667 10595
 	}
 }

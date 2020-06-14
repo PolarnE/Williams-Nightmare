@@ -59,13 +59,15 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	neutrality = 62
+    communism = 28
+	fascism = 10
 }
 
 create_country_leader = {
@@ -79,15 +81,32 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	create_country_leader = {
-		name = "Aurelio Mosquera"
-		desc = "POLITICS_AURELIO_MOSQUERA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = liberalism
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "Juan Sebastián Sarmiento"
+	desc = ""
+	picture = "Portrait_Ecuador_Juan_S_Sarmiento.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Juan Sebastián Sarmiento"
+	desc = ""
+	picture = "Portrait_Ecuador_Juan_S_Sarmiento.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Juan Sebastián Sarmiento"
+	desc = ""
+	picture = "Portrait_Ecuador_Juan_S_Sarmiento.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
 	}
 }

@@ -109,6 +109,23 @@ diplomatic_relation = {
     active = yes
 }
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = BHC
+		autonomous_state = autonomy_colony
+		freedom_level = 0.75
+	}
+	else = {
+		puppet = BHC
+	}
+}
+
 create_country_leader = {
 	name = "F. Edward Hébert"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"

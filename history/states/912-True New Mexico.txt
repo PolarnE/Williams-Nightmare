@@ -1,0 +1,31 @@
+
+state={
+	id=912
+	name="New Mexico"
+	manpower = 38877
+	
+	state_category = rural
+	
+	resources={
+		oil=14 # was: 20
+		aluminium=30 # was: 52
+	}
+
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = MEX
+		victory_points = {
+			4975 1
+		}
+	}
+
+	provinces={
+	5044 10914 12791 3883 4975 8070 3867 12720 10867
+	}
+	
+}
