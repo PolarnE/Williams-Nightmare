@@ -1,7 +1,7 @@
 ## DO NOT change name of this file or "USA tags". Its purpose is to overwrite USA Congress (as it's authoritarian), transferring it to RUS. Making separate files for Duma would be just silly.
 USA_congress = {
 	RUS_Issue_Regional_Ordinances = {
-		icon = generic_political_discourse
+		icon = decision_eng_trade_unions_support
 		available = {
 			OR = {
 				check_variable = { senators_support < senators_total }
@@ -36,18 +36,18 @@ USA_congress = {
 			political_power_gain = -0.75
 		}
 		remove_effect = {
-			USA_congress_medium_support = yes
+			USA_senate_medium_opposition = yes
 		}
 	}
 	RUS_Fund_Election_Campaign = {
-		icon = generic_political_discourse
+		icon = decision_generic_political_rally
 		available = {
 			OR = {
 				check_variable = { senators_support < senators_total }
 				check_variable = { representatives_support < representatives_total }
 			}
 			not = {
-				has_decision = USA_medium_lobby_effort
+				has_decision = RUS_Shuffle_The_Party
 			}
 			OR = {
 				political_power_daily > 0.3
@@ -75,11 +75,12 @@ USA_congress = {
 		}
 		days_remove = 30
 		remove_effect = {
-			USA_congress_small_support = yes
+			USA_house_small_support = yes
+			USA_senate_small_opposition = yes
 		}
 	}
 	RUS_Allow_Deputies_Initiative = {
-		icon = ger_mefo_bills
+		icon = decision_generic_political_discourse
 		available = {
 			OR = {
 				check_variable = { senators_support < senators_total }
@@ -107,7 +108,7 @@ USA_congress = {
 				check_variable = { representatives_support < representatives_total }
 			}
 			not = {
-				has_decision = USA_medium_lobby_effort
+				has_decision = RUS_Fund_Election_Campaign
 			}
 			OR = {
 				political_power_daily > 0.3
