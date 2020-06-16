@@ -702,5 +702,9 @@ spriteTypes = {
 		name = "GFX_gbr_royalist_map_icon"
 		texturefile = "gfx/interface/decisions/decision_eng_royalist_land.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_category_rus_separatism"
+		texturefile = "gfx/interface/decisions/decision_category_rus_separatism.dds"
+	}
 
 }
