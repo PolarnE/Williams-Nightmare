@@ -1,7 +1,7 @@
 
 state={
 	id=864
-	name="Hastings"
+	name="Portsmouth"
 	manpower = 823521
 	state_category = city
 

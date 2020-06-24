@@ -1,0 +1,21 @@
+state=
+{
+	id=913
+	name="Elba"
+	manpower = 20951
+	state_category = small_island
+	history= {
+		owner = SPR
+		add_core_of = TUS
+		victory_points = {
+			13235 1
+		}
+		buildings = {
+			infrastructure = 3
+			13235 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces= { 13235 }
+}

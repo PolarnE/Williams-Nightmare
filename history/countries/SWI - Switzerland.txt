@@ -95,11 +95,22 @@ add_ideas = {
 set_stability = 0.85
 
 create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
+	name = "Jakob Schaffner"
+	desc = ""
+	picture = "gfx/leaders/SWI/Portrait_Switzerland_Jakob_Schaffner.dds" 
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+    fascist_sympathies
+	}
+}
+
+create_country_leader = {
+	name = "Jakob Schaffner"
+	desc = ""
+	picture = "gfx/leaders/SWI/Portrait_Switzerland_Jakob_Schaffner.dds" 
+	expire = "1965.1.1"
+	ideology = cromwellian
 	traits = {
 		#
 	}
@@ -111,17 +122,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = nazism
 	traits = {
 		#
 	}

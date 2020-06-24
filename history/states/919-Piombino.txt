@@ -1,0 +1,27 @@
+
+state={
+	id=919
+	name="Piombino"
+	manpower = 21323
+	
+	
+	state_category = small_town
+
+	history={
+		owner = LUC
+		buildings = {
+			infrastructure = 4
+			6875 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			6875 1 
+		}
+		add_core_of = LUC
+	}
+
+	provinces={
+	6875
+	}
+}

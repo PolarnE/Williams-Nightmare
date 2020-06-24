@@ -990,4 +990,5 @@ opinion_modifiers = {
 	MON_handed_over_unberg_sternberg = { value = 20 }
 	MON_didnt_hand_over_unberg_sternberg = { value = -20 }
 	MON_given_unberg_sternberg_political_power = { value = -50 }
+	family_ties_opinion = { value = 50 }
 }	

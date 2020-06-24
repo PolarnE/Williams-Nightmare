@@ -1,0 +1,25 @@
+
+state={
+	id=918
+	name="Three Leagues"
+	manpower = 423267
+	
+	
+	state_category = town
+
+	history={
+		owner = THL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		victory_points = {
+			3660 5 
+		}
+		add_core_of = THL
+	}
+
+	provinces={
+	3660 658 3641 9600 3662
+	}
+}

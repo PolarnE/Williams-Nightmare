@@ -82,6 +82,11 @@ spriteTypes = {
 		size = { x = 75 y = 16 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+	spriteType = {
+		name = "GFX_rfr_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//rfr_album_art.dds"
+		noOfFrames = 2
+	}
 	
 	spriteType = {
 		name = "GFX_base_game_album_art"
@@ -92,11 +97,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_classic_album_art"
 		texturefile = "gfx//interface//topbar//musicplayer//classic_album_art.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_rfr_album_art"
-		texturefile = "gfx//interface//topbar//musicplayer//rfr_album_art.dds"
 		noOfFrames = 2
 	}
 }

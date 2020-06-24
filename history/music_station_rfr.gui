@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		name = "base_music_faceplate"
+		name = "rfr_faceplate"
 		position = { x =0 y=0 }
 		size = { width = 590 height = 46 }
 
@@ -111,13 +111,13 @@ guiTypes = {
 	}
 
 	containerWindowType={
-		name = "base_music_stations_entry"
+		name = "rfr_stations_entry"
 		size = { width = 162 height = 130 }
 		
 		checkBoxType = {
 			name = "select_station_button"
 			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_base_game_album_art"
+			quadTextureSprite = "GFX_rfr_album_art"
 			clicksound = decisions_ui_button
 		}
 	}

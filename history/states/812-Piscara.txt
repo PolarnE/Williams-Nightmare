@@ -18,5 +18,5 @@ state=
 		add_core_of = NAP
 	}
 	provinces={
-	963 923 6831 }
+	963 6831 11882 3910 9838 }
 	}

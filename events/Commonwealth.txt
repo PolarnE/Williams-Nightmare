@@ -224,7 +224,7 @@ country_event = {
 		name = commonwealth.9.b #The Military
 		ai_chance = { base = 25 }
 		 hidden_effect = {
-		 ENG = { country_event = { id = commonwealth.11 days = 3 } }
+		 ENG = { country_event = { id = commonwealth.21 days = 3 } }
 		 }
 		}
     option = {
@@ -305,7 +305,8 @@ country_event = {
 		name = commonwealth.15.a #Beat a confession out of them, admitting that Mosley is in on this
 		add_stability = 0.05
 		hidden_effect = {
-		ENG = { country_event = { id = commonwealth.19 days = 5 } }
+		ENG = { country_event = { id = commonwealth.17 days = 5 } }
+		}
 		}
 	}
 	
@@ -365,11 +366,73 @@ country_event = {
 	option = {
 		name = commonwealth.19.a #Carry on
 		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.20 days = 10 } } }# Nothing
+		 }
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - Government Loyalists - They Covered Their Tracks - Nothing
+country_event = {
+	id = commonwealth.20
+	title = commonwealth.20.t
+	desc = commonwealth.20.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.20.a #Good
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - The Military
+country_event = {
+	id = commonwealth.21
+	title = commonwealth.21.t
+	desc = commonwealth.21.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.21.a #Carry on
+		 hidden_effect = {
 		 random_list = {
-			35 = { ENG = { country_event = { id = commonwealth.14 days = 10 } } }# A Possible Lead - leads to a Nasapo raid, you can beat them into confessing shit too
-			65 = { ENG = { country_event = { id = commonwealth.15 days = 10 } } }# They Covered Their Tracks - continue searching
+			50 = { ENG = { country_event = { id = commonwealth.22 days = 10 } } }# Military finds soldier disloyalty
+			50 = { ENG = { country_event = { id = commonwealth.23 days = 10 } } }# Military finds disloyalty amongst High Command
 	     }
 		 }
 		}
 	}
 	
+# Rumors of a Plot? - Begin Investigation - The Military - Soldier Disloyalty
+country_event = {
+	id = commonwealth.22
+	title = commonwealth.22.t
+	desc = commonwealth.22.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.22.a #We must reinvigorate the hardy discipline and loyalty
+		add_war_support = 0.05
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - The Military - General Disloyalty
+country_event = {
+	id = commonwealth.23
+	title = commonwealth.23.t
+	desc = commonwealth.23.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.23.a
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.24 days = 10 } }# Trial of Neil Ritchie
+		 }
+		}
+	}

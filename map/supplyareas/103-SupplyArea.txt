@@ -1,8 +1,8 @@
 supply_area={
 	id=103
-	name="SUPPLYAREA_103"
+	name="Malta"
 	value=6
 	states={
-		116 
+		116
 	}
 }

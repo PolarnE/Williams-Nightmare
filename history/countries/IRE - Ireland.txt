@@ -12,6 +12,12 @@ set_technology = {
 
 set_convoys = 10
 
+diplomatic_relation = {
+	country = FRA
+	relation = non_aggression_pact
+	active = yes
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -61,25 +67,18 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	fascism = 1
-	communism = 1
+	neutrality = 42
+	democratic = 38
+	fascism = 12
+	communism = 8
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.6.17"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 create_country_leader = {
 	name = "Éamon de Valera"
 	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
@@ -114,11 +113,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Norton"
-	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Críostóir II"
+	desc = ""
+	picture = "Portrait_Ireland_Christopher_II.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = bonapartism
 	traits = {
 		#
 	}

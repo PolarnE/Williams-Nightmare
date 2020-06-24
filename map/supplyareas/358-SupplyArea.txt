@@ -1,0 +1,8 @@
+supply_area={
+	id=358
+	name="Elba"
+	value=4
+	states={
+		913
+	}
+}

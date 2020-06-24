@@ -11,7 +11,7 @@ SOV_category_struggle_for_independence = {
 		available = {
 				OR = {
 				has_idea = RUS_integrity_6
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = CIR
 				}
 		}
@@ -78,7 +78,7 @@ SOV_category_struggle_for_independence = {
 		available = {
 				OR = {
 				has_idea = RUS_integrity_6
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = UKR
 				AND = {
 					has_idea = RUS_integrity_5
@@ -92,7 +92,7 @@ SOV_category_struggle_for_independence = {
 			tag = SOV
 		}
 
-		days_mission_timeout = 70
+		days_mission_timeout = 120
 		#days_remove = 1
 
 		activation = {
@@ -157,7 +157,7 @@ SOV_category_struggle_for_independence = {
 				OR = {
 				has_idea = RUS_integrity_6
 				has_idea = RUS_integrity_5
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = BLR
 				}
 		}
@@ -225,7 +225,7 @@ SOV_category_struggle_for_independence = {
 				OR = {
 				has_idea = RUS_integrity_6
 				has_idea = RUS_integrity_5
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = KAZ
 				AND = {
 					has_idea = RUS_integrity_4
@@ -303,7 +303,7 @@ SOV_category_struggle_for_independence = {
 				has_idea = RUS_integrity_6
 				has_idea = RUS_integrity_5
 				has_idea = RUS_integrity_4
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = SIB
 				}
 		}
@@ -369,7 +369,7 @@ SOV_category_struggle_for_independence = {
 				has_idea = RUS_integrity_6
 				has_idea = RUS_integrity_5
 				has_idea = RUS_integrity_4
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = KRA
 				AND = {
 					has_idea = RUS_integrity_3
@@ -446,7 +446,7 @@ SOV_category_struggle_for_independence = {
 				has_idea = RUS_integrity_5
 				has_idea = RUS_integrity_4
 				has_idea = RUS_integrity_3
-				has_completed_focus = SOV_Total_Isolationism
+				has_completed_focus = SOV_onlyus
 				country_exists = URA
 				}
 		}

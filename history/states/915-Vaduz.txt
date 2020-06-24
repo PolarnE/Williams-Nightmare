@@ -1,0 +1,21 @@
+
+state={
+	id=915
+	name="Vaduz"
+	manpower = 14236
+	
+	
+	state_category = rural
+
+	history={
+		owner = BAV
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BAV
+	}
+
+	provinces={
+	6680 6678
+	}
+}

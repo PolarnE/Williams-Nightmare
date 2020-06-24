@@ -1,0 +1,21 @@
+state=
+{
+	id=914
+	name="Albinia"
+	manpower = 6289
+	state_category = enclave
+	history= {
+		owner = NAP
+		add_core_of = NAP
+		buildings = {
+			infrastructure = 3
+			13236 = {
+				naval_base = 3
+			}
+			13237 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces= { 13236 13237 }
+}

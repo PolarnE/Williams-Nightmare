@@ -270,6 +270,8 @@ BRG = "countries/Burgundy.txt"
 BRI = "countries/Brittany.txt"
 BUK = "countries/Bukovina.txt"
 FR2 = "countries/NationalFrance.txt"
+THL = "countries/ThreeLeagues.txt"
+LUC = "countries/Lucca.txt"
 ############AMERICAS################################
 BHC = "countries/BHC.txt"
 DST = "countries/Deseret.txt"

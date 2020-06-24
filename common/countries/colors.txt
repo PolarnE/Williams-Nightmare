@@ -793,3 +793,13 @@ CAL = {
 	color = rgb { 153 116 93 }
 	color_ui = rgb { 199 151 121 }
 }
+
+THL = {
+	color = rgb { 255 171 171 }
+	color_ui = rgb { 255 171 171 }
+}
+
+LUC = {
+	color = rgb { 128 235 192 }
+	color_ui = rgb { 128 235 192 }
+}

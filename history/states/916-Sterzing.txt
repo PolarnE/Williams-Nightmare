@@ -1,0 +1,23 @@
+
+state={
+	id=916
+	name="Sterzing"
+	manpower = 53217
+	
+	state_category = small_town
+
+	history={
+		victory_points = {
+			11598 1
+		}
+		owner = BAV
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BAV
+	}
+
+	provinces={
+	11615 9630 6675
+	}
+}

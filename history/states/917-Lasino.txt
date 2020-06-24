@@ -1,0 +1,22 @@
+state={
+	id=917
+	name="Lasino"
+	manpower = 12321
+	
+	state_category = small_town
+
+	history={
+		victory_points = {
+			11598 1
+		}
+		owner = ITA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ITA
+	}
+
+	provinces={
+	6631
+	}
+}

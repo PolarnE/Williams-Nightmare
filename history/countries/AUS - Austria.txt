@@ -27,6 +27,9 @@ set_popularities = {
 	communism = 40
 }
 
+add_opinion_modifier = { target = THL modifier = family_ties_opinion }
+add_opinion_modifier = { target = WRB modifier = family_ties_opinion }
+
 add_ideas = {
 AUS_Status_Impios
 AUS_Factionalism
