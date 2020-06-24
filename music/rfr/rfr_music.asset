@@ -1,0 +1,48 @@
+###PEACE - Generic allignment
+music = {
+	name = "PolyushkaPolye"
+	file = "PolyushkaPolye.ogg"
+	volume = 0.7
+}
+music = {
+	name = "AZaOknom"
+	file = "AZaOknom.ogg"
+	volume = 0.7
+}
+music = {
+	name = "DveGiraty"
+	file = "DveGiraty.ogg"
+	volume = 0.7
+}
+music = {
+	name = "Korobushka"
+	file = "Korobushka.ogg"
+	volume = 0.7
+}
+music = {
+	name = "TeciTeciDunave"
+	file = "TeciTeciDunave.ogg"
+	volume = 0.7
+}
+music = {
+	name = "UralskayaRyabinushka"
+	file = "UralskayaRyabinushka.ogg"
+	volume = 0.7
+}
+###WARTIME
+music = {
+	name = "BattleOfNovgorod"
+	file = "BattleOfNovgorod.ogg"
+	volume = 0.7
+}
+music = {
+	name = "BearingTheFreedom"
+	file = "BearingTheFreedom.ogg"
+	volume = 0.7
+}
+music = {
+	name = "TheFederationNeverSurrenders"
+	file = "TheFederationNeverSurrenders.ogg"
+	volume = 0.7
+}
+
