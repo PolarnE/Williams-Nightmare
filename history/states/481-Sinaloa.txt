@@ -16,6 +16,12 @@ state={
 			}
 		}
 		add_core_of = MEX
+		add_core_of = CMX
+		add_core_of = SMX
+		SMX = {
+		set_province_controller = 8003
+		set_province_controller = 10895
+		}
 		victory_points = {
 			7921 10
 		}

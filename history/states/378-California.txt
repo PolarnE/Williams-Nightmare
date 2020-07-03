@@ -34,6 +34,15 @@ state={
 		}
 		add_core_of = MEX
 		add_core_of = CAL
+		MEX = {
+		set_province_controller = 7517
+		set_province_controller = 12374
+		set_province_controller = 9814
+		set_province_controller = 610
+		set_province_controller = 9730
+		set_province_controller = 6757
+		set_province_controller = 6772
+		}
 		victory_points = {
 			9814 30
 		}

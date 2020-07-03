@@ -1,0 +1,89 @@
+﻿###########################
+# Mexico Events
+###########################
+
+add_namespace = h1936_mexico
+
+country_event = {
+	id = h1936_mexico.1 #Callista Victory in Civil War
+	title = h1936_mexico.1.t
+	desc = h1936_mexico.1.d
+	
+	picture = GFX_report_event_tanks_mexico_city
+	
+	fire_only_once = yes
+	
+	immediate = { 
+	hidden_effect = {
+	
+	}
+	}
+	
+        trigger = {
+		original_tag = MEX
+		country_exists = MEX
+		NOT = { country_exists = CMX country_exists = SMX }
+	    }
+option = {
+		name = h1936_mexico.1.a
+		add_political_power = 50
+		drop_cosmetic_tag = yes
+		}
+	}
+	
+country_event = {
+	id = h1936_mexico.2 #Synarchist Victory in Civil War
+	title = h1936_mexico.2.t
+	desc = h1936_mexico.2.d
+	
+	picture = GFX_report_event_tanks_mexico_city
+	
+	fire_only_once = yes
+	
+	immediate = { 
+	hidden_effect = {
+	
+	}
+	}
+	
+        trigger = {
+		original_tag = SMX
+		country_exists = SMX
+		NOT = { country_exists = CMX country_exists = MEX }
+	    }
+option = {
+		name = h1936_mexico.2.a
+		add_political_power = 50
+		drop_cosmetic_tag = yes
+		}
+	}
+	
+country_event = {
+	id = h1936_mexico.3 #Synarchist Victory in Civil War
+	title = h1936_mexico.3.t
+	desc = h1936_mexico.3.d
+	
+	picture = GFX_report_event_tanks_mexico_city
+	
+	fire_only_once = yes
+	
+	immediate = { 
+	hidden_effect = {
+	
+	}
+	}
+	
+        trigger = {
+		original_tag = CMX
+		country_exists = CMX
+		NOT = { country_exists = MEX country_exists = SMX }
+	    }
+option = {
+		name = h1936_mexico.3.a
+		add_political_power = 50
+		drop_cosmetic_tag = yes
+		set_politics = {
+	ruling_party = democratic
+}
+		}
+	}

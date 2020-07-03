@@ -1,5 +1,26 @@
 ﻿capital = 380
 
+oob = "DST_1936"
+
+declare_war_on = {
+		target = MEX
+		type = annex_everything
+	}
+declare_war_on = {
+		target = SMX
+		type = annex_everything
+	}
+declare_war_on = {
+		target = CMX
+		type = annex_everything
+	}
+
+add_ideas = {
+service_by_requirement
+war_economy
+idea_rebelling_from_mexico
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

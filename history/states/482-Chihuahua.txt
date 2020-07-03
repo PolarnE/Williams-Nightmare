@@ -12,7 +12,12 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = MEX
-
+		add_core_of = CMX
+		add_core_of = SMX
+		SMX = {
+		set_province_controller = 12897
+		set_province_controller = 12850
+        }
 		victory_points = {
 			8097 10
 		}

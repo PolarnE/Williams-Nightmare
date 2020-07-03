@@ -227,13 +227,6 @@ country_event = {
 		 ENG = { country_event = { id = commonwealth.21 days = 3 } }
 		 }
 		}
-    option = {
-		name = commonwealth.9.c #Pan-Germanicists
-		ai_chance = { base = 25 }
-		 hidden_effect = {
-		 ENG = { country_event = { id = commonwealth.12 days = 3 } }
-		 }
-		}
 	 option = {
 		name = commonwealth.9.e #Nasapo
 		ai_chance = { base = 25 }
@@ -433,6 +426,30 @@ country_event = {
 		name = commonwealth.23.a
 		 hidden_effect = {
 		 ENG = { country_event = { id = commonwealth.24 days = 10 } }# Trial of Neil Ritchie
+		 }
+		}
+	}
+	
+# Rumors of a Plot? - Begin Investigation - The Military - General Disloyalty - Trial of Neil Ritchie
+country_event = {
+	id = commonwealth.23
+	title = commonwealth.23.t
+	desc = commonwealth.23.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = commonwealth.23.a # Kill him
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.24 days = 10 } }# Trial of Henry Wilson
+		 }
+		}
+	option = {
+		name = commonwealth.23.a # Spare him
+		add_political_power = -25
+		 hidden_effect = {
+		 ENG = { country_event = { id = commonwealth.24 days = 10 } }# Trial of Henry Wilson
 		 }
 		}
 	}

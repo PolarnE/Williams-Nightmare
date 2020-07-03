@@ -11,7 +11,7 @@ state={
 	}
 	
 	history={
-		owner = MEX
+		owner = CMX
 		buildings = {
 			infrastructure = 3
 			air_base = 2
@@ -20,6 +20,8 @@ state={
 			}
 		}
 		add_core_of = MEX
+		add_core_of = CMX
+		add_core_of = SMX
 		victory_points = {
 			10889 1
 		}

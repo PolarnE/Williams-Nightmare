@@ -20,6 +20,9 @@ state={
 		}
 		add_core_of = DST
 		add_core_of = MEX
+		MEX = {
+		set_province_controller = 12684
+		}
 	}
 
 	provinces={

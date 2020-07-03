@@ -12,12 +12,17 @@ state={
 	}
 	
 	history={
-		owner = MEX
+		owner = CMX
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
 		add_core_of = MEX
+		add_core_of = CMX
+		add_core_of = SMX
+		MEX = {
+		set_province_controller = 1952
+		}
 		victory_points = {
 			4956 10
 		}

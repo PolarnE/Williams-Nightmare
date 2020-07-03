@@ -16,6 +16,8 @@ country_event = {
 	}
 	
 	option = {
+	hidden_effect = {
+	}
 		name = h1936_italy.1.a #epic!!!
 	create_country_leader = {
 	name = "Italo Balbo"

@@ -255,4 +255,35 @@ idea_colonial_eng_suppressed = {
 			 land_reinforce_rate = 0.075
 			}
 		}
+		
+	idea_mexican_civil_war = {
+		
+			removal_cost = -1
+
+			allowed_civil_war = {
+			}
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+			 surrender_limit = 1
+			 set_rule = {
+			 can_force_government = no 
+			 can_puppet = no
+			 }
+			}
+		}
+	idea_rebelling_from_mexico = {
+		
+			removal_cost = -1
+
+			allowed_civil_war = {
+			}
+
+			picture = air_support_focus
+			
+			modifier = {
+			 surrender_limit = 0.1
+			}
+		}
 }

@@ -19,6 +19,8 @@ state={
 			air_base = 3
 		}
 		add_core_of = MEX
+		add_core_of = CMX
+		add_core_of = SMX
 		victory_points = {
 			1965 25
 		}

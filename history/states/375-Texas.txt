@@ -14,7 +14,7 @@ state={
 
 
 	history={
-		owner = MEX
+		owner = SMX
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
@@ -24,6 +24,14 @@ state={
 			}
 		}
 		add_core_of = MEX
+		add_core_of = CMX
+		add_core_of = SMX
+		MEX = {
+		set_province_controller = 5038
+		set_province_controller = 1954
+		set_province_controller = 10894
+		set_province_controller = 10740
+		}
 		victory_points = {
 			12782 1 
 		}

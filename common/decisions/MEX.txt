@@ -1,0 +1,37 @@
+mexican_civil_war_category = {
+	california_deseret_rebellion = {
+
+		icon = generic_civil_support
+
+		fire_only_once = yes
+
+		visible = {
+		has_war_with = CAL
+		has_war_with = DST
+		}
+		
+		available = {
+		NOT = { country_exists = CAL }
+		NOT = { country_exists = DST }
+		}
+
+		activation = {
+	    country_exists = CAL
+		country_exists = DST
+		}
+
+		fire_only_once = yes
+		
+		is_good = no
+		
+		days_mission_timeout = 300
+		
+		timeout_effect = {
+		white_peace = CAL
+		white_peace = DST
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+}

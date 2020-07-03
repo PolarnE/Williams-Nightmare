@@ -17,6 +17,11 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = MEX
+		add_core_of = CMX
+		add_core_of = SMX
+		CMX = {
+		set_province_controller = 2051
+		}
 		victory_points = {
 			13089 10
 		}

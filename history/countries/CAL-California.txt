@@ -1,5 +1,26 @@
 ﻿capital = 378
 
+oob = "CAL_1936"
+
+declare_war_on = {
+		target = MEX
+		type = annex_everything
+	}
+declare_war_on = {
+		target = SMX
+		type = annex_everything
+	}
+declare_war_on = {
+		target = CMX
+		type = annex_everything
+	}
+
+add_ideas = {
+limited_conscription
+partial_economic_mobilisation
+idea_rebelling_from_mexico
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
