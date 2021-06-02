@@ -3,5 +3,5 @@ tags={
 	"Alternative History"
 	"National Focuses"
 }
-name="williams_nightmare"
+name="Williams-Nightmare"
 supported_version="1.10.5"
