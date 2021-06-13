@@ -216,7 +216,7 @@ HNO = "countries/Hannover.txt"
 NSA = "countries/Nassau.txt"
 WST = "countries/Westphalia.txt"
 RGN = "countries/Regensburg.txt"
-############CHING CHONG#############################
+############ASIA#############################
 HVK = "countries/HeavenlyKingdom.txt"
 IAA = "countries/InternationalAsianAssociation.txt"
 ############RUSSIAN STUFF###########################
