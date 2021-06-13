@@ -79,7 +79,7 @@ create_country_leader = {
 		
 	}
 }
-#create_country_leader = {
+create_country_leader = {
 	name = "M. N. Roy"
 	desc = ""
 	picture = "portrait_m_n_roy.dds"
