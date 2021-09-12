@@ -4,4 +4,5 @@ tags={
 	"National Focuses"
 }
 name="Williams-Nightmare"
+replace_path="history/states"
 supported_version="1.10.5"
