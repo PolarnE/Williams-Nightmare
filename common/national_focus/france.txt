@@ -44,7 +44,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = {
-				idea = FRA_devalue_the_franc
+				idea = FRA_Stagnant_Beast
 				days = 365
 			}
 		}
