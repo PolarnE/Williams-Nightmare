@@ -50,8 +50,8 @@
 		}
 	}
 	focus = {
-		id = FRA_autoroutes
-		icon = GFX_goal_generic_construct_infrastructure
+		id = FRA_Paris_Stock_Crash
+		icon = GFX_
 		x = 2
 		y = 1
 		offset = {
