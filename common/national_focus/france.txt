@@ -58,9 +58,9 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_devalue_the_franc }
+		prerequisite = { focus = FRA_Stagnant_Beast }
 		mutually_exclusive = { }
-		relative_position_id = FRA_devalue_the_franc
+		relative_position_id = FRA_Stagnant_Beast
 		cost = 10
 
 		ai_will_do = {
