@@ -140,17 +140,17 @@
 		}
 	}
 	focus = {
-			id = FRA_invest_in_the_metropole
-			icon = GFX_goal_generic_construct_civilian
+			id = FRA_Coup_Reaction
+			icon = GFX_
 			x = 0
 			y = 1
 			offset = {
 				x = 0
 				y = 0
 			}
-			prerequisite = { focus = FRA_devalue_the_franc }
+			prerequisite = { focus = FRA_Paris_Stock_Crash }
 			mutually_exclusive = { }
-			relative_position_id = FRA_devalue_the_franc
+			relative_position_id = FRA_Paris_Stock_Crash
 			cost = 10
 	
 			ai_will_do = {
