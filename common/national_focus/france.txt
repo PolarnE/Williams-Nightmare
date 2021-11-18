@@ -175,8 +175,8 @@
 			}
 		}	
 	focus = {
-		id = FRA_metropolitan_france
-		icon = GFX_focus_generic_industry_1
+		id = FRA_Lion_Two_Cities
+		icon = GFX_
 		available = {
 			any_owned_state = {
 				is_core_of = ROOT
@@ -193,8 +193,8 @@
 		ai_will_do = {
 			factor = 1
 		}		
-		prerequisite = { focus = FRA_invest_in_the_metropole }
-		relative_position_id = FRA_devalue_the_franc
+		prerequisite = { focus = FRA_Coup_Reaction }
+		relative_position_id = FRA_Coup_Reaction
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
