@@ -237,14 +237,14 @@
 	}
 
 	focus = {
-		id = FRA_industrial_expansion
-		icon = GFX_focus_generic_industry_3
+		id = FRA_Forgive_Forget
+		icon = GFX_
 		available = {
 		}
-		prerequisite = { focus = FRA_metropolitan_france focus = FRA_algerie_france }
+		prerequisite = { focus = FRA_Lion_Two_Cities }
 		x = 0
 		y = 1
-		relative_position_id = FRA_metropolitan_france
+		relative_position_id = FRA_Lion_Two_Cities
 		cost = 10
 		ai_will_do = {
 			factor = 1
