@@ -288,14 +288,14 @@
 	}
 
 	focus = {
-		id = FRA_military_factories
-		icon = GFX_goal_generic_construct_mil_factory
+		id = FRA_Fire_Fury
+		icon = GFX_
 		available = {
 		}
-		prerequisite = { focus = FRA_industrial_expansion focus = FRA_colonial_industry }
+		prerequisite = { focus = FRA_Lion_Two_Cities }
 		x = 2
 		y = 1
-		relative_position_id = FRA_industrial_expansion
+		relative_position_id = FRA_Lion_Two_Cities
 		cost = 10
 		ai_will_do = {
 			factor = 1
