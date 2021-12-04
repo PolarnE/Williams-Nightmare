@@ -344,8 +344,8 @@
 
 
 	focus = {
-		id = FRA_algerie_france
-		icon = GFX_focus_generic_industry_1
+		id = FRA_Consolidate_Power
+		icon = GFX_
 		available = {
 			any_state = {
 				OR = {
@@ -372,8 +372,8 @@
 		ai_will_do = {
 			factor = 0.2
 		}
-		prerequisite = { focus = FRA_invest_in_the_metropole focus = FRA_invest_in_the_colonies }
-		relative_position_id = FRA_invest_in_the_metropole
+		prerequisite = { focus = FRA_Fire_Fury }
+		relative_position_id = FRA_Fire_Fury
 		available_if_capitulated = yes
 
 		bypass = {
