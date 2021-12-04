@@ -749,8 +749,8 @@
 		}
 	}
 	focus = {
-		id = FRA_global_integration
-		icon = GFX_goal_generic_construction
+		id = 
+		icon = 
 		x = 2
 		y = 1
 		offset = {
