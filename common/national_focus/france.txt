@@ -437,8 +437,8 @@
 		}
 	}	
 	focus = {
-		id = FRA_invest_in_the_colonies
-		icon = GFX_goal_generic_construct_civilian
+		id = 
+		icon = 
 		x = 4
 		y = 1
 		offset = {
