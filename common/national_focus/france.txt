@@ -481,8 +481,8 @@
 		}
 	}
 	focus = {
-		id = FRA_invest_in_west_africa
-		icon = GFX_focus_generic_industry_1
+		id =
+		icon = 
 		x = 0
 		y = 1
 		offset = {
@@ -547,8 +547,8 @@
 		}
 	}
 	focus = {
-		id = FRA_invest_in_indochina
-		icon = GFX_focus_generic_industry_1
+		id = 
+		icon = 
 		x = 2
 		y = 1
 		offset = {
@@ -604,8 +604,8 @@
 		}
 	}
 	focus = {
-		id = FRA_invest_in_syria
-		icon = GFX_focus_generic_industry_1
+		id = 
+		icon = 
 		x = 4
 		y = 1
 		offset = {
@@ -660,8 +660,8 @@
 		}
 	}
 	focus = {
-		id = FRA_colonial_industry
-		icon = GFX_focus_generic_industry_3
+		id = 
+		icon = 
 		available = {
 		}
 		prerequisite = { focus = FRA_algerie_france focus = FRA_invest_in_west_africa focus = FRA_invest_in_indochina focus = FRA_invest_in_syria }
@@ -697,8 +697,8 @@
 	}
 
 	focus = {
-		id = FRA_extra_research_slot
-		icon = GFX_focus_research
+		id =
+		icon =
 		available = {
 			if = {
 				limit = { amount_research_slots > 3 }
@@ -726,8 +726,8 @@
 	}
 	
 	focus = {
-		id = FRA_extra_research_slot_2
-		icon = GFX_focus_research
+		id =
+		icon = 
 		prerequisite = { 
 			focus = FRA_colonial_industry
 		}
@@ -786,7 +786,7 @@
 	#### END ####
 
 	focus = {
-		id = FRA_begin_rearmament
+		id = 
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 16
 		y = 0
