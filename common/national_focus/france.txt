@@ -52,7 +52,7 @@
 	focus = {
 		id = FRA_Paris_Stock_Crash
 		icon = GFX_
-		x = 2
+		x = 0
 		y = 1
 		offset = {
 			x = 0
