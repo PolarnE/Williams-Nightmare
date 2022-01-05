@@ -19,7 +19,7 @@
 	focus = {
 		id = FRA_Stagnant_Beast
 		icon = GFX_
-		x = 0
+		x = 5
 		y = 0
 		offset = {
 			x = 0
