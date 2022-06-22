@@ -5,4 +5,4 @@ tags={
 }
 name="Williams-Nightmare"
 replace_path="history/states"
-supported_version="1.10.5"
+supported_version="1.11.12"
